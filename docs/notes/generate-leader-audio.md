@@ -24,8 +24,15 @@
 1. Encode using ffmpeg, e.g.
 
    ```
-   ffmpeg -i ~/Desktop/Your\ most\ valuable\ human\ 1.wav -codec:a libmp3lame -b:a 128k -ac 1 src/sounds/speech/english/wonders/markoveclipse.mp3
+   ffmpeg -i ~/Desktop/Your\ most\ valuable\ human\ 1.wav -codec:a libmp3lame -b:a 128k -ac 1 src/Assets/Sounds/Speech/English/Wonders/MarkovEclipse.mp3
    ```
+
+1. Copy to src/ using the exact same path and filename as the game
+
+   💡 To make this easier, in the filter box on SteamDB type `english/tech/tech` or `english/wonders/` to show only the files we want
+
+   - Base game: https://steamdb.info/depot/65981/
+   - Rising Tide: https://steamdb.info/depot/353830/
 
 #### Arshia
 
