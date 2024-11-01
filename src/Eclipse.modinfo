@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="dc718a43-7f42-45c5-8963-a158d69d947b" version="1">
+  <Properties>
+    <Name>Eclipse</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>TODO</Teaser>
+    <Description>TODO</Description>
+    <Authors>bmaupin</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <!-- See here for more information about this section: https://forums.civfanatics.com/threads/file-attributes-properties-is-that-vfs-ingameuiaddin-or-updatedatabase.487846/ -->
+  <Files>
+    <File md5="11c4f69e87d4ec2759b8f91415ded70d" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/EuphoticStrand.mp3</File>
+    <File md5="9e03f69e142cd8403f02e2ed0ed40135" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/RelativisticDataBank.mp3</File>
+    <File md5="2027f5937f96d20de4fad13b82e302d6" import="1">Assets/Sounds/Speech/English/Tech/TechAlienBiology.mp3</File>
+    <File md5="7294d68a723e04c0ba614c7416f61245" import="1">Assets/Sounds/Speech/English/Tech/TechHumanIdealism.mp3</File>
+    <File md5="f082d5143ae1df0cf11533b1551105ed" import="1">Assets/Sounds/Speech/English/Tech/TechHyperconductors.mp3</File>
+    <File md5="9f4d8767aae5f14c7290e7c6c660d518" import="1">Assets/Sounds/Speech/English/Tech/TechOrganics.mp3</File>
+    <File md5="8f7b42667073a591f448c843e14c68e5" import="1">Assets/Sounds/Speech/English/Tech/TechPlanetarySurvey.mp3</File>
+    <File md5="a448d4c0850702406eecb8bce4547449" import="1">Assets/Sounds/Speech/English/Tech/TechSurrogacy.mp3</File>
+    <File md5="e7f5df902f584990fc8f778a2da184af" import="1">Assets/Sounds/Speech/English/Tech/TechSwarmRobotics.mp3</File>
+    <File md5="ba9b50642093d0150f2260f14562d065" import="1">Assets/Sounds/Speech/English/Tech/TechSynergetics.mp3</File>
+    <File md5="1cd49f85fc2698b28645ef519d3a6bac" import="1">Assets/Sounds/Speech/English/Wonders/HumanHive.mp3</File>
+    <File md5="5d41c9a87ff0799706912b123da8ee88" import="1">Assets/Sounds/Speech/English/Wonders/MarkovEclipse.mp3</File>
+    <File md5="708e84ba92030c2fb53db5297c0801e5" import="1">Assets/Sounds/Speech/English/Wonders/QuantumComputer.mp3</File>
+  </Files>
+  <Actions>
+  </Actions>
+  <EntryPoints>
+  </EntryPoints>
+</Mod>
