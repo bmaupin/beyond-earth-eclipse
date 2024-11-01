@@ -34,6 +34,15 @@
    - Base game: https://steamdb.info/depot/65981/
    - Rising Tide: https://steamdb.info/depot/353830/
 
+1. Generate the list of audio files
+
+   ```
+   cd src
+   find Assets/ -type f | sort
+   ```
+
+1. Add audio files to .modinfo
+
 #### Arshia
 
 TODO: no English audio
