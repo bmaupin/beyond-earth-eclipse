@@ -10,7 +10,7 @@
 1. For any particular leader, listen to all of the audio and pick files that are in English (since that's the language the quotes are in)
 
    ```
-   for filename in *.mp3; do echo $filename; mpv $filename; done
+   for filename in *.mp3; do echo $filename; mpv $filename; read -n 1 -s -r -p "Press any key to continue to next file"; echo; done
    ```
 
 1. Join the files using ffmpeg, e.g.
@@ -98,7 +98,19 @@ TODO: no English audio
 
 #### Rejinaldo
 
-TODO: no English audio
+(Spanish?)
+
+```
+ffmpeg -i "concat:rejinaldodefeated.mp3|rejinaldohateletshearit01.mp3|rejinaldohateletshearit03.mp3|rejinaldohateno01.mp3|rejinaldohateno02.mp3|rejinaldohateno03.mp3|rejinaldohateyes01.mp3|rejinaldohateyes02.mp3|rejinaldointro.mp3|rejinaldoneutralhello.mp3|rejinaldoneutralletshearit03.mp3|rejinaldoneutralno02.mp3|rejinaldoneutralno03.mp3|rejinaldoneutralyes01.mp3|rejinaldoneutralyes02.mp3|rejinaldoneutralyes03.mp3|rejinaldorequest.mp3" -acodec copy rejinaldo.mp3
+```
+
+Modified text for better pronunciation:
+
+- There's an old soldier's axiom, "You can't kill what you can't see". The inverse is also true.
+- Do not assume the battleground is impahrshel or in your favor.
+- It has been said, 'The point of war is not to dai for your country, but to make your enemy dai for theirs'. A goal which is more readily accomplished if your side never has to take the field.
+- The best way to survaive a firefight is to be elsewhere when your enemy starts one.
+- Advokayts of maneuver warfare must not fall into the trap of loving maneuver for its own sake.
 
 #### Sochua
 
