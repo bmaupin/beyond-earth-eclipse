@@ -39,21 +39,28 @@
    ```
    cd src
    find Assets/ -type f | sort
+   cd ..
    ```
 
 1. Add audio files to .modinfo
+
+1. Package mod to regenerate checksums
+
+   ```
+   ./scripts/package-mod.sh
+   ```
 
 #### Arshia
 
 TODO: no English audio
 
-#### Barre (People's African Union)
+#### ~~Barre (People's African Union)~~
 
 ```
 ffmpeg -i "concat:barreattacked.mp3|barredeclarewar.mp3|barredefeated.mp3|barrehatehello.mp3|barrehateletshearit01.mp3|barrehateletshearit02.mp3|barrehateletshearit03.mp3|barrehateno02.mp3|barrehateno03.mp3|barrehateyes01.mp3|barrehateyes02.mp3|barrehateyes03.mp3|barreneutralletshearit03.mp3|barreneutralno02.mp3|barreneutralno03.mp3|barreneutralyes03.mp3|barrepeaceful.mp3|barrerequest.mp3" -acodec copy barre.mp3
 ```
 
-#### Élodie
+#### ~~Élodie~~
 
 (French)
 
@@ -72,7 +79,7 @@ Modified text for better pronunciation:
 - I cannot dislike the bite geist, because despite its insufferable chirpy ubiquity, it is entirely too helpful to be without.
 - We have discovered alien life on our new world. Unsurprisingly, it grows, reproduces, daiz, and cannot understand French.
 
-#### Fielding (ARC)
+#### ~~Fielding (ARC)~~
 
 ```
 ffmpeg -i "concat:fieldingattacked.mp3|fieldinghatehello.mp3|fieldinghateletshearit01.mp3|fieldinghateletshearit02.mp3|fieldinghateletshearit03.mp3|fieldinghateno01.mp3|fieldinghateno02.mp3|fieldinghateno03.mp3|fieldinghateyes01.mp3|fieldingintro.mp3|fieldinglosewar.mp3|fieldingneutralhellob.mp3|fieldingneutralletshearit01.mp3|fieldingneutralletshearit02.mp3|fieldingneutralletshearit03.mp3|fieldingneutralno01.mp3|fieldingneutralno02.mp3|fieldingneutralyes01.mp3|fieldingneutralyes02.mp3|fieldingneutralyes03.mp3|fieldingrequest.mp3" -acodec copy fielding.mp3
@@ -84,17 +91,21 @@ ffmpeg -i "concat:fieldingattacked.mp3|fieldinghatehello.mp3|fieldinghateletshea
 ffmpeg -i "concat:hughesattacked.mp3|hughesdeclarewar.mp3|hughesdefeated.mp3|hugheshatehello.mp3|hugheshateletshearit01.mp3|hugheshateletshearit02.mp3|hugheshateletshearit03.mp3|hugheshateno01.mp3|hugheshateno02.mp3|hugheshateno03.mp3|hugheshateyes01.mp3|hugheshateyes02.mp3|hugheshateyes03.mp3|hughesintro.mp3|hughesneutralhello.mp3|hughesneutralletshearit01.mp3|hughesneutralletshearit02.mp3|hughesneutralletshearit03.mp3|hughesneutralno01.mp3|hughesneutralno02.mp3|hughesneutralno03.mp3|hughesneutralyes01.mp3|hughesneutralyes02.mp3|hughesneutralyes03.mp3|hughespeaceful.mp3|hughesrequest.mp3" -acodec copy hughes.mp3
 ```
 
-#### Hutama
+#### ~~Hutama~~
 
 ```
 ffmpeg -i "concat:hutamaattacked.mp3|hutamadeclarewar.mp3|hutamadefeated.mp3|hutamahateletshearit01.mp3|hutamahateletshearit02.mp3|hutamahateletshearit03.mp3|hutamahateno01.mp3|hutamahateno02.mp3|hutamahateno03.mp3|hutamahateyes01.mp3|hutamahateyes02.mp3|hutamahateyes03.mp3|hutamaneutralhello.mp3|hutamaneutralletshearit01.mp3|hutamaneutralletshearit02.mp3|hutamaneutralletshearit03.mp3|hutamaneutralno01.mp3|hutamaneutralno02.mp3|hutamaneutralno03.mp3|hutamaneutralyes01.mp3|hutamaneutralyes03.mp3|hutamapeaceful.mp3|hutamarequest.mp3" -acodec copy hutama.mp3
 ```
 
-#### Kavitha
+#### ~~Kavitha~~
 
 ```
 ffmpeg -i "concat:kavithaattacked.mp3|kavithadeclarewar.mp3|kavithadefeated.mp3|kavithahatehello.mp3|kavithahateletshearit01.mp3|kavithahateno02.mp3|kavithahateno03.mp3|kavithahateyes01.mp3|kavithahateyes02.mp3|kavithahateyes03.mp3|kavithaintro.mp3|kavithaneutralletshearit01.mp3|kavithaneutralletshearit02.mp3|kavithaneutralno02.mp3|kavithaneutralno03.mp3|kavithaneutralyes01.mp3|kavithaneutralyes02.mp3|kavithapeaceful.mp3" -acodec copy kavitha.mp3
 ```
+
+Modified text for better pronunciation:
+
+- Behold unsleeping sainosure, the golem whose minds span kalpa.
 
 #### Koslov
 
@@ -108,7 +119,7 @@ TODO: no English audio
 
 TODO: no English audio
 
-#### Rejinaldo
+#### ~~Rejinaldo~~
 
 (Spanish?)
 

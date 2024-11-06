@@ -31,6 +31,7 @@
     <File md5="30491bb6a119444b938d13b4390f7493" import="1">Assets/Sounds/Speech/English/Tech/TechAlienDomestication.mp3</File>
     <File md5="422db9abaa091bbebde8b376efcc57b1" import="1">Assets/Sounds/Speech/English/Tech/TechAlienEcology.mp3</File>
     <File md5="b609dd2a17e4ab1fa54cfec3a4f0cde6" import="1">Assets/Sounds/Speech/English/Tech/TechAlienEthics.mp3</File>
+    <File md5="d7d8714c4aa33c9d20dcae77bcd57835" import="1">Assets/Sounds/Speech/English/Tech/TechAlienHybridization.mp3</File>
     <File md5="fbfa491cfdb92ce717fe784235a11c1a" import="1">Assets/Sounds/Speech/English/Tech/TechAlienLifeforms.mp3</File>
     <File md5="ae5bd049d0257cfe8acb2ce9882ee625" import="1">Assets/Sounds/Speech/English/Tech/TechAlienSciences.mp3</File>
     <File md5="843f7192093cba22224c05b7ceebc9fb" import="1">Assets/Sounds/Speech/English/Tech/TechArtificialEvolution.mp3</File>
@@ -48,11 +49,14 @@
     <File md5="ee646ef0304236acc5fd15fc7c4104c1" import="1">Assets/Sounds/Speech/English/Tech/TechCollaborativeThought.mp3</File>
     <File md5="afe7612922fb62897337124fc5fea541" import="1">Assets/Sounds/Speech/English/Tech/TechCommunications.mp3</File>
     <File md5="da48a9a912bf9fef35959ebe2b01b7ed" import="1">Assets/Sounds/Speech/English/Tech/TechComputing.mp3</File>
+    <File md5="2c7e55870580a373c2d16a32184960f0" import="1">Assets/Sounds/Speech/English/Tech/TechDarkNetworks.mp3</File>
     <File md5="0fee45bc414c55992dbc92ae27f2e59e" import="1">Assets/Sounds/Speech/English/Tech/TechDefenseGrid.mp3</File>
     <File md5="d7f19fe3dd2f0ede9f9f505fd4fcbe77" import="1">Assets/Sounds/Speech/English/Tech/TechEuthenics.mp3</File>
     <File md5="ec782014b1c6c7fde9c01f91ae7450de" import="1">Assets/Sounds/Speech/English/Tech/TechExoticMatter.mp3</File>
+    <File md5="38c7076d666f5516ceb8eedf19cc433e" import="1">Assets/Sounds/Speech/English/Tech/TechGeneticDesign.mp3</File>
     <File md5="500a0c0fab80e97139eda4ab890263e3" import="1">Assets/Sounds/Speech/English/Tech/TechGeneticMapping.mp3</File>
     <File md5="fc3b63d28649923b5510b288f3fe5b27" import="1">Assets/Sounds/Speech/English/Tech/TechGenetics.mp3</File>
+    <File md5="72819ff463b9ef6b388c19a9a9b5c67d" import="1">Assets/Sounds/Speech/English/Tech/TechGeophysics.mp3</File>
     <File md5="3866a35e4757b55a9989ae1fdf267311" import="1">Assets/Sounds/Speech/English/Tech/TechHumanConservation.mp3</File>
     <File md5="7294d68a723e04c0ba614c7416f61245" import="1">Assets/Sounds/Speech/English/Tech/TechHumanIdealism.mp3</File>
     <File md5="f082d5143ae1df0cf11533b1551105ed" import="1">Assets/Sounds/Speech/English/Tech/TechHyperconductors.mp3</File>
@@ -60,7 +64,9 @@
     <File md5="6bca3a4d640f7391e66bef958c99e705" import="1">Assets/Sounds/Speech/English/Tech/TechMetamaterials.mp3</File>
     <File md5="99fa9120952d45bac11d8a0ac0f0771b" import="1">Assets/Sounds/Speech/English/Tech/TechMobileLEV.mp3</File>
     <File md5="d106a74c1cc7b03dd8a19d0d4bd30bf1" import="1">Assets/Sounds/Speech/English/Tech/TechNanotechnology.mp3</File>
+    <File md5="0da1f43415c1597a4435a82a2df121a3" import="1">Assets/Sounds/Speech/English/Tech/TechOrbitalNetworks.mp3</File>
     <File md5="9f4d8767aae5f14c7290e7c6c660d518" import="1">Assets/Sounds/Speech/English/Tech/TechOrganics.mp3</File>
+    <File md5="34ebe52223c42f7991f19f8525447b15" import="1">Assets/Sounds/Speech/English/Tech/TechPhotosystems.mp3</File>
     <File md5="8f7b42667073a591f448c843e14c68e5" import="1">Assets/Sounds/Speech/English/Tech/TechPlanetarySurvey.mp3</File>
     <File md5="cf4e7cdc307645efec5db8ae3ffa9e5a" import="1">Assets/Sounds/Speech/English/Tech/TechProtogenetics.mp3</File>
     <File md5="1668eb462f829ace384d71cc98f7b8fb" import="1">Assets/Sounds/Speech/English/Tech/TechSocialDynamics.mp3</File>
@@ -74,6 +80,8 @@
     <File md5="751fb3d7885dc93168ae64db85148233" import="1">Assets/Sounds/Speech/English/Wonders/ArchimedesLever.mp3</File>
     <File md5="6357e25dbe9e6515b85057345a5cdc7c" import="1">Assets/Sounds/Speech/English/Wonders/Armasail.mp3</File>
     <File md5="0c4caafa8ec1ca9fe4b0113831528cb3" import="1">Assets/Sounds/Speech/English/Wonders/Bytegeist.mp3</File>
+    <File md5="e875e9551c0ffd3b359f04e9476ff0b6" import="1">Assets/Sounds/Speech/English/Wonders/Cynosure.mp3</File>
+    <File md5="87baf6301df5c8866483c7c44b15dbf2" import="1">Assets/Sounds/Speech/English/Wonders/DaedalusLadder.mp3</File>
     <File md5="e4a0badac6feb5a58a3e79327670784b" import="1">Assets/Sounds/Speech/English/Wonders/DeepMemory.mp3</File>
     <File md5="06645db377a6e0a25c3d079b402c09cd" import="1">Assets/Sounds/Speech/English/Wonders/DroneSphere.mp3</File>
     <File md5="1cd49f85fc2698b28645ef519d3a6bac" import="1">Assets/Sounds/Speech/English/Wonders/HumanHive.mp3</File>
@@ -81,7 +89,9 @@
     <File md5="f26f09336cb70dfdf01bae8c3fe77bae" import="1">Assets/Sounds/Speech/English/Wonders/MassDriver.mp3</File>
     <File md5="1c6c41eedfbf5f31e61c9c4f74f10e3d" import="1">Assets/Sounds/Speech/English/Wonders/Nano-thermite.mp3</File>
     <File md5="21f9dcd170a821621b92bafb16b818e9" import="1">Assets/Sounds/Speech/English/Wonders/Panopticon.mp3</File>
+    <File md5="f9852135decd094a74127c73806c371f" import="1">Assets/Sounds/Speech/English/Wonders/PrecogProject.mp3</File>
     <File md5="708e84ba92030c2fb53db5297c0801e5" import="1">Assets/Sounds/Speech/English/Wonders/QuantumComputer.mp3</File>
+    <File md5="bd504237200e770a808458416ab57ed1" import="1">Assets/Sounds/Speech/English/Wonders/ResurrectionDevice.mp3</File>
     <File md5="f774579bb46adf93a1cb45b6819e8777" import="1">Assets/Sounds/Speech/English/Wonders/TectonicAnvil.mp3</File>
     <File md5="0902cd20fe0bd720255c0f86d163a567" import="1">Assets/Sounds/Speech/English/Wonders/Xenodrome.mp3</File>
     <File md5="3281cf987e14a9b6a535c12e3223d314" import="1">Assets/Sounds/Speech/English/Wonders/Xenomalleum.mp3</File>
