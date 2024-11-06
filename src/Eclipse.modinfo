@@ -23,6 +23,7 @@
   <Blocks />
   <!-- See here for more information about this section: https://forums.civfanatics.com/threads/file-attributes-properties-is-that-vfs-ingameuiaddin-or-updatedatabase.487846/ -->
   <Files>
+    <File md5="91468aba3ce61a555b8633b86e3689ac" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/Akkorokamui.mp3</File>
     <File md5="11c4f69e87d4ec2759b8f91415ded70d" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/EuphoticStrand.mp3</File>
     <File md5="9e03f69e142cd8403f02e2ed0ed40135" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/RelativisticDataBank.mp3</File>
     <File md5="5f61635d10b41e2e49e41d2425ff74fc" import="1">Assets/Sounds/Speech/English/Tech/TechAlienAdaption.mp3</File>
@@ -30,6 +31,7 @@
     <File md5="30491bb6a119444b938d13b4390f7493" import="1">Assets/Sounds/Speech/English/Tech/TechAlienDomestication.mp3</File>
     <File md5="422db9abaa091bbebde8b376efcc57b1" import="1">Assets/Sounds/Speech/English/Tech/TechAlienEcology.mp3</File>
     <File md5="b609dd2a17e4ab1fa54cfec3a4f0cde6" import="1">Assets/Sounds/Speech/English/Tech/TechAlienEthics.mp3</File>
+    <File md5="fbfa491cfdb92ce717fe784235a11c1a" import="1">Assets/Sounds/Speech/English/Tech/TechAlienLifeforms.mp3</File>
     <File md5="ae5bd049d0257cfe8acb2ce9882ee625" import="1">Assets/Sounds/Speech/English/Tech/TechAlienSciences.mp3</File>
     <File md5="843f7192093cba22224c05b7ceebc9fb" import="1">Assets/Sounds/Speech/English/Tech/TechArtificialEvolution.mp3</File>
     <File md5="a95fecbfe1d114cb16477c1899e27892" import="1">Assets/Sounds/Speech/English/Tech/TechAstrodynamics.mp3</File>
@@ -38,11 +40,16 @@
     <File md5="5f311bdcaba81ccbd6806946899ea5d0" import="1">Assets/Sounds/Speech/English/Tech/TechBallistics.mp3</File>
     <File md5="88918c3b901f6ff01360948f24df08b0" import="1">Assets/Sounds/Speech/English/Tech/TechBiochemistry.mp3</File>
     <File md5="822f46b2916296d7fcf418ee9a1cef3e" import="1">Assets/Sounds/Speech/English/Tech/TechBiology.mp3</File>
+    <File md5="3dd411dc4ccc242fa9a5b977fb336e52" import="1">Assets/Sounds/Speech/English/Tech/TechBiometallurgy.mp3</File>
     <File md5="0a342eebc98c966ea68e2a6c987798d1" import="1">Assets/Sounds/Speech/English/Tech/TechBiospheres.mp3</File>
     <File md5="b1ddc455b3674e41fa801e77c091aa77" import="1">Assets/Sounds/Speech/English/Tech/TechChemistry.mp3</File>
     <File md5="7fc3e8ae71d02b93506d1836978d72c6" import="1">Assets/Sounds/Speech/English/Tech/TechCivilSupport.mp3</File>
     <File md5="fe2cbdf3bf135eae5971783b43e69632" import="1">Assets/Sounds/Speech/English/Tech/TechCognition.mp3</File>
+    <File md5="ee646ef0304236acc5fd15fc7c4104c1" import="1">Assets/Sounds/Speech/English/Tech/TechCollaborativeThought.mp3</File>
+    <File md5="afe7612922fb62897337124fc5fea541" import="1">Assets/Sounds/Speech/English/Tech/TechCommunications.mp3</File>
     <File md5="da48a9a912bf9fef35959ebe2b01b7ed" import="1">Assets/Sounds/Speech/English/Tech/TechComputing.mp3</File>
+    <File md5="0fee45bc414c55992dbc92ae27f2e59e" import="1">Assets/Sounds/Speech/English/Tech/TechDefenseGrid.mp3</File>
+    <File md5="d7f19fe3dd2f0ede9f9f505fd4fcbe77" import="1">Assets/Sounds/Speech/English/Tech/TechEuthenics.mp3</File>
     <File md5="ec782014b1c6c7fde9c01f91ae7450de" import="1">Assets/Sounds/Speech/English/Tech/TechExoticMatter.mp3</File>
     <File md5="500a0c0fab80e97139eda4ab890263e3" import="1">Assets/Sounds/Speech/English/Tech/TechGeneticMapping.mp3</File>
     <File md5="fc3b63d28649923b5510b288f3fe5b27" import="1">Assets/Sounds/Speech/English/Tech/TechGenetics.mp3</File>
@@ -56,6 +63,7 @@
     <File md5="9f4d8767aae5f14c7290e7c6c660d518" import="1">Assets/Sounds/Speech/English/Tech/TechOrganics.mp3</File>
     <File md5="8f7b42667073a591f448c843e14c68e5" import="1">Assets/Sounds/Speech/English/Tech/TechPlanetarySurvey.mp3</File>
     <File md5="cf4e7cdc307645efec5db8ae3ffa9e5a" import="1">Assets/Sounds/Speech/English/Tech/TechProtogenetics.mp3</File>
+    <File md5="1668eb462f829ace384d71cc98f7b8fb" import="1">Assets/Sounds/Speech/English/Tech/TechSocialDynamics.mp3</File>
     <File md5="a448d4c0850702406eecb8bce4547449" import="1">Assets/Sounds/Speech/English/Tech/TechSurrogacy.mp3</File>
     <File md5="e625c07051e44f78f6ea25d3ab40b29d" import="1">Assets/Sounds/Speech/English/Tech/TechSwarmIntelligence.mp3</File>
     <File md5="e7f5df902f584990fc8f778a2da184af" import="1">Assets/Sounds/Speech/English/Tech/TechSwarmRobotics.mp3</File>
@@ -65,13 +73,16 @@
     <File md5="6b5c3216d611a50f340aac8a023e5cc5" import="1">Assets/Sounds/Speech/English/Tech/TechVerticalFarming.mp3</File>
     <File md5="751fb3d7885dc93168ae64db85148233" import="1">Assets/Sounds/Speech/English/Wonders/ArchimedesLever.mp3</File>
     <File md5="6357e25dbe9e6515b85057345a5cdc7c" import="1">Assets/Sounds/Speech/English/Wonders/Armasail.mp3</File>
+    <File md5="0c4caafa8ec1ca9fe4b0113831528cb3" import="1">Assets/Sounds/Speech/English/Wonders/Bytegeist.mp3</File>
     <File md5="e4a0badac6feb5a58a3e79327670784b" import="1">Assets/Sounds/Speech/English/Wonders/DeepMemory.mp3</File>
+    <File md5="06645db377a6e0a25c3d079b402c09cd" import="1">Assets/Sounds/Speech/English/Wonders/DroneSphere.mp3</File>
     <File md5="1cd49f85fc2698b28645ef519d3a6bac" import="1">Assets/Sounds/Speech/English/Wonders/HumanHive.mp3</File>
     <File md5="5d41c9a87ff0799706912b123da8ee88" import="1">Assets/Sounds/Speech/English/Wonders/MarkovEclipse.mp3</File>
     <File md5="f26f09336cb70dfdf01bae8c3fe77bae" import="1">Assets/Sounds/Speech/English/Wonders/MassDriver.mp3</File>
     <File md5="1c6c41eedfbf5f31e61c9c4f74f10e3d" import="1">Assets/Sounds/Speech/English/Wonders/Nano-thermite.mp3</File>
     <File md5="21f9dcd170a821621b92bafb16b818e9" import="1">Assets/Sounds/Speech/English/Wonders/Panopticon.mp3</File>
     <File md5="708e84ba92030c2fb53db5297c0801e5" import="1">Assets/Sounds/Speech/English/Wonders/QuantumComputer.mp3</File>
+    <File md5="f774579bb46adf93a1cb45b6819e8777" import="1">Assets/Sounds/Speech/English/Wonders/TectonicAnvil.mp3</File>
     <File md5="0902cd20fe0bd720255c0f86d163a567" import="1">Assets/Sounds/Speech/English/Wonders/Xenodrome.mp3</File>
     <File md5="3281cf987e14a9b6a535c12e3223d314" import="1">Assets/Sounds/Speech/English/Wonders/Xenomalleum.mp3</File>
     <File md5="a677cae7903b65f35e8b1d563c50d522" import="1">Assets/Sounds/Speech/English/Wonders/Xenonova.mp3</File>

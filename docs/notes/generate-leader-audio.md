@@ -55,10 +55,22 @@ ffmpeg -i "concat:barreattacked.mp3|barredeclarewar.mp3|barredefeated.mp3|barreh
 
 #### Élodie
 
-TODO: not enough English audio?
+(French)
+
+```
+ffmpeg -i "concat:elodiedefeated.mp3|elodiehatehello.mp3|elodiehateletshearit02.mp3|elodiehateletshearit03.mp3|elodiehateno01.mp3|elodiehateno02.mp3|elodiehateno03.mp3|elodiehateyes02.mp3|elodiehateyes02.mp3|elodieintro.mp3|elodieneutralhello.mp3|elodieneutralletshearit01.mp3|elodieneutralletshearit03.mp3|elodieneutralno02.mp3|elodieneutralno03.mp3|elodieneutralyes01.mp3|elodiepeaceful.mp3|elodierequest.mp3" -acodec copy elodie.mp3
+```
+
+(English)
 
 - elodiehateletshearit01.mp3
 - elodieneutralno01.mp3
+
+Modified text for better pronunciation:
+
+- Within the Drone Sfeer I am reminded of nothing less than the apex of versai, with each man and woman a Sun King or Queen, surrounded by fawning courtiers.
+- I cannot dislike the bite geist, because despite its insufferable chirpy ubiquity, it is entirely too helpful to be without.
+- We have discovered alien life on our new world. Unsurprisingly, it grows, reproduces, daiz, and cannot understand French.
 
 #### Fielding (ARC)
 
