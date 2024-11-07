@@ -21,10 +21,12 @@
 
 1. Generate new audio
 
-1. Encode using ffmpeg, e.g.
+1. Encode using ffmpeg
 
    ```
-   ffmpeg -i ~/Desktop/Your\ most\ valuable\ human\ 1.wav -codec:a libmp3lame -b:a 128k -ac 1 src/Assets/Sounds/Speech/English/Wonders/MarkovEclipse.mp3
+   for file in *.wav; do
+     ffmpeg -i "$file" -codec:a libmp3lame -b:a 128k -ac 1 "${file%.wav}.mp3"
+   done
    ```
 
 1. Copy to src/ using the exact same path and filename as the game
@@ -33,6 +35,12 @@
 
    - Base game: https://steamdb.info/depot/65981/
    - Rising Tide: https://steamdb.info/depot/353830/
+
+   e.g.
+
+   ```
+   mv ~/Desktop/Your\ most\ valuable\ human\ 1.mp3 src/Assets/Sounds/Speech/English/Wonders/MarkovEclipse.mp3
+   ```
 
 1. Generate the list of audio files and add them to .modinfo
 
@@ -105,9 +113,13 @@ Modified text for better pronunciation:
 
 - Behold unsleeping sainosure, the golem whose minds span kalpa.
 
-#### Koslov
+#### ~~Koslov~~
 
-TODO: no English audio
+(Ukrainian/Russian with Polish accent)
+
+```
+ffmpeg -i "concat:kozlovattacked.mp3|kozlovdeclarewar.mp3|kozlovdefeated.mp3|kozlovhatehello.mp3|kozlovhateletshearit01.mp3|kozlovhateletshearit02.mp3|kozlovhateletshearit03.mp3|kozlovhateno01.mp3|kozlovhateno02.mp3|kozlovhateno03.mp3|kozlovhateyes01.mp3|kozlovhateyes02.mp3|kozlovhateyes03.mp3|kozlovintro.mp3|kozlovneutralhello.mp3|kozlovneutralletshearit01.mp3|kozlovneutralletshearit02.mp3|kozlovneutralletshearit03.mp3|kozlovneutralno01.mp3|kozlovneutralno02.mp3|kozlovneutralno03.mp3|kozlovneutralyes01.mp3|kozlovneutralyes02.mp3|kozlovneutralyes03.mp3|kozlovpeaceful.mp3|kozlovrequest.mp3" -acodec copy kozlov.mp3
+```
 
 #### Lena
 
