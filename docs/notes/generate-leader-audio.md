@@ -34,15 +34,13 @@
    - Base game: https://steamdb.info/depot/65981/
    - Rising Tide: https://steamdb.info/depot/353830/
 
-1. Generate the list of audio files
+1. Generate the list of audio files and add them to .modinfo
 
    ```
-   cd src
-   find Assets/ -type f | sort
-   cd ..
+   cd src; find Assets/ -type f | sort >> Eclipse.modinfo; cd ..
    ```
 
-1. Add audio files to .modinfo
+1. Reformat .modinfo as needed
 
 1. Package mod to regenerate checksums
 
@@ -135,6 +133,14 @@ Modified text for better pronunciation:
 - The best way to survaive a firefight is to be elsewhere when your enemy starts one.
 - Advokayts of maneuver warfare must not fall into the trap of loving maneuver for its own sake.
 
-#### Sochua
+#### ~~Sochua~~
 
-TODO: no English audio
+(Mandarin?)
+
+```
+ffmpeg -i "concat:sochuaattacked.mp3|sochuadeclarewar.mp3|sochuadefeated.mp3|sochuahatehello.mp3|sochuahateletshearit01.mp3|sochuahateletshearit02.mp3|sochuahateletshearit03.mp3|sochuahateno01.mp3|sochuahateno02.mp3|sochuahateno03.mp3|sochuahateyes01.mp3|sochuahateyes02.mp3|sochuahateyes03.mp3|sochuaintro.mp3|sochuaneutralhello.mp3|sochuaneutralletshearit01.mp3|sochuaneutralletshearit02.mp3|sochuaneutralletshearit03.mp3|sochuaneutralno01.mp3|sochuaneutralno02.mp3|sochuaneutralno03.mp3|sochuaneutralyes01.mp3|sochuaneutralyes02.mp3|sochuaneutralyes03.mp3|sochuapeaceful.mp3|sochuarequest.mp3" -acodec copy sochua.mp3
+```
+
+Modified text for better pronunciation:
+
+- Good ei eye prevents bad operators from using computers to conduct useless tasks at high speeds to many degrees of vacuous precision.
