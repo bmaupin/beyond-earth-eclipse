@@ -24,9 +24,7 @@
 1. Encode using ffmpeg
 
    ```
-   for file in *.wav; do
-     ffmpeg -i "$file" -codec:a libmp3lame -b:a 128k -ac 1 "${file%.wav}.mp3"
-   done
+   for file in *.wav; do ffmpeg -i "$file" -codec:a libmp3lame -b:a 128k -ac 1 "${file%.wav}.mp3"; done
    ```
 
 1. Copy to src/ using the exact same path and filename as the game
@@ -56,9 +54,9 @@
    ./scripts/package-mod.sh
    ```
 
-#### Arshia
+#### ~~Arshia~~
 
-TODO: no English audio
+No tech/wonder quotes?
 
 #### ~~Barre (People's African Union)~~
 
@@ -91,7 +89,7 @@ Modified text for better pronunciation:
 ffmpeg -i "concat:fieldingattacked.mp3|fieldinghatehello.mp3|fieldinghateletshearit01.mp3|fieldinghateletshearit02.mp3|fieldinghateletshearit03.mp3|fieldinghateno01.mp3|fieldinghateno02.mp3|fieldinghateno03.mp3|fieldinghateyes01.mp3|fieldingintro.mp3|fieldinglosewar.mp3|fieldingneutralhellob.mp3|fieldingneutralletshearit01.mp3|fieldingneutralletshearit02.mp3|fieldingneutralletshearit03.mp3|fieldingneutralno01.mp3|fieldingneutralno02.mp3|fieldingneutralyes01.mp3|fieldingneutralyes02.mp3|fieldingneutralyes03.mp3|fieldingrequest.mp3" -acodec copy fielding.mp3
 ```
 
-#### Hughes
+#### ~~Hughes~~
 
 ```
 ffmpeg -i "concat:hughesattacked.mp3|hughesdeclarewar.mp3|hughesdefeated.mp3|hugheshatehello.mp3|hugheshateletshearit01.mp3|hugheshateletshearit02.mp3|hugheshateletshearit03.mp3|hugheshateno01.mp3|hugheshateno02.mp3|hugheshateno03.mp3|hugheshateyes01.mp3|hugheshateyes02.mp3|hugheshateyes03.mp3|hughesintro.mp3|hughesneutralhello.mp3|hughesneutralletshearit01.mp3|hughesneutralletshearit02.mp3|hughesneutralletshearit03.mp3|hughesneutralno01.mp3|hughesneutralno02.mp3|hughesneutralno03.mp3|hughesneutralyes01.mp3|hughesneutralyes02.mp3|hughesneutralyes03.mp3|hughespeaceful.mp3|hughesrequest.mp3" -acodec copy hughes.mp3
@@ -121,13 +119,21 @@ Modified text for better pronunciation:
 ffmpeg -i "concat:kozlovattacked.mp3|kozlovdeclarewar.mp3|kozlovdefeated.mp3|kozlovhatehello.mp3|kozlovhateletshearit01.mp3|kozlovhateletshearit02.mp3|kozlovhateletshearit03.mp3|kozlovhateno01.mp3|kozlovhateno02.mp3|kozlovhateno03.mp3|kozlovhateyes01.mp3|kozlovhateyes02.mp3|kozlovhateyes03.mp3|kozlovintro.mp3|kozlovneutralhello.mp3|kozlovneutralletshearit01.mp3|kozlovneutralletshearit02.mp3|kozlovneutralletshearit03.mp3|kozlovneutralno01.mp3|kozlovneutralno02.mp3|kozlovneutralno03.mp3|kozlovneutralyes01.mp3|kozlovneutralyes02.mp3|kozlovneutralyes03.mp3|kozlovpeaceful.mp3|kozlovrequest.mp3" -acodec copy kozlov.mp3
 ```
 
-#### Lena
+#### ~~Lena~~
 
-TODO: no English audio
+(German)
 
-#### Moon
+```
+ffmpeg -i "concat:lenaattacked.mp3|lenadeclarewar.mp3|lenadefeated.mp3|lenahatehello.mp3|lenahateletshearit01.mp3|lenahateletshearit02.mp3|lenahateletshearit03.mp3|lenahateno01.mp3|lenahateno02.mp3|lenahateno03.mp3|lenahateyes01.mp3|lenahateyes02.mp3|lenahateyes03.mp3|lenaintro.mp3|lenaneutralhello.mp3|lenaneutralletshearit01.mp3|lenaneutralletshearit02.mp3|lenaneutralletshearit03.mp3|lenaneutralno01.mp3|lenaneutralno02.mp3|lenaneutralno03.mp3|lenaneutralyes01.mp3|lenaneutralyes02.mp3|lenaneutralyes03.mp3|lenapeaceful.mp3|lenarequest.mp3" -acodec copy lena.mp3
+```
 
-TODO: no English audio
+#### ~~Moon~~
+
+(Korean)
+
+```
+ffmpeg -i "concat:moonattacked.mp3|moondeclarewar.mp3|moondefeated.mp3|moonhatehello.mp3|moonhateletshearit01.mp3|moonhateletshearit02.mp3|moonhateletshearit03.mp3|moonhateno01.mp3|moonhateno02.mp3|moonhateno03.mp3|moonhateyes01.mp3|moonhateyes02.mp3|moonhateyes03.mp3|moonintro.mp3|moonneutralhello.mp3|moonneutralletshearit01.mp3|moonneutralletshearit02.mp3|moonneutralletshearit03.mp3|moonneutralno01.mp3|moonneutralno02.mp3|moonneutralno03.mp3|moonneutralyes01.mp3|moonneutralyes02.mp3|moonneutralyes03.mp3|moonpeaceful.mp3|moonrequest.mp3" -acodec copy moon.mp3
+```
 
 #### ~~Rejinaldo~~
 

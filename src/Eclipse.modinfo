@@ -24,11 +24,15 @@
   <!-- See here for more information about this section: https://forums.civfanatics.com/threads/file-attributes-properties-is-that-vfs-ingameuiaddin-or-updatedatabase.487846/ -->
   <Files>
     <File md5="91468aba3ce61a555b8633b86e3689ac" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/Akkorokamui.mp3</File>
+    <File md5="d57fefb3811a9b75ea6ea0298afa14a1" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/BenthicAugur.mp3</File>
     <File md5="0ee1c1df32d0cf9b97779a820d9aa8f6" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/DimensionFoldingComplex.mp3</File>
     <File md5="11c4f69e87d4ec2759b8f91415ded70d" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/EuphoticStrand.mp3</File>
     <File md5="37d6fd4905235c040e62973a7c95b886" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/FaradayGyre.mp3</File>
     <File md5="ccfa31dab042184ead71d0129b6da101" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/MachineAssistedFreeWill.mp3</File>
+    <File md5="d08d3dc7c0dccb234b0625475c00ad84" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/QuantumPolitics.mp3</File>
     <File md5="9e03f69e142cd8403f02e2ed0ed40135" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/RelativisticDataBank.mp3</File>
+    <File md5="327d8d0d6865776aec206ea4f1f17654" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/TemporalCalculus.mp3</File>
+    <File md5="8a40736b207263f4d3260cc600967fa1" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/TesselationFoundry.mp3</File>
     <File md5="5f61635d10b41e2e49e41d2425ff74fc" import="1">Assets/Sounds/Speech/English/Tech/TechAlienAdaption.mp3</File>
     <File md5="2027f5937f96d20de4fad13b82e302d6" import="1">Assets/Sounds/Speech/English/Tech/TechAlienBiology.mp3</File>
     <File md5="30491bb6a119444b938d13b4390f7493" import="1">Assets/Sounds/Speech/English/Tech/TechAlienDomestication.mp3</File>
