@@ -20,6 +20,12 @@
             </Set>
         </Update>
         <Update>
+            <Where TechType="TECH_ALIEN_ETHICS" AffinityType="AFFINITY_TYPE_HARMONY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
             <Where TechType="TECH_ALIEN_EVOLUTION" AffinityType="AFFINITY_TYPE_HARMONY" />
             <Set>
                 <AffinityValue>40</AffinityValue>
@@ -38,9 +44,45 @@
             </Set>
         </Update>
         <Update>
+            <Where TechType="TECH_ALIEN_LIFEFORMS" AffinityType="AFFINITY_TYPE_HARMONY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
             <Where TechType="TECH_ALIEN_MATERIALS" AffinityType="AFFINITY_TYPE_SUPREMACY" />
             <Set>
                 <AffinityValue>40</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_ALIEN_SCIENCES" AffinityType="AFFINITY_TYPE_HARMONY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_ARTIFICIAL_EVOLUTION" AffinityType="AFFINITY_TYPE_HARMONY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_ARTIFICIAL_INTELLIGENCE" AffinityType="AFFINITY_TYPE_HARMONY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_ARTIFICIAL_INTELLIGENCE" AffinityType="AFFINITY_TYPE_SUPREMACY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_AUGMENTATION" AffinityType="AFFINITY_TYPE_PURITY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
             </Set>
         </Update>
         <Update>
@@ -56,9 +98,39 @@
             </Set>
         </Update>
         <Update>
+            <Where TechType="TECH_BALLISTIC_LEV" AffinityType="AFFINITY_TYPE_SUPREMACY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_BALLISTICS" AffinityType="AFFINITY_TYPE_PURITY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_BIOENGINEERING" AffinityType="AFFINITY_TYPE_SUPREMACY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
             <Where TechType="TECH_BIOMETALLURGY" AffinityType="AFFINITY_TYPE_SUPREMACY" />
             <Set>
                 <AffinityValue>40</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_BIONICS" AffinityType="AFFINITY_TYPE_HARMONY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_BIONICS" AffinityType="AFFINITY_TYPE_PURITY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
             </Set>
         </Update>
         <Update>
@@ -80,15 +152,51 @@
             </Set>
         </Update>
         <Update>
+            <Where TechType="TECH_COGNITION" AffinityType="AFFINITY_TYPE_SUPREMACY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
             <Where TechType="TECH_COLLABORATIVE_THOUGHT" AffinityType="AFFINITY_TYPE_SUPREMACY" />
             <Set>
                 <AffinityValue>25</AffinityValue>
             </Set>
         </Update>
         <Update>
+            <Where TechType="TECH_COMPUTING" AffinityType="AFFINITY_TYPE_PURITY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_COMPUTING" AffinityType="AFFINITY_TYPE_SUPREMACY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_CYBERNETICS" AffinityType="AFFINITY_TYPE_HARMONY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_CYBERNETICS" AffinityType="AFFINITY_TYPE_SUPREMACY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
             <Where TechType="TECH_DESIGNER_LIFEFORMS" AffinityType="AFFINITY_TYPE_HARMONY" />
             <Set>
                 <AffinityValue>40</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_ENGINEERING" AffinityType="AFFINITY_TYPE_SUPREMACY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
             </Set>
         </Update>
         <Update>
@@ -104,9 +212,33 @@
             </Set>
         </Update>
         <Update>
+            <Where TechType="TECH_FABRICATION" AffinityType="AFFINITY_TYPE_PURITY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_FIELD_THEORY" AffinityType="AFFINITY_TYPE_HARMONY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_GENETIC_DESIGN" AffinityType="AFFINITY_TYPE_PURITY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
             <Where TechType="TECH_GENETIC_MAPPING" AffinityType="AFFINITY_TYPE_PURITY" />
             <Set>
                 <AffinityValue>12</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_GENETICS" AffinityType="AFFINITY_TYPE_HARMONY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
             </Set>
         </Update>
         <Update>
@@ -122,6 +254,18 @@
             </Set>
         </Update>
         <Update>
+            <Where TechType="TECH_HYPERCOMPUTING" AffinityType="AFFINITY_TYPE_PURITY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_HYPERCOMPUTING" AffinityType="AFFINITY_TYPE_SUPREMACY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
             <Where TechType="TECH_HYPERCONDUCTORS" AffinityType="AFFINITY_TYPE_PURITY" />
             <Set>
                 <AffinityValue>40</AffinityValue>
@@ -131,6 +275,18 @@
             <Where TechType="TECH_INDUSTRIAL_ECOLOGY" AffinityType="AFFINITY_TYPE_PURITY" />
             <Set>
                 <AffinityValue>40</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_MECHATRONICS" AffinityType="AFFINITY_TYPE_PURITY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_MECHATRONICS" AffinityType="AFFINITY_TYPE_SUPREMACY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
             </Set>
         </Update>
         <Update>
@@ -152,9 +308,27 @@
             </Set>
         </Update>
         <Update>
+            <Where TechType="TECH_NANOTECHNOLOGY" AffinityType="AFFINITY_TYPE_HARMONY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_NANOTECHNOLOGY" AffinityType="AFFINITY_TYPE_PURITY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
             <Where TechType="TECH_NEURAL_UPLOADING" AffinityType="AFFINITY_TYPE_SUPREMACY" />
             <Set>
                 <AffinityValue>40</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_ORGANICS" AffinityType="AFFINITY_TYPE_HARMONY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
             </Set>
         </Update>
         <Update>
@@ -164,15 +338,51 @@
             </Set>
         </Update>
         <Update>
+            <Where TechType="TECH_PHYSICS" AffinityType="AFFINITY_TYPE_PURITY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_PLANETARY_ENGINEERING" AffinityType="AFFINITY_TYPE_PURITY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_PLANETARY_ENGINEERING" AffinityType="AFFINITY_TYPE_SUPREMACY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
             <Where TechType="TECH_POWER_SYSTEMS" AffinityType="AFFINITY_TYPE_SUPREMACY" />
             <Set>
                 <AffinityValue>12</AffinityValue>
             </Set>
         </Update>
         <Update>
+            <Where TechType="TECH_PROTOGENETICS" AffinityType="AFFINITY_TYPE_PURITY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
             <Where TechType="TECH_PROTOGENETICS" AffinityType="AFFINITY_TYPE_SUPREMACY" />
             <Set>
                 <AffinityValue>32</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_ROBOTICS" AffinityType="AFFINITY_TYPE_HARMONY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_ROBOTICS" AffinityType="AFFINITY_TYPE_SUPREMACY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
             </Set>
         </Update>
         <Update>
@@ -185,6 +395,18 @@
             <Where TechType="TECH_SERVOMACHINERY" AffinityType="AFFINITY_TYPE_PURITY" />
             <Set>
                 <AffinityValue>25</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_SOCIAL_DYNAMICS" AffinityType="AFFINITY_TYPE_PURITY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_SOCIAL_DYNAMICS" AffinityType="AFFINITY_TYPE_SUPREMACY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
             </Set>
         </Update>
         <Update>
@@ -206,6 +428,12 @@
             </Set>
         </Update>
         <Update>
+            <Where TechType="TECH_SYNERGETICS" AffinityType="AFFINITY_TYPE_HARMONY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
             <Where TechType="TECH_SYNTHETIC_THOUGHT" AffinityType="AFFINITY_TYPE_SUPREMACY" />
             <Set>
                 <AffinityValue>25</AffinityValue>
@@ -224,9 +452,45 @@
             </Set>
         </Update>
         <Update>
+            <Where TechType="TECH_TERRAFORMING" AffinityType="AFFINITY_TYPE_PURITY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_TERRAFORMING" AffinityType="AFFINITY_TYPE_SUPREMACY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
             <Where TechType="TECH_TISSUE_ENGINEERING" AffinityType="AFFINITY_TYPE_HARMONY" />
             <Set>
                 <AffinityValue>25</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_TRANSCENDENTAL_MATH" AffinityType="AFFINITY_TYPE_PURITY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_TRANSGENICS" AffinityType="AFFINITY_TYPE_HARMONY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_TRANSGENICS" AffinityType="AFFINITY_TYPE_PURITY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
+            </Set>
+        </Update>
+        <Update>
+            <Where TechType="TECH_TRANSGENICS" AffinityType="AFFINITY_TYPE_SUPREMACY" />
+            <Set>
+                <AffinityValue>0</AffinityValue>
             </Set>
         </Update>
         <Update>
