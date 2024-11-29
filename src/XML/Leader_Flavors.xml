@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Leader_Flavors>
+        <Update>
+            <Where LeaderType="LEADER_AFRICAN_UNION" FlavorType="FLAVOR_TRANSCENDENCE" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_AFRICAN_UNION" FlavorType="FLAVOR_EMANCIPATION" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_AFRICAN_UNION" FlavorType="FLAVOR_PROMISED_LAND" />
+            <Set>
+                <Flavor>12</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_AL_FALAH" FlavorType="FLAVOR_TRANSCENDENCE" />
+            <Set>
+                <Flavor>12</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_AL_FALAH" FlavorType="FLAVOR_EMANCIPATION" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_AL_FALAH" FlavorType="FLAVOR_PROMISED_LAND" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_ARC" FlavorType="FLAVOR_TRANSCENDENCE" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_ARC" FlavorType="FLAVOR_EMANCIPATION" />
+            <Set>
+                <Flavor>12</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_ARC" FlavorType="FLAVOR_PROMISED_LAND" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_BRASILIA" FlavorType="FLAVOR_TRANSCENDENCE" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_BRASILIA" FlavorType="FLAVOR_EMANCIPATION" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_BRASILIA" FlavorType="FLAVOR_PROMISED_LAND" />
+            <Set>
+                <Flavor>12</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_CHUNGSU" FlavorType="FLAVOR_TRANSCENDENCE" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_CHUNGSU" FlavorType="FLAVOR_EMANCIPATION" />
+            <Set>
+                <Flavor>12</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_CHUNGSU" FlavorType="FLAVOR_PROMISED_LAND" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_FRANCO_IBERIA" FlavorType="FLAVOR_TRANSCENDENCE" />
+            <Set>
+                <Flavor>12</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_FRANCO_IBERIA" FlavorType="FLAVOR_EMANCIPATION" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_FRANCO_IBERIA" FlavorType="FLAVOR_PROMISED_LAND" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_INDIA" FlavorType="FLAVOR_TRANSCENDENCE" />
+            <Set>
+                <Flavor>12</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_INDIA" FlavorType="FLAVOR_EMANCIPATION" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_INDIA" FlavorType="FLAVOR_PROMISED_LAND" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_INTEGR" FlavorType="FLAVOR_TRANSCENDENCE" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_INTEGR" FlavorType="FLAVOR_EMANCIPATION" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_INTEGR" FlavorType="FLAVOR_PROMISED_LAND" />
+            <Set>
+                <Flavor>12</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_NORTH_SEA_ALLIANCE" FlavorType="FLAVOR_TRANSCENDENCE" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_NORTH_SEA_ALLIANCE" FlavorType="FLAVOR_EMANCIPATION" />
+            <Set>
+                <Flavor>12</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_NORTH_SEA_ALLIANCE" FlavorType="FLAVOR_PROMISED_LAND" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_PAN_ASIA" FlavorType="FLAVOR_DIPLOMACY" />
+            <Set>
+                <Flavor>3</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_PAN_ASIA" FlavorType="FLAVOR_CONTACT" />
+            <Set>
+                <Flavor>8</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_PAN_ASIA" FlavorType="FLAVOR_TRANSCENDENCE" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_POLYSTRALIA" FlavorType="FLAVOR_TRANSCENDENCE" />
+            <Set>
+                <Flavor>12</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_POLYSTRALIA" FlavorType="FLAVOR_EMANCIPATION" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_POLYSTRALIA" FlavorType="FLAVOR_PROMISED_LAND" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_RUSSIA" FlavorType="FLAVOR_TRANSCENDENCE" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_RUSSIA" FlavorType="FLAVOR_EMANCIPATION" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_RUSSIA" FlavorType="FLAVOR_PROMISED_LAND" />
+            <Set>
+                <Flavor>12</Flavor>
+            </Set>
+        </Update>
+    </Leader_Flavors>
+</GameData>

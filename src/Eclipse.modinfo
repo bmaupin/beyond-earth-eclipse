@@ -131,10 +131,12 @@
     <File md5="0902cd20fe0bd720255c0f86d163a567" import="1">Assets/Sounds/Speech/English/Wonders/Xenodrome.mp3</File>
     <File md5="3281cf987e14a9b6a535c12e3223d314" import="1">Assets/Sounds/Speech/English/Wonders/Xenomalleum.mp3</File>
     <File md5="a677cae7903b65f35e8b1d563c50d522" import="1">Assets/Sounds/Speech/English/Wonders/Xenonova.mp3</File>
+    <File md5="923616ce53bde52656df46130d4f87d3" import="1">XML/Leader_Flavors.xml</File>
     <File md5="a948fbd05a0c75255ef713f8494bd66c" import="1">XML/Technology_Affinities.xml</File>
   </Files>
   <Actions>
     <OnModActivated>
+      <UpdateDatabase>XML/Leader_Flavors.xml</UpdateDatabase>
       <UpdateDatabase>XML/Technology_Affinities.xml</UpdateDatabase>
     </OnModActivated>
   </Actions>

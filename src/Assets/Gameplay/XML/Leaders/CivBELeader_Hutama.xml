@@ -21,11 +21,11 @@
 			<Forgiveness>6</Forgiveness>
 			<Chattiness>7</Chattiness>
 			<Meanness>4</Meanness>
-			<AffinityDevotion>4</AffinityDevotion>
+      <AffinityDevotion>4</AffinityDevotion>
 			<AntiAlien>1</AntiAlien>
-			<RespectIncreaseModifier>0</RespectIncreaseModifier>
-			<RespectDecreaseModifier>0</RespectDecreaseModifier>
-		</Row>
+      <RespectIncreaseModifier>0</RespectIncreaseModifier>
+      <RespectDecreaseModifier>0</RespectDecreaseModifier>
+    </Row>
 	</Leaders>
 	<Leader_MajorCivApproachBiases>
 		<Row>
@@ -230,17 +230,17 @@
 		<Row>
 			<LeaderType>LEADER_POLYSTRALIA</LeaderType>
 			<FlavorType>FLAVOR_TRANSCENDENCE</FlavorType>
-			<Flavor>12</Flavor>
+			<Flavor>9</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_POLYSTRALIA</LeaderType>
 			<FlavorType>FLAVOR_EMANCIPATION</FlavorType>
-			<Flavor>0</Flavor>
+			<Flavor>4</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_POLYSTRALIA</LeaderType>
 			<FlavorType>FLAVOR_PROMISED_LAND</FlavorType>
-			<Flavor>0</Flavor>
+			<Flavor>8</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_POLYSTRALIA</LeaderType>

@@ -23,9 +23,9 @@
 			<Meanness>4</Meanness>
 			<AffinityDevotion>6</AffinityDevotion>
 			<AntiAlien>5</AntiAlien>
-			<RespectIncreaseModifier>30</RespectIncreaseModifier>
-			<RespectDecreaseModifier>0</RespectDecreaseModifier>
-		</Row>
+      <RespectIncreaseModifier>30</RespectIncreaseModifier>
+      <RespectDecreaseModifier>0</RespectDecreaseModifier>
+    </Row>
 	</Leaders>
 	<Leader_MajorCivApproachBiases>
 		<Row>
@@ -235,17 +235,17 @@
 		<Row>
 			<LeaderType>LEADER_NORTH_SEA_ALLIANCE</LeaderType>
 			<FlavorType>FLAVOR_TRANSCENDENCE</FlavorType>
-			<Flavor>0</Flavor>
+			<Flavor>3</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_NORTH_SEA_ALLIANCE</LeaderType>
 			<FlavorType>FLAVOR_EMANCIPATION</FlavorType>
-			<Flavor>12</Flavor>
+			<Flavor>6</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_NORTH_SEA_ALLIANCE</LeaderType>
 			<FlavorType>FLAVOR_PROMISED_LAND</FlavorType>
-			<Flavor>0</Flavor>
+			<Flavor>7</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_NORTH_SEA_ALLIANCE</LeaderType>
@@ -267,12 +267,12 @@
 			<FlavorType>FLAVOR_AQUATIC</FlavorType>
 			<Flavor>12</Flavor>
 		</Row>
-		<Row>
-			<LeaderType>LEADER_NORTH_SEA_ALLIANCE</LeaderType>
-			<FlavorType>FLAVOR_NAVAL_RANGED</FlavorType>
-			<Flavor>8</Flavor>
-		</Row>
-	</Leader_Flavors>
+    <Row>
+      <LeaderType>LEADER_NORTH_SEA_ALLIANCE</LeaderType>
+      <FlavorType>FLAVOR_NAVAL_RANGED</FlavorType>
+      <Flavor>8</Flavor>
+    </Row>
+  </Leader_Flavors>
 	<Leader_RelationshipFearStages>
 		<Row>
 			<LeaderType>LEADER_NORTH_SEA_ALLIANCE</LeaderType>

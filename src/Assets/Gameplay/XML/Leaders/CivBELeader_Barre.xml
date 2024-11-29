@@ -21,11 +21,11 @@
 			<Forgiveness>4</Forgiveness>
 			<Chattiness>7</Chattiness>
 			<Meanness>3</Meanness>
-			<AffinityDevotion>3</AffinityDevotion>
+      <AffinityDevotion>3</AffinityDevotion>
 			<AntiAlien>6</AntiAlien>
-			<RespectIncreaseModifier>40</RespectIncreaseModifier>
-			<RespectDecreaseModifier>-40</RespectDecreaseModifier>
-		</Row>
+      <RespectIncreaseModifier>40</RespectIncreaseModifier>
+      <RespectDecreaseModifier>-40</RespectDecreaseModifier>
+    </Row>
 	</Leaders>
 	<Leader_MajorCivApproachBiases>
 		<Row>
@@ -235,17 +235,17 @@
 		<Row>
 			<LeaderType>LEADER_AFRICAN_UNION</LeaderType>
 			<FlavorType>FLAVOR_TRANSCENDENCE</FlavorType>
-			<Flavor>0</Flavor>
+			<Flavor>4</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_AFRICAN_UNION</LeaderType>
 			<FlavorType>FLAVOR_EMANCIPATION</FlavorType>
-			<Flavor>0</Flavor>
+			<Flavor>7</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_AFRICAN_UNION</LeaderType>
 			<FlavorType>FLAVOR_PROMISED_LAND</FlavorType>
-			<Flavor>12</Flavor>
+			<Flavor>7</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_AFRICAN_UNION</LeaderType>

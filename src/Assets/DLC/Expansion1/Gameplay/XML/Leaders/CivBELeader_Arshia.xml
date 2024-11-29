@@ -23,8 +23,8 @@
 			<Meanness>3</Meanness>
 			<AffinityDevotion>3</AffinityDevotion>
 			<AntiAlien>1</AntiAlien>
-			<RespectIncreaseModifier>40</RespectIncreaseModifier>
-			<RespectDecreaseModifier>-40</RespectDecreaseModifier>
+      <RespectIncreaseModifier>40</RespectIncreaseModifier>
+      <RespectDecreaseModifier>-40</RespectDecreaseModifier>
 		</Row>
 	</Leaders>
 	<Leader_MajorCivApproachBiases>
@@ -235,17 +235,17 @@
 		<Row>
 			<LeaderType>LEADER_AL_FALAH</LeaderType>
 			<FlavorType>FLAVOR_TRANSCENDENCE</FlavorType>
-			<Flavor>12</Flavor>
+			<Flavor>4</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_AL_FALAH</LeaderType>
 			<FlavorType>FLAVOR_EMANCIPATION</FlavorType>
-			<Flavor>0</Flavor>
+			<Flavor>7</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_AL_FALAH</LeaderType>
 			<FlavorType>FLAVOR_PROMISED_LAND</FlavorType>
-			<Flavor>0</Flavor>
+			<Flavor>7</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_AL_FALAH</LeaderType>
@@ -267,12 +267,12 @@
 			<FlavorType>FLAVOR_AQUATIC</FlavorType>
 			<Flavor>6</Flavor>
 		</Row>
-		<Row>
-			<LeaderType>LEADER_AL_FALAH</LeaderType>
-			<FlavorType>FLAVOR_NAVAL_RANGED</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-	</Leader_Flavors>
+    <Row>
+      <LeaderType>LEADER_AL_FALAH</LeaderType>
+      <FlavorType>FLAVOR_NAVAL_RANGED</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+  </Leader_Flavors>
 	<Leader_RelationshipFearStages>
 		<Row>
 			<LeaderType>LEADER_AL_FALAH</LeaderType>
