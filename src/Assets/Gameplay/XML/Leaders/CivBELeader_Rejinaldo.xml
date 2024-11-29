@@ -12,17 +12,17 @@
 			<IconAtlas>LEADER_ATLAS</IconAtlas>
 			<VictoryCompetitiveness>7</VictoryCompetitiveness>
 			<WonderCompetitiveness>3</WonderCompetitiveness>
-			<Boldness>7</Boldness>
+			<Boldness>8</Boldness>
 			<DiploBalance>3</DiploBalance>
 			<WarmongerHate>5</WarmongerHate>
 			<CoopWillingness>3</CoopWillingness>
 			<Loyalty>6</Loyalty>
-			<Neediness>4</Neediness>
-			<Forgiveness>3</Forgiveness>
-			<Chattiness>3</Chattiness>
+			<Neediness>1</Neediness>
+			<Forgiveness>1</Forgiveness>
+			<Chattiness>2</Chattiness>
 			<Meanness>6</Meanness>
 			<AffinityDevotion>6</AffinityDevotion>
-			<AntiAlien>6</AntiAlien>
+			<AntiAlien>8</AntiAlien>
 			<RespectIncreaseModifier>-20</RespectIncreaseModifier>
 			<RespectDecreaseModifier>40</RespectDecreaseModifier>
 		</Row>
@@ -31,7 +31,7 @@
 		<Row>
 			<LeaderType>LEADER_BRASILIA</LeaderType>
 			<MajorCivApproachType>MAJOR_CIV_APPROACH_WAR</MajorCivApproachType>
-			<Bias>7</Bias>
+			<Bias>8</Bias>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_BRASILIA</LeaderType>
@@ -51,7 +51,7 @@
 		<Row>
 			<LeaderType>LEADER_BRASILIA</LeaderType>
 			<MajorCivApproachType>MAJOR_CIV_APPROACH_AFRAID</MajorCivApproachType>
-			<Bias>3</Bias>
+			<Bias>2</Bias>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_BRASILIA</LeaderType>
@@ -98,14 +98,14 @@
 		<Row>
 			<LeaderType>LEADER_BRASILIA</LeaderType>
 			<CondemnationType>CONDEMNATION_WARMONGERING</CondemnationType>
-			<Bias>4</Bias>
+			<Bias>1</Bias>
 		</Row>
 	</Leader_CondemnationBiases>
 	<Leader_Flavors>
 		<Row>
 			<LeaderType>LEADER_BRASILIA</LeaderType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>4</Flavor>
+			<Flavor>12</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_BRASILIA</LeaderType>
@@ -120,7 +120,7 @@
 		<Row>
 			<LeaderType>LEADER_BRASILIA</LeaderType>
 			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>3</Flavor>
+			<Flavor>10</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_BRASILIA</LeaderType>

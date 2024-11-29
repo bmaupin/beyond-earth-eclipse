@@ -15,11 +15,11 @@
 			<Boldness>6</Boldness>
 			<DiploBalance>4</DiploBalance>
 			<WarmongerHate>3</WarmongerHate>
-			<CoopWillingness>3</CoopWillingness>
-			<Loyalty>5</Loyalty>
-			<Neediness>4</Neediness>
-			<Forgiveness>6</Forgiveness>
-			<Chattiness>3</Chattiness>
+			<CoopWillingness>0</CoopWillingness>
+			<Loyalty>0</Loyalty>
+			<Neediness>0</Neediness>
+			<Forgiveness>3</Forgiveness>
+			<Chattiness>1</Chattiness>
 			<Meanness>6</Meanness>
 			<AffinityDevotion>5</AffinityDevotion>
 			<AntiAlien>7</AntiAlien>
@@ -125,7 +125,7 @@
 		<Row>
 			<LeaderType>LEADER_CHUNGSU</LeaderType>
 			<FlavorType>FLAVOR_RECON</FlavorType>
-			<Flavor>4</Flavor>
+			<Flavor>8</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_CHUNGSU</LeaderType>
@@ -190,7 +190,7 @@
 		<Row>
 			<LeaderType>LEADER_CHUNGSU</LeaderType>
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>7</Flavor>
+			<Flavor>9</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_CHUNGSU</LeaderType>
@@ -260,7 +260,7 @@
 		<Row>
 			<LeaderType>LEADER_CHUNGSU</LeaderType>
 			<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
-			<Flavor>9</Flavor>
+			<Flavor>12</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_CHUNGSU</LeaderType>

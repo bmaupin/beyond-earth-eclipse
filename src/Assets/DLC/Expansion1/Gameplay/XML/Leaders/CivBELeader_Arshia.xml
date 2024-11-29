@@ -15,14 +15,14 @@
 			<Boldness>4</Boldness>
 			<DiploBalance>7</DiploBalance>
 			<WarmongerHate>7</WarmongerHate>
-			<CoopWillingness>6</CoopWillingness>
-			<Loyalty>7</Loyalty>
+			<CoopWillingness>8</CoopWillingness>
+			<Loyalty>8</Loyalty>
 			<Neediness>5</Neediness>
 			<Forgiveness>4</Forgiveness>
 			<Chattiness>7</Chattiness>
 			<Meanness>3</Meanness>
 			<AffinityDevotion>3</AffinityDevotion>
-			<AntiAlien>4</AntiAlien>
+			<AntiAlien>1</AntiAlien>
 			<RespectIncreaseModifier>40</RespectIncreaseModifier>
 			<RespectDecreaseModifier>-40</RespectDecreaseModifier>
 		</Row>
@@ -41,17 +41,17 @@
 		<Row>
 			<LeaderType>LEADER_AL_FALAH</LeaderType>
 			<MajorCivApproachType>MAJOR_CIV_APPROACH_DECEPTIVE</MajorCivApproachType>
-			<Bias>4</Bias>
+			<Bias>2</Bias>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_AL_FALAH</LeaderType>
 			<MajorCivApproachType>MAJOR_CIV_APPROACH_GUARDED</MajorCivApproachType>
-			<Bias>4</Bias>
+			<Bias>5</Bias>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_AL_FALAH</LeaderType>
 			<MajorCivApproachType>MAJOR_CIV_APPROACH_AFRAID</MajorCivApproachType>
-			<Bias>5</Bias>
+			<Bias>3</Bias>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_AL_FALAH</LeaderType>
@@ -61,7 +61,7 @@
 		<Row>
 			<LeaderType>LEADER_AL_FALAH</LeaderType>
 			<MajorCivApproachType>MAJOR_CIV_APPROACH_FRIENDLY</MajorCivApproachType>
-			<Bias>7</Bias>
+			<Bias>8</Bias>
 		</Row>
 	</Leader_MajorCivApproachBiases>
 	<Leader_CondemnationBiases>
@@ -155,7 +155,7 @@
 		<Row>
 			<LeaderType>LEADER_AL_FALAH</LeaderType>
 			<FlavorType>FLAVOR_NAVAL_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>4</Flavor>
+			<Flavor>10</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_AL_FALAH</LeaderType>
@@ -165,17 +165,17 @@
 		<Row>
 			<LeaderType>LEADER_AL_FALAH</LeaderType>
 			<FlavorType>FLAVOR_EXPANSION</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>8</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_AL_FALAH</LeaderType>
 			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>8</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_AL_FALAH</LeaderType>
 			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>6</Flavor>
+			<Flavor>12</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_AL_FALAH</LeaderType>

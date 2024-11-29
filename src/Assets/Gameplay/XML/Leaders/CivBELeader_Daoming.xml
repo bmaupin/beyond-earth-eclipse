@@ -19,7 +19,7 @@
 			<Loyalty>4</Loyalty>
 			<Neediness>4</Neediness>
 			<Forgiveness>5</Forgiveness>
-			<Chattiness>4</Chattiness>
+			<Chattiness>2</Chattiness>
 			<Meanness>3</Meanness>
 			<AffinityDevotion>7</AffinityDevotion>
 			<AntiAlien>5</AntiAlien>
@@ -46,7 +46,7 @@
 		<Row>
 			<LeaderType>LEADER_PAN_ASIA</LeaderType>
 			<MajorCivApproachType>MAJOR_CIV_APPROACH_GUARDED</MajorCivApproachType>
-			<Bias>5</Bias>
+			<Bias>8</Bias>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_PAN_ASIA</LeaderType>
@@ -61,7 +61,7 @@
 		<Row>
 			<LeaderType>LEADER_PAN_ASIA</LeaderType>
 			<MajorCivApproachType>MAJOR_CIV_APPROACH_FRIENDLY</MajorCivApproachType>
-			<Bias>4</Bias>
+			<Bias>3</Bias>
 		</Row>
 	</Leader_MajorCivApproachBiases>
 	<Leader_CondemnationBiases>
@@ -165,7 +165,7 @@
 		<Row>
 			<LeaderType>LEADER_PAN_ASIA</LeaderType>
 			<FlavorType>FLAVOR_EXPANSION</FlavorType>
-			<Flavor>4</Flavor>
+			<Flavor>8</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_PAN_ASIA</LeaderType>
@@ -185,7 +185,7 @@
 		<Row>
 			<LeaderType>LEADER_PAN_ASIA</LeaderType>
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>12</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_PAN_ASIA</LeaderType>

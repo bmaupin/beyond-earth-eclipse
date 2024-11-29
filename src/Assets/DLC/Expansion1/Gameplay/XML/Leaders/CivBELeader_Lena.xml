@@ -15,14 +15,14 @@
 			<Boldness>4</Boldness>
 			<DiploBalance>9</DiploBalance>
 			<WarmongerHate>5</WarmongerHate>
-			<CoopWillingness>6</CoopWillingness>
-			<Loyalty>7</Loyalty>
+			<CoopWillingness>4</CoopWillingness>
+			<Loyalty>0</Loyalty>
 			<Neediness>3</Neediness>
 			<Forgiveness>3</Forgiveness>
 			<Chattiness>5</Chattiness>
 			<Meanness>6</Meanness>
 			<AffinityDevotion>9</AffinityDevotion>
-			<AntiAlien>2</AntiAlien>
+			<AntiAlien>6</AntiAlien>
 			<RespectIncreaseModifier>0</RespectIncreaseModifier>
 			<RespectDecreaseModifier>0</RespectDecreaseModifier>
 		</Row>
@@ -41,7 +41,7 @@
 		<Row>
 			<LeaderType>LEADER_INTEGR</LeaderType>
 			<MajorCivApproachType>MAJOR_CIV_APPROACH_DECEPTIVE</MajorCivApproachType>
-			<Bias>4</Bias>
+			<Bias>7</Bias>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_INTEGR</LeaderType>
@@ -61,7 +61,7 @@
 		<Row>
 			<LeaderType>LEADER_INTEGR</LeaderType>
 			<MajorCivApproachType>MAJOR_CIV_APPROACH_FRIENDLY</MajorCivApproachType>
-			<Bias>5</Bias>
+			<Bias>4</Bias>
 		</Row>
 	</Leader_MajorCivApproachBiases>
 	<Leader_CondemnationBiases>
@@ -180,22 +180,22 @@
 		<Row>
 			<LeaderType>LEADER_INTEGR</LeaderType>
 			<FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
-			<Flavor>7</Flavor>
+			<Flavor>12</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_INTEGR</LeaderType>
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>4</Flavor>
+			<Flavor>10</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_INTEGR</LeaderType>
 			<FlavorType>FLAVOR_ENERGY</FlavorType>
-			<Flavor>7</Flavor>
+			<Flavor>8</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_INTEGR</LeaderType>
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>6</Flavor>
+			<Flavor>8</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_INTEGR</LeaderType>
