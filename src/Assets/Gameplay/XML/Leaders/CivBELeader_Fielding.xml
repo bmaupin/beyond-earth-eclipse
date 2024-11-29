@@ -21,11 +21,11 @@
 			<Forgiveness>6</Forgiveness>
 			<Chattiness>4</Chattiness>
 			<Meanness>7</Meanness>
-      <AffinityDevotion>2</AffinityDevotion>
+			<AffinityDevotion>2</AffinityDevotion>
 			<AntiAlien>5</AntiAlien>
-      <RespectIncreaseModifier>-20</RespectIncreaseModifier>
-      <RespectDecreaseModifier>20</RespectDecreaseModifier>
-    </Row>
+			<RespectIncreaseModifier>-20</RespectIncreaseModifier>
+			<RespectDecreaseModifier>20</RespectDecreaseModifier>
+		</Row>
 	</Leaders>
 	<Leader_MajorCivApproachBiases>
 		<Row>
@@ -235,17 +235,17 @@
 		<Row>
 			<LeaderType>LEADER_ARC</LeaderType>
 			<FlavorType>FLAVOR_TRANSCENDENCE</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>0</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_ARC</LeaderType>
 			<FlavorType>FLAVOR_EMANCIPATION</FlavorType>
-			<Flavor>6</Flavor>
+			<Flavor>12</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_ARC</LeaderType>
 			<FlavorType>FLAVOR_PROMISED_LAND</FlavorType>
-			<Flavor>4</Flavor>
+			<Flavor>0</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_ARC</LeaderType>

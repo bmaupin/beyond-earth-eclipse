@@ -21,11 +21,11 @@
 			<Forgiveness>3</Forgiveness>
 			<Chattiness>3</Chattiness>
 			<Meanness>6</Meanness>
-      <AffinityDevotion>6</AffinityDevotion>
+			<AffinityDevotion>6</AffinityDevotion>
 			<AntiAlien>6</AntiAlien>
-      <RespectIncreaseModifier>-20</RespectIncreaseModifier>
-      <RespectDecreaseModifier>40</RespectDecreaseModifier>
-    </Row>
+			<RespectIncreaseModifier>-20</RespectIncreaseModifier>
+			<RespectDecreaseModifier>40</RespectDecreaseModifier>
+		</Row>
 	</Leaders>
 	<Leader_MajorCivApproachBiases>
 		<Row>
@@ -230,17 +230,17 @@
 		<Row>
 			<LeaderType>LEADER_BRASILIA</LeaderType>
 			<FlavorType>FLAVOR_TRANSCENDENCE</FlavorType>
-			<Flavor>8</Flavor>
+			<Flavor>0</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_BRASILIA</LeaderType>
 			<FlavorType>FLAVOR_EMANCIPATION</FlavorType>
-			<Flavor>7</Flavor>
+			<Flavor>0</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_BRASILIA</LeaderType>
 			<FlavorType>FLAVOR_PROMISED_LAND</FlavorType>
-			<Flavor>6</Flavor>
+			<Flavor>12</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_BRASILIA</LeaderType>

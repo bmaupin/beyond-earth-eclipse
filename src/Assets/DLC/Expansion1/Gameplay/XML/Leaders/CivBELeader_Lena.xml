@@ -23,9 +23,9 @@
 			<Meanness>6</Meanness>
 			<AffinityDevotion>9</AffinityDevotion>
 			<AntiAlien>2</AntiAlien>
-      <RespectIncreaseModifier>0</RespectIncreaseModifier>
-      <RespectDecreaseModifier>0</RespectDecreaseModifier>
-    </Row>
+			<RespectIncreaseModifier>0</RespectIncreaseModifier>
+			<RespectDecreaseModifier>0</RespectDecreaseModifier>
+		</Row>
 	</Leaders>
 	<Leader_MajorCivApproachBiases>
 		<Row>
@@ -235,17 +235,17 @@
 		<Row>
 			<LeaderType>LEADER_INTEGR</LeaderType>
 			<FlavorType>FLAVOR_TRANSCENDENCE</FlavorType>
-			<Flavor>9</Flavor>
+			<Flavor>0</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_INTEGR</LeaderType>
 			<FlavorType>FLAVOR_EMANCIPATION</FlavorType>
-			<Flavor>4</Flavor>
+			<Flavor>0</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_INTEGR</LeaderType>
 			<FlavorType>FLAVOR_PROMISED_LAND</FlavorType>
-			<Flavor>4</Flavor>
+			<Flavor>12</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_INTEGR</LeaderType>
@@ -267,12 +267,12 @@
 			<FlavorType>FLAVOR_AQUATIC</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
-    <Row>
-      <LeaderType>LEADER_INTEGR</LeaderType>
-      <FlavorType>FLAVOR_NAVAL_RANGED</FlavorType>
-      <Flavor>4</Flavor>
-    </Row>
-  </Leader_Flavors>
+		<Row>
+			<LeaderType>LEADER_INTEGR</LeaderType>
+			<FlavorType>FLAVOR_NAVAL_RANGED</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</Leader_Flavors>
 	<Leader_RelationshipFearStages>
 		<Row>
 			<LeaderType>LEADER_INTEGR</LeaderType>

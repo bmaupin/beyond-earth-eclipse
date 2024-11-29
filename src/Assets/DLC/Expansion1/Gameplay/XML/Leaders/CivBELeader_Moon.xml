@@ -23,9 +23,9 @@
 			<Meanness>6</Meanness>
 			<AffinityDevotion>5</AffinityDevotion>
 			<AntiAlien>7</AntiAlien>
-      <RespectIncreaseModifier>-20</RespectIncreaseModifier>
-      <RespectDecreaseModifier>20</RespectDecreaseModifier>
-    </Row>
+			<RespectIncreaseModifier>-20</RespectIncreaseModifier>
+			<RespectDecreaseModifier>20</RespectDecreaseModifier>
+		</Row>
 	</Leaders>
 	<Leader_MajorCivApproachBiases>
 		<Row>
@@ -230,17 +230,17 @@
 		<Row>
 			<LeaderType>LEADER_CHUNGSU</LeaderType>
 			<FlavorType>FLAVOR_TRANSCENDENCE</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>0</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_CHUNGSU</LeaderType>
 			<FlavorType>FLAVOR_EMANCIPATION</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>12</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_CHUNGSU</LeaderType>
 			<FlavorType>FLAVOR_PROMISED_LAND</FlavorType>
-			<Flavor>9</Flavor>
+			<Flavor>0</Flavor>
 		</Row>
 		<Row>
 			<LeaderType>LEADER_CHUNGSU</LeaderType>
@@ -312,12 +312,12 @@
 			<FlavorType>FLAVOR_AQUATIC</FlavorType>
 			<Flavor>7</Flavor>
 		</Row>
-    <Row>
-      <LeaderType>LEADER_CHUNGSU</LeaderType>
-      <FlavorType>FLAVOR_NAVAL_RANGED</FlavorType>
-      <Flavor>4</Flavor>
-    </Row>
-  </Leader_Flavors>
+		<Row>
+			<LeaderType>LEADER_CHUNGSU</LeaderType>
+			<FlavorType>FLAVOR_NAVAL_RANGED</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</Leader_Flavors>
 	<Leader_RelationshipFearStages>
 		<Row>
 			<LeaderType>LEADER_CHUNGSU</LeaderType>
