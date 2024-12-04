@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Leader_CondemnationBiases>
+		<Update>
+			<Where LeaderType="LEADER_FRANCO_IBERIA" CondemnationType="CONDEMNATION_ALIEN_APPROACH" />
+			<Set>
+				<Bias>8</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_POLYSTRALIA" CondemnationType="CONDEMNATION_ALIEN_APPROACH" />
+			<Set>
+				<Bias>6</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_INDIA" CondemnationType="CONDEMNATION_ALIEN_APPROACH" />
+			<Set>
+				<Bias>8</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_BRASILIA" CondemnationType="CONDEMNATION_WARMONGERING" />
+			<Set>
+				<Bias>1</Bias>
+			</Set>
+		</Update>
+	</Leader_CondemnationBiases>
+</GameData>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Leaders>
+        <Update>
+            <Where Type="LEADER_AFRICAN_UNION" />
+            <Set>
+                <Boldness>0</Boldness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_AFRICAN_UNION" />
+            <Set>
+                <DiploBalance>8</DiploBalance>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_AFRICAN_UNION" />
+            <Set>
+                <WarmongerHate>8</WarmongerHate>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_AFRICAN_UNION" />
+            <Set>
+                <CoopWillingness>8</CoopWillingness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_AFRICAN_UNION" />
+            <Set>
+                <Loyalty>8</Loyalty>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_AFRICAN_UNION" />
+            <Set>
+                <AntiAlien>6</AntiAlien>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_AL_FALAH" />
+            <Set>
+                <CoopWillingness>8</CoopWillingness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_AL_FALAH" />
+            <Set>
+                <Loyalty>8</Loyalty>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_AL_FALAH" />
+            <Set>
+                <AntiAlien>1</AntiAlien>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_ARC" />
+            <Set>
+                <Boldness>8</Boldness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_ARC" />
+            <Set>
+                <Neediness>2</Neediness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_ARC" />
+            <Set>
+                <Forgiveness>2</Forgiveness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_BRASILIA" />
+            <Set>
+                <Boldness>8</Boldness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_BRASILIA" />
+            <Set>
+                <Neediness>1</Neediness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_BRASILIA" />
+            <Set>
+                <Forgiveness>1</Forgiveness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_BRASILIA" />
+            <Set>
+                <Chattiness>2</Chattiness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_BRASILIA" />
+            <Set>
+                <AntiAlien>8</AntiAlien>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_CHUNGSU" />
+            <Set>
+                <CoopWillingness>0</CoopWillingness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_CHUNGSU" />
+            <Set>
+                <Loyalty>0</Loyalty>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_CHUNGSU" />
+            <Set>
+                <Neediness>0</Neediness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_CHUNGSU" />
+            <Set>
+                <Forgiveness>3</Forgiveness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_CHUNGSU" />
+            <Set>
+                <Chattiness>1</Chattiness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_FRANCO_IBERIA" />
+            <Set>
+                <Loyalty>1</Loyalty>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_FRANCO_IBERIA" />
+            <Set>
+                <Forgiveness>1</Forgiveness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_FRANCO_IBERIA" />
+            <Set>
+                <AntiAlien>0</AntiAlien>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_INDIA" />
+            <Set>
+                <Loyalty>8</Loyalty>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_INDIA" />
+            <Set>
+                <AntiAlien>0</AntiAlien>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_INTEGR" />
+            <Set>
+                <CoopWillingness>4</CoopWillingness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_INTEGR" />
+            <Set>
+                <Loyalty>0</Loyalty>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_INTEGR" />
+            <Set>
+                <AntiAlien>6</AntiAlien>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_PAN_ASIA" />
+            <Set>
+                <Chattiness>2</Chattiness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_POLYSTRALIA" />
+            <Set>
+                <CoopWillingness>4</CoopWillingness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_POLYSTRALIA" />
+            <Set>
+                <AntiAlien>1</AntiAlien>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_RUSSIA" />
+            <Set>
+                <Chattiness>2</Chattiness>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="LEADER_RUSSIA" />
+            <Set>
+                <AntiAlien>8</AntiAlien>
+            </Set>
+        </Update>
+    </Leaders>
+</GameData>

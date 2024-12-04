@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Leader_MajorCivApproachBiases>
+		<Update>
+			<Where LeaderType="LEADER_AL_FALAH" MajorCivApproachType="MAJOR_CIV_APPROACH_DECEPTIVE" />
+			<Set>
+				<Bias>2</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_AL_FALAH" MajorCivApproachType="MAJOR_CIV_APPROACH_GUARDED" />
+			<Set>
+				<Bias>5</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_AL_FALAH" MajorCivApproachType="MAJOR_CIV_APPROACH_AFRAID" />
+			<Set>
+				<Bias>3</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_AL_FALAH" MajorCivApproachType="MAJOR_CIV_APPROACH_FRIENDLY" />
+			<Set>
+				<Bias>8</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_INTEGR" MajorCivApproachType="MAJOR_CIV_APPROACH_DECEPTIVE" />
+			<Set>
+				<Bias>7</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_INTEGR" MajorCivApproachType="MAJOR_CIV_APPROACH_FRIENDLY" />
+			<Set>
+				<Bias>4</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_AFRICAN_UNION" MajorCivApproachType="MAJOR_CIV_APPROACH_WAR" />
+			<Set>
+				<Bias>1</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_AFRICAN_UNION" MajorCivApproachType="MAJOR_CIV_APPROACH_HOSTILE" />
+			<Set>
+				<Bias>0</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_AFRICAN_UNION" MajorCivApproachType="MAJOR_CIV_APPROACH_DECEPTIVE" />
+			<Set>
+				<Bias>0</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_AFRICAN_UNION" MajorCivApproachType="MAJOR_CIV_APPROACH_FRIENDLY" />
+			<Set>
+				<Bias>8</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_PAN_ASIA" MajorCivApproachType="MAJOR_CIV_APPROACH_GUARDED" />
+			<Set>
+				<Bias>8</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_PAN_ASIA" MajorCivApproachType="MAJOR_CIV_APPROACH_FRIENDLY" />
+			<Set>
+				<Bias>3</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_FRANCO_IBERIA" MajorCivApproachType="MAJOR_CIV_APPROACH_DECEPTIVE" />
+			<Set>
+				<Bias>7</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_FRANCO_IBERIA" MajorCivApproachType="MAJOR_CIV_APPROACH_GUARDED" />
+			<Set>
+				<Bias>6</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_FRANCO_IBERIA" MajorCivApproachType="MAJOR_CIV_APPROACH_AFRAID" />
+			<Set>
+				<Bias>3</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_FRANCO_IBERIA" MajorCivApproachType="MAJOR_CIV_APPROACH_FRIENDLY" />
+			<Set>
+				<Bias>1</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_ARC" MajorCivApproachType="MAJOR_CIV_APPROACH_WAR" />
+			<Set>
+				<Bias>8</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_ARC" MajorCivApproachType="MAJOR_CIV_APPROACH_AFRAID" />
+			<Set>
+				<Bias>1</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_POLYSTRALIA" MajorCivApproachType="MAJOR_CIV_APPROACH_DECEPTIVE" />
+			<Set>
+				<Bias>5</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_POLYSTRALIA" MajorCivApproachType="MAJOR_CIV_APPROACH_GUARDED" />
+			<Set>
+				<Bias>6</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_POLYSTRALIA" MajorCivApproachType="MAJOR_CIV_APPROACH_AFRAID" />
+			<Set>
+				<Bias>4</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_POLYSTRALIA" MajorCivApproachType="MAJOR_CIV_APPROACH_FRIENDLY" />
+			<Set>
+				<Bias>5</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_INDIA" MajorCivApproachType="MAJOR_CIV_APPROACH_WAR" />
+			<Set>
+				<Bias>3</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_INDIA" MajorCivApproachType="MAJOR_CIV_APPROACH_DECEPTIVE" />
+			<Set>
+				<Bias>2</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_INDIA" MajorCivApproachType="MAJOR_CIV_APPROACH_GUARDED" />
+			<Set>
+				<Bias>6</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_INDIA" MajorCivApproachType="MAJOR_CIV_APPROACH_FRIENDLY" />
+			<Set>
+				<Bias>8</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_RUSSIA" MajorCivApproachType="MAJOR_CIV_APPROACH_GUARDED" />
+			<Set>
+				<Bias>8</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_RUSSIA" MajorCivApproachType="MAJOR_CIV_APPROACH_FRIENDLY" />
+			<Set>
+				<Bias>3</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_BRASILIA" MajorCivApproachType="MAJOR_CIV_APPROACH_WAR" />
+			<Set>
+				<Bias>8</Bias>
+			</Set>
+		</Update>
+		<Update>
+			<Where LeaderType="LEADER_BRASILIA" MajorCivApproachType="MAJOR_CIV_APPROACH_AFRAID" />
+			<Set>
+				<Bias>2</Bias>
+			</Set>
+		</Update>
+	</Leader_MajorCivApproachBiases>
+</GameData>
