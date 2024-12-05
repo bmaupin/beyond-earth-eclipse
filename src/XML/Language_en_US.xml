@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Language_en_US>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_0" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Élodie &gt;&gt;[NEWLINE][NEWLINE][[CED.1221.59]][NEWLINE][NEWLINE]As we begin our journey, I remember the words of William Cullen Bryant, who said unto his God, “Thou didst look down upon the naked earth, and, forthwith, rose all these fair ranks of trees. They, in thy sun, budded, and shook their green leaves in the breeze, and shot towards Heaven.” For today, we have budded and now shoot towards Heaven. And though I cannot say whether our next home will have trees such as these, I carry hope that it will be worthy of the beauty I bring with me.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_1" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Élodie &gt;&gt;[NEWLINE][NEWLINE][[CED.1480.02]][NEWLINE][NEWLINE]A second chance is not something which you are granted; it must be created. As our world collapsed, we had the wisdom to strike out into space. Now, we search the Heavens for a fresh start – a new world upon which to plant the seed of our people. This is our second chance and we will make the most of it.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_2" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Élodie &gt;&gt;[NEWLINE][NEWLINE][[CED.1385.63]][NEWLINE][NEWLINE]As we fly through the vastness of space, I am filled with courage. In these people, I see the seed of greatness. Others may hope only to survive in this alien land, but not us. Ours will be the greatest colony to grace those shores – A grand, new Eden, worthy of Franco-Iberia.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_3" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Élodie &gt;&gt;[NEWLINE][NEWLINE][[CED.1328.41]][NEWLINE][NEWLINE]Oh, if I could see this new planet through the eyes of Rembrandt! If only he could accompany me now, by some divine miracle, to witness the alien world through my window. What wondrous paintings he would create from this new muse.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_4" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Élodie &gt;&gt;[NEWLINE][NEWLINE][[CED.1695.39]][NEWLINE][NEWLINE]We have arrived. The new Eden lies below, ready to receive our wisdom and creativity. We have brought all that is good from old Earth and with it, shall make this world better. The glorious culture of Franco-Iberia will take root in this alien land and bloom unto its full majesty.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_5" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Élodie &gt;&gt;[NEWLINE][NEWLINE][[CED.1547.74]][NEWLINE][NEWLINE]It was John Calvin who said, “There is not one blade of grass, there is no color in this world that is not intended to make us rejoice.” Below us waits a foreign world. No matter how alien it may appear, I know it will bear creation’s majesty. Our own miraculous Earth was destroyed by those too selfish to look outward. It is my great hope that we will appreciate the inventiveness of our new world more than we did the last.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_0" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Vadim Petrovich Kozlov &gt;&gt;[NEWLINE][NEWLINE][[CED.1074.45]][NEWLINE][NEWLINE]I have waited so long to return to space. Were it not for the encouragement of my wife, it might not have come to pass. When she and our children gaze upon new stars in a new sky, they will understand why I fought for this new frontier. This world is unknown, but our future is not. We will prosper.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_1" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Vadim Petrovich Kozlov &gt;&gt;[NEWLINE][NEWLINE][[CED.1684.15]][NEWLINE][NEWLINE]Long have our people stood at the forefront of scientific advancement. We were the first to establish a base upon the moon. And the first to replace our satellites after the Great Mistake. I would see us continue this tradition on our new world and I will fight any who stand in our way.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_2" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Vadim Petrovich Kozlov &gt;&gt;[NEWLINE][NEWLINE][[CED.1569.73]][NEWLINE][NEWLINE]Space offers so much. To share its wonders with my family is a joy I cannot express. My children will have a future on a new world. They will make discoveries that on Earth would have been impossible. Together, we will face the future and finally be free to live the life I worked so hard to secure.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_3" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Vadim Petrovich Kozlov &gt;&gt;[NEWLINE][NEWLINE][[CED.1693.12]][NEWLINE][NEWLINE]The planet approaches. From this distance, it holds some similarity to Earth. I must not take comfort in this. From comfort comes weakness and that is something I cannot abide. Although we have prepared for the world below, it will not be enough. If we are to survive, we will need to learn more. To be vigilant. To adapt.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_4" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Vadim Petrovich Kozlov &gt;&gt;[NEWLINE][NEWLINE][[CED.2701.03]][NEWLINE][NEWLINE]I do not know what is in store for us. It is possible we will flourish without effort. Or perhaps we will be set-upon by monsters we can barely comprehend. Either way, I hope for peace and through our superior weapons, we will achieve it.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_5" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Vadim Petrovich Kozlov &gt;&gt;[NEWLINE][NEWLINE][[CED.3685.52]][NEWLINE][NEWLINE]It is my duty to keep these men and women alive. It is my burden to know that I cannot. They must make their own future. I can guide them. I can give them the tools to survive. But I cannot control them. Their choices will be their own as will their consequences.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_0" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Rejinaldo Bolivar de Alencar-Araripe &gt;&gt;[NEWLINE][NEWLINE][[CED.1348.15]][NEWLINE][NEWLINE]I faced much in my lifetime and am familiar with the burdens of leadership. For Brasilia, I was a convenient choice. Lucky for them, I was also the best choice. They know I am capable of leading them into the unknown. I know that I am capable of leading them to glory.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_1" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Rejinaldo Bolivar de Alencar-Araripe &gt;&gt;[NEWLINE][NEWLINE][[CED.2465.32]][NEWLINE][NEWLINE]I do not wish for war, but destiny cares little for my desires. My soldiers have trained their whole lives for this journey. Today, as we descend into the toxic fog, they prepare for the hunt. There will be enemies waiting, hiding. We will find them. We will eliminate them. This will be our first act upon our new world and we will not fail.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_2" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Rejinaldo Bolivar de Alencar-Araripe &gt;&gt;[NEWLINE][NEWLINE][[CED.2753.19]][NEWLINE][NEWLINE]I wonder how to approach the native life on this new planet. Is it better to strike swiftly or to hide our strength? We will have to see how they react to our arrival. If they ignore us, I will be suspicious. I would not have us fall to alien life.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_3" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Rejinaldo Bolivar de Alencar-Araripe &gt;&gt;[NEWLINE][NEWLINE][[CED.3021.65]][NEWLINE][NEWLINE]I do not ask much from my people, but I do demand what is necessary for success. All must be in order, if we are to face the trials ahead. They do not struggle, for they know I alone have been trusted to lead them to our new home. For this reason, it is I who must oversee all aspects of our mission. For me, there can be no struggle too difficult, no task too great. I must endure. Not for myself, but for them.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_4" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Rejinaldo Bolivar de Alencar-Araripe &gt;&gt;[NEWLINE][NEWLINE][[CED.1862.37]][NEWLINE][NEWLINE]We move through space at remarkable speed, drawing ever closer to our destiny. And yet, I find no peace. If only there was a way to know what lies ahead. Instead, I am left to wonder. What will we find on this world? Will be greeted with hostility or quietly ignored? Even if I knew the answer, it would bring me no rest, for I cannot say which I would prefer.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_5" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Rejinaldo Bolivar de Alencar-Araripe &gt;&gt;[NEWLINE][NEWLINE][[CED.2187.42]][NEWLINE][NEWLINE]It is quiet out here, among the stars. I know that when we reach this new planet, there will be much for us to do. My officers will set about their tasks, for which I must be ever-present. My people will only be as strong as I make them. And so I must be strong and cannot waver. For now, though, I appreciate the quiet.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_AFRICAN_UNION_TEXT_0" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Samatar Jama Barre &gt;&gt;[NEWLINE][NEWLINE][[CED.1054.56]][NEWLINE][NEWLINE]Our purpose has never been clearer. Tomorrow we embark on a journey into the stars. We will rely upon each other to forge our fate. Even when our feet touch upon unknown soil, we shall not falter. We will walk upon a new planet and its name shall be “Home.”[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_AFRICAN_UNION_TEXT_1" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Samatar Jama Barre &gt;&gt;[NEWLINE][NEWLINE][[CED.3587.77]][NEWLINE][NEWLINE]On the eve of our landing, let us meditate on the pearl diver, who saturates his lungs with air, before descending into the depths. What waits for us, we cannot know, be it hostility or indifference. But we will gather our strength within and plunge to the surface below. We will not come up for air until we have found what are searching for – our new home.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_AFRICAN_UNION_TEXT_2" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Samatar Jama Barre &gt;&gt;[NEWLINE][NEWLINE][[CED.3957.34]][NEWLINE][NEWLINE]On Earth, we were witness to a great sight. An orangutan. The last of its kind. Her eyes were empty. Any spark they once held, drained by sadness. She knew. She knew that we were her last hope and that we had failed her. As we settle these new lands, we must not repeat the mistakes of our fathers. We must protect the gifts of nature. Only then will we prosper.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_AFRICAN_UNION_TEXT_3" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Samatar Jama Barre &gt;&gt;[NEWLINE][NEWLINE][[CED.3754.08]][NEWLINE][NEWLINE]On Earth, we had plenty. What we had was squandered and we were left with naught. Now, we have no choice but to reap what we have sown and create from it what we can. We journey from nothing to something, in hope that we may find respect for our new world and that our children may find respect for us.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_AFRICAN_UNION_TEXT_4" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Samatar Jama Barre &gt;&gt;[NEWLINE][NEWLINE][[CED.3612.91]][NEWLINE][NEWLINE]As we approach our new planet, we must contemplate the possibilities of regulation. We were careless when we destroyed our planet. If protections had been in place, perhaps we would not have been so foolish. None wish to be controlled. But like children, we must be given rules if ever we are to learn.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_AFRICAN_UNION_TEXT_5" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Samatar Jama Barre &gt;&gt;[NEWLINE][NEWLINE][[CED.2004.84]][NEWLINE][NEWLINE]We are strong. We have faced much and will continue to forge ahead, but only if we learn from our mistakes. When we reach this world, we must give ourselves to it; strive to understand it. We are no longer a young species. We have no excuse for the destruction we visit upon our home.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_0" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Suzanne Marjorie Fielding &gt;&gt;[NEWLINE][NEWLINE][[CED.0546.53]][NEWLINE][NEWLINE]Finally… Tomorrow, I leave this spoiled Earth behind and all on ARC’s dime. There’s an alien world out there with my name on it and nothing is going to hold me back.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_1" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Suzanne Marjorie Fielding &gt;&gt;[NEWLINE][NEWLINE][[CED.2321.66]][NEWLINE][NEWLINE]Everything has gone according to plan. The colony is mine to control. Who else could do what I do? Could lead with my skill? No one. ARC knows I‘m their greatest asset. The more responsibility they give me, the more invaluable I become.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_2" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Suzanne Marjorie Fielding &gt;&gt;[NEWLINE][NEWLINE][[CED.2479.24]][NEWLINE][NEWLINE]They think this will be a challenge. They don’t realize Economics is nothing more than Sociology followed through to its logical conclusion. If you understand the various factors which define people and their desires, you can be prepared to give them what they want. Once you know that, starting from scratch is easy. I will lead this colony to great riches, and ARC will profit, once I have my share.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_3" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Suzanne Marjorie Fielding &gt;&gt;[NEWLINE][NEWLINE][[CED.2978.75]][NEWLINE][NEWLINE]I tell them this is for the greater good. They think I mean the greater good of Earth and humanity. I don’t. We are the ones being launched into space. The ones who will toil against the unknown. We are risking everything. If that risk pays off, humanity will survive, but we will reap the rewards.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_4" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Suzanne Marjorie Fielding &gt;&gt;[NEWLINE][NEWLINE][[CED.1978.28]][NEWLINE][NEWLINE]I want more – Responsibility, power, wealth. All of it. If you think I’m greedy, then you don’t understand ambition. Ambition isn’t a character flaw. It’s the means by which I envision the future and then bring it into being. I will make the most of my existence. Those who help me can only prosper.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_5" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Suzanne Marjorie Fielding &gt;&gt;[NEWLINE][NEWLINE][[CED.3112.74]][NEWLINE][NEWLINE]I will start from scratch on this new planet, but I have done so successfully before. When I was just a girl, I helped my father run his business. Economics has never baffled me, as it has so many others. Such principles just make sense to me. I will lead my colony to great riches, and ARC will profit, once I have my share.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_0" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Daoming Sochua &gt;&gt;[NEWLINE][NEWLINE][[CED.1230.12]][NEWLINE][NEWLINE]On the eve of my departure, I feel that I must reflect on the life I have led. In my time, I have been given many names, most unflattering. My people do not look on me with affection, but I am respected. I know history will not look kindly upon me, but if I had stopped to worry about that, I would not be the success that I am today. I am proud of the advances I made for myself and my people. But I cannot be proud for long. I have a taxing journey ahead of me and I must prepare.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_1" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Daoming Sochua &gt;&gt;[NEWLINE][NEWLINE][[CED.3385.74]][NEWLINE][NEWLINE]While some looked to the stars and saw gods, I saw possibilities – Possibilities for a future that has finally come. We have explored the unknown sky and now will colonize the alien shore. I will lead my people to great success as the Pan-Asian Cooperative discovers its new role in the universe.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_2" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Daoming Sochua &gt;&gt;[NEWLINE][NEWLINE][[CED.1425.37]][NEWLINE][NEWLINE]This will be my final sunset on Earth. Tomorrow, I will lead the Pan-Asian Cooperative into the Aether. We leave behind everything but our wits and machines, and yet I foresee a great and prosperous future awaiting us on new shores.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_3" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Daoming Sochua &gt;&gt;[NEWLINE][NEWLINE][[CED.3698.41]][NEWLINE][NEWLINE]I have chosen to lead the Pan-Asian Cooperative of Earth to a new, alien world. What we establish there will be my colony and they will be my people. They know I demand nothing short of perfection. The secrets of our new planet will be ours and ours alone. I have no doubt that we will continue our tradition of success and rebuild towards a brighter future.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_4" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Daoming Sochua &gt;&gt;[NEWLINE][NEWLINE][[CED.3748.17]][NEWLINE][NEWLINE]When we land, there will be much to do, if our colony is to be great. I am not intimidated by the work; I simply wish to be prepared. I wonder at the effects this new habitat will have on our production. Will our equipment work on the planet below? How many modifications must I make before our technology will suit the environment? I have spent much time questioning and theorizing. Now it is time to act.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_5" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Daoming Sochua &gt;&gt;[NEWLINE][NEWLINE][[CED.3859.88]][NEWLINE][NEWLINE]On Earth, the Pan-Asian Cooperative was great. Out here, we will be better. With new challenges will come new ways to apply ourselves. We will find our niche and we will succeed. Nothing will stand in our way and I will be at the forefront, leading us to greatness.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_0" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Kavitha Thakur &gt;&gt;[NEWLINE][NEWLINE][[CED.0618.65]][NEWLINE][NEWLINE]We have been beaten back by our own land, threatened by our own people, and yet we have persevered. We have overcome all odds and have arrived here, to our new home. When our feet touch new land, our chains will be severed; our wounds, healed. Our spirits and bodies will be free to flourish in all that we are.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_1" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Kavitha Thakur &gt;&gt;[NEWLINE][NEWLINE][[CED.2661.17]][NEWLINE][NEWLINE]There was a time when my forebears believed Earth was a flat stone, around which revolved the Heavenly hosts. Eventually, the truth of that world became known to us. Now, we have a new Earth and all that we have known becomes unknown once again. In time, we will know its truth as well. For while it may not be the home we knew, it is home just the same.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_2" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Kavitha Thakur &gt;&gt;[NEWLINE][NEWLINE][[CED.1979.12]][NEWLINE][NEWLINE]The hearts of my people carry many wounds. I feared they would carry this pain with them. And yet, as we prepare to meet our future, I can see the hope in their eyes. Hope has ever been a great remedy and it does my heart good to see my people so renewed. Our hope will light our path. Our faith will lead us to a peaceful existence. I know this to be true.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_3" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Kavitha Thakur &gt;&gt;[NEWLINE][NEWLINE][[CED.0286.46]][NEWLINE][NEWLINE]The new dawn rises, lighting our spirits with the flame of hope. Hope for sanctuary, for a bright future, for a new chapter. Together we will rise up and become stronger than ever before. On these new shores, we will finally be whole.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_4" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Kavitha Thakur &gt;&gt;[NEWLINE][NEWLINE][[CED.2536.97]][NEWLINE][NEWLINE]It is time for my people to reflect. We must open our minds and release the follies of the past. With every fiber of my being, I believe that we can prosper on this world, but only if we learn from our mistakes. Together, we will walk the path which frees us from the past and leads to a new existence.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_5" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Kavitha Thakur &gt;&gt;[NEWLINE][NEWLINE][[CED.2584.82]][NEWLINE][NEWLINE]It is the nature of man to seek ownership of that which he surveys. As we come upon our new world, we must not think, “This is ours and only ours.” We must show reverence for the glorious life which already holds claim. We are refugees, not conquerors. On this new planet, we will be new creatures, not the only creatures.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_0" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Hutama &gt;&gt;[NEWLINE][NEWLINE][[CED.1984.61]][NEWLINE][NEWLINE]There are moments when I cannot believe it is true. Even now, I am not wholly convinced this is not a dream. I never thought I would leave my home, let alone my planet. There is still so much to do here, but my people have spoken and I must comply.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_1" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Hutama &gt;&gt;[NEWLINE][NEWLINE][[CED.3194.26]][NEWLINE][NEWLINE]The riches of Earth are behind us. No longer can I reach out and touch gold, freshly plucked from the dirt. And yet, I am not saddened. Our future holds new riches. Our tongues will taste new flavors. Our fingers will be adorned with stones. Our bodies will be draped in the hides of impossible beasts. It is right to miss the world we have left. But we must look to the new one with great reverence.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_2" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Hutama &gt;&gt;[NEWLINE][NEWLINE][[CED.1745.68]][NEWLINE][NEWLINE]This expedition is an opportunity to start over. One for which Polystralia is well-prepared. We have always been economically superior. We know how to forge lucrative relationships. Although I am concerned about the beings we may encounter, I remain hopeful. Though we may be outnumbered by savage beasts, we will find some intelligence with which to ally ourselves.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_3" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Hutama &gt;&gt;[NEWLINE][NEWLINE][[CED.3654.14]][NEWLINE][NEWLINE]We have but one goal: Take this new planet and transform it into a home. What that home is like will be decided in time. The possibilities are endless, but only one is fruitless. We cannot alter this planet to make it like our last. We must embrace the future.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_4" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Hutama &gt;&gt;[NEWLINE][NEWLINE][[CED.2546.36]][NEWLINE][NEWLINE]When I think of the wonders on Earth, I become lost in the thought of possibility. What new materials will our hands find? Will they be harder than diamond or softer than silk? Whatever they are, we will use them to make wondrous things, more amazing than we have ever dreamed.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_5" />
+            <Set>
+                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Hutama &gt;&gt;[NEWLINE][NEWLINE][[CED.1835.74]][NEWLINE][NEWLINE]My people are looking for answers, but I have nothing but questions. We have much to offer – the refinement of minerals and manufacturing of goods. But who will we trade with? If they be alien, will they pay us for their own resources? If they be human, will they have need of what we create? Until I know what is out there, I won’t know to make of it.[NEWLINE][NEWLINE]</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_AFRICAN_UNION_1" />
+            <Set>
+                <Text>Samatar Barre's many accomplishments are noteworthy; his survival nothing short of miraculous. When he was 13 years old, Samatar’s village was stricken with an outbreak of VESB. As one of the last villagers to catch the deadly disease, the young Samatar tended to the sick until emergency relief could arrive. Unfortunately, many villagers succumbed during the final stages of the outbreak, and Samatar was forced to watch friends and family suffer. It was because of this tragedy that Samatar began a life devoted to philanthropy.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_AFRICAN_UNION_2" />
+            <Set>
+                <Text>The 'People's' African Union was one of the first organizations to embrace the Seeding. Leading African scientists were pivotal during the Inflection Point discovery, and the Union was well prepared to lead humanity into space. While well-prepared, the issue was extremely divisive for the much of the population of the Union. Samatar Jama Barre himself, one of the major proponents of the Seeding venture still carries a small piece of soil from his birthplace.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_AFRICAN_UNION_3" />
+            <Set>
+                <Text>The African Union is held together by a leadership council representing key stakeholders in the Union. The leadership council is effectively an executive council, with the judicial, administrative, and legislative responsibilities remaining with individual governments. Because of the violent history of so many insurrections, the People’s African Union provides stability through superior military forces. The strength of the Union rests on the shoulders of people like Prime Minister Samatar Jama Barre, who commands respect from the armed forces, and has the wisdom of knowing how best to use them.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_AL_FALAH_1" />
+            <Set>
+                <Text>The Golden Shah is well-known as the interstellar spacecraft of Arshia Kishk, but it is also home to a number of notable members of Al Falah. Famous neurosurgeon Zayd Shakir revolutionized his practice through intrepid uses of zero-g assisted procedures. Research scientist Milad Alasady invented various pharmaceuticals and vaccines based on exospheric life-forms. The Golden Shah’s renowned medical education system was only possible through the discipline and dedication of the people of Al Falah.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_AL_FALAH_2" />
+            <Set>
+                <Text>Before becoming pregnant with her daughter Nur, Arshia Kishk frequently spacewalked between Seedships. As the spacecraft were separated by long distances, these trips were considered a pilgrimage, and a chance to meditate upon the vastness of the universe. Only the bravest colonists attempted the dangerous trek, while most preferred small shuttles. Arshia’s influence and popularity were strengthened every time she arrived from the depths of space; a fearless leader sent to guide Al Falah through the stars. </Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_AL_FALAH_3" />
+            <Set>
+                <Text>Al Falah is known as a phoenix-like collective of resilient and determined people; however, it is more than just a tenacious movement. Aboard the waking Seedships, the people of Al Falah lived a relatively comfortable life in a simulated-gravity environment aboard the “waking” Seedships. Special attention had been paid to creating and preserving as much of an Earth-like ambiance as possible. Elaborate, artificial terrariums and nurseries housed valuable pieces of Al Falah’s heritage, and ensured that the people would never forget their homeland.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_ARC_1" />
+            <Set>
+                <Text>What many don’t realize about Suzanne Fielding’s take-no-prisoner approach to corporate growth is that it is the result of numerous failures and years of hardship. As an intern, her first project was destined for failure, with little buy-in from colleagues and no support from her superiors. When leadership pulled the plug, she was shuffled to two more projects that were also canned. These setbacks—however—only strengthened her resolve. As she ascended the ranks of the American Reclamation Corporation, her struggles changed in nature. Fighting institutionalized misogyny, racism, and classism throughout this process, Suzanne never gave up on the American dream.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_ARC_2" />
+            <Set>
+                <Text>As one of the most easily recognized personalities on Old Earth, Suzanne Fielding is uniquely familiar with most, if not all of the other Sponsors. ARC’s clients include most major multi-national conglomerates, and Fielding has made a habit of meeting all of ARC’s clients despite the long list. In all introductions she makes it a priority to shake hands and guarantee an exceptional level of quality regardless of whether it’s with the Slavic Federation or a small private business.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_ARC_3" />
+            <Set>
+                <Text>ARC’s global operations require a herculean logistical effort. Thousands of client and customer relationships are managed every second, and every interaction between ARC and an outside entity must represent the company’s culture, values, and pedigree. As CEO, Fielding prioritized quality assurance and public relations without sacrificing the bottom line, much to the delight of investors and the public alike. Under her guidance, both shares and the company reputation have risen astronomically.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_BRASILIA_1" />
+            <Set>
+                <Text>The Academia Militar das Agulhas Negras is famous for its all-terrain survival training course known as Las Lomas de Arena. Once a Parque Regional, this restricted area is loved by instructors for its utility in separating the weak from the strong. The 10 mile course includes rainforest, 30 meter high sand dunes, river crossings, pulse plasma sentries, low-charge ion minefields, and irradiated swampland. One does not run the Lomas course, one survives it. The first and only cadet to ever complete the course intact is none other than the Supreme Commander of Brasilia, the Lion of Peshawar, Rejinaldo Leonardo Pedro Bolivar de Alencar-Araripe.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_BRASILIA_2" />
+            <Set>
+                <Text>Rejinaldo de Alencar-Araripe was famous for his valor in multiple combat situations, but it was his bravery in action during the Battle of Blue Route that endeared him to the men and women of Brasilia’s armed forces. During an enemy ambush, Rejinaldo singlehandedly cleared the surrounding enemy fortifications with individually placed plasma charges. He then carried gravely wounded soldiers to a safer location all while under heavy fire. He defended the location until reinforcements could arrive, nearly half an hour later.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_BRASILIA_3" />
+            <Set>
+                <Text>Rejinaldo’s proudest moment came during Peshawar Crisis. Under the auspices of the UN+S, Rejinaldo orchestrated a military coup of the Warlord Malachi Morganti in a daring covert mission. No military forces were lost during the raid, and only minimal losses inflicted to the enemy. Before night fell on the second day, the remaining enemy forces surrendered unconditionally. Rejinaldo personally led the original strike team in the capture of Morganti, for which he earned the nickname the 'Lion of Peshawar.'</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_CHUNGSU_1" />
+            <Set>
+                <Text>There are multiple levels to Sub-Seoul’s Mireuk Bosal Dome. The lowest, publicly acknowledged level, Abyssopelagic-0, is home to deep-sea, scientific research, energy production and resource harvesting. Below Abyssopelagic-0 is the Chungsu academy, which exists in extreme pressure, total darkness, and near freezing temperatures. When the earthquake that triggered the Hareubang Tsunami hit the academy, a stress fracture developed on the surface of the outer dome. Moments before the dome’s collapse, Han Jae Moon evacuated his fellow students of the satellite Sky Station facility into multiple deep-sea submarines. Subsequently, all of them survived the catastrophe.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_CHUNGSU_2" />
+            <Set>
+                <Text>Much of Han Jae Moon’s enigmatic personality stems from the Iso-meditation practice that is common during Chungsu training. The practice involves a deep-sea diving suit, and little else. Would-be agents are left alone at the bottom of hadopelagic trenches for hours at a time. Bioluminescent flashes are the only visible stimuli, and the muffled sound of the ocean the only accompaniment. These sessions were often preceded by intense physical training, so that exhaustion would threaten to overwhelm the participant. Intense focus was required to stay awake, and alive.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_CHUNGSU_3" />
+            <Set>
+                <Text>Although multiple adjustments and accommodations were added to the sleep chamber equipment, the de-cryostasis procedure is often extremely stressful to the human body. Intense fatigue, disorientation, and nausea accompanies a variety of mechanical and psychosomatic pain. The experience is unique. It is for these reasons that the Chungsu employs special procedures to test agents immediately upon awakening. They must overcome physical hurdles and navigate mental puzzles under extreme duress.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_FRANCO_IBERIA_1" />
+            <Set>
+                <Text>Élodie is considered one of, if not the most important art critic and historian of the past 300 years. Her writings on the video game era of the early 21st century are considered the most authoritative take on the subject, and her discussion on the death of the internet sparked an entire artistic movement. Her greatest critical work is considered by many to be the marriage of the two topics in her Critique of Isotopic Decay 3.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_FRANCO_IBERIA_2" />
+            <Set>
+                <Text>In her memoirs, Élodie often writes about the influence of poetry in all of her aesthetics. Considering poets such as Wang Wei, Callimachus, Victor Hugo, Wallace Stevens and García Lorca as her muses, Élodie composed multiple volumes of cantos, rondeaus, odes and sonnets. Her last collection before the Seeding, Philocaly, was a far cry from her previous, ambitious work, and presented a personal, almost whimsical side to the poet in opposition to the passionate, evocative lyricism so many of her fans had become used to.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_FRANCO_IBERIA_3" />
+            <Set>
+                <Text>'My love, A Poem for You[NEWLINE][NEWLINE]In a bowl of tonic ephemera[NEWLINE]I elide heralded war,[NEWLINE]I trinket through breezes,[NEWLINE]I sit here softly humming,[NEWLINE]Your evocation.' – From Élodie’s 'Philocaly'</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_INTEGR_1" />
+            <Set>
+                <Text>Although relatively few people have read Lena Ebner’s dissertation on the intersection of climate change policymaking and the nature of political violence, it stands as the seminal work in academic circles throughout the European continent. Instead of the standard five chapter format, Lena presented both sides of a hypothetical court case, citing classical, modern, postmodern, metamodern, and pseudo-metamodernist scholarship. The judge in the hypothetical trial is none-other than the father of 22nd century philosophy and political science, S. A. Carazo. </Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_INTEGR_2" />
+            <Set>
+                <Text>During her time as a political activist, Lena spent years living abroad and learning from different cultures. Because of her help in resolving the nearly 300 year old Mediterranean debt crisis, she was hailed as a folk-hero from Cyprus City to Olympus Island. To commemorate the victory, Lena used the payment she received in legal fees to work with ARC in restoring the ruined habitats of the unemployed and impoverished climate refugees flooding her homeland.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_INTEGR_3" />
+            <Set>
+                <Text>INTEGR’s aggressive platform of environmental reform and financial accountability was crucial to the dissolution of the Atlantic-Mediterranean-Euro-American Trade Agreement. Hailed by critics as the absolute manifestation of bad trade policy, the trade agreement was an easy target for the Responsible Party. INTEGR’s vocal minority opposition stood unified in the face of extreme external pressure. Lena Ebner’s leadership proved vital in the victory, lobbying a European parliamentary group for nearly 20 hours straight.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_KAVITHAN_1" />
+            <Set>
+                <Text>Kavitha Thakur’s esoteric spiritual sutras and aphorisms have been interpreted by various theologians to have extremely diverse meanings. Some posit that her writings are ultimately Nāgārjunic in nature, and that her references to the Lord of the Cosmos, the Third Mother, and the Universal Divinity obscure the primacy of what she varying refers to as 'the Demon of Nihility' or simply 'the Void.' While Kavitha’s father supposedly received prophetic visions, it is surmised that Kavitha’s attempts to commune with the same spirit were met with what could only be described as a sinister nothingness.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_KAVITHAN_2" />
+            <Set>
+                <Text>Kavitha’s complicated cosmology can be understood in many ways, however, there are two prevailing interpretations regarding her use of the ‘Third Mother.’ Both explanations agree that the ‘Third Mother’ references the planet that will be colonized during the Seeding. From there, however, theologians disagree on who, or what, constitutes the ‘First’ and ‘Second’ Mothers. One argument is that Old Earth, (a.k.a. ‘Gaia’ or ‘Terra’) is the First Mother, while the second is the literal mother of every individual. The other theory is that Kavitha refers to a supernatural progenitor as the First Mother, and that the Second Mother is humankind itself.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_KAVITHAN_3" />
+            <Set>
+                <Text>Unlike the other Sponsors, the Kavithan Protectorate is primarily concerned with the spirituality of its colonists. This can easily be seen in the daily sermons Kavitha would deliver to the colonists chosen to populate the new planet, who she sometimes refers to as ‘Seedlings.’ During the preparation for the journey, she proselytized what she called ‘the Seeding’ of a new planet. The name for the mission gained popularity, and was adopted globally as an unofficial movement.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_NORTH_SEA_ALLIANCE_1" />
+            <Set>
+                <Text>Duncan Hughes is well regarded as one of the top sport fisherman in the world. Duncan’s largest catch, nicknamed the Aberdonian Monster, was a 95 kg mutant Atlantic Cod that, while too contaminated to eat, is still the largest cod caught on record. According to eyewitnesses, the fish was so large, Duncan was barely able to hold it for a photograph. He spent more than an hour reeling in the monster, and more than once feared he would be pulled overboard.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_NORTH_SEA_ALLIANCE_2" />
+            <Set>
+                <Text>Until the Seeding, Duncan Hughes’ proudest achievement was the development of the water-based, floating cities known as the ARKs. His experience as a longshoreman and naval engineer was instrumental in designing the concept, and it was his tireless commitment to the project that saw the first successful prototype go into production and eventual testing in the North Sea. The ARK program was an instant success, and revolutionized global trade.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_NORTH_SEA_ALLIANCE_3" />
+            <Set>
+                <Text>Duncan Hughes didn’t stop with the success of the ARK program. Although coming from a wealthy family, he never lost touch with the economically burdened majority in Scotland. He was known as a dedicated philanthropist and donated large sums to education and urban development. He was particularly supportive of children’s hospitals and orphanages that had been overextended as a result of climate refugees. The Hughes Institute in Aberdeen, a boarding school and public clinic, is just one of his many legacies.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_NORTH_SEA_ALLIANCE_4" />
+            <Set>
+                <Text>What brought Duncan Hughes international acclaim, and cemented his place in history, was his generosity. Some of the first beneficiaries of the ARKs were none other than the long-displaced climate refugees of the Maldive Islands. Hughes oversaw the entire project from its inception, and his guarantee that the ARKs would come at no cost to the people of the former islands was a landmark moment. Hughes personally went along for the delivery of the first ARK delivered from its port in Oslo to the Laccadive Sea. </Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_PAN_ASIA_1" />
+            <Set>
+                <Text>Daoming’s work in speculative mathematics is widely regarded as the foremost research in the field. Her theorem led to the eventual proving of Goldbach's conjecture, and for this work she was hailed as the most important mathematician in the history of the Pan-Asian Cooperative. She was awarded a special grant to continue her work, and received numerous accolades and honorary titles. A statue of her likeness sits opposite of Chen Jingrun in a park in Old Xiamen University.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_PAN_ASIA_2" />
+            <Set>
+                <Text>As an administrator, Daoming excelled at executive decision-making, based in no small part to her analytical approach to common problems. By dissecting the unique energy shortage crisis facing PAC, she was able to pinpoint the key component that was responsible for a majority of the shortfall in the Western Provinces. Rampant corruption had survived because of a lack of oversight, and by putting an end to specific criminal elements, the PAC not only made up the deficit, but increased overall production by nearly double. </Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_PAN_ASIA_3" />
+            <Set>
+                <Text>Daoming Sochua spent most of her life in cities, working in laboratories or institutions of higher learning, but she always found time to visit her father’s family in Cambodia. The time she spent on her father’s farm, away from the loud hustle and bustle of her technocrat peers, invigorated and renewed her efforts to save the people and culture that she loved. </Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_POLYSTRALIA_1" />
+            <Set>
+                <Text>As a man of the people, Hutama would often disguise himself and spend time in public places to get to know his constituency. Besides loving his fellow Polystralians, Hutama wanted to understand their different viewpoints, especially on topics such as foreign relations and international trade. While this caused his Protective Service no end of problems, some speculate that it was one of these outings that caused him to reverse his position on the Seeding, and embrace extrasolar colonization.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_POLYSTRALIA_2" />
+            <Set>
+                <Text>During the eruption of Anak Krakatau, Hutama’s responsibilities shifted from government administration to disaster relief. As the eruption disrupted supply chains throughout Polystralia and displaced hundreds of thousands of Polystralians, the calamity was an unparalleled natural disaster, and rivalled the impact of the Great Mistake in terms of the effect on global food supplies. Hutama’s focus on the logistics of catastrophe mitigation combined with his understanding of the people resulted in the salvation of millions.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_POLYSTRALIA_3" />
+            <Set>
+                <Text>The Tahiti2 project was one of Hutama’s earliest political victories, and remains a point of pride for the intrepid Polystralian. The multi-trillion dollar reclamation and reconstruction project would have never found the appropriate funding if not for Hutama’s vigorous support. As a show of gratitude, the people of Tahiti built a special marae for Hutama’s spacecraft, and honored him with the title Aliʻi. </Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_RUSSIA_1" />
+            <Set>
+                <Text>General Kozlov was the first cosmonaut to explore KBO-82, the artificial satellite in the Kuiper Belt that was uncovered during the Provenance Discovery. The results of the mission sent shockwaves throughout the world. While the Provenance Discovery had confirmed evidence of life, it was Kozlov’s team that found intact artifacts from presumably intelligent, extrasolar life. While much still remained a mystery, it was considered the most significant expedition of the century, and would have been impossible without Kozlov’s influence.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_RUSSIA_2" />
+            <Set>
+                <Text>Although precipitated by PAC’s first successful expedition, General Kozlov was the first citizen of the Slavic Federation to step foot on Mars. He likened the experience to “like the moon, but more red.” His yearlong traversal of Olympic Mons remains a record setting feat of endurance and effort, and it was his surveying of the Koval'skiy crater that allowed for the first Slavic Federation mining colony on Mars. It is with some pride that General Kozlov carries a Martian rock as a memento.</Text>
+            </Set>
+        </Update>
+        <Update>
+            <Where Tag="TXT_KEY_INTRO_MESSAGE_RUSSIA_3" />
+            <Set>
+                <Text>It is remarkable that, despite a busy career in space and construction sites, General Kozlov found the time to compose the “Axioms from the Minutes of the Central Directorate.” The impressive work stands as the de facto authority for colonial direction, and serves as a nearly 10,000 word mission statement for the Slavic Federation. The text is used in all levels of education, and is the most frequently referenced literature in academic and political discourse.</Text>
+            </Set>
+        </Update>
+    </Language_en_US>
+</GameData>
