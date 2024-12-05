@@ -10,7 +10,7 @@ A mod for Sid Meier's Civilization: Beyond Earth to give it more flavour.
 
 - [x] Overwrite all leader tech/wonder audio
 - [x] Remove hybrid affinities from all techs; hybrid affinity should be a choice, not an accident
-- [ ] Adjust all leader traits to have stronger personalities
+- [x] Adjust all leader traits to have stronger personalities
 - [ ] Find a way to bring text from victory dialogue to the front; it's interesting
 - [ ] Add new leader intro text for all leaders to reflect darker theme
 
@@ -27,6 +27,14 @@ TODO
 #### Tech and wonder quotes are now spoken by sponsors
 
 All tech and wonder quotes from sponsors have had their audio overridden so that they're now spoken by the respective sponsor instead of the same narrator that narrates most of the rest of the game in order to add more variety to the spoken dialogue.
+
+#### Stronger leader personalities
+
+Leaders have been adjusted to have more distinct personalities:
+
+- Stronger preference for a particular affinity
+- More extreme values for leader traits (bold, loyal, guarded, deceptive, friendly, etc.)
+- A strong focus on one or two aspects for each leader (growth, production, trade, espionage, military, culture, etc.)
 
 #### Tech tree affinities have been reverted to base game values
 
