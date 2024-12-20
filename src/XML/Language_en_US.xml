@@ -19,24 +19,9 @@
                 <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Samatar Jama Barre &gt;&gt;[NEWLINE][NEWLINE][[CED.3957.34]][NEWLINE][NEWLINE]On Earth, we were witness to a great sight. An orangutan. The last of its kind. Her eyes were empty. Any spark they once held, drained by sadness. She knew. She knew that we were her last hope and that we had failed her. As we settle these new lands, we must not repeat the mistakes of our fathers. We must protect the gifts of nature. Only then will we prosper.[NEWLINE][NEWLINE]</Text>
             </Set>
         </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_AFRICAN_UNION_TEXT_3" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Samatar Jama Barre &gt;&gt;[NEWLINE][NEWLINE][[CED.3754.08]][NEWLINE][NEWLINE]On Earth, we had plenty. What we had was squandered and we were left with naught. Now, we have no choice but to reap what we have sown and create from it what we can. We journey from nothing to something, in hope that we may find respect for our new world and that our children may find respect for us.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_AFRICAN_UNION_TEXT_4" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Samatar Jama Barre &gt;&gt;[NEWLINE][NEWLINE][[CED.3612.91]][NEWLINE][NEWLINE]As we approach our new planet, we must contemplate the possibilities of regulation. We were careless when we destroyed our planet. If protections had been in place, perhaps we would not have been so foolish. None wish to be controlled. But like children, we must be given rules if ever we are to learn.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_AFRICAN_UNION_TEXT_5" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Samatar Jama Barre &gt;&gt;[NEWLINE][NEWLINE][[CED.2004.84]][NEWLINE][NEWLINE]We are strong. We have faced much and will continue to forge ahead, but only if we learn from our mistakes. When we reach this world, we must give ourselves to it; strive to understand it. We are no longer a young species. We have no excuse for the destruction we visit upon our home.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
+        <Delete Tag="TXT_KEY_CIV_INTRO_AFRICAN_UNION_TEXT_3" />
+        <Delete Tag="TXT_KEY_CIV_INTRO_AFRICAN_UNION_TEXT_4" />
+        <Delete Tag="TXT_KEY_CIV_INTRO_AFRICAN_UNION_TEXT_5" />
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_0" />
             <Set>
@@ -55,24 +40,9 @@
                 <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Suzanne Marjorie Fielding &gt;&gt;[NEWLINE][NEWLINE][[CED.2479.24]][NEWLINE][NEWLINE]They think this will be a challenge. They don’t realize Economics is nothing more than Sociology followed through to its logical conclusion. If you understand the various factors which define people and their desires, you can be prepared to give them what they want. Once you know that, starting from scratch is easy. I will lead this colony to great riches, and ARC will profit, once I have my share.[NEWLINE][NEWLINE]</Text>
             </Set>
         </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_3" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Suzanne Marjorie Fielding &gt;&gt;[NEWLINE][NEWLINE][[CED.2978.75]][NEWLINE][NEWLINE]I tell them this is for the greater good. They think I mean the greater good of Earth and humanity. I don’t. We are the ones being launched into space. The ones who will toil against the unknown. We are risking everything. If that risk pays off, humanity will survive, but we will reap the rewards.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_4" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Suzanne Marjorie Fielding &gt;&gt;[NEWLINE][NEWLINE][[CED.1978.28]][NEWLINE][NEWLINE]I want more – Responsibility, power, wealth. All of it. If you think I’m greedy, then you don’t understand ambition. Ambition isn’t a character flaw. It’s the means by which I envision the future and then bring it into being. I will make the most of my existence. Those who help me can only prosper.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_5" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Suzanne Marjorie Fielding &gt;&gt;[NEWLINE][NEWLINE][[CED.3112.74]][NEWLINE][NEWLINE]I will start from scratch on this new planet, but I have done so successfully before. When I was just a girl, I helped my father run his business. Economics has never baffled me, as it has so many others. Such principles just make sense to me. I will lead my colony to great riches, and ARC will profit, once I have my share.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
+        <Delete Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_3" />
+        <Delete Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_4" />
+        <Delete Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_5" />
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_0" />
             <Set>
@@ -91,24 +61,9 @@
                 <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Rejinaldo Bolivar de Alencar-Araripe &gt;&gt;[NEWLINE][NEWLINE][[CED.2753.19]][NEWLINE][NEWLINE]I wonder how to approach the native life on this new planet. Is it better to strike swiftly or to hide our strength? We will have to see how they react to our arrival. If they ignore us, I will be suspicious. I would not have us fall to alien life.[NEWLINE][NEWLINE]</Text>
             </Set>
         </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_3" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Rejinaldo Bolivar de Alencar-Araripe &gt;&gt;[NEWLINE][NEWLINE][[CED.3021.65]][NEWLINE][NEWLINE]I do not ask much from my people, but I do demand what is necessary for success. All must be in order, if we are to face the trials ahead. They do not struggle, for they know I alone have been trusted to lead them to our new home. For this reason, it is I who must oversee all aspects of our mission. For me, there can be no struggle too difficult, no task too great. I must endure. Not for myself, but for them.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_4" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Rejinaldo Bolivar de Alencar-Araripe &gt;&gt;[NEWLINE][NEWLINE][[CED.1862.37]][NEWLINE][NEWLINE]We move through space at remarkable speed, drawing ever closer to our destiny. And yet, I find no peace. If only there was a way to know what lies ahead. Instead, I am left to wonder. What will we find on this world? Will be greeted with hostility or quietly ignored? Even if I knew the answer, it would bring me no rest, for I cannot say which I would prefer.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_5" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Rejinaldo Bolivar de Alencar-Araripe &gt;&gt;[NEWLINE][NEWLINE][[CED.2187.42]][NEWLINE][NEWLINE]It is quiet out here, among the stars. I know that when we reach this new planet, there will be much for us to do. My officers will set about their tasks, for which I must be ever-present. My people will only be as strong as I make them. And so I must be strong and cannot waver. For now, though, I appreciate the quiet.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
+        <Delete Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_3" />
+        <Delete Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_4" />
+        <Delete Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_5" />
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_0" />
             <Set>
@@ -127,24 +82,9 @@
                 <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Élodie &gt;&gt;[NEWLINE][NEWLINE][[CED.1385.63]][NEWLINE][NEWLINE]As we fly through the vastness of space, I am filled with courage. In these people, I see the seed of greatness. Others may hope only to survive in this alien land, but not us. Ours will be the greatest colony to grace those shores – A grand, new Eden, worthy of Franco-Iberia.[NEWLINE][NEWLINE]</Text>
             </Set>
         </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_3" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Élodie &gt;&gt;[NEWLINE][NEWLINE][[CED.1328.41]][NEWLINE][NEWLINE]Oh, if I could see this new planet through the eyes of Rembrandt! If only he could accompany me now, by some divine miracle, to witness the alien world through my window. What wondrous paintings he would create from this new muse.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_4" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Élodie &gt;&gt;[NEWLINE][NEWLINE][[CED.1695.39]][NEWLINE][NEWLINE]We have arrived. The new Eden lies below, ready to receive our wisdom and creativity. We have brought all that is good from old Earth and with it, shall make this world better. The glorious culture of Franco-Iberia will take root in this alien land and bloom unto its full majesty.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_5" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Élodie &gt;&gt;[NEWLINE][NEWLINE][[CED.1547.74]][NEWLINE][NEWLINE]It was John Calvin who said, “There is not one blade of grass, there is no color in this world that is not intended to make us rejoice.” Below us waits a foreign world. No matter how alien it may appear, I know it will bear creation’s majesty. Our own miraculous Earth was destroyed by those too selfish to look outward. It is my great hope that we will appreciate the inventiveness of our new world more than we did the last.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
+        <Delete Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_3" />
+        <Delete Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_4" />
+        <Delete Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_5" />
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_0" />
             <Set>
@@ -163,24 +103,9 @@
                 <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Kavitha Thakur &gt;&gt;[NEWLINE][NEWLINE][[CED.1979.12]][NEWLINE][NEWLINE]The hearts of my people carry many wounds. I feared they would carry this pain with them. And yet, as we prepare to meet our future, I can see the hope in their eyes. Hope has ever been a great remedy and it does my heart good to see my people so renewed. Our hope will light our path. Our faith will lead us to a peaceful existence. I know this to be true.[NEWLINE][NEWLINE]</Text>
             </Set>
         </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_3" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Kavitha Thakur &gt;&gt;[NEWLINE][NEWLINE][[CED.0286.46]][NEWLINE][NEWLINE]The new dawn rises, lighting our spirits with the flame of hope. Hope for sanctuary, for a bright future, for a new chapter. Together we will rise up and become stronger than ever before. On these new shores, we will finally be whole.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_4" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Kavitha Thakur &gt;&gt;[NEWLINE][NEWLINE][[CED.2536.97]][NEWLINE][NEWLINE]It is time for my people to reflect. We must open our minds and release the follies of the past. With every fiber of my being, I believe that we can prosper on this world, but only if we learn from our mistakes. Together, we will walk the path which frees us from the past and leads to a new existence.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_5" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Kavitha Thakur &gt;&gt;[NEWLINE][NEWLINE][[CED.2584.82]][NEWLINE][NEWLINE]It is the nature of man to seek ownership of that which he surveys. As we come upon our new world, we must not think, “This is ours and only ours.” We must show reverence for the glorious life which already holds claim. We are refugees, not conquerors. On this new planet, we will be new creatures, not the only creatures.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
+        <Delete Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_3" />
+        <Delete Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_4" />
+        <Delete Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_5" />
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_0" />
             <Set>
@@ -199,24 +124,9 @@
                 <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Daoming Sochua &gt;&gt;[NEWLINE][NEWLINE][[CED.1425.37]][NEWLINE][NEWLINE]This will be my final sunset on Earth. Tomorrow, I will lead the Pan-Asian Cooperative into the Aether. We leave behind everything but our wits and machines, and yet I foresee a great and prosperous future awaiting us on new shores.[NEWLINE][NEWLINE]</Text>
             </Set>
         </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_3" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Daoming Sochua &gt;&gt;[NEWLINE][NEWLINE][[CED.3698.41]][NEWLINE][NEWLINE]I have chosen to lead the Pan-Asian Cooperative of Earth to a new, alien world. What we establish there will be my colony and they will be my people. They know I demand nothing short of perfection. The secrets of our new planet will be ours and ours alone. I have no doubt that we will continue our tradition of success and rebuild towards a brighter future.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_4" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Daoming Sochua &gt;&gt;[NEWLINE][NEWLINE][[CED.3748.17]][NEWLINE][NEWLINE]When we land, there will be much to do, if our colony is to be great. I am not intimidated by the work; I simply wish to be prepared. I wonder at the effects this new habitat will have on our production. Will our equipment work on the planet below? How many modifications must I make before our technology will suit the environment? I have spent much time questioning and theorizing. Now it is time to act.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_5" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Daoming Sochua &gt;&gt;[NEWLINE][NEWLINE][[CED.3859.88]][NEWLINE][NEWLINE]On Earth, the Pan-Asian Cooperative was great. Out here, we will be better. With new challenges will come new ways to apply ourselves. We will find our niche and we will succeed. Nothing will stand in our way and I will be at the forefront, leading us to greatness.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
+        <Delete Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_3" />
+        <Delete Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_4" />
+        <Delete Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_5" />
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_0" />
             <Set>
@@ -235,24 +145,9 @@
                 <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Hutama &gt;&gt;[NEWLINE][NEWLINE][[CED.1745.68]][NEWLINE][NEWLINE]This expedition is an opportunity to start over. One for which Polystralia is well-prepared. We have always been economically superior. We know how to forge lucrative relationships. Although I am concerned about the beings we may encounter, I remain hopeful. Though we may be outnumbered by savage beasts, we will find some intelligence with which to ally ourselves.[NEWLINE][NEWLINE]</Text>
             </Set>
         </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_3" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Hutama &gt;&gt;[NEWLINE][NEWLINE][[CED.3654.14]][NEWLINE][NEWLINE]We have but one goal: Take this new planet and transform it into a home. What that home is like will be decided in time. The possibilities are endless, but only one is fruitless. We cannot alter this planet to make it like our last. We must embrace the future.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_4" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Hutama &gt;&gt;[NEWLINE][NEWLINE][[CED.2546.36]][NEWLINE][NEWLINE]When I think of the wonders on Earth, I become lost in the thought of possibility. What new materials will our hands find? Will they be harder than diamond or softer than silk? Whatever they are, we will use them to make wondrous things, more amazing than we have ever dreamed.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_5" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Hutama &gt;&gt;[NEWLINE][NEWLINE][[CED.1835.74]][NEWLINE][NEWLINE]My people are looking for answers, but I have nothing but questions. We have much to offer – the refinement of minerals and manufacturing of goods. But who will we trade with? If they be alien, will they pay us for their own resources? If they be human, will they have need of what we create? Until I know what is out there, I won’t know to make of it.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
+        <Delete Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_3" />
+        <Delete Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_4" />
+        <Delete Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_5" />
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_0" />
             <Set>
@@ -271,24 +166,9 @@
                 <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Vadim Petrovich Kozlov &gt;&gt;[NEWLINE][NEWLINE][[CED.1569.73]][NEWLINE][NEWLINE]Space offers so much. To share its wonders with my family is a joy I cannot express. My children will have a future on a new world. They will make discoveries that on Earth would have been impossible. Together, we will face the future and finally be free to live the life I worked so hard to secure.[NEWLINE][NEWLINE]</Text>
             </Set>
         </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_3" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Vadim Petrovich Kozlov &gt;&gt;[NEWLINE][NEWLINE][[CED.1693.12]][NEWLINE][NEWLINE]The planet approaches. From this distance, it holds some similarity to Earth. I must not take comfort in this. From comfort comes weakness and that is something I cannot abide. Although we have prepared for the world below, it will not be enough. If we are to survive, we will need to learn more. To be vigilant. To adapt.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_4" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Vadim Petrovich Kozlov &gt;&gt;[NEWLINE][NEWLINE][[CED.2701.03]][NEWLINE][NEWLINE]I do not know what is in store for us. It is possible we will flourish without effort. Or perhaps we will be set-upon by monsters we can barely comprehend. Either way, I hope for peace and through our superior weapons, we will achieve it.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
-        <Update>
-            <Where Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_5" />
-            <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Vadim Petrovich Kozlov &gt;&gt;[NEWLINE][NEWLINE][[CED.3685.52]][NEWLINE][NEWLINE]It is my duty to keep these men and women alive. It is my burden to know that I cannot. They must make their own future. I can guide them. I can give them the tools to survive. But I cannot control them. Their choices will be their own as will their consequences.[NEWLINE][NEWLINE]</Text>
-            </Set>
-        </Update>
+        <Delete Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_3" />
+        <Delete Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_4" />
+        <Delete Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_5" />
 
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_AFRICAN_UNION_1" />
