@@ -25,19 +25,19 @@
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_0" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Suzanne Marjorie Fielding &gt;&gt;[NEWLINE][NEWLINE][[CED.0546.53]][NEWLINE][NEWLINE]Finally… Tomorrow, I leave this spoiled Earth behind and all on ARC’s dime. There’s an alien world out there with my name on it and nothing is going to hold me back.[NEWLINE][NEWLINE]</Text>
+                <Text>What many don’t realize about Suzanne Fielding’s take-no-prisoner approach to corporate growth is that it is the result of numerous failures and years of hardship. Over the years, she never gave up on the American dream, ascending the ranks of the American Reclamation Corporation even when it meant climbing on the backs of others in order to make her way to the top. Her relentless drive and strategic acumen have made ARC a dominant force on the new planet. As the years have passed, Suzanne's ambitions to keep ARC at the top and herself at the top of ARC have only grown stronger, to the point that little remains of the scrappy intern that she once was.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_1" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Suzanne Marjorie Fielding &gt;&gt;[NEWLINE][NEWLINE][[CED.2321.66]][NEWLINE][NEWLINE]Everything has gone according to plan. The colony is mine to control. Who else could do what I do? Could lead with my skill? No one. ARC knows I‘m their greatest asset. The more responsibility they give me, the more invaluable I become.[NEWLINE][NEWLINE]</Text>
+                <Text>As one of the most easily recognized personalities on Old Earth, Suzanne Fielding is uniquely familiar with most, if not all of the other Sponsors. What started out as natural relationships has slowly been turned into one of the many building blocks of ARC's formidable intelligence behemoth. As corporations have evolved into governments, what could have been called customer relations have evolved into something else altogether: a vast secretive web of espionage that the ARC uses to keep an eye on both friend and foe. To what purposes, only Fielding may know.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_2" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Suzanne Marjorie Fielding &gt;&gt;[NEWLINE][NEWLINE][[CED.2479.24]][NEWLINE][NEWLINE]They think this will be a challenge. They don’t realize Economics is nothing more than Sociology followed through to its logical conclusion. If you understand the various factors which define people and their desires, you can be prepared to give them what they want. Once you know that, starting from scratch is easy. I will lead this colony to great riches, and ARC will profit, once I have my share.[NEWLINE][NEWLINE]</Text>
+                <Text>ARC, along with the other sponsors, was simply content to survive the vast journey across space and make planetfall, focusing solely on survival of itself and its citizens. As time has passed, the old itch of manifest destiny has slowly started to creap upon the body of the organisation. Natural growth as the ARC has acclimated to the planet and its ecosystem has started to give way to stronger feelings of expansionism. How much will be enough to satiate the ARC's appetite for more territory and resources? And what will it sacrifice along the way?</Text>
             </Set>
         </Update>
         <Delete Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_3" />
@@ -209,19 +209,19 @@
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_ARC_1" />
             <Set>
-                <Text>What many don’t realize about Suzanne Fielding’s take-no-prisoner approach to corporate growth is that it is the result of numerous failures and years of hardship. As an intern, her first project was destined for failure, with little buy-in from colleagues and no support from her superiors. When leadership pulled the plug, she was shuffled to two more projects that were also canned. These setbacks—however—only strengthened her resolve. As she ascended the ranks of the American Reclamation Corporation, her struggles changed in nature. Fighting institutionalized misogyny, racism, and classism throughout this process, Suzanne never gave up on the American dream.</Text>
+                <Text>What many don’t realize about Suzanne Fielding’s take-no-prisoner approach to corporate growth is that it is the result of numerous failures and years of hardship. Over the years, she never gave up on the American dream, ascending the ranks of the American Reclamation Corporation even when it meant climbing on the backs of others in order to make her way to the top. Her relentless drive and strategic acumen have made ARC a dominant force on the new planet. As the years have passed, Suzanne's ambitions to keep ARC at the top and herself at the top of ARC have only grown stronger, to the point that little remains of the scrappy intern that she once was.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_ARC_2" />
             <Set>
-                <Text>As one of the most easily recognized personalities on Old Earth, Suzanne Fielding is uniquely familiar with most, if not all of the other Sponsors. ARC’s clients include most major multi-national conglomerates, and Fielding has made a habit of meeting all of ARC’s clients despite the long list. In all introductions she makes it a priority to shake hands and guarantee an exceptional level of quality regardless of whether it’s with the Slavic Federation or a small private business.</Text>
+                <Text>As one of the most easily recognized personalities on Old Earth, Suzanne Fielding is uniquely familiar with most, if not all of the other Sponsors. What started out as natural relationships has slowly been turned into one of the many building blocks of ARC's formidable intelligence behemoth. As corporations have evolved into governments, what could have been called customer relations have evolved into something else altogether: a vast secretive web of espionage that the ARC uses to keep an eye on both friend and foe. To what purposes, only Fielding may know.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_ARC_3" />
             <Set>
-                <Text>ARC’s global operations require a herculean logistical effort. Thousands of client and customer relationships are managed every second, and every interaction between ARC and an outside entity must represent the company’s culture, values, and pedigree. As CEO, Fielding prioritized quality assurance and public relations without sacrificing the bottom line, much to the delight of investors and the public alike. Under her guidance, both shares and the company reputation have risen astronomically.</Text>
+                <Text>ARC, along with the other sponsors, was simply content to survive the vast journey across space and make planetfall, focusing solely on survival of itself and its citizens. As time has passed, the old itch of manifest destiny has slowly started to creap upon the body of the organisation. Natural growth as the ARC has acclimated to the planet and its ecosystem has started to give way to stronger feelings of expansionism. How much will be enough to satiate the ARC's appetite for more territory and resources? And what will it sacrifice along the way?</Text>
             </Set>
         </Update>
         <Update>
