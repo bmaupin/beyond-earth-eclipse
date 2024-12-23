@@ -1,16 +1,16 @@
 # Leader personalities
 
-Ideas for more unique personalities:
+#### Ideas for more unique personalities
 
-- Barre (Africa): growth/food, purity, friendly
-- Daoming (Asia): production, supremacy, closed
-- Élodie (France): culture, harmony, untrustworthy
-- US: espionage, supremacy, aggressive
-- Hutama (Polynesia): trade, Harmony, balanced
-- India: growth, culture ???, HARMONY, FRIENDLY
-- Koslov (Soviet): orbit, purity, closed
-- Brasil : full military, purity, AGGRESSIVE
-- Arshia (Arab): land improvements, Harmony, friendly
-- Scotland: ocean, supremacy, balanced
-- Lena (Germany): ???, Purity, untrustworthy
-- Moon (Korea): espionage/science, SUPREMACY, untrustworthy
+- Barre (AFRICAN_UNION): peaceful (strong), growth (strong), purity, friendly
+- Daoming (PAN_ASIA): production (strong), expansion (moderate), supremacy, closed/guarded
+- Élodie (FRANCO_IBERIA): culture (strong), pro-alien (strong), harmony, untrustworthy
+- Fielding (ARC): espionage (strong), expansionist (strong), supremacy, aggressive/warlike (strong)
+- Hutama (POLYSTRALIA): trade (strong), Harmony, balanced
+- Kavitha (INDIA): growth (strong), culture (moderate-strong), pro-alien (strong), HARMONY, FRIENDLY
+- Koslov (RUSSIA): orbital (strong), expansionist (strong), anti-alien (strong), purity, closed/guarded
+- Rejinaldo (BRASILIA): military (strong), anti-alien (strong), purity, AGGRESSIVE/warlike (strong)
+- Arshia (AL_FALAH): land/tile improvements (strong), expansion/growth (moderate), Harmony, friendly
+- Hughes (NORTH_SEA_ALLIANCE): ocean/naval (strong), health (moderate), supremacy, balanced
+- Lena (INTEGR): infrastructure/production (strong), energy/science (moderate), Purity, untrustworthy
+- Moon (CHUNGSU): espionage (strong), science (moderate), SUPREMACY, untrustworthy
