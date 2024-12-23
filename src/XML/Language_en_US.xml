@@ -46,19 +46,19 @@
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_0" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Rejinaldo Bolivar de Alencar-Araripe &gt;&gt;[NEWLINE][NEWLINE][[CED.1348.15]][NEWLINE][NEWLINE]I faced much in my lifetime and am familiar with the burdens of leadership. For Brasilia, I was a convenient choice. Lucky for them, I was also the best choice. They know I am capable of leading them into the unknown. I know that I am capable of leading them to glory.[NEWLINE][NEWLINE]</Text>
+                <Text>Rejinaldo Leonardo Pedro Bolivar de Alencar-Araripe, the leader of Brasilia, came from a long line of military heroes. A common saying among his people is that he was born wearing a uniform. The possibility of Rejinaldo entering into any career other than the military was never even considered in his household, and to even hint at such a thing would have been taboo. This same all-encompassing fixation with the military seeps through every facet of life for Brasilia on this new planet. Children are indoctrinated from a very young age, and education centres on how best to prepare children to either be in the military or help support it. As Brasilia looks across the new planet, they see little else besides a land to be conquered behind the barrel of a gun.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_1" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Rejinaldo Bolivar de Alencar-Araripe &gt;&gt;[NEWLINE][NEWLINE][[CED.2465.32]][NEWLINE][NEWLINE]I do not wish for war, but destiny cares little for my desires. My soldiers have trained their whole lives for this journey. Today, as we descend into the toxic fog, they prepare for the hunt. There will be enemies waiting, hiding. We will find them. We will eliminate them. This will be our first act upon our new world and we will not fail.[NEWLINE][NEWLINE]</Text>
+                <Text>For Rejinaldo de Alencar-Araripe, his humanity is defined in very narrow terms. While other sponsors have embraced unknown alien monstrosities or dangerous robotic augmentations, this is akin to turning one's back on one's own humanity as far as Rejinaldo is concerned. He has little tolerance for such creatures (for he does not even deign to use the term "human" in these cases). From his point of view, there is no possibility of cooperation or collaboration with those willing to give up what it means to be human. Their choice will only lead to extermination alongside anything else that does not qualify as human in his eyes.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_2" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Rejinaldo Bolivar de Alencar-Araripe &gt;&gt;[NEWLINE][NEWLINE][[CED.2753.19]][NEWLINE][NEWLINE]I wonder how to approach the native life on this new planet. Is it better to strike swiftly or to hide our strength? We will have to see how they react to our arrival. If they ignore us, I will be suspicious. I would not have us fall to alien life.[NEWLINE][NEWLINE]</Text>
+                <Text>While on Earth, Brasilia used its nearly unmatched military might around the world to help those in need and eliminate abuse and oppression. With humanity's very existence hanging in the balance, humanitarian needs trumped old ways of conquest and domination. However, now that Brasilia and the other sponsors have made planetfall on a new alien world, fears for their survival have given way to intolerance of the way of life chosen by much of the population of the new planet. Do they deserve to stand on an equal footing with the great Brasilia while chasing after at best frivolous pursuits such as art, luxury, or filling their stomachs? Not to mention those that have traded their own humanity to embrace ... alienness. They deserve what's coming to them.</Text>
             </Set>
         </Update>
         <Delete Tag="TXT_KEY_CIV_INTRO_BRASILIA_TEXT_3" />
@@ -227,19 +227,19 @@
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_BRASILIA_1" />
             <Set>
-                <Text>The Academia Militar das Agulhas Negras is famous for its all-terrain survival training course known as Las Lomas de Arena. Once a Parque Regional, this restricted area is loved by instructors for its utility in separating the weak from the strong. The 10 mile course includes rainforest, 30 meter high sand dunes, river crossings, pulse plasma sentries, low-charge ion minefields, and irradiated swampland. One does not run the Lomas course, one survives it. The first and only cadet to ever complete the course intact is none other than the Supreme Commander of Brasilia, the Lion of Peshawar, Rejinaldo Leonardo Pedro Bolivar de Alencar-Araripe.</Text>
+                <Text>Rejinaldo Leonardo Pedro Bolivar de Alencar-Araripe, the leader of Brasilia, came from a long line of military heroes. A common saying among his people is that he was born wearing a uniform. The possibility of Rejinaldo entering into any career other than the military was never even considered in his household, and to even hint at such a thing would have been taboo. This same all-encompassing fixation with the military seeps through every facet of life for Brasilia on this new planet. Children are indoctrinated from a very young age, and education centres on how best to prepare children to either be in the military or help support it. As Brasilia looks across the new planet, they see little else besides a land to be conquered behind the barrel of a gun.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_BRASILIA_2" />
             <Set>
-                <Text>Rejinaldo de Alencar-Araripe was famous for his valor in multiple combat situations, but it was his bravery in action during the Battle of Blue Route that endeared him to the men and women of Brasilia’s armed forces. During an enemy ambush, Rejinaldo singlehandedly cleared the surrounding enemy fortifications with individually placed plasma charges. He then carried gravely wounded soldiers to a safer location all while under heavy fire. He defended the location until reinforcements could arrive, nearly half an hour later.</Text>
+                <Text>For Rejinaldo de Alencar-Araripe, his humanity is defined in very narrow terms. While other sponsors have embraced unknown alien monstrosities or dangerous robotic augmentations, this is akin to turning one's back on one's own humanity as far as Rejinaldo is concerned. He has little tolerance for such creatures (for he does not even deign to use the term "human" in these cases). From his point of view, there is no possibility of cooperation or collaboration with those willing to give up what it means to be human. Their choice will only lead to extermination alongside anything else that does not qualify as human in his eyes.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_BRASILIA_3" />
             <Set>
-                <Text>Rejinaldo’s proudest moment came during Peshawar Crisis. Under the auspices of the UN+S, Rejinaldo orchestrated a military coup of the Warlord Malachi Morganti in a daring covert mission. No military forces were lost during the raid, and only minimal losses inflicted to the enemy. Before night fell on the second day, the remaining enemy forces surrendered unconditionally. Rejinaldo personally led the original strike team in the capture of Morganti, for which he earned the nickname the 'Lion of Peshawar.'</Text>
+                <Text>While on Earth, Brasilia used its nearly unmatched military might around the world to help those in need and eliminate abuse and oppression. With humanity's very existence hanging in the balance, humanitarian needs trumped old ways of conquest and domination. However, now that Brasilia and the other sponsors have made planetfall on a new alien world, fears for their survival have given way to intolerance of the way of life chosen by much of the population of the new planet. Do they deserve to stand on an equal footing with the great Brasilia while chasing after at best frivolous pursuits such as art, luxury, or filling their stomachs? Not to mention those that have traded their own humanity to embrace ... alienness. They deserve what's coming to them.</Text>
             </Set>
         </Update>
         <Update>
