@@ -67,19 +67,19 @@
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_0" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Élodie &gt;&gt;[NEWLINE][NEWLINE][[CED.1221.59]][NEWLINE][NEWLINE]As we begin our journey, I remember the words of William Cullen Bryant, who said unto his God, “Thou didst look down upon the naked earth, and, forthwith, rose all these fair ranks of trees. They, in thy sun, budded, and shook their green leaves in the breeze, and shot towards Heaven.” For today, we have budded and now shoot towards Heaven. And though I cannot say whether our next home will have trees such as these, I carry hope that it will be worthy of the beauty I bring with me.[NEWLINE][NEWLINE]</Text>
+                <Text>Élodie is considered one of, if not the most important art critic and historian of the past 300 years. While at the helm of Franco-Iberia, she made it her personal mission to accumulate a definitive collection of artistic work known as the Canon, which traveled across space along with the colonists. Notably, this resulted in less space on the ship for human passengers. This was merely a hint of Élodie's true priorities, which began to surface more rapidly once her ship made planetfall. Holding her values as a banner, she sees herself as compelled to spread culture across the new planet by any means necessary. Resistance is seen as little more than unenlightenment, which for others may seem trivial but for Élodie must be corrected or eradicated.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_1" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Élodie &gt;&gt;[NEWLINE][NEWLINE][[CED.1480.02]][NEWLINE][NEWLINE]A second chance is not something which you are granted; it must be created. As our world collapsed, we had the wisdom to strike out into space. Now, we search the Heavens for a fresh start – a new world upon which to plant the seed of our people. This is our second chance and we will make the most of it.[NEWLINE][NEWLINE]</Text>
+                <Text>While it is clear that under Élodie's lead, Franco-Iberia holds art and culture as its highest values, it is often less clear what Élodies true sentiments are towards others. She typically carries a casual disdain for those who she deems less enlightened, which in most cases is almost everyone else. However even to her closest friends she remains an enigma. Even in matters of state such as alliances or declarations of war, Élodie's artistic whims shine through, often taking drastic actions for seemingly no reason. If her goal is to confound the other corporations, in this she can be seen as having had great success. If not, she may simply be mad. Either way, she is not to be trifled with.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_2" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Élodie &gt;&gt;[NEWLINE][NEWLINE][[CED.1385.63]][NEWLINE][NEWLINE]As we fly through the vastness of space, I am filled with courage. In these people, I see the seed of greatness. Others may hope only to survive in this alien land, but not us. Ours will be the greatest colony to grace those shores – A grand, new Eden, worthy of Franco-Iberia.[NEWLINE][NEWLINE]</Text>
+                <Text>Despite Élodie's own extremely high regard for the arts, her own dabblings in poetry and other arts have not been universally met with enthusiasm by critics. Perhaps as a way to detract from the negative attention her own art has received, Élodie has taken up a second banner, that of harmony with her new planet and all of its various plant and animal life. She takes it as a personal offence whenever the alien flora or fauna are disturbed in any way, and any kind of deliberate harm to either is quick to provoke her wrath. She sees Franco-Iberia's modest military resources as a tool for protecting not only their precious cultural and artistic heritage (and the people necessary to maintain them), but also the native alien life. Some have said she values the alien life more than the lives of her own citizens.</Text>
             </Set>
         </Update>
         <Delete Tag="TXT_KEY_CIV_INTRO_FRANCO_IBERIA_TEXT_3" />
@@ -263,19 +263,19 @@
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_FRANCO_IBERIA_1" />
             <Set>
-                <Text>Élodie is considered one of, if not the most important art critic and historian of the past 300 years. Her writings on the video game era of the early 21st century are considered the most authoritative take on the subject, and her discussion on the death of the internet sparked an entire artistic movement. Her greatest critical work is considered by many to be the marriage of the two topics in her Critique of Isotopic Decay 3.</Text>
+                <Text>Élodie is considered one of, if not the most important art critic and historian of the past 300 years. While at the helm of Franco-Iberia, she made it her personal mission to accumulate a definitive collection of artistic work known as the Canon, which traveled across space along with the colonists. Notably, this resulted in less space on the ship for human passengers. This was merely a hint of Élodie's true priorities, which began to surface more rapidly once her ship made planetfall. Holding her values as a banner, she sees herself as compelled to spread culture across the new planet by any means necessary. Resistance is seen as little more than unenlightenment, which for others may seem trivial but for Élodie must be corrected or eradicated.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_FRANCO_IBERIA_2" />
             <Set>
-                <Text>In her memoirs, Élodie often writes about the influence of poetry in all of her aesthetics. Considering poets such as Wang Wei, Callimachus, Victor Hugo, Wallace Stevens and García Lorca as her muses, Élodie composed multiple volumes of cantos, rondeaus, odes and sonnets. Her last collection before the Seeding, Philocaly, was a far cry from her previous, ambitious work, and presented a personal, almost whimsical side to the poet in opposition to the passionate, evocative lyricism so many of her fans had become used to.</Text>
+                <Text>While it is clear that under Élodie's lead, Franco-Iberia holds art and culture as its highest values, it is often less clear what Élodies true sentiments are towards others. She typically carries a casual disdain for those who she deems less enlightened, which in most cases is almost everyone else. However even to her closest friends she remains an enigma. Even in matters of state such as alliances or declarations of war, Élodie's artistic whims shine through, often taking drastic actions for seemingly no reason. If her goal is to confound the other corporations, in this she can be seen as having had great success. If not, she may simply be mad. Either way, she is not to be trifled with.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_FRANCO_IBERIA_3" />
             <Set>
-                <Text>'My love, A Poem for You[NEWLINE][NEWLINE]In a bowl of tonic ephemera[NEWLINE]I elide heralded war,[NEWLINE]I trinket through breezes,[NEWLINE]I sit here softly humming,[NEWLINE]Your evocation.' – From Élodie’s 'Philocaly'</Text>
+                <Text>Despite Élodie's own extremely high regard for the arts, her own dabblings in poetry and other arts have not been universally met with enthusiasm by critics. Perhaps as a way to detract from the negative attention her own art has received, Élodie has taken up a second banner, that of harmony with her new planet and all of its various plant and animal life. She takes it as a personal offence whenever the alien flora or fauna are disturbed in any way, and any kind of deliberate harm to either is quick to provoke her wrath. She sees Franco-Iberia's modest military resources as a tool for protecting not only their precious cultural and artistic heritage (and the people necessary to maintain them), but also the native alien life. Some have said she values the alien life more than the lives of her own citizens.</Text>
             </Set>
         </Update>
         <Update>
