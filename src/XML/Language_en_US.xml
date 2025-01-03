@@ -4,19 +4,19 @@
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_AFRICAN_UNION_TEXT_0" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Samatar Jama Barre &gt;&gt;[NEWLINE][NEWLINE][[CED.1054.56]][NEWLINE][NEWLINE]Our purpose has never been clearer. Tomorrow we embark on a journey into the stars. We will rely upon each other to forge our fate. Even when our feet touch upon unknown soil, we shall not falter. We will walk upon a new planet and its name shall be “Home.”[NEWLINE][NEWLINE]</Text>
+                <Text>The 'People's' African Union, led by Samatar Jama Barre, brought all of the various African countries together after The Great Mistake at a time when humanity as a whole found itself in a crisis big enough to finally put aside their differences. As all countries around the world began to prioritise humanitarian efforts, other priorities were necessarily shelved, and military budgets across the globe were slashed. The Union at its founding decided their budget would be better spent and decided not to invest in military expenditures. This same attitude continues to this day on the new planet.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_AFRICAN_UNION_TEXT_1" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Samatar Jama Barre &gt;&gt;[NEWLINE][NEWLINE][[CED.3587.77]][NEWLINE][NEWLINE]On the eve of our landing, let us meditate on the pearl diver, who saturates his lungs with air, before descending into the depths. What waits for us, we cannot know, be it hostility or indifference. But we will gather our strength within and plunge to the surface below. We will not come up for air until we have found what are searching for – our new home.[NEWLINE][NEWLINE]</Text>
+                <Text>Seeing its own people as its greatest asset, the African Union spends most of its budget promoting the health and growth of its citizens. From birth to death, everyone is provided free health care, and the government carefully scrutinises all new products that enter the market for any potential safety risk. The agricultural industry and its output is occasionally subsidised as needed in order to ensure that the whims of the capitalist free market are unable to put farmers out of business as well as maintaining the price of most foods at a stable level within reach of the purchasing power of all within the Union.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_AFRICAN_UNION_TEXT_2" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Samatar Jama Barre &gt;&gt;[NEWLINE][NEWLINE][[CED.3957.34]][NEWLINE][NEWLINE]On Earth, we were witness to a great sight. An orangutan. The last of its kind. Her eyes were empty. Any spark they once held, drained by sadness. She knew. She knew that we were her last hope and that we had failed her. As we settle these new lands, we must not repeat the mistakes of our fathers. We must protect the gifts of nature. Only then will we prosper.[NEWLINE][NEWLINE]</Text>
+                <Text>Given the African Union's strong concern for the health and safety of its citizens, it has put in place vigorous restrictions when it comes to research and products of alien or technological origin that are designed to enable humans to surpass the limits placed upon them by their biology. Many such endeavours have been undertaken by other sponsors, and Samatar Barre wishes no part of it for his people. At the same time, he maintains a warm approach to all, even those who hold fundamentally different outlooks and values. The African Union was necessarily built on tolerance and understanding in order to bring together so many different groups of people, and these same values are extended even to those outside the Union.</Text>
             </Set>
         </Update>
         <Delete Tag="TXT_KEY_CIV_INTRO_AFRICAN_UNION_TEXT_3" />
@@ -88,19 +88,19 @@
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_0" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Kavitha Thakur &gt;&gt;[NEWLINE][NEWLINE][[CED.0618.65]][NEWLINE][NEWLINE]We have been beaten back by our own land, threatened by our own people, and yet we have persevered. We have overcome all odds and have arrived here, to our new home. When our feet touch new land, our chains will be severed; our wounds, healed. Our spirits and bodies will be free to flourish in all that we are.[NEWLINE][NEWLINE]</Text>
+                <Text>While not directly responsible for The Great Mistake, the proximity of its epicentre and the immediate and severe impact it had on the Indian subcontenent instilled in the Kavithan Protectorate a strong sense of responsibility in terms of spearheading humanitarian efforts and remediating the impact. Borne out of the ashes of the Mistake, the Protectorate's own values were inextricably intertwined with those of the post-Mistake era. The extreme crisis that ensued forced the population which had known centuries of conflict to lay down their arms if they hoped to survive. This cooperative attitude became part of the identity of its citizens and to this day Kavitha Thakur and her people know they cannot be separated from it without giving up an essential part of themselves.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_1" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Kavitha Thakur &gt;&gt;[NEWLINE][NEWLINE][[CED.2661.17]][NEWLINE][NEWLINE]There was a time when my forebears believed Earth was a flat stone, around which revolved the Heavenly hosts. Eventually, the truth of that world became known to us. Now, we have a new Earth and all that we have known becomes unknown once again. In time, we will know its truth as well. For while it may not be the home we knew, it is home just the same.[NEWLINE][NEWLINE]</Text>
+                <Text>As one of the regions of the world whose histories date back millenia, the various cultures of the Kavithan Protectorate place high value on keeping this heritage alive. Rather than a melting pot of disparate identies, the Protectorate values its diversity and is very protective of the many distinct peoples that make up its citizenry. Each group receives funding from the government to keep its cultural heritage not simply alive, but in order to continue to pass it down to future generations and even spread awareness among other groups both within the Protectorate and without.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_2" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Kavitha Thakur &gt;&gt;[NEWLINE][NEWLINE][[CED.1979.12]][NEWLINE][NEWLINE]The hearts of my people carry many wounds. I feared they would carry this pain with them. And yet, as we prepare to meet our future, I can see the hope in their eyes. Hope has ever been a great remedy and it does my heart good to see my people so renewed. Our hope will light our path. Our faith will lead us to a peaceful existence. I know this to be true.[NEWLINE][NEWLINE]</Text>
+                <Text>Unlike the other Sponsors, the Kavithan Protectorate is primarily concerned with the spirituality of its colonists. Now on a new planet, what is held as sacred has extended to embrace not only their own humanity, but also the alien life that now surrounds them in all its forms. Kavitha Thakur and her people extend an attitude of peace and kindness to all creatures. This extends to all of the citizens of the new planet, regardless of what sponsor they might happen to find themselves under. However, little patience is had for those who do not share this same high esteeem for human or alien life.</Text>
             </Set>
         </Update>
         <Delete Tag="TXT_KEY_CIV_INTRO_KAVITHAN_TEXT_3" />
@@ -109,19 +109,19 @@
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_0" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Daoming Sochua &gt;&gt;[NEWLINE][NEWLINE][[CED.1230.12]][NEWLINE][NEWLINE]On the eve of my departure, I feel that I must reflect on the life I have led. In my time, I have been given many names, most unflattering. My people do not look on me with affection, but I am respected. I know history will not look kindly upon me, but if I had stopped to worry about that, I would not be the success that I am today. I am proud of the advances I made for myself and my people. But I cannot be proud for long. I have a taxing journey ahead of me and I must prepare.[NEWLINE][NEWLINE]</Text>
+                <Text>Daoming Sochua was raised not make a name for herself, but instead to work hard and let her work show for itself. This strong work ethic pervades the Pan-Asian Cooperative, and those that dare to be idle stand out as a reed in the middle of a swiftly rushing current and are quickly pushed back down to their appropriate function in society. The effect of this is that the PAC functions as a well-oiled machine, a machine capable of dominating anything in its path, growing only larger in the process. All other sponsors would be wise to stay out of the way of the PAC or find themselves unintentionally becoming part of it.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_1" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Daoming Sochua &gt;&gt;[NEWLINE][NEWLINE][[CED.3385.74]][NEWLINE][NEWLINE]While some looked to the stars and saw gods, I saw possibilities – Possibilities for a future that has finally come. We have explored the unknown sky and now will colonize the alien shore. I will lead my people to great success as the Pan-Asian Cooperative discovers its new role in the universe.[NEWLINE][NEWLINE]</Text>
+                <Text>While innovation may seem out of place in a society where there is little place for the individual, Daoming has long held that without innovation, the PAC will not be able to surpass the other sponsors. While many may look at the abundant resources and untouched land of the new planet, Daoming dares not allow this to lull her into a sense of complacency. She knows that there will come a time when there will no longer be enough resources to go around, and those that fail to establish themselves in a position of greater power now will be at some point forced into arrangements at their own expense. In order to preclude this, Daoming has launched into an aggressive campaign of technological research and acquisition aimed at enhanching all levels of PAC society so that they might exceed the limits placed upon them even by virtue of their own biology.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_2" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Daoming Sochua &gt;&gt;[NEWLINE][NEWLINE][[CED.1425.37]][NEWLINE][NEWLINE]This will be my final sunset on Earth. Tomorrow, I will lead the Pan-Asian Cooperative into the Aether. We leave behind everything but our wits and machines, and yet I foresee a great and prosperous future awaiting us on new shores.[NEWLINE][NEWLINE]</Text>
+                <Text>Even as the PAC expands quickly across the new planet, outsiders do not have an open window into the society that is forcefully vying for the top of the food chain. The PAC, while made up of a vast population, acts as one. Any openness that was genuine or feigned after The Great Mistake in order to propel humanity off of a dying planet has been cast aside. There is now little pretence that the PAC exists solely for its own interests now. Other sponsors are wise to be cautious about entering into an agreement with PAC, given that it is widely believed PAC will only enter into such agreements when they believe they are able to extract all or most of the benefit, often at the expense of the other party. Such decisions should not be taken lightly.</Text>
             </Set>
         </Update>
         <Delete Tag="TXT_KEY_CIV_INTRO_PAN_ASIA_TEXT_3" />
@@ -130,19 +130,19 @@
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_0" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Hutama &gt;&gt;[NEWLINE][NEWLINE][[CED.1984.61]][NEWLINE][NEWLINE]There are moments when I cannot believe it is true. Even now, I am not wholly convinced this is not a dream. I never thought I would leave my home, let alone my planet. There is still so much to do here, but my people have spoken and I must comply.[NEWLINE][NEWLINE]</Text>
+                <Text>As a formerly disjointed collection of Pacific islands, the Commonwealth of the Pacific, also known as Polystralia, could never have worked as a collective entity had it not been for centuries of established trade between the disparate islands that joined to become something greater. Trade both within and without has long been the lifeblood of Polystralia, something Hutama understands without fault. He spent vast amounts of his own resources in order to become savvy in all things trade, which paid off as it strenghtened Polystralia's economic and social bonds. Now on a new planet, Hutama sees a healthy inter-sponsor trade as being crucial for humanity's chances of surviving and one day thriving on this new alien world so far from home.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_1" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Hutama &gt;&gt;[NEWLINE][NEWLINE][[CED.3194.26]][NEWLINE][NEWLINE]The riches of Earth are behind us. No longer can I reach out and touch gold, freshly plucked from the dirt. And yet, I am not saddened. Our future holds new riches. Our tongues will taste new flavors. Our fingers will be adorned with stones. Our bodies will be draped in the hides of impossible beasts. It is right to miss the world we have left. But we must look to the new one with great reverence.[NEWLINE][NEWLINE]</Text>
+                <Text>Even before The Great Mistake, global warming had impacted Polystralia more than many other countries as much of its territory is made up of islands. As a result, Polystralia has had a longstanding appreciation for the value of proper care for the planet. These same values have been carried across the stars to the new planet, where Polystralia has watched with concern as some of the other sponsors have flirted with nonchalant or even exploitative attitudes towards the land and its indigenous life. While Hutama is a patient man and not quick to enter conflict with other factions, even he has his limits, and needs must if it comes to protecting his people from a similar fate they faced at the hands of other careless nations on Earth.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_2" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Hutama &gt;&gt;[NEWLINE][NEWLINE][[CED.1745.68]][NEWLINE][NEWLINE]This expedition is an opportunity to start over. One for which Polystralia is well-prepared. We have always been economically superior. We know how to forge lucrative relationships. Although I am concerned about the beings we may encounter, I remain hopeful. Though we may be outnumbered by savage beasts, we will find some intelligence with which to ally ourselves.[NEWLINE][NEWLINE]</Text>
+                <Text>It has not gone past Hutama's notice that there has been a change in many of the other leaders, in most cases not for the better. Deception, exploitation, and outright hostility have marred recent relations between some of the various leaders on the new planet. While some have been quick to give the benefit of the doubt, Hutama has seen his fair share of both passive and aggressive leaders come and go, and he is careful not to jump to any conclusions nor pass any judgement. While he needs to maintain healthy relationships with the other sponsors to keep the trade economy strong, he will not allow himself to be pushed around by those who wish to assert their own dominance on the new planet at the expensive of the other sponsors, Polystralia in particular.</Text>
             </Set>
         </Update>
         <Delete Tag="TXT_KEY_CIV_INTRO_POLYSTRALIA_TEXT_3" />
@@ -173,19 +173,19 @@
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_AFRICAN_UNION_1" />
             <Set>
-                <Text>Samatar Barre's many accomplishments are noteworthy; his survival nothing short of miraculous. When he was 13 years old, Samatar’s village was stricken with an outbreak of VESB. As one of the last villagers to catch the deadly disease, the young Samatar tended to the sick until emergency relief could arrive. Unfortunately, many villagers succumbed during the final stages of the outbreak, and Samatar was forced to watch friends and family suffer. It was because of this tragedy that Samatar began a life devoted to philanthropy.</Text>
+                <Text>The 'People's' African Union, led by Samatar Jama Barre, brought all of the various African countries together after The Great Mistake at a time when humanity as a whole found itself in a crisis big enough to finally put aside their differences. As all countries around the world began to prioritise humanitarian efforts, other priorities were necessarily shelved, and military budgets across the globe were slashed. The Union at its founding decided their budget would be better spent and decided not to invest in military expenditures. This same attitude continues to this day on the new planet.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_AFRICAN_UNION_2" />
             <Set>
-                <Text>The 'People's' African Union was one of the first organizations to embrace the Seeding. Leading African scientists were pivotal during the Inflection Point discovery, and the Union was well prepared to lead humanity into space. While well-prepared, the issue was extremely divisive for the much of the population of the Union. Samatar Jama Barre himself, one of the major proponents of the Seeding venture still carries a small piece of soil from his birthplace.</Text>
+                <Text>Seeing its own people as its greatest asset, the African Union spends most of its budget promoting the health and growth of its citizens. From birth to death, everyone is provided free health care, and the government carefully scrutinises all new products that enter the market for any potential safety risk. The agricultural industry and its output is occasionally subsidised as needed in order to ensure that the whims of the capitalist free market are unable to put farmers out of business as well as maintaining the price of most foods at a stable level within reach of the purchasing power of all within the Union.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_AFRICAN_UNION_3" />
             <Set>
-                <Text>The African Union is held together by a leadership council representing key stakeholders in the Union. The leadership council is effectively an executive council, with the judicial, administrative, and legislative responsibilities remaining with individual governments. Because of the violent history of so many insurrections, the People’s African Union provides stability through superior military forces. The strength of the Union rests on the shoulders of people like Prime Minister Samatar Jama Barre, who commands respect from the armed forces, and has the wisdom of knowing how best to use them.</Text>
+                <Text>Given the African Union's strong concern for the health and safety of its citizens, it has put in place vigorous restrictions when it comes to research and products of alien or technological origin that are designed to enable humans to surpass the limits placed upon them by their biology. Many such endeavours have been undertaken by other sponsors, and Samatar Barre wishes no part of it for his people. At the same time, he maintains a warm approach to all, even those who hold fundamentally different outlooks and values. The African Union was necessarily built on tolerance and understanding in order to bring together so many different groups of people, and these same values are extended even to those outside the Union.</Text>
             </Set>
         </Update>
         <Update>
@@ -281,37 +281,37 @@
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_INTEGR_1" />
             <Set>
-                <Text>Although relatively few people have read Lena Ebner’s dissertation on the intersection of climate change policymaking and the nature of political violence, it stands as the seminal work in academic circles throughout the European continent. Instead of the standard five chapter format, Lena presented both sides of a hypothetical court case, citing classical, modern, postmodern, metamodern, and pseudo-metamodernist scholarship. The judge in the hypothetical trial is none-other than the father of 22nd century philosophy and political science, S. A. Carazo. </Text>
+                <Text>Although relatively few people had heard of Lena Ebner before she took over leadership of INTEGR, she comes from a long line of hard-working industrialists. Like those before her, Lena prefers to keep her head down and let the results speak for themselves. Productivity and efficiency are held as high values both by Lena herself as well as INTEGR as a whole. Little acknowledgement nor approval are given to frivolity, and when possible any excess is sought out and curtailed with ruthless efficacy in order to prevent it from spreading like an infection. This same additude has grown beyond just INTEGR's own holdings to reflect its view on many of the other sponsors and their perceived wanton exhorbitance.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_INTEGR_2" />
             <Set>
-                <Text>During her time as a political activist, Lena spent years living abroad and learning from different cultures. Because of her help in resolving the nearly 300 year old Mediterranean debt crisis, she was hailed as a folk-hero from Cyprus City to Olympus Island. To commemorate the victory, Lena used the payment she received in legal fees to work with ARC in restoring the ruined habitats of the unemployed and impoverished climate refugees flooding her homeland.</Text>
+                <Text>One of Lena Ebner's first tasks as leader of INTEGR was to divert the majority of public funds to infrastructure. Having seen firsthand the massive and literal roadblocks that crippled industrial sectors, Lena could no longer allow crumbling infrastructure to be neglected. Many were the detractors who said the money would be better spent elsewhere: healthcare, social services, even the military. But she would not be swayed. Now on a new planet, Lena is determined not to repeat the same mistakes and to never allow infrastructure to be neglected. She holds this view so strongly that she has stated on more than one occasion that she would be willing to sacrifice her own personal standard of living if it came to it in order to keep the assembly lines running and the delivery of goods running smoothly from end to end.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_INTEGR_3" />
             <Set>
-                <Text>INTEGR’s aggressive platform of environmental reform and financial accountability was crucial to the dissolution of the Atlantic-Mediterranean-Euro-American Trade Agreement. Hailed by critics as the absolute manifestation of bad trade policy, the trade agreement was an easy target for the Responsible Party. INTEGR’s vocal minority opposition stood unified in the face of extreme external pressure. Lena Ebner’s leadership proved vital in the victory, lobbying a European parliamentary group for nearly 20 hours straight.</Text>
+                <Text>As part of INTEGR's commitment to eliminating all inefficiencies across the board, growing research into alien and technological discoveries and the alarming trends toward interest in using these discoveries to augment the human experience has been a growing concern. According to Lena Ebner, humans are already equipped with everything they need to be productive and functional, and she sees such investments of time and money as foolish and dangerous to the bottom line. INTEGR has no tolerance for such waste and is prepared to defend their point of view with force if that's what it takes to protect its people from the wayward influences of those who would say otherwise.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_KAVITHAN_1" />
             <Set>
-                <Text>Kavitha Thakur’s esoteric spiritual sutras and aphorisms have been interpreted by various theologians to have extremely diverse meanings. Some posit that her writings are ultimately Nāgārjunic in nature, and that her references to the Lord of the Cosmos, the Third Mother, and the Universal Divinity obscure the primacy of what she varying refers to as 'the Demon of Nihility' or simply 'the Void.' While Kavitha’s father supposedly received prophetic visions, it is surmised that Kavitha’s attempts to commune with the same spirit were met with what could only be described as a sinister nothingness.</Text>
+                <Text>While not directly responsible for The Great Mistake, the proximity of its epicentre and the immediate and severe impact it had on the Indian subcontenent instilled in the Kavithan Protectorate a strong sense of responsibility in terms of spearheading humanitarian efforts and remediating the impact. Borne out of the ashes of the Mistake, the Protectorate's own values were inextricably intertwined with those of the post-Mistake era. The extreme crisis that ensued forced the population which had known centuries of conflict to lay down their arms if they hoped to survive. This cooperative attitude became part of the identity of its citizens and to this day Kavitha Thakur and her people know they cannot be separated from it without giving up an essential part of themselves.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_KAVITHAN_2" />
             <Set>
-                <Text>Kavitha’s complicated cosmology can be understood in many ways, however, there are two prevailing interpretations regarding her use of the ‘Third Mother.’ Both explanations agree that the ‘Third Mother’ references the planet that will be colonized during the Seeding. From there, however, theologians disagree on who, or what, constitutes the ‘First’ and ‘Second’ Mothers. One argument is that Old Earth, (a.k.a. ‘Gaia’ or ‘Terra’) is the First Mother, while the second is the literal mother of every individual. The other theory is that Kavitha refers to a supernatural progenitor as the First Mother, and that the Second Mother is humankind itself.</Text>
+                <Text>As one of the regions of the world whose histories date back millenia, the various cultures of the Kavithan Protectorate place high value on keeping this heritage alive. Rather than a melting pot of disparate identies, the Protectorate values its diversity and is very protective of the many distinct peoples that make up its citizenry. Each group receives funding from the government to keep its cultural heritage not simply alive, but in order to continue to pass it down to future generations and even spread awareness among other groups both within the Protectorate and without.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_KAVITHAN_3" />
             <Set>
-                <Text>Unlike the other Sponsors, the Kavithan Protectorate is primarily concerned with the spirituality of its colonists. This can easily be seen in the daily sermons Kavitha would deliver to the colonists chosen to populate the new planet, who she sometimes refers to as ‘Seedlings.’ During the preparation for the journey, she proselytized what she called ‘the Seeding’ of a new planet. The name for the mission gained popularity, and was adopted globally as an unofficial movement.</Text>
+                <Text>Unlike the other Sponsors, the Kavithan Protectorate is primarily concerned with the spirituality of its colonists. Now on a new planet, what is held as sacred has extended to embrace not only their own humanity, but also the alien life that now surrounds them in all its forms. Kavitha Thakur and her people extend an attitude of peace and kindness to all creatures. This extends to all of the citizens of the new planet, regardless of what sponsor they might happen to find themselves under. However, little patience is had for those who do not share this same high esteeem for human or alien life.</Text>
             </Set>
         </Update>
         <Update>
@@ -341,37 +341,37 @@
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_PAN_ASIA_1" />
             <Set>
-                <Text>Daoming’s work in speculative mathematics is widely regarded as the foremost research in the field. Her theorem led to the eventual proving of Goldbach's conjecture, and for this work she was hailed as the most important mathematician in the history of the Pan-Asian Cooperative. She was awarded a special grant to continue her work, and received numerous accolades and honorary titles. A statue of her likeness sits opposite of Chen Jingrun in a park in Old Xiamen University.</Text>
+                <Text>Daoming Sochua was raised not make a name for herself, but instead to work hard and let her work show for itself. This strong work ethic pervades the Pan-Asian Cooperative, and those that dare to be idle stand out as a reed in the middle of a swiftly rushing current and are quickly pushed back down to their appropriate function in society. The effect of this is that the PAC functions as a well-oiled machine, a machine capable of dominating anything in its path, growing only larger in the process. All other sponsors would be wise to stay out of the way of the PAC or find themselves unintentionally becoming part of it.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_PAN_ASIA_2" />
             <Set>
-                <Text>As an administrator, Daoming excelled at executive decision-making, based in no small part to her analytical approach to common problems. By dissecting the unique energy shortage crisis facing PAC, she was able to pinpoint the key component that was responsible for a majority of the shortfall in the Western Provinces. Rampant corruption had survived because of a lack of oversight, and by putting an end to specific criminal elements, the PAC not only made up the deficit, but increased overall production by nearly double. </Text>
+                <Text>While innovation may seem out of place in a society where there is little place for the individual, Daoming has long held that without innovation, the PAC will not be able to surpass the other sponsors. While many may look at the abundant resources and untouched land of the new planet, Daoming dares not allow this to lull her into a sense of complacency. She knows that there will come a time when there will no longer be enough resources to go around, and those that fail to establish themselves in a position of greater power now will be at some point forced into arrangements at their own expense. In order to preclude this, Daoming has launched into an aggressive campaign of technological research and acquisition aimed at enhanching all levels of PAC society so that they might exceed the limits placed upon them even by virtue of their own biology.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_PAN_ASIA_3" />
             <Set>
-                <Text>Daoming Sochua spent most of her life in cities, working in laboratories or institutions of higher learning, but she always found time to visit her father’s family in Cambodia. The time she spent on her father’s farm, away from the loud hustle and bustle of her technocrat peers, invigorated and renewed her efforts to save the people and culture that she loved. </Text>
+                <Text>Even as the PAC expands quickly across the new planet, outsiders do not have an open window into the society that is forcefully vying for the top of the food chain. The PAC, while made up of a vast population, acts as one. Any openness that was genuine or feigned after The Great Mistake in order to propel humanity off of a dying planet has been cast aside. There is now little pretence that the PAC exists solely for its own interests now. Other sponsors are wise to be cautious about entering into an agreement with PAC, given that it is widely believed PAC will only enter into such agreements when they believe they are able to extract all or most of the benefit, often at the expense of the other party. Such decisions should not be taken lightly.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_POLYSTRALIA_1" />
             <Set>
-                <Text>As a man of the people, Hutama would often disguise himself and spend time in public places to get to know his constituency. Besides loving his fellow Polystralians, Hutama wanted to understand their different viewpoints, especially on topics such as foreign relations and international trade. While this caused his Protective Service no end of problems, some speculate that it was one of these outings that caused him to reverse his position on the Seeding, and embrace extrasolar colonization.</Text>
+                <Text>As a formerly disjointed collection of Pacific islands, the Commonwealth of the Pacific, also known as Polystralia, could never have worked as a collective entity had it not been for centuries of established trade between the disparate islands that joined to become something greater. Trade both within and without has long been the lifeblood of Polystralia, something Hutama understands without fault. He spent vast amounts of his own resources in order to become savvy in all things trade, which paid off as it strenghtened Polystralia's economic and social bonds. Now on a new planet, Hutama sees a healthy inter-sponsor trade as being crucial for humanity's chances of surviving and one day thriving on this new alien world so far from home.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_POLYSTRALIA_2" />
             <Set>
-                <Text>During the eruption of Anak Krakatau, Hutama’s responsibilities shifted from government administration to disaster relief. As the eruption disrupted supply chains throughout Polystralia and displaced hundreds of thousands of Polystralians, the calamity was an unparalleled natural disaster, and rivalled the impact of the Great Mistake in terms of the effect on global food supplies. Hutama’s focus on the logistics of catastrophe mitigation combined with his understanding of the people resulted in the salvation of millions.</Text>
+                <Text>Even before The Great Mistake, global warming had impacted Polystralia more than many other countries as much of its territory is made up of islands. As a result, Polystralia has had a longstanding appreciation for the value of proper care for the planet. These same values have been carried across the stars to the new planet, where Polystralia has watched with concern as some of the other sponsors have flirted with nonchalant or even exploitative attitudes towards the land and its indigenous life. While Hutama is a patient man and not quick to enter conflict with other factions, even he has his limits, and needs must if it comes to protecting his people from a similar fate they faced at the hands of other careless nations on Earth.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_POLYSTRALIA_3" />
             <Set>
-                <Text>The Tahiti2 project was one of Hutama’s earliest political victories, and remains a point of pride for the intrepid Polystralian. The multi-trillion dollar reclamation and reconstruction project would have never found the appropriate funding if not for Hutama’s vigorous support. As a show of gratitude, the people of Tahiti built a special marae for Hutama’s spacecraft, and honored him with the title Aliʻi. </Text>
+                <Text>It has not gone past Hutama's notice that there has been a change in many of the other leaders, in most cases not for the better. Deception, exploitation, and outright hostility have marred recent relations between some of the various leaders on the new planet. While some have been quick to give the benefit of the doubt, Hutama has seen his fair share of both passive and aggressive leaders come and go, and he is careful not to jump to any conclusions nor pass any judgement. While he needs to maintain healthy relationships with the other sponsors to keep the trade economy strong, he will not allow himself to be pushed around by those who wish to assert their own dominance on the new planet at the expensive of the other sponsors, Polystralia in particular.</Text>
             </Set>
         </Update>
         <Update>
