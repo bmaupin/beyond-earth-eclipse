@@ -11,6 +11,9 @@ A mod for Sid Meier's Civilization: Beyond Earth to give it more flavour.
 - [x] Overwrite all leader tech/wonder audio
 - [x] Remove hybrid affinities from all techs; hybrid affinity should be a choice, not an accident
 - [x] Adjust all leader traits to have stronger personalities
+- [ ] Add new leader intro text for all leaders to reflect darker theme
+  - [x] Modify all leader intro text
+  - [ ] Modify `IntroductionQuote` for all leaders to use any available intro text? Instead of just for that leader
 - [ ] Find a way to bring text from victory dialogue to the front; it's interesting
 - [ ] Add new leader intro text for all leaders to reflect darker theme
 

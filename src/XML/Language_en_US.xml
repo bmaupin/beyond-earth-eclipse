@@ -25,7 +25,7 @@
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_ARC_TEXT_0" />
             <Set>
-                <Text>What many don’t realize about Suzanne Fielding’s take-no-prisoner approach to corporate growth is that it is the result of numerous failures and years of hardship. Over the years, she never gave up on the American dream, ascending the ranks of the American Reclamation Corporation even when it meant climbing on the backs of others in order to make her way to the top. Her relentless drive and strategic acumen have made ARC a dominant force on the new planet. As the years have passed, Suzanne's ambitions to keep ARC at the top and herself at the top of ARC have only grown stronger, to the point that little remains of the scrappy intern that she once was.</Text>
+                <Text>What many don't realize about Suzanne Fielding's take-no-prisoner approach to corporate growth is that it is the result of numerous failures and years of hardship. Over the years, she never gave up on the American dream, ascending the ranks of the American Reclamation Corporation even when it meant climbing on the backs of others in order to make her way to the top. Her relentless drive and strategic acumen have made ARC a dominant force on the new planet. As the years have passed, Suzanne's ambitions to keep ARC at the top and herself at the top of ARC have only grown stronger, to the point that little remains of the scrappy intern that she once was.</Text>
             </Set>
         </Update>
         <Update>
@@ -151,19 +151,19 @@
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_0" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Vadim Petrovich Kozlov &gt;&gt;[NEWLINE][NEWLINE][[CED.1074.45]][NEWLINE][NEWLINE]I have waited so long to return to space. Were it not for the encouragement of my wife, it might not have come to pass. When she and our children gaze upon new stars in a new sky, they will understand why I fought for this new frontier. This world is unknown, but our future is not. We will prosper.[NEWLINE][NEWLINE]</Text>
+                <Text>The Slavic Federation has a long heritage of looking to the stars. Their ancestors were among the first to put humans in orbit and since then they have placed high value and a not insignificant portion of their budget in space exploration. Exploitation of Earth's atmosphere as a resource was seen not as a frivolity but as an investment, and so on a new planet it is of utmost importance to General Kozlov as he leads the Slavic Federation that they maintain dominance not only on planetside but also in the skies and beyond. By the time the other leaders remember to look up, Kozlov plans for their gaze to be filled with the might of the Slavic Federation.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_1" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Vadim Petrovich Kozlov &gt;&gt;[NEWLINE][NEWLINE][[CED.1684.15]][NEWLINE][NEWLINE]Long have our people stood at the forefront of scientific advancement. We were the first to establish a base upon the moon. And the first to replace our satellites after the Great Mistake. I would see us continue this tradition on our new world and I will fight any who stand in our way.[NEWLINE][NEWLINE]</Text>
+                <Text>While General Kozlov first and foremost has prioritised dominance in the orbital domain, he has not neglected to stake his territorial claims down below. The Slavic Federation enjoys control of the largest expanse of land back on Earth and they have grown accustomed to having a strong advantage in the vast strategic and mineral resources this has brought. To settle for anything less on the new planet would be a humiliation they would not be able to tolerate, not to mention it would require an undesired reworking of their entire bureaucracy which has been optimised for a vast empire.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_2" />
             <Set>
-                <Text>&lt;&lt; Excerpts from Colony Archives &gt;&gt;[NEWLINE]&lt;&lt; Personal Log, Vadim Petrovich Kozlov &gt;&gt;[NEWLINE][NEWLINE][[CED.1569.73]][NEWLINE][NEWLINE]Space offers so much. To share its wonders with my family is a joy I cannot express. My children will have a future on a new world. They will make discoveries that on Earth would have been impossible. Together, we will face the future and finally be free to live the life I worked so hard to secure.[NEWLINE][NEWLINE]</Text>
+                <Text>With one foot in the east and one in the west back on Earth, the Slavic Federation has long been wary of outside influences of both. They see the Slavic culture as not needing enhancement and instead needing protection from corruption from all sides. General Kozlov tolerates no interference with his government nor his people, who have long been proudly self-sufficient. Attempts by other sponsors at collaboration are seen as veiled attempts at control and will at best be met with scorn. Repeated attempts will be met with military deterrant.</Text>
             </Set>
         </Update>
         <Delete Tag="TXT_KEY_CIV_INTRO_RUSSIA_TEXT_3" />
@@ -191,25 +191,25 @@
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_AL_FALAH_1" />
             <Set>
-                <Text>The Golden Shah is well-known as the interstellar spacecraft of Arshia Kishk, but it is also home to a number of notable members of Al Falah. Famous neurosurgeon Zayd Shakir revolutionized his practice through intrepid uses of zero-g assisted procedures. Research scientist Milad Alasady invented various pharmaceuticals and vaccines based on exospheric life-forms. The Golden Shah’s renowned medical education system was only possible through the discipline and dedication of the people of Al Falah.</Text>
+                <Text>Unlike the other sponsors whose people spent the duration of the interstellar voyage to the new planet in cryogenic sleep, the people of Al Falah had no such luxury. The first generation who left Earth knew they would spend the rest of their lives on the ship in order to grant a better life to future generations. This made them a very hardy people, willing to sacrifice their individual comfort for the greater good. While having fewer economic resources than the other sponsors, Al Falah has more than enough character to make up for such shortcomings. While the other sponsors had their eyes closed, Al Falah's eyes were open and ready for their new lives.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_AL_FALAH_2" />
             <Set>
-                <Text>Before becoming pregnant with her daughter Nur, Arshia Kishk frequently spacewalked between Seedships. As the spacecraft were separated by long distances, these trips were considered a pilgrimage, and a chance to meditate upon the vastness of the universe. Only the bravest colonists attempted the dangerous trek, while most preferred small shuttles. Arshia’s influence and popularity were strengthened every time she arrived from the depths of space; a fearless leader sent to guide Al Falah through the stars. </Text>
+                <Text>Before becoming pregnant with her daughter Nur, Arshia Kishk frequently spacewalked between Seedships. As the spacecraft were separated by long distances, these trips were considered a pilgrimage, and a chance to meditate upon the vastness of the universe. Only the bravest colonists attempted the dangerous trek, while most preferred small shuttles. Arshia's influence and popularity were strengthened every time she arrived from the depths of space; a fearless leader sent to guide Al Falah through the stars. </Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_AL_FALAH_3" />
             <Set>
-                <Text>Al Falah is known as a phoenix-like collective of resilient and determined people; however, it is more than just a tenacious movement. Aboard the waking Seedships, the people of Al Falah lived a relatively comfortable life in a simulated-gravity environment aboard the “waking” Seedships. Special attention had been paid to creating and preserving as much of an Earth-like ambiance as possible. Elaborate, artificial terrariums and nurseries housed valuable pieces of Al Falah’s heritage, and ensured that the people would never forget their homeland.</Text>
+                <Text>While the journey to the new planet wasn't spent in total discomfort, Al Falah had to resort to population control, food rationing, and other such restrictive measures due to limited space and resources aboard their ship. Now without these constraints, Arshia Kishk and her people are eager to live freely and spread out across their new home. A booming population has meant that Arshia has had to invest significantly into improving the land in order to support the rapidly increasing numbers of citizens of Al Falah.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_ARC_1" />
             <Set>
-                <Text>What many don’t realize about Suzanne Fielding’s take-no-prisoner approach to corporate growth is that it is the result of numerous failures and years of hardship. Over the years, she never gave up on the American dream, ascending the ranks of the American Reclamation Corporation even when it meant climbing on the backs of others in order to make her way to the top. Her relentless drive and strategic acumen have made ARC a dominant force on the new planet. As the years have passed, Suzanne's ambitions to keep ARC at the top and herself at the top of ARC have only grown stronger, to the point that little remains of the scrappy intern that she once was.</Text>
+                <Text>What many don't realize about Suzanne Fielding's take-no-prisoner approach to corporate growth is that it is the result of numerous failures and years of hardship. Over the years, she never gave up on the American dream, ascending the ranks of the American Reclamation Corporation even when it meant climbing on the backs of others in order to make her way to the top. Her relentless drive and strategic acumen have made ARC a dominant force on the new planet. As the years have passed, Suzanne's ambitions to keep ARC at the top and herself at the top of ARC have only grown stronger, to the point that little remains of the scrappy intern that she once was.</Text>
             </Set>
         </Update>
         <Update>
@@ -245,7 +245,7 @@
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_CHUNGSU_1" />
             <Set>
-                <Text>There are multiple levels to Sub-Seoul’s Mireuk Bosal Dome. The lowest, publicly acknowledged level, Abyssopelagic-0, is home to deep-sea, scientific research, energy production and resource harvesting. What lies below is simply unknown. What is known is that many who enter the Chungsu academy, willingly or otherwise, are never heard from again. Have their memories been erased to take on new identities in Chungsu's secretive intelligence forces? Or have they been forced to cut off all contact with friends and loved ones in order to avoid any attachment that may compromise the mission? What is known is that the names and history of all who enter cease to exist except in the memories of those who knew them but who dare not go looking for them. The same can be said for Han Jae Moon himself, about whom there seems to be no evidence of his existence before he formed Chunsu.</Text>
+                <Text>There are multiple levels to Sub-Seoul's Mireuk Bosal Dome. The lowest, publicly acknowledged level, Abyssopelagic-0, is home to deep-sea, scientific research, energy production and resource harvesting. What lies below is simply unknown. What is known is that many who enter the Chungsu academy, willingly or otherwise, are never heard from again. Have their memories been erased to take on new identities in Chungsu's secretive intelligence forces? Or have they been forced to cut off all contact with friends and loved ones in order to avoid any attachment that may compromise the mission? What is known is that the names and history of all who enter cease to exist except in the memories of those who knew them but who dare not go looking for them. The same can be said for Han Jae Moon himself, about whom there seems to be no evidence of his existence before he formed Chunsu.</Text>
             </Set>
         </Update>
         <Update>
@@ -317,27 +317,23 @@
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_NORTH_SEA_ALLIANCE_1" />
             <Set>
-                <Text>Duncan Hughes is well regarded as one of the top sport fisherman in the world. Duncan’s largest catch, nicknamed the Aberdonian Monster, was a 95 kg mutant Atlantic Cod that, while too contaminated to eat, is still the largest cod caught on record. According to eyewitnesses, the fish was so large, Duncan was barely able to hold it for a photograph. He spent more than an hour reeling in the monster, and more than once feared he would be pulled overboard.</Text>
+                <Text>The inherent isolation that comes with living in a city floating on the water means that keeping a healthy population is of much greater importance. The citizens of the North Sea Alliance have learned to adopt a lifestyle that is centred on well-being, which is aided by a diet centred on water-based flora and fauna. When traveling to visit other sponsors, Duncan Hughes and his compatriots are often appalled to see how those living on land can be so careless in these matters that are of vital importance to the NSA.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_NORTH_SEA_ALLIANCE_2" />
             <Set>
-                <Text>Until the Seeding, Duncan Hughes’ proudest achievement was the development of the water-based, floating cities known as the ARKs. His experience as a longshoreman and naval engineer was instrumental in designing the concept, and it was his tireless commitment to the project that saw the first successful prototype go into production and eventual testing in the North Sea. The ARK program was an instant success, and revolutionized global trade.</Text>
+                <Text>After The Great Mistake, the nations in the North Sea found themselves with much less land to live on. This shared crisis caused them to come together to form the North Sea Alliance, and they naturally looked towards the vast seas that surrounded them for a solution. It was Duncan Hughes who developed the water-based, floating cities known as the ARKs. His experience as a longshoreman and naval engineer was instrumental in designing the concept, and it was his tireless commitment to the project that saw the first successful prototype go into production and eventual testing in the North Sea.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_NORTH_SEA_ALLIANCE_3" />
             <Set>
-                <Text>Duncan Hughes didn’t stop with the success of the ARK program. Although coming from a wealthy family, he never lost touch with the economically burdened majority in Scotland. He was known as a dedicated philanthropist and donated large sums to education and urban development. He was particularly supportive of children’s hospitals and orphanages that had been overextended as a result of climate refugees. The Hughes Institute in Aberdeen, a boarding school and public clinic, is just one of his many legacies.</Text>
+                <Text>Being willing to live on a city floating on seas that are often anything but peaceful requires a strong reliance on and trust in technology. This has become an ingrained part of daily life in the North Sea Alliance, and Duncan Hughes has led his people by example. Constantly praising the benefits of technology, he often marvels out loud about the other sponsors who have a longstanding fear of adopting advancements that have grown to be an essential pillar of the thriving NSA society.
+                </Text>
             </Set>
         </Update>
-        <Update>
-            <Where Tag="TXT_KEY_INTRO_MESSAGE_NORTH_SEA_ALLIANCE_4" />
-            <Set>
-                <Text>What brought Duncan Hughes international acclaim, and cemented his place in history, was his generosity. Some of the first beneficiaries of the ARKs were none other than the long-displaced climate refugees of the Maldive Islands. Hughes oversaw the entire project from its inception, and his guarantee that the ARKs would come at no cost to the people of the former islands was a landmark moment. Hughes personally went along for the delivery of the first ARK delivered from its port in Oslo to the Laccadive Sea. </Text>
-            </Set>
-        </Update>
+        <Delete Tag="TXT_KEY_INTRO_MESSAGE_NORTH_SEA_ALLIANCE_4" />
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_PAN_ASIA_1" />
             <Set>
@@ -377,19 +373,19 @@
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_RUSSIA_1" />
             <Set>
-                <Text>General Kozlov was the first cosmonaut to explore KBO-82, the artificial satellite in the Kuiper Belt that was uncovered during the Provenance Discovery. The results of the mission sent shockwaves throughout the world. While the Provenance Discovery had confirmed evidence of life, it was Kozlov’s team that found intact artifacts from presumably intelligent, extrasolar life. While much still remained a mystery, it was considered the most significant expedition of the century, and would have been impossible without Kozlov’s influence.</Text>
+                <Text>The Slavic Federation has a long heritage of looking to the stars. Their ancestors were among the first to put humans in orbit and since then they have placed high value and a not insignificant portion of their budget in space exploration. Exploitation of Earth's atmosphere as a resource was seen not as a frivolity but as an investment, and so on a new planet it is of utmost importance to General Kozlov as he leads the Slavic Federation that they maintain dominance not only on planetside but also in the skies and beyond. By the time the other leaders remember to look up, Kozlov plans for their gaze to be filled with the might of the Slavic Federation.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_RUSSIA_2" />
             <Set>
-                <Text>Although precipitated by PAC’s first successful expedition, General Kozlov was the first citizen of the Slavic Federation to step foot on Mars. He likened the experience to “like the moon, but more red.” His yearlong traversal of Olympic Mons remains a record setting feat of endurance and effort, and it was his surveying of the Koval'skiy crater that allowed for the first Slavic Federation mining colony on Mars. It is with some pride that General Kozlov carries a Martian rock as a memento.</Text>
+                <Text>While General Kozlov first and foremost has prioritised dominance in the orbital domain, he has not neglected to stake his territorial claims down below. The Slavic Federation enjoys control of the largest expanse of land back on Earth and they have grown accustomed to having a strong advantage in the vast strategic and mineral resources this has brought. To settle for anything less on the new planet would be a humiliation they would not be able to tolerate, not to mention it would require an undesired reworking of their entire bureaucracy which has been optimised for a vast empire.</Text>
             </Set>
         </Update>
         <Update>
             <Where Tag="TXT_KEY_INTRO_MESSAGE_RUSSIA_3" />
             <Set>
-                <Text>It is remarkable that, despite a busy career in space and construction sites, General Kozlov found the time to compose the “Axioms from the Minutes of the Central Directorate.” The impressive work stands as the de facto authority for colonial direction, and serves as a nearly 10,000 word mission statement for the Slavic Federation. The text is used in all levels of education, and is the most frequently referenced literature in academic and political discourse.</Text>
+                <Text>With one foot in the east and one in the west back on Earth, the Slavic Federation has long been wary of outside influences of both. They see the Slavic culture as not needing enhancement and instead needing protection from corruption from all sides. General Kozlov tolerates no interference with his government nor his people, who have long been proudly self-sufficient. Attempts by other sponsors at collaboration are seen as veiled attempts at control and will at best be met with scorn. Repeated attempts will be met with military deterrant.</Text>
             </Set>
         </Update>
     </Language_en_US>
