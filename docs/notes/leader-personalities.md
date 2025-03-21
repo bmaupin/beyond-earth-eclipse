@@ -1,5 +1,11 @@
 # Leader personalities
 
+#### Default personalities
+
+[CBE leader personalities](https://docs.google.com/spreadsheets/d/1rKgPRnXtAhYZ5JGsSHxbaAGWie52tFAyWI5JbsF7A8U/edit?gid=473300739#gid=473300739)
+
+Compare to Civ 5: [CIV V Interactive AI Bias Value Chart](http://civdata.com/)
+
 #### Ideas for more unique personalities
 
 - Barre (AFRICAN_UNION): peaceful (strong), growth (strong), purity, friendly

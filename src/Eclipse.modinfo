@@ -131,9 +131,7 @@
     <File md5="0902cd20fe0bd720255c0f86d163a567" import="1">Assets/Sounds/Speech/English/Wonders/Xenodrome.mp3</File>
     <File md5="3281cf987e14a9b6a535c12e3223d314" import="1">Assets/Sounds/Speech/English/Wonders/Xenomalleum.mp3</File>
     <File md5="a677cae7903b65f35e8b1d563c50d522" import="1">Assets/Sounds/Speech/English/Wonders/Xenonova.mp3</File>
-    <File md5="12ed3acb3586d14789bd32dc72e5a3b2" import="0">SQL/Language_en_US.sql</File>
-    <File md5="0aed5c7d4915360af0476edfd2abdf8c" import="0">XML/Civilizations.xml</File>
-    <!-- <File md5="e1d68364fadb846c54da62cee10c779c" import="0">XML/Language_en_US.xml</File> -->
+    <File md5="3c8817d41a3c2ef77c8af76ff9d595af" import="0">SQL/Language_en_US.sql</File>
     <File md5="2d7e83a68f0fe6fa2d7f5014a923b651" import="0">XML/Leader_CondemnationBiases.xml</File>
     <File md5="6dc419d189a85cd8a86d47753c46bdf0" import="0">XML/Leader_Flavors.xml</File>
     <File md5="23a5d5299f9e7d49f9f31c7a1e37f4e7" import="0">XML/Leader_MajorCivApproachBiases.xml</File>
@@ -143,8 +141,6 @@
   <Actions>
     <OnModActivated>
       <UpdateDatabase>SQL/Language_en_US.sql</UpdateDatabase>
-      <UpdateDatabase>XML/Civilizations.xml</UpdateDatabase>
-      <!-- <UpdateDatabase>XML/Language_en_US.xml</UpdateDatabase> -->
       <UpdateDatabase>XML/Leader_CondemnationBiases.xml</UpdateDatabase>
       <UpdateDatabase>XML/Leader_Flavors.xml</UpdateDatabase>
       <UpdateDatabase>XML/Leader_MajorCivApproachBiases.xml</UpdateDatabase>
