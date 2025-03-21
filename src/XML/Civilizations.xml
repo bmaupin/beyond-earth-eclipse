@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Civilizations>
+        <Update>
+            <Where Type="CIVILIZATION_ARC" />
+            <Set>
+                <IntroductionQuote>TXT_KEY_INTRO_MESSAGE_CUSTOM%</IntroductionQuote>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="CIVILIZATION_AFRICAN_UNION" />
+            <Set>
+                <IntroductionQuote>TXT_KEY_CUSTOM_INTRO_MESSAGE%</IntroductionQuote>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="CIVILIZATION_BRASILIA" />
+            <Set>
+                <IntroductionQuote>TXT_KEY_CUSTOM_INTRO_MESSAGE_1</IntroductionQuote>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="CIVILIZATION_PAN_ASIA" />
+            <Set>
+                <IntroductionQuote>TXT_KEY_INTRO_MESSAGE_CUSTOM%</IntroductionQuote>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="CIVILIZATION_FRANCO_IBERIA" />
+            <Set>
+                <IntroductionQuote>TXT_KEY_INTRO_MESSAGE_CUSTOM%</IntroductionQuote>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="CIVILIZATION_KAVITHAN" />
+            <Set>
+                <IntroductionQuote>TXT_KEY_INTRO_MESSAGE_CUSTOM%</IntroductionQuote>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="CIVILIZATION_POLYSTRALIA" />
+            <Set>
+                <IntroductionQuote>TXT_KEY_INTRO_MESSAGE_CUSTOM%</IntroductionQuote>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="CIVILIZATION_RUSSIA" />
+            <Set>
+                <IntroductionQuote>TXT_KEY_INTRO_MESSAGE_CUSTOM%</IntroductionQuote>
+            </Set>
+        </Update>
+        <!-- XP Civilizations -->
+        <Update>
+            <Where Type="CIVILIZATION_AL_FALAH" />
+            <Set>
+                <IntroductionQuote>TXT_KEY_INTRO_MESSAGE_CUSTOM%</IntroductionQuote>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="CIVILIZATION_NORTH_SEA_ALLIANCE" />
+            <Set>
+                <IntroductionQuote>TXT_KEY_INTRO_MESSAGE_CUSTOM%</IntroductionQuote>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="CIVILIZATION_INTEGR" />
+            <Set>
+                <IntroductionQuote>TXT_KEY_INTRO_MESSAGE_CUSTOM%</IntroductionQuote>
+            </Set>
+        </Update>
+        <Update>
+            <Where Type="CIVILIZATION_CHUNGSU" />
+            <Set>
+                <IntroductionQuote>TXT_KEY_INTRO_MESSAGE_CUSTOM%</IntroductionQuote>
+            </Set>
+        </Update>
+    </Civilizations>
+</GameData>
