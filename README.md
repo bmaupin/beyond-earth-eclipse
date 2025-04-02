@@ -69,4 +69,8 @@ TODO
 
 TODO
 
+## Credits
+
+- Some of the code from the victory popup comes from the [Codex](https://steamcommunity.com/sharedfiles/filedetails/?id=780912351) mod
+
 -->

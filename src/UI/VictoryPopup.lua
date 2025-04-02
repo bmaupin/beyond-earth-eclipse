@@ -86,7 +86,13 @@ function ShowHideHandler( bIsHide, bInitState )
 end
 ContextPtr:SetShowHideHandler( ShowHideHandler );
 
-----------------------------------------------------------------
--- 'Active' (local human) player has changed
-----------------------------------------------------------------
-Events.GameplaySetActivePlayer.Add(OnCloseButtonClicked);
+-- NOTE: The popups in the game source don't have this but it seems necessary for mods,
+--       otherwise the popup will show right away when a game is loaded or started and
+--       can't be dismissed.
+function OnLoadScreenClose()
+	UIManager:QueuePopup(ContextPtr, PopupPriority.TextPopup)
+	UIManager:DequeuePopup(ContextPtr)
+	-- 'Active' (local human) player has changed
+	Events.GameplaySetActivePlayer.Add(OnCloseButtonClicked)
+end
+Events.LoadScreenClose.Add(OnLoadScreenClose)
