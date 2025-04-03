@@ -1,8 +1,7 @@
 function ShowPopup(victoryType, textKey)
-    -- See textpopup.lua in the game's source code to see how this is used
     Events.SerialEventGameMessagePopup( {
         Type = ButtonPopupTypes.BUTTONPOPUP_VICTORY_PROGRESS,
-        Data1 = victoryType,
+        Data1 = GameInfo.Quests[victoryType].ID,
         Text = textKey
     } );
 
