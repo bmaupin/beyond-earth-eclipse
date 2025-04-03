@@ -10,6 +10,7 @@ local m_PopupInfo = nil;
 -- Since this is an enum, it just has to be a unique number; I just generated a random 6-digit number 🤷‍♂️
 ButtonPopupTypes.BUTTONPOPUP_VICTORY_PROGRESS = 823485;
 
+-- DELETEME
 local function printTable(t, indent)
     indent = indent or ""
     for k, v in pairs(t) do
@@ -37,21 +38,17 @@ function OnPopup( popupInfo )
 		return;
 	end
 
+	-- TODO: do we need this?
+	Controls.AlphaAnim:SetToBeginning();
+	Controls.AlphaAnim:Play();
+
+	Controls.TitleText:SetText('VICTORY PROGRESS');
+
 	local questIndex = popupInfo.Data1;
+	local questInfo = GetQuestByID(questIndex);
 
-	-- Controls.AlphaAnim:SetToBeginning();
-	-- Controls.AlphaAnim:Play();
-
-	-- print("(Eclipse) victoryType=" .. victoryType);
-
-	-- Find the corresponding quest entry
-	-- local questInfo = GameInfo.Quests[victoryType];
-
-	local questInfo = GetQuestByID(questIndex)
-
+	-- DELETEME
 	if questInfo then
-		print("(Eclipse) questInfo.Type=" .. tostring(questInfo.Type))
-
 		print("(Eclipse) questInfo = {")
 		printTable(questInfo, "  ")
 		print("}")
@@ -59,19 +56,28 @@ function OnPopup( popupInfo )
 		print("(Eclipse) No quest found with ID=" .. questIndex)
 	end
 
-	-- TODO: title text isn't working; it's saying "Gifts from Home"
-	-- Set the title based on the victory type
 	if questInfo then
-		print("(Eclipse) questInfo.Description=" .. questInfo.Description);
-		Controls.TitleText:SetText(Locale.ConvertTextKey(questInfo.Description));  -- Localized title
+		Controls.VictoryType:SetText(Locale.ConvertTextKey(questInfo.Description));
 	end
 
 	-- TODO: image isn't working
 	-- Set the image based on the victory type
 	if questInfo and questInfo.IconAtlas and questInfo.PortraitIndex then
-		print("(Eclipse) questInfo.IconAtlas=" .. questInfo.IconAtlas);
-		print("(Eclipse) questInfo.PortraitIndex=" .. questInfo.PortraitIndex);
-		IconHookup(questInfo.PortraitIndex, 128, questInfo.IconAtlas, Controls.Image);
+
+		-- doesn't work
+		-- IconHookup(questInfo.PortraitIndex, 128, questInfo.IconAtlas, Controls.Image);
+
+		-- doesn't work
+		-- textureOffset, textureSheet = IconLookup( portraitOffset, 45, portraitAtlas );
+		-- local textureOffset;
+		-- local textureSheet;
+		-- textureOffset, textureSheet = IconHookup(questInfo.PortraitIndex, 91, questInfo.IconAtlas);
+		-- if textureSheet ~= nil and textureOffset ~= nil then
+		-- 	Controls.Image:SetTexture(textureSheet);
+		-- 	Controls.Image:SetTextureOffset(textureOffset);
+
+		IconHookup(questInfo.PortraitIndex, 91, questInfo.IconAtlas, Controls.Image);
+		-- end
 	end
 
 	-- Set the description text
@@ -92,6 +98,7 @@ Events.SerialEventGameMessagePopup.Add( OnPopup );
 -- Input processing
 ----------------------------------------------------------------
 function OnCloseButtonClicked ()
+	Controls.Image:UnloadTexture();
     UIManager:DequeuePopup( ContextPtr );
 end
 Controls.CloseButton:RegisterCallback( Mouse.eLClick, OnCloseButtonClicked );
