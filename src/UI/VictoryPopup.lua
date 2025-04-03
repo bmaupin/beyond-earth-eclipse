@@ -93,7 +93,7 @@ function OnPopup( popupInfo )
 		-- textureOffset, textureSheet = IconHookup(questInfo.PortraitIndex, 91, questInfo.IconAtlas);
 		if (questInfo.Type == "QUEST_VICTORY_TRANSCENDENCE") then
 			Controls.Banner:SetTexture("Victory_Transcend.dds");
-			Controls.Banner:SetTextureOffsetVal(184, 203);
+			-- Controls.Banner:SetTextureOffsetVal(184, 203);
 			-- image is 953x531
 			-- banner size is 585x125
 			-- 184,203 -> 769,328
@@ -118,7 +118,7 @@ Events.SerialEventGameMessagePopup.Add( OnPopup );
 -- Input processing
 ----------------------------------------------------------------
 function OnCloseButtonClicked ()
-	Controls.Image:UnloadTexture();
+	Controls.Banner:UnloadTexture();
     UIManager:DequeuePopup( ContextPtr );
 end
 Controls.CloseButton:RegisterCallback( Mouse.eLClick, OnCloseButtonClicked );
