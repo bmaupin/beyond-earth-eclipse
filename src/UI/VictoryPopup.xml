@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Anton Strenger (Firaxis Games) -->
 <Context Layer="Modal">
 	<Box Style="BGBlock" />
 
-	<AlphaAnim ID="AlphaAnim" Size="Full,Full" Cycle="Once" Pause="0" Speed="2" AlphaStart="0" Function="OutQuint" AlphaEnd="1">
-		<Grid ID="PopupFrame" Anchor="C,C" Offset="0,0" Size="700,370" Style="GridWindowWithHeader">
-			<Label ID="TitleText" Style="MenuTitleCaption" Offset="0,17" Anchor="C,U" String="{TITLE LABEL:upper}" />
+	<AlphaAnim Size="Full,Full" Cycle="Once" Pause="0" Speed="2" AlphaStart="0" Function="OutQuint" AlphaEnd="1" ID="AlphaAnim">
+		<Grid ID="Content" Size="600,300" Anchor="C,C" Offset="0,0" Style="GridWindowWithHeader">
+			<!-- Image -->
+			<Image ID="Banner" Size="585,125" Anchor="C,T" Offset="0,48" />
 
-			<Stack ID="ContentStack" Anchor="C,T" Offset="0,70" Size="0,0" StackGrowth="Bottom" Padding="0">
-				<Label Anchor="C,T" Offset="0,0" Style="GrayGlow22" String="Victory type" ID="VictoryType" />
-				<Box Anchor="C,T" Offset="0,0" Size="500,18" Color="White.0" />
-				<Image Anchor="C,T" Offset="0,0" Color="255,255,255,150" Texture="bar500x2.dds" Size="500.1" />
-				<Box Anchor="C,T" Offset="0,0" Size="500,14" Color="White.0" />
-				<Stack ID="StoryStack" Anchor="L,T" Offset="0,14" Size="520,360" StackGrowth="Bottom">
-					<Container ID="BodyContainer" Size="650,128">
-						<Image ID="Image" Offset="22,0" Size="128,128" Texture="VictoryButton.dds" />
-						<Label ID="BodyText" Anchor="L,T" Offset="180,0" String="Body" Style="WhiteShadow" WrapWidth="470" WrapGrowth="Bottom" />
-					</Container>
-				</Stack>
-			</Stack>
-
-			<GridButton ID="CloseButton" Anchor="C,B" Offset="0,30" Size="320,36" Style="BaseButton" String="TXT_KEY_OK_BUTTON" />
+			<Label Offset="0,17" Anchor="C,U" Style="MenuTitleCaption" ID="TitleLabel" String="Title" />
+			<Label ID="DetailsLabel" Anchor="C,T" Offset="0,190" WrapWidth="560" Style="GrayGlow20" String="DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD" />
+			<GridButton ID="CloseButton" Size="220,35" Anchor="C,B" Style="BaseButton" Offset="0,20" String="TXT_KEY_OK_BUTTON" />
 		</Grid>
-
 	</AlphaAnim>
 </Context>

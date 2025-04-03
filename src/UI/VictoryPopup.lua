@@ -42,8 +42,7 @@ function OnPopup( popupInfo )
 	Controls.AlphaAnim:SetToBeginning();
 	Controls.AlphaAnim:Play();
 
-	Controls.TitleText:SetText('VICTORY PROGRESS');
-
+	local victoryProgressTitle = 'VICTORY PROGRESS';
 	local questIndex = popupInfo.Data1;
 	local questInfo = GetQuestByID(questIndex);
 
@@ -57,7 +56,13 @@ function OnPopup( popupInfo )
 	end
 
 	if questInfo then
-		Controls.VictoryType:SetText(Locale.ConvertTextKey(questInfo.Description));
+		print("(Eclipse) victoryProgressTitle = " .. victoryProgressTitle)
+		print("(Eclipse) questInfo.Description = " .. questInfo.Description)
+		print("(Eclipse) Locale.ConvertTextKey(questInfo.Description) = " .. Locale.ConvertTextKey(questInfo.Description))
+		print("(Eclipse) Locale.ToUpper(Locale.ConvertTextKey(questInfo.Description)) = " .. Locale.ToUpper(Locale.ConvertTextKey(questInfo.Description)))
+		Controls.TitleLabel:SetText(victoryProgressTitle .. ': ' .. Locale.ToUpper(Locale.ConvertTextKey(questInfo.Description)));
+	else
+		Controls.TitleLabel:SetText(victoryProgressTitle);
 	end
 
 	-- TODO: image isn't working
@@ -76,12 +81,27 @@ function OnPopup( popupInfo )
 		-- 	Controls.Image:SetTexture(textureSheet);
 		-- 	Controls.Image:SetTextureOffset(textureOffset);
 
-		IconHookup(questInfo.PortraitIndex, 91, questInfo.IconAtlas, Controls.Image);
+		-- worked but showed part of next image due to size
+		-- IconHookup(questInfo.PortraitIndex, 91, questInfo.IconAtlas, Controls.Image);
+
+		-- Does not work!!
+		-- IconHookup(questInfo.PortraitIndex, 128, questInfo.IconAtlas, Controls.Image);
 		-- end
+
+		-- <Grid Anchor="C,B" Size="parent,96" Offset="0,0" Padding="0,0" Texture="VictoryButton.dds" SliceStart="0,0" SliceCorner="48,2" SliceTextureSize="96,96"/>
+
+		-- textureOffset, textureSheet = IconHookup(questInfo.PortraitIndex, 91, questInfo.IconAtlas);
+		if (questInfo.Type == "QUEST_VICTORY_TRANSCENDENCE") then
+			Controls.Banner:SetTexture("Victory_Transcend.dds");
+			Controls.Banner:SetTextureOffsetVal(184, 203);
+			-- image is 953x531
+			-- banner size is 585x125
+			-- 184,203 -> 769,328
+		end
 	end
 
 	-- Set the description text
-	Controls.BodyText:LocalizeAndSetText(popupInfo.Text);
+	Controls.DetailsLabel:LocalizeAndSetText(popupInfo.Text);
 
 	-- TODO: uncomment or delete
 	-- local textSizeY = Controls.DetailsLabel:GetSizeY();
