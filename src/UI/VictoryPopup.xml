@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Anton Strenger (Firaxis Games) -->
 <Context Layer="Modal">
 	<Box Style="BGBlock" />
 
 	<AlphaAnim Size="Full,Full" Cycle="Once" Pause="0" Speed="2" AlphaStart="0" Function="OutQuint" AlphaEnd="1" ID="AlphaAnim">
-		<!-- <Grid ID="Content" Size="600,300" Anchor="C,C" Offset="0,0" Style="GridWindowWithHeader"> -->
-		<Grid ID="Content" Size="968,706" Anchor="C,C" Offset="0,0" Style="GridWindowWithHeader">
-			<!-- Image -->
-			<!-- <Image ID="Banner" Size="585,125" Anchor="C,T" Offset="0,48" /> -->
-			<Image ID="Banner" Size="953x531" Anchor="C,T" Offset="0,48" />
-
+		<Grid ID="OuterGrid" Anchor="C,C" Offset="0,0" Size="968,370" Style="GridWindowWithHeader">
 			<Label Offset="0,17" Anchor="C,U" Style="MenuTitleCaption" ID="TitleLabel" String="Title" />
-			<Label ID="DetailsLabel" Anchor="C,T" Offset="0,190" WrapWidth="913" Style="GrayGlow20" String="DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD" />
-			<GridButton ID="CloseButton" Size="220,35" Anchor="C,B" Style="BaseButton" Offset="0,20" String="TXT_KEY_OK_BUTTON" />
+			<Stack ID="ContentStack" Anchor="C,T" Offset="0,48" Size="918,360" StackGrowth="Bottom" Padding="0">
+				<Image ID="Banner" Anchor="C,T" Offset="0,0" Size="953,203" />
+				<Label ID="BodyText" Anchor="C,T" Offset="0,17" String="Body" Style="GrayGlow20" WrapWidth="913" WrapGrowth="Bottom" />
+			</Stack>
+			<GridButton ID="CloseButton" Anchor="C,B" Offset="0,20" Size="220,35" String="TXT_KEY_OK_BUTTON" Style="BaseButton" />
 		</Grid>
 	</AlphaAnim>
 </Context>
