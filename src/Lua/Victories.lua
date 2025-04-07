@@ -188,6 +188,9 @@ function ShowVictoryPopup(playerID)
         local questInfo = GameInfo.Quests[questId];
         local questType = questInfo.Type;
 
+        -- NOTE: We don't need logic to determine whether a victory type has been disabled
+        --       in the game options because disabled victories won't show up in the
+        --       player's quests
         if (quest:IsInProgress() and
             (questType == "QUEST_VICTORY_CONTACT" or
             questType == "QUEST_VICTORY_EMANCIPATION" or
@@ -203,8 +206,37 @@ function ShowVictoryPopup(playerID)
 
                 if ((not objective:IsInProgress()) and
                     objective:DidSucceed() and
-                    not completedVictoryObjectives[objectiveEpilogue]
+                    not completedVictoryObjectives[objectiveEpilogue] and
+                    -- Unfortunately the epilogue text for the transcendence victory tech
+                    -- objectives are repetitive, so only show whichever is finished
+                    -- first. Because Lua has no continue statement, it's simpler to put
+                    -- all the logic together here.
+                    (
+                        (
+                            objectiveEpilogue == "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE" and
+                            (
+                                not completedVictoryObjectives["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE"] and
+                                not completedVictoryObjectives["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE"]
+                            )
+                        ) or
+                        (
+                            objectiveEpilogue == "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE" and
+                            (
+                                not completedVictoryObjectives["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE"] and
+                                not completedVictoryObjectives["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE"]
+                            )
+                        ) or
+                        (
+                            objectiveEpilogue == "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE" and
+                            (
+                                not completedVictoryObjectives["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE"] and
+                                not completedVictoryObjectives["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE"]
+                            )
+                        )
+                    )
                 ) then
+                    -- TODO: add initial prologue text?
+                    -- TODO: add logic for overlapping emancipation/promised land first objective
                     -- TODO: do we need to exclude the quest epilogue objectives?, e.g. TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_WAIT_EPILOGUE
                     -- TODO: do we need to include the quest wait summary? e.g. TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_WAIT_EPILOGUE
                     print("(Beyond Earth Eclipse) showing popup for victory " .. questType .. " objective " .. objective:GetSummary())
