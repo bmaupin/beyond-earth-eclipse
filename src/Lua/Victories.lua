@@ -130,46 +130,48 @@ function PopulateCompletedVictoryObjectives()
     for playerID = 0, GameDefines.MAX_CIV_PLAYERS - 1 do
         local player = Players[playerID];
 
-        if not player:IsHuman() or not player:IsAlive() then
-            return;
-        end
+        if player:IsHuman() and player:IsAlive() then
+            -- DELETEME
+            print("(Beyond Earth Eclipse) === populating completed victory objective IDs " .. playerID .. " ===");
 
-        -- DELETEME
-        print("(Beyond Earth Eclipse) === populating completed victory objective IDs " .. playerID .. " ===")
+            local quests = player:GetQuests()
+            for _, quest in ipairs(quests) do
+                local questId = quest:GetType()
+                local questInfo = GameInfo.Quests[questId];
+                local questType = questInfo.Type;
 
-        local quests = player:GetQuests()
-        for _, quest in ipairs(quests) do
-            local questId = quest:GetType()
-            local questInfo = GameInfo.Quests[questId];
-            local questType = questInfo.Type;
+                -- if (quest:IsInProgress() and
+                if (
+                    (questType == "QUEST_VICTORY_CONTACT" or
+                    questType == "QUEST_VICTORY_EMANCIPATION" or
+                    questType == "QUEST_VICTORY_PROMISED_LAND" or
+                    questType == "QUEST_VICTORY_TRANSCENDENCE")
+                ) then
+                    -- DELETEME
+                    print("(Beyond Earth Eclipse) questType = " .. questType)
 
-            if (quest:IsInProgress() and
-                (questType == "QUEST_VICTORY_CONTACT" or
-                questType == "QUEST_VICTORY_EMANCIPATION" or
-                questType == "QUEST_VICTORY_PROMISED_LAND" or
-                questType == "QUEST_VICTORY_TRANSCENDENCE")
-            ) then
-                -- DELETEME
-                print("(Beyond Earth Eclipse) questType = " .. questType)
+                    local objectives = quest:GetObjectives()
+                    for _, objective in ipairs(objectives) do
+                        local objectiveEpilogue = objective:GetEpilogue()
 
-                local objectives = quest:GetObjectives()
-                for _, objective in ipairs(objectives) do
-                    local objectiveEpilogue = objective:GetEpilogue()
-
-                    if ((not objective:IsInProgress()) and
-                        objective:DidSucceed() and
-                        not completedVictoryObjectives[objectiveEpilogue]
-                    ) then
-                        completedVictoryObjectives[objectiveEpilogue] = true;
+                        if ((not objective:IsInProgress()) and
+                            objective:DidSucceed() and
+                            not completedVictoryObjectives[objectiveEpilogue]
+                        ) then
+                            completedVictoryObjectives[objectiveEpilogue] = true;
+                        end
                     end
                 end
             end
+
+            -- DELETEME
+            print("(Beyond Earth Eclipse) completedVictoryObjectiveIds=", "    ")
+            print("(Beyond Earth Eclipse) completedVictoryObjectives is nil? ", completedVictoryObjectives == nil)
+            print("(Beyond Earth Eclipse) completedVictoryObjectives count = ", table.count(completedVictoryObjectives))
+            print(completedVictoryObjectives)
+            printTable(completedVictoryObjectives)
         end
     end
-
-    -- DELETEME
-    print("(Beyond Earth Eclipse) completedVictoryObjectiveIds=", "    ")
-    printTable(completedVictoryObjectives)
 end
 -- Run this once when the game is first started/loaded
 Events.SequenceGameInitComplete.Add(PopulateCompletedVictoryObjectives);
@@ -239,6 +241,7 @@ function ShowVictoryPopup(playerID)
                     -- TODO: add logic for overlapping emancipation/promised land first objective
                     -- TODO: do we need to exclude the quest epilogue objectives?, e.g. TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_WAIT_EPILOGUE
                     -- TODO: do we need to include the quest wait summary? e.g. TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_WAIT_EPILOGUE
+                    -- TODO: show domination prologue after first capital is conquered?
                     print("(Beyond Earth Eclipse) showing popup for victory " .. questType .. " objective " .. objective:GetSummary())
                     completedVictoryObjectives[objectiveEpilogue] = true;
                     print("(Beyond Earth Eclipse) completedVictoryObjectiveIds=", "    ")
