@@ -3,11 +3,23 @@
 	<Box Style="BGBlock" />
 
 	<AlphaAnim Size="Full,Full" Cycle="Once" Pause="0" Speed="2" AlphaStart="0" Function="OutQuint" AlphaEnd="1" ID="AlphaAnim">
+		<!-- NOTE: For whatever reason this has to be wider than the image, although it lines up fine like this -->
 		<Grid ID="OuterGrid" Anchor="C,C" Offset="0,0" Size="968,370" Style="GridWindowWithHeader">
 			<Label Offset="0,17" Anchor="C,U" Style="MenuTitleCaption" ID="TitleLabel" String="Title" />
-			<Stack ID="ContentStack" Anchor="C,T" Offset="0,48" Size="918,360" StackGrowth="Bottom" Padding="0">
-				<Image ID="Banner" Anchor="C,T" Offset="0,0" Size="953,203" />
-				<Label ID="BodyText" Anchor="C,T" Offset="0,17" String="Body" Style="GrayGlow20" WrapWidth="913" WrapGrowth="Bottom" />
+			<Image ID="Banner" Anchor="C,T" Offset="0,48" Size="953,203" />
+			<!-- NOTE: Don't set Size on stack as the stack will always resize to fit content -->
+			<!-- NOTE: This stack and both labels in it are left-aligned so they'll line up; centre alignment won't work since they auto resize -->
+			<Stack ID="ContentStack" Anchor="L,T" Offset="0,261" StackGrowth="Bottom" Padding="0">
+				<Stack ID="PrologueStack" Anchor="L,T" Offset="0,0" StackGrowth="Bottom" Padding="0" Hidden="1">
+					<!-- NOTE: Don't set Label on stack as the stack will always resize to fit content -->
+					<Label ID="PrologueText" Anchor="L,T" Offset="35,17" String="Prologue" Style="GrayGlow20" WrapWidth="883" WrapGrowth="Bottom" />
+					<Box Anchor="C,T" Offset="0,0" Size="500,28" Color="White.0" />
+					<Image Anchor="C,T" Offset="0,0" Color="255,255,255,150" Texture="bar500x2.dds" Size="500.1" />
+					<Box Anchor="C,T" Offset="0,0" Size="500,14" Color="White.0" />
+				</Stack>
+				<Label ID="BodyText" Anchor="L,T" Offset="35,17" String="Body" Style="GrayGlow20" WrapWidth="883" WrapGrowth="Bottom" />
+				<!-- TODO: test this -->
+				<Box Anchor="C,T" Offset="0,0" Size="500,20" Color="White.0" />
 			</Stack>
 			<GridButton ID="CloseButton" Anchor="C,B" Offset="0,20" Size="220,35" String="TXT_KEY_OK_BUTTON" Style="BaseButton" />
 		</Grid>

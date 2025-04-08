@@ -1,8 +1,9 @@
-function ShowPopup(victoryType, textKey)
+function ShowPopup(victoryType, victoryObjectiveKey, showVictoryPrologue)
     Events.SerialEventGameMessagePopup( {
         Type = ButtonPopupTypes.BUTTONPOPUP_VICTORY_PROGRESS,
         Data1 = GameInfo.Quests[victoryType].ID,
-        Text = textKey
+        Option1 = showVictoryPrologue,
+        Text = victoryObjectiveKey
     } );
 end
 
@@ -188,6 +189,7 @@ function ShowVictoryPopup(playerID)
     for _, quest in ipairs(quests) do
         local questId = quest:GetType()
         local questInfo = GameInfo.Quests[questId];
+        local questPrologue = quest:GetPrologue();
         local questType = questInfo.Type;
 
         -- NOTE: We don't need logic to determine whether a victory type has been disabled
@@ -237,16 +239,30 @@ function ShowVictoryPopup(playerID)
                         )
                     )
                 ) then
-                    -- TODO: add initial prologue text?
+                    -- TODO: only show text for highest affinity
+                       -- Get affinity levels for all affinities and record highest level
+                       -- Check that affinity for victory matches highest level, this way it will also match if they're tied
                     -- TODO: add logic for overlapping emancipation/promised land first objective
+                       -- Randomly show one or the other? Or a custom message?
+                       -- Requires Orbital Networks, which could potentially be researched with tied purity/supremacy
                     -- TODO: do we need to exclude the quest epilogue objectives?, e.g. TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_WAIT_EPILOGUE
                     -- TODO: do we need to include the quest wait summary? e.g. TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_WAIT_EPILOGUE
                     -- TODO: show domination prologue after first capital is conquered?
                     print("(Beyond Earth Eclipse) showing popup for victory " .. questType .. " objective " .. objective:GetSummary())
                     completedVictoryObjectives[objectiveEpilogue] = true;
+
+                    -- Show the victory quest prologue the first time we show a popup for
+                    -- a particular victory type
+                    if (not completedVictoryObjectives[questPrologue]) then
+                        completedVictoryObjectives[questPrologue] = true;
+                        ShowPopup(questType, objectiveEpilogue, true);
+                    else
+                        ShowPopup(questType, objectiveEpilogue, false);
+                    end
+
+                    -- DELETEME
                     print("(Beyond Earth Eclipse) completedVictoryObjectiveIds=", "    ")
                     printTable(completedVictoryObjectives)
-                    ShowPopup(questType, objectiveEpilogue);
                 end
             end
         end
