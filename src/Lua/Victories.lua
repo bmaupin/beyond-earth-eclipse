@@ -216,34 +216,7 @@ function ShowVictoryPopup(playerID)
 
                 if ((not objective:IsInProgress()) and
                     objective:DidSucceed() and
-                    not shownVictoryQuestStrings[objectiveEpilogue] and
-                    -- Unfortunately the epilogue text for the transcendence victory tech
-                    -- objectives are repetitive, so only show whichever is finished
-                    -- first. Because Lua has no continue statement, it's simpler to put
-                    -- all the logic together here.
-                    (
-                        (
-                            objectiveEpilogue == "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE" and
-                            (
-                                not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE"] and
-                                not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE"]
-                            )
-                        ) or
-                        (
-                            objectiveEpilogue == "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE" and
-                            (
-                                not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE"] and
-                                not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE"]
-                            )
-                        ) or
-                        (
-                            objectiveEpilogue == "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE" and
-                            (
-                                not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE"] and
-                                not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE"]
-                            )
-                        )
-                    )
+                    not shownVictoryQuestStrings[objectiveEpilogue]
                 ) then
                     -- TODO: only show text for highest affinity
                        -- Get affinity levels for all affinities and record highest level
@@ -264,8 +237,17 @@ function ShowVictoryPopup(playerID)
                     end
 
                     print("(Beyond Earth Eclipse) showing popup for victory " .. questType .. " objective " .. objective:GetSummary())
+                    -- Unfortunately the epilogue text for the transcendence victory tech
+                    -- objectives are repetitive, so only show whichever is finished
+                    -- first.
+                    if (
+                        not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE"] and
+                        not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE"] and
+                        not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE"]
+                    ) then
+                        ShowPopup(questType, objectiveEpilogue, showVictoryPrologue);
+                    end
                     shownVictoryQuestStrings[objectiveEpilogue] = true;
-                    ShowPopup(questType, objectiveEpilogue, showVictoryPrologue);
 
                     -- DELETEME
                     print("(Beyond Earth Eclipse) completedVictoryObjectiveIds=", "    ")
