@@ -109,9 +109,8 @@ end
 -- end
 
 
--- Track which victory objectives have been completed. We're indexing them by epilogue
--- text key since this seems to be unique across victory objectives
-local completedVictoryObjectives = {}
+-- Track which victory quest strings we've shown by storing the text key for each one
+local shownVictoryQuestStrings = {}
 
 -- DELETEME
 local function printTable(t, indent)
@@ -137,6 +136,7 @@ function PopulateCompletedVictoryObjectives()
 
             local quests = player:GetQuests()
             for _, quest in ipairs(quests) do
+                local questPrologue = quest:GetPrologue();
                 local questId = quest:GetType()
                 local questInfo = GameInfo.Quests[questId];
                 local questType = questInfo.Type;
@@ -157,9 +157,15 @@ function PopulateCompletedVictoryObjectives()
 
                         if ((not objective:IsInProgress()) and
                             objective:DidSucceed() and
-                            not completedVictoryObjectives[objectiveEpilogue]
+                            not shownVictoryQuestStrings[objectiveEpilogue]
                         ) then
-                            completedVictoryObjectives[objectiveEpilogue] = true;
+                            shownVictoryQuestStrings[objectiveEpilogue] = true;
+
+                            -- Add the quest prologue text key as well; we should only
+                            -- show this once per victory type
+                            if (not shownVictoryQuestStrings[questPrologue]) then
+                                shownVictoryQuestStrings[questPrologue] = true;
+                            end
                         end
                     end
                 end
@@ -167,10 +173,10 @@ function PopulateCompletedVictoryObjectives()
 
             -- DELETEME
             print("(Beyond Earth Eclipse) completedVictoryObjectiveIds=", "    ")
-            print("(Beyond Earth Eclipse) completedVictoryObjectives is nil? ", completedVictoryObjectives == nil)
-            print("(Beyond Earth Eclipse) completedVictoryObjectives count = ", table.count(completedVictoryObjectives))
-            print(completedVictoryObjectives)
-            printTable(completedVictoryObjectives)
+            print("(Beyond Earth Eclipse) completedVictoryObjectives is nil? ", shownVictoryQuestStrings == nil)
+            print("(Beyond Earth Eclipse) completedVictoryObjectives count = ", table.count(shownVictoryQuestStrings))
+            print(shownVictoryQuestStrings)
+            printTable(shownVictoryQuestStrings)
         end
     end
 end
@@ -187,9 +193,9 @@ function ShowVictoryPopup(playerID)
 
     local quests = player:GetQuests()
     for _, quest in ipairs(quests) do
+        local questPrologue = quest:GetPrologue();
         local questId = quest:GetType()
         local questInfo = GameInfo.Quests[questId];
-        local questPrologue = quest:GetPrologue();
         local questType = questInfo.Type;
 
         -- NOTE: We don't need logic to determine whether a victory type has been disabled
@@ -210,7 +216,7 @@ function ShowVictoryPopup(playerID)
 
                 if ((not objective:IsInProgress()) and
                     objective:DidSucceed() and
-                    not completedVictoryObjectives[objectiveEpilogue] and
+                    not shownVictoryQuestStrings[objectiveEpilogue] and
                     -- Unfortunately the epilogue text for the transcendence victory tech
                     -- objectives are repetitive, so only show whichever is finished
                     -- first. Because Lua has no continue statement, it's simpler to put
@@ -219,22 +225,22 @@ function ShowVictoryPopup(playerID)
                         (
                             objectiveEpilogue == "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE" and
                             (
-                                not completedVictoryObjectives["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE"] and
-                                not completedVictoryObjectives["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE"]
+                                not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE"] and
+                                not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE"]
                             )
                         ) or
                         (
                             objectiveEpilogue == "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE" and
                             (
-                                not completedVictoryObjectives["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE"] and
-                                not completedVictoryObjectives["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE"]
+                                not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE"] and
+                                not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE"]
                             )
                         ) or
                         (
                             objectiveEpilogue == "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE" and
                             (
-                                not completedVictoryObjectives["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE"] and
-                                not completedVictoryObjectives["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE"]
+                                not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE"] and
+                                not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE"]
                             )
                         )
                     )
@@ -248,21 +254,22 @@ function ShowVictoryPopup(playerID)
                     -- TODO: do we need to exclude the quest epilogue objectives?, e.g. TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_WAIT_EPILOGUE
                     -- TODO: do we need to include the quest wait summary? e.g. TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_WAIT_EPILOGUE
                     -- TODO: show domination prologue after first capital is conquered?
-                    print("(Beyond Earth Eclipse) showing popup for victory " .. questType .. " objective " .. objective:GetSummary())
-                    completedVictoryObjectives[objectiveEpilogue] = true;
 
                     -- Show the victory quest prologue the first time we show a popup for
                     -- a particular victory type
-                    if (not completedVictoryObjectives[questPrologue]) then
-                        completedVictoryObjectives[questPrologue] = true;
-                        ShowPopup(questType, objectiveEpilogue, true);
-                    else
-                        ShowPopup(questType, objectiveEpilogue, false);
+                    local showVictoryPrologue = false;
+                    if (not shownVictoryQuestStrings[questPrologue]) then
+                        showVictoryPrologue = true;
+                        shownVictoryQuestStrings[questPrologue] = true;
                     end
+
+                    print("(Beyond Earth Eclipse) showing popup for victory " .. questType .. " objective " .. objective:GetSummary())
+                    shownVictoryQuestStrings[objectiveEpilogue] = true;
+                    ShowPopup(questType, objectiveEpilogue, showVictoryPrologue);
 
                     -- DELETEME
                     print("(Beyond Earth Eclipse) completedVictoryObjectiveIds=", "    ")
-                    printTable(completedVictoryObjectives)
+                    printTable(shownVictoryQuestStrings)
                 end
             end
         end
