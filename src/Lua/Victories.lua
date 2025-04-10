@@ -7,6 +7,7 @@ function ShowPopup(victoryType, victoryObjectiveKey, showVictoryPrologue)
     } );
 end
 
+-- TODO: clean this up
 -- function OnTechResearched(teamType, techType, change)
 --     print("(Beyond Earth Eclipse) OnTechResearched")
 
@@ -191,6 +192,12 @@ function ShowVictoryPopup(playerID)
 
     print("(Beyond Earth Eclipse) === Turn for Player " .. playerID .. " ===")
 
+    -- Emancipation and promised land victories share the first objective.
+    -- If the player has a tied purity and supremacy level, both of them
+    -- would be shown at once. Instead, we pick one of them randomly to
+    -- show and don't show the other one.
+    local showPurityFirstObjectivePopup = math.random() < 0.5;
+
     local quests = player:GetQuests()
     for _, quest in ipairs(quests) do
         local questPrologue = quest:GetPrologue();
@@ -232,16 +239,9 @@ function ShowVictoryPopup(playerID)
                     local harmonyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_HARMONY"].ID);
                     local supremacyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_SUPREMACY"].ID);
 
-                    -- Show the victory quest prologue the first time we show a popup for
-                    -- a particular victory type
-                    local showVictoryPrologue = false;
-                    if (not shownVictoryQuestStrings[questPrologue]) then
-                        showVictoryPrologue = true;
-                        shownVictoryQuestStrings[questPrologue] = true;
-                    end
-
                     local showPopup = true;
 
+                    -- TODO: this is broken because it's not checking the victoryType
                     -- Unfortunately the epilogue text for the transcendence victory tech
                     -- objectives are repetitive, so only show whichever is finished
                     -- first.
@@ -253,6 +253,7 @@ function ShowVictoryPopup(playerID)
                         showPopup = false;
                     end
 
+                    -- TODO: test this
                     -- For affinity victory types, only show the popup if it's the
                     -- highest affinity (or tied)
                     if (
@@ -275,7 +276,32 @@ function ShowVictoryPopup(playerID)
                         showPopup = false;
                     end
 
+                    -- TODO: test this
+                    -- Show purity first objective popup but not supremacy
+                    if (
+                        purityLevel == supremacyLevel and
+                        objectiveEpilogue == "TXT_KEY_QUEST_VICTORY_EMANCIPATION_LAUNCH_EPILOGUE" and
+                        showPurityFirstObjectivePopup
+                    ) then
+                        showPopup = false;
+                    -- Show supremacy first objective popup but not purity
+                    elseif (
+                        purityLevel == supremacyLevel and
+                        objectiveEpilogue == "TXT_KEY_QUEST_VICTORY_PROMISED_LAND_LAUNCH_EPILOGUE" and
+                        not showPurityFirstObjectivePopup
+                    ) then
+                        showPopup = false;
+                    end
+
                     if (showPopup) then
+                        -- Show the victory quest prologue the first time we show a popup for
+                        -- a particular victory type
+                        local showVictoryPrologue = false;
+                        if (not shownVictoryQuestStrings[questPrologue]) then
+                            showVictoryPrologue = true;
+                            shownVictoryQuestStrings[questPrologue] = true;
+                        end
+
                         print("(Beyond Earth Eclipse) showing popup for victory " .. questType .. " objective " .. objective:GetSummary())
                         ShowPopup(questType, objectiveEpilogue, showVictoryPrologue);
                     end
