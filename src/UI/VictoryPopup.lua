@@ -28,7 +28,6 @@ function OnPopup( popupInfo )
 	local victoryProgressTitle = 'VICTORY PROGRESS';
 	local questIndex = popupInfo.Data1;
 	local questInfo = getQuestByID(questIndex);
-	local showVictoryPrologue = popupInfo.Option1 or false;
 
 	if questInfo then
 		Controls.TitleLabel:SetText(victoryProgressTitle .. ': ' .. Locale.ToUpper(Locale.ConvertTextKey(questInfo.Description)));
@@ -42,46 +41,26 @@ function OnPopup( popupInfo )
 			-- We're creating a banner from a larger image, so offset it a bit to pick
 			-- the part we want
 			Controls.Banner:SetTextureOffsetVal(0, 90);
-			if (showVictoryPrologue) then
-				Controls.PrologueText:LocalizeAndSetText("TXT_KEY_QUEST_VICTORY_CONTACT_PROLOGUE");
-				Controls.PrologueStack:SetHide(false);
-			end
 		elseif (questInfo.Type == "QUEST_VICTORY_DOMINATION") then
 			Controls.Banner:SetTexture("Victory_Military_P.dds");
 			Controls.Banner:SetTextureOffsetVal(0, 104);
-			if (showVictoryPrologue) then
-				Controls.PrologueText:LocalizeAndSetText("TXT_KEY_QUEST_VICTORY_DOMINATION_PROLOGUE");
-				Controls.PrologueStack:SetHide(false);
-			end
 		elseif (questInfo.Type == "QUEST_VICTORY_EMANCIPATION") then
 			Controls.Banner:SetTexture("Victory_Emancipation.dds");
 			Controls.Banner:SetTextureOffsetVal(0, 54);
-			if (showVictoryPrologue) then
-				Controls.PrologueText:LocalizeAndSetText("TXT_KEY_QUEST_VICTORY_EMANCIPATION_PROLOGUE");
-				Controls.PrologueStack:SetHide(false);
-			end
 		elseif (questInfo.Type == "QUEST_VICTORY_PROMISED_LAND") then
 			Controls.Banner:SetTexture("Victory_Promised.dds");
 			Controls.Banner:SetTextureOffsetVal(0, 66);
-			if (showVictoryPrologue) then
-				Controls.PrologueText:LocalizeAndSetText("TXT_KEY_QUEST_VICTORY_PROMISED_LAND_PROLOGUE");
-				Controls.PrologueStack:SetHide(false);
-			end
 		elseif (questInfo.Type == "QUEST_VICTORY_TRANSCENDENCE") then
 			Controls.Banner:SetTexture("Victory_Transcend.dds");
-			if (showVictoryPrologue) then
-				Controls.PrologueText:LocalizeAndSetText("TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_PROLOGUE");
-				Controls.PrologueStack:SetHide(false);
-			end
 		end
 	end
 
 	Controls.BodyText:LocalizeAndSetText(popupInfo.Text);
 
-	-- Get the size of the content in the stack so we can resize the popup to hold everything
+	-- Get the size of the content in the stack so we can resize popup to hold everything
 	local contentSize = Controls.ContentStack:GetSizeY();
-	-- Add the height of the label, image, and close button plus a little margin
-	Controls.OuterGrid:SetSizeY(contentSize + 48 + 203 + 35 + 30);
+	-- Add the height of the label and the close button plus a little margin
+	Controls.OuterGrid:SetSizeY(contentSize + 48 + 35 + 30);
 	Controls.OuterGrid:ReprocessAnchoring();
 
 	UIManager:QueuePopup(ContextPtr, PopupPriority.InGameUtmost);
