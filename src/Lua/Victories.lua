@@ -228,6 +228,10 @@ function ShowVictoryPopup(playerID)
                     -- TODO: do we need to include the quest wait summary? e.g. TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_WAIT_EPILOGUE
                     -- TODO: show domination prologue after first capital is conquered?
 
+                    local purityLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_PURITY"].ID);
+                    local harmonyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_HARMONY"].ID);
+                    local supremacyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_SUPREMACY"].ID);
+
                     -- Show the victory quest prologue the first time we show a popup for
                     -- a particular victory type
                     local showVictoryPrologue = false;
@@ -236,17 +240,46 @@ function ShowVictoryPopup(playerID)
                         shownVictoryQuestStrings[questPrologue] = true;
                     end
 
-                    print("(Beyond Earth Eclipse) showing popup for victory " .. questType .. " objective " .. objective:GetSummary())
+                    local showPopup = true;
+
                     -- Unfortunately the epilogue text for the transcendence victory tech
                     -- objectives are repetitive, so only show whichever is finished
                     -- first.
                     if (
-                        not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE"] and
-                        not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE"] and
-                        not shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE"]
+                        shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE"] or
+                        shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE"] or
+                        shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE"]
                     ) then
+                        showPopup = false;
+                    end
+
+                    -- For affinity victory types, only show the popup if it's the
+                    -- highest affinity (or tied)
+                    if (
+                        (
+                            questType == "QUEST_VICTORY_EMANCIPATION" and
+                            supremacyLevel < purityLevel and
+                            supremacyLevel < harmonyLevel
+                        ) or
+                        (
+                            questType == "QUEST_VICTORY_PROMISED_LAND" and
+                            purityLevel < harmonyLevel and
+                            purityLevel < supremacyLevel
+                        ) or
+                        (
+                            questType == "QUEST_VICTORY_TRANSCENDENCE" and
+                            harmonyLevel < purityLevel and
+                            harmonyLevel < supremacyLevel
+                        )
+                    ) then
+                        showPopup = false;
+                    end
+
+                    if (showPopup) then
+                        print("(Beyond Earth Eclipse) showing popup for victory " .. questType .. " objective " .. objective:GetSummary())
                         ShowPopup(questType, objectiveEpilogue, showVictoryPrologue);
                     end
+                    -- Always add the text key to the list whether or not we show a popup
                     shownVictoryQuestStrings[objectiveEpilogue] = true;
 
                     -- DELETEME
