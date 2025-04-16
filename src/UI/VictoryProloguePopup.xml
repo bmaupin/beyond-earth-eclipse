@@ -3,6 +3,7 @@
 	<Box Style="BGBlock" />
 
 	<AlphaAnim Size="Full,Full" Cycle="Once" Pause="0" Speed="2" AlphaStart="0" Function="OutQuint" AlphaEnd="1" ID="AlphaAnim">
+		<!-- NOTE: For whatever reason this has to be wider than the image, although it lines up fine like this -->
 		<Grid ID="OuterGrid" Anchor="C,C" Offset="0,0" Size="968,370" Style="GridWindowWithHeader">
 			<!-- NOTE: Don't set Size on label as it will always resize to fit content -->
 			<Label Offset="0,17" Anchor="C,U" Style="MenuTitleCaption" ID="TitleLabel" String="Title" />
