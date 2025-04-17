@@ -1,12 +1,12 @@
 -------------------------------------------------
--- Victory Progress Popup
+-- Victory Prologue Popup
 -------------------------------------------------
 
 local m_PopupInfo = nil;
 
 -- NOTE: This is needed, do not remove it
 -- Since this is an enum, it just has to be a unique number; I just generated a random 6-digit number 🤷‍♂️
-ButtonPopupTypes.BUTTONPOPUP_VICTORY_PROGRESS = 823485;
+ButtonPopupTypes.BUTTONPOPUP_VICTORY_PROLOGUE = 823485;
 
 local function getQuestByID(questID)
     for quest in GameInfo.Quests() do
@@ -18,21 +18,21 @@ local function getQuestByID(questID)
 end
 
 function OnPopup( popupInfo )
-	if (popupInfo.Type ~= ButtonPopupTypes.BUTTONPOPUP_VICTORY_PROGRESS) then
+	if (popupInfo.Type ~= ButtonPopupTypes.BUTTONPOPUP_VICTORY_PROLOGUE) then
 		return;
 	end
 
 	Controls.AlphaAnim:SetToBeginning();
 	Controls.AlphaAnim:Play();
 
-	local victoryProgressTitle = 'VICTORY PROGRESS';
+	local prologueTitle = 'PROLOGUE';
 	local questIndex = popupInfo.Data1;
 	local questInfo = getQuestByID(questIndex);
 
 	if questInfo then
-		Controls.TitleLabel:SetText(victoryProgressTitle .. ': ' .. Locale.ToUpper(Locale.ConvertTextKey(questInfo.Description)));
+		Controls.TitleLabel:SetText(prologueTitle .. ': ' .. Locale.ToUpper(Locale.ConvertTextKey(questInfo.Description)));
 	else
-		Controls.TitleLabel:SetText(victoryProgressTitle);
+		Controls.TitleLabel:SetText(prologueTitle);
 	end
 
 	if questInfo and questInfo.Type then
@@ -101,7 +101,7 @@ function ShowHideHandler( bIsHide, bInitState )
         	Events.SerialEventGameMessagePopupShown(m_PopupInfo);
         else
             UI.decTurnTimerSemaphore();
-            Events.SerialEventGameMessagePopupProcessed.CallImmediate( ButtonPopupTypes.BUTTONPOPUP_VICTORY_PROGRESS, 0 );
+            Events.SerialEventGameMessagePopupProcessed.CallImmediate( ButtonPopupTypes.BUTTONPOPUP_VICTORY_PROLOGUE, 0 );
         end
     end
 end

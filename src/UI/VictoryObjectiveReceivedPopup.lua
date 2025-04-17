@@ -258,33 +258,13 @@ function ShowWindow()
 		Controls.TitleText:LocalizeAndSetText(newQuestObjectiveRecievedTitleTextKey);
 	end
 
-	Controls.ObjectiveStack:DestroyAllChildren();
-	-- If it's one of the first 3 transcendence objectives, instead of showing the next
-	-- objective, show all three since they can be done in any order
+	-- If it's one of the first 3 transcendence objectives, the next objective is number 4
 	if (m_PopupInfo ~= nil and m_PopupInfo.Data3 ~= nil and m_PopupInfo.Data3 >= 2 and m_PopupInfo.Data3 <= 4) then
-		local objective1 = objectives[1];
-		local objective2 = objectives[2];
-		local objective3 = objectives[3];
+		newObjective = objectives[4];
+	end
 
-		local objectiveInstance = {};
-		ContextPtr:BuildInstanceForControl("ThreeObjectiveInstance", objectiveInstance, Controls.ObjectiveStack);
-
-		objectiveInstance.Objective1:SetText(Locale.ConvertTextKey(objective1:GetSummary()));
-		if(objective1:AreSuccessConditionsMet())then
-			objectiveInstance.ActiveCheckBox1:SetTextureOffsetVal(0, 32);	-- 2nd texture in strip is checked
-		end
-
-		objectiveInstance.Objective2:SetText(Locale.ConvertTextKey(objective2:GetSummary()));
-		if(objective2:AreSuccessConditionsMet())then
-			objectiveInstance.ActiveCheckBox2:SetTextureOffsetVal(0, 32);	-- 2nd texture in strip is checked
-		end
-
-		objectiveInstance.Objective3:SetText(Locale.ConvertTextKey(objective3:GetSummary()));
-		if(objective3:AreSuccessConditionsMet())then
-			objectiveInstance.ActiveCheckBox3:SetTextureOffsetVal(0, 32);	-- 2nd texture in strip is checked
-		end
-
-	elseif (newObjective) then
+	Controls.ObjectiveStack:DestroyAllChildren();
+	if (newObjective) then
 		local objectiveInstance = {};
 		ContextPtr:BuildInstanceForControl("ObjectiveInstance", objectiveInstance, Controls.ObjectiveStack);
 		objectiveInstance.Objective:SetText(Locale.ConvertTextKey(newObjective:GetSummary()));
@@ -310,6 +290,11 @@ function ShowWindow()
 	Events.SerialEventGameMessagePopupShown(m_PopupInfo);
 end
 
+-- NOTE: The popups in the game source don't have this but it seems necessary for mods,
+--       otherwise the popup will show right away when a game is loaded or started and
+--       can't be dismissed.
+-- The source for this function came from Codex (https://steamcommunity.com/sharedfiles/filedetails/?id=780912351)
+-- in the file randomeventoverviewpopup.lua
 function OnLoadScreenClose()
 	UIManager:QueuePopup(ContextPtr, PopupPriority.TextPopup);
 	UIManager:DequeuePopup(ContextPtr);

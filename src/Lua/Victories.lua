@@ -216,43 +216,29 @@ function ShowVictoryPopup(playerID)
                     objective:DidSucceed() and
                     not shownVictoryQuestStrings[objectiveEpilogue]
                 ) then
-                    -- TODO: only show text for highest affinity
-                       -- Get affinity levels for all affinities and record highest level
-                       -- Check that affinity for victory matches highest level, this way it will also match if they're tied
-                    -- TODO: add logic for overlapping emancipation/promised land first objective
-                       -- Randomly show one or the other? Or a custom message?
-                       -- Requires Orbital Networks, which could potentially be researched with tied purity/supremacy
-                    -- TODO: do we need to exclude the quest epilogue objectives?, e.g. TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_WAIT_EPILOGUE
-                    -- TODO: do we need to include the quest wait summary? e.g. TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_WAIT_EPILOGUE
                     -- TODO: show domination prologue after first capital is conquered?
 
-                    -- TODO: I think there's an easier way to get this?
-                    local purityLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_PURITY"].ID);
-                    local harmonyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_HARMONY"].ID);
-                    local supremacyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_SUPREMACY"].ID);
-
-                    local showObjectivePopup = questType == "QUEST_VICTORY_TRANSCENDENCE" or false;
+                    local showObjectivePopup = false;
                     local showProloguePopup = true;
 
-                    -- TODO: this is broken because it's not checking the victoryType
                     -- Unfortunately the epilogue text for the transcendence victory tech
                     -- objectives are repetitive, so only show whichever is finished
-                    -- first.
+                    -- last.
                     if (
                         questType == "QUEST_VICTORY_TRANSCENDENCE" and
-                        (
-                            shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE"] or
-                            shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE"] or
-                            shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE"]
-                        )
+                        objectives[1]:DidSucceed() and
+                        objectives[2]:DidSucceed() and
+                        objectives[3]:DidSucceed()
                     ) then
-                        showObjectivePopup = false;
-                        showProloguePopup = false;
+                        showObjectivePopup = true;
                     end
 
                     -- TODO: test this
                     -- For affinity victory types, only show the popup if it's the
                     -- highest affinity (or tied)
+                    local purityLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_PURITY"].ID);
+                    local harmonyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_HARMONY"].ID);
+                    local supremacyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_SUPREMACY"].ID);
                     if (
                         (
                             questType == "QUEST_VICTORY_EMANCIPATION" and
@@ -290,8 +276,8 @@ function ShowVictoryPopup(playerID)
                         showProloguePopup = false;
                     end
 
-                    -- TODO: check for DLC
-                    if (questType == "QUEST_VICTORY_TRANSCENDENCE" and showObjectivePopup) then
+                    local isRisingTideActive = ContentManager.IsActive("54D2B257-C591-4045-8F17-A69F033166C7", ContentType.GAMEPLAY);
+                    if (questType == "QUEST_VICTORY_TRANSCENDENCE" and showObjectivePopup and isRisingTideActive) then
                         print("(Beyond Earth Eclipse) showing objective popup for victory " .. questType .. " objective " .. objective:GetSummary())
 
                         if (questType == "QUEST_VICTORY_TRANSCENDENCE") then
@@ -306,7 +292,7 @@ function ShowVictoryPopup(playerID)
                         end
                     end
 
-                    if (showProloguePopup) then
+                    if (showProloguePopup and not shownVictoryQuestStrings[questPrologue]) then
                         print("(Beyond Earth Eclipse) showing prologue popup for victory " .. questType .. " objective " .. objective:GetSummary())
 
                         Events.SerialEventGameMessagePopup({

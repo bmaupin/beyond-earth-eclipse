@@ -43,21 +43,4 @@
     </Container>
   </Instance>
 
-  <Instance Name="ThreeObjectiveInstance">
-    <Container ID="Content" Offset="0,0" Size="565,50">
-      <Stack Anchor="C,T" Padding="10" StackGrowth="Right">
-        <Image ID="ActiveCheckBox1" Anchor="C,C" Offset="0,0" Size="32,32" Style="QuestCheckButtons" />
-        <Label ID="Objective1" Anchor="C,C" Offset="0,0" Style="QuestCompleteText" WrapWidth="460" />
-      </Stack>
-      <Stack Anchor="C,T" Offset="0,30" Padding="10" StackGrowth="Right">
-        <Image ID="ActiveCheckBox2" Anchor="C,C" Offset="0,0" Size="32,32" Style="QuestCheckButtons" />
-        <Label ID="Objective2" Anchor="C,C" Offset="0,0" Style="QuestCompleteText" WrapWidth="460" />
-      </Stack>
-      <Stack Anchor="C,T" Offset="0,60" Padding="10" StackGrowth="Right">
-        <Image ID="ActiveCheckBox3" Anchor="C,C" Offset="0,0" Size="32,32" Style="QuestCheckButtons" />
-        <Label ID="Objective3" Anchor="C,C" Offset="0,0" Style="QuestCompleteText" WrapWidth="460" />
-      </Stack>
-    </Container>
-  </Instance>
-
 </Context>
