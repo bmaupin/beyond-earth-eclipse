@@ -6,6 +6,8 @@ local m_NextPopupInfo = nil;
 
 local m_PopupShown = false;
 
+ButtonPopupTypes.BUTTONPOPUP_QUEST_OBJECTIVE_RECEIVED_ECLIPSE = 772378;
+
 -- ===========================================================================
 -- Constants
 -- ===========================================================================
@@ -32,12 +34,16 @@ local transcendenceVictoryType : number = GameInfo.Quests["QUEST_VICTORY_TRANSCE
 
 -- ===========================================================================
 function OnPopup(popupInfo)
-	if (popupInfo.Type ~= ButtonPopupTypes.BUTTONPOPUP_QUEST_OBJECTIVE_RECEIVED) then
+	if (popupInfo.Type ~= ButtonPopupTypes.BUTTONPOPUP_QUEST_OBJECTIVE_RECEIVED_ECLIPSE) then
 		return;
 	end
 
 	if (OptionsManager.IsNoRewardPopups()) then
 		Events.SerialEventGameMessagePopupProcessed.CallImmediate(popupInfo.Type, 0);
+		return;
+	end
+
+	if (popupInfo.Data1 == nil) then
 		return;
 	end
 
@@ -47,12 +53,14 @@ function OnPopup(popupInfo)
 	local quest = Players[playerType]:GetQuestWithIndex(questIndex);
 	local objectives = quest:GetObjectives();
 
-	if(quest:GetType() == transcendenceVictoryType) then
-		
-		-- this popup does not support non-deterministic quests (quests in which the objectives can be completed in any order)
-		Events.SerialEventGameMessagePopupProcessed.CallImmediate(popupInfo.Type, 0);
-		return;
-	end
+	-- The whole purpose of this popup is to handle the trancendence victory objectives
+	-- local transcendenceVictoryType = GameInfo.Quests["QUEST_VICTORY_TRANSCENDENCE"].ID;
+	-- if(quest:GetType() == transcendenceVictoryType) then
+
+	-- 	-- this popup does not support non-deterministic quests (quests in which the objectives can be completed in any order)
+	-- 	Events.SerialEventGameMessagePopupProcessed.CallImmediate(popupInfo.Type, 0);
+	-- 	return;
+	-- end
 
 	if(	GameInfo.Quests[quest:GetType()].Victory and
 		#objectives == 1)
@@ -121,7 +129,6 @@ function OnActivePlayerChanged( iActivePlayer, iPrevActivePlayer )
 		HideWindow();
 	end
 end
-Events.GameplaySetActivePlayer.Add(OnActivePlayerChanged);
 
 
 -- ===========================================================================
@@ -251,9 +258,34 @@ function ShowWindow()
 		Controls.TitleText:LocalizeAndSetText(newQuestObjectiveRecievedTitleTextKey);
 	end
 
-	Controls.ObjectiveStack:DestroyAllChildren(); 
-	if (newObjective) then
-		local objectiveInstance = {};		
+	Controls.ObjectiveStack:DestroyAllChildren();
+	-- If it's one of the first 3 transcendence objectives, instead of showing the next
+	-- objective, show all three since they can be done in any order
+	if (m_PopupInfo ~= nil and m_PopupInfo.Data3 ~= nil and m_PopupInfo.Data3 >= 2 and m_PopupInfo.Data3 <= 4) then
+		local objective1 = objectives[1];
+		local objective2 = objectives[2];
+		local objective3 = objectives[3];
+
+		local objectiveInstance = {};
+		ContextPtr:BuildInstanceForControl("ThreeObjectiveInstance", objectiveInstance, Controls.ObjectiveStack);
+
+		objectiveInstance.Objective1:SetText(Locale.ConvertTextKey(objective1:GetSummary()));
+		if(objective1:AreSuccessConditionsMet())then
+			objectiveInstance.ActiveCheckBox1:SetTextureOffsetVal(0, 32);	-- 2nd texture in strip is checked
+		end
+
+		objectiveInstance.Objective2:SetText(Locale.ConvertTextKey(objective2:GetSummary()));
+		if(objective2:AreSuccessConditionsMet())then
+			objectiveInstance.ActiveCheckBox2:SetTextureOffsetVal(0, 32);	-- 2nd texture in strip is checked
+		end
+
+		objectiveInstance.Objective3:SetText(Locale.ConvertTextKey(objective3:GetSummary()));
+		if(objective3:AreSuccessConditionsMet())then
+			objectiveInstance.ActiveCheckBox3:SetTextureOffsetVal(0, 32);	-- 2nd texture in strip is checked
+		end
+
+	elseif (newObjective) then
+		local objectiveInstance = {};
 		ContextPtr:BuildInstanceForControl("ObjectiveInstance", objectiveInstance, Controls.ObjectiveStack);
 		objectiveInstance.Objective:SetText(Locale.ConvertTextKey(newObjective:GetSummary()));
 
@@ -277,3 +309,11 @@ function ShowWindow()
 
 	Events.SerialEventGameMessagePopupShown(m_PopupInfo);
 end
+
+function OnLoadScreenClose()
+	UIManager:QueuePopup(ContextPtr, PopupPriority.TextPopup);
+	UIManager:DequeuePopup(ContextPtr);
+	-- 'Active' (local human) player has changed
+	Events.GameplaySetActivePlayer.Add(OnActivePlayerChanged);
+end
+Events.LoadScreenClose.Add(OnLoadScreenClose);

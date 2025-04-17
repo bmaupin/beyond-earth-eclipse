@@ -1,12 +1,3 @@
-function ShowPopup(victoryType, victoryObjectiveKey, showVictoryPrologue)
-    Events.SerialEventGameMessagePopup( {
-        Type = ButtonPopupTypes.BUTTONPOPUP_VICTORY_PROGRESS,
-        Data1 = GameInfo.Quests[victoryType].ID,
-        Option1 = showVictoryPrologue,
-        Text = victoryObjectiveKey
-    } );
-end
-
 -- TODO: clean this up
 -- function OnTechResearched(teamType, techType, change)
 --     print("(Beyond Earth Eclipse) OnTechResearched")
@@ -196,7 +187,7 @@ function ShowVictoryPopup(playerID)
     -- If the player has a tied purity and supremacy level, both of them
     -- would be shown at once. Instead, we pick one of them randomly to
     -- show and don't show the other one.
-    local showPurityFirstObjectivePopup = math.random() < 0.5;
+    local showPurityProloguePopup = math.random() < 0.5;
 
     local quests = player:GetQuests()
     for _, quest in ipairs(quests) do
@@ -235,22 +226,28 @@ function ShowVictoryPopup(playerID)
                     -- TODO: do we need to include the quest wait summary? e.g. TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_WAIT_EPILOGUE
                     -- TODO: show domination prologue after first capital is conquered?
 
+                    -- TODO: I think there's an easier way to get this?
                     local purityLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_PURITY"].ID);
                     local harmonyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_HARMONY"].ID);
                     local supremacyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_SUPREMACY"].ID);
 
-                    local showPopup = true;
+                    local showObjectivePopup = questType == "QUEST_VICTORY_TRANSCENDENCE" or false;
+                    local showProloguePopup = true;
 
                     -- TODO: this is broken because it's not checking the victoryType
                     -- Unfortunately the epilogue text for the transcendence victory tech
                     -- objectives are repetitive, so only show whichever is finished
                     -- first.
                     if (
-                        shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE"] or
-                        shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE"] or
-                        shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE"]
+                        questType == "QUEST_VICTORY_TRANSCENDENCE" and
+                        (
+                            shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE"] or
+                            shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE"] or
+                            shownVictoryQuestStrings["TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE"]
+                        )
                     ) then
-                        showPopup = false;
+                        showObjectivePopup = false;
+                        showProloguePopup = false;
                     end
 
                     -- TODO: test this
@@ -273,7 +270,7 @@ function ShowVictoryPopup(playerID)
                             harmonyLevel < supremacyLevel
                         )
                     ) then
-                        showPopup = false;
+                        showProloguePopup = false;
                     end
 
                     -- TODO: test this
@@ -281,32 +278,51 @@ function ShowVictoryPopup(playerID)
                     if (
                         purityLevel == supremacyLevel and
                         objectiveEpilogue == "TXT_KEY_QUEST_VICTORY_EMANCIPATION_LAUNCH_EPILOGUE" and
-                        showPurityFirstObjectivePopup
+                        showPurityProloguePopup
                     ) then
-                        showPopup = false;
+                        showProloguePopup = false;
                     -- Show supremacy first objective popup but not purity
                     elseif (
                         purityLevel == supremacyLevel and
                         objectiveEpilogue == "TXT_KEY_QUEST_VICTORY_PROMISED_LAND_LAUNCH_EPILOGUE" and
-                        not showPurityFirstObjectivePopup
+                        not showPurityProloguePopup
                     ) then
-                        showPopup = false;
+                        showProloguePopup = false;
                     end
 
-                    if (showPopup) then
-                        -- Show the victory quest prologue the first time we show a popup for
-                        -- a particular victory type
-                        local showVictoryPrologue = false;
-                        if (not shownVictoryQuestStrings[questPrologue]) then
-                            showVictoryPrologue = true;
-                            shownVictoryQuestStrings[questPrologue] = true;
+                    -- TODO: check for DLC
+                    if (questType == "QUEST_VICTORY_TRANSCENDENCE" and showObjectivePopup) then
+                        print("(Beyond Earth Eclipse) showing objective popup for victory " .. questType .. " objective " .. objective:GetSummary())
+
+                        if (questType == "QUEST_VICTORY_TRANSCENDENCE") then
+                            Events.SerialEventGameMessagePopup({
+                                Type = ButtonPopupTypes.BUTTONPOPUP_QUEST_OBJECTIVE_RECEIVED_ECLIPSE,
+                                Data1 = playerID,
+                                Data2 = quest:GetIndex(),
+                                -- This is the index of the next objective; Lua indexes
+                                -- start at 1 so we have to add 2 😝
+                                Data3 = objective:GetIndex() + 2
+                            });
                         end
-
-                        print("(Beyond Earth Eclipse) showing popup for victory " .. questType .. " objective " .. objective:GetSummary())
-                        ShowPopup(questType, objectiveEpilogue, showVictoryPrologue);
                     end
+
+                    if (showProloguePopup) then
+                        print("(Beyond Earth Eclipse) showing prologue popup for victory " .. questType .. " objective " .. objective:GetSummary())
+
+                        Events.SerialEventGameMessagePopup({
+                            Type = ButtonPopupTypes.BUTTONPOPUP_VICTORY_PROLOGUE,
+                            Data1 = GameInfo.Quests[questType].ID,
+                            Text = quest:GetPrologue()
+                        });
+                    end
+
                     -- Always add the text key to the list whether or not we show a popup
-                    shownVictoryQuestStrings[objectiveEpilogue] = true;
+                    if (not shownVictoryQuestStrings[objectiveEpilogue]) then
+                        shownVictoryQuestStrings[objectiveEpilogue] = true;
+                    end
+                    if (not shownVictoryQuestStrings[questPrologue]) then
+                        shownVictoryQuestStrings[questPrologue] = true;
+                    end
 
                     -- DELETEME
                     print("(Beyond Earth Eclipse) completedVictoryObjectiveIds=", "    ")
