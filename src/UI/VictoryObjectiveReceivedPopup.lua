@@ -178,6 +178,10 @@ Controls.ConfirmButton:RegisterCallback(Mouse.eLClick, HideWindow);
 
 -- ===========================================================================
 function ShowWindow()
+	if (m_PopupInfo == nil) then
+		return;
+	end
+
 	local playerType = m_PopupInfo.Data1;
 	local questIndex = m_PopupInfo.Data2;
 	local objectiveIndex = m_PopupInfo.Data3;
