@@ -133,11 +133,8 @@ function ShowVictoryObjectivePopup(playerID)
         return;
     end
 
-
-
     local quests = player:GetQuests()
     for _, quest in ipairs(quests) do
-        local questPrologue = quest:GetPrologue();
         local questId = quest:GetType()
         local questInfo = GameInfo.Quests[questId];
         local questType = questInfo.Type;
@@ -214,66 +211,64 @@ end
 GameEvents.PlayerDoTurn.Add(ShowVictoryObjectivePopup);
 
 function ShowVictoryProloguePopup(playerID, questType)
-    local showProloguePopup = true;
+    print("(Beyond Earth Eclipse) ShowVictoryProloguePopup()")
 
-    -- TODO: move highest affinity logic here?
-
-    -- TODO: move supremacy/purity logic here, if questType is QUEST_VICTORY_EMANCIPATION or QUEST_VICTORY_PROMISED_LAND
-    -- Emancipation and promised land victories share the first objective.
-    -- If the player has a tied purity and supremacy level, both of them
-    -- would be shown at once. Instead, we pick one of them randomly to
-    -- show and don't show the other one.
-    local showPurityProloguePopup = math.random() < 0.5;
+    local player = Players[playerID];
+    if not player:IsHuman() or not player:IsAlive() then
+        return;
+    end
 
 
-    -- For affinity victory types, only show the popup if it's the
-    -- highest affinity (or tied)
     local purityLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_PURITY"].ID);
     local harmonyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_HARMONY"].ID);
     local supremacyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_SUPREMACY"].ID);
+
+    -- Only show the harmony victory prologue if that's the player's highest affinity (or
+    -- tied)
     if (
-        (
-            questType == "QUEST_VICTORY_EMANCIPATION" and
-            supremacyLevel < purityLevel and
-            supremacyLevel < harmonyLevel
-        ) or
-        (
-            questType == "QUEST_VICTORY_PROMISED_LAND" and
+        questType == "QUEST_VICTORY_TRANSCENDENCE" and
+        harmonyLevel < purityLevel and
+        harmonyLevel < supremacyLevel
+    ) then
+        return;
+    end
+
+    -- Emancipation and promised land victories share the first objective so we have to
+    -- handle them together
+    if (
+        questType == "QUEST_VICTORY_EMANCIPATION" or
+        questType == "QUEST_VICTORY_PROMISED_LAND"
+    ) then
+        -- Make sure one or the other are higher than or tied with harmony affinity level
+        if (
             purityLevel < harmonyLevel and
-            purityLevel < supremacyLevel
-        ) or
-        (
-            questType == "QUEST_VICTORY_TRANSCENDENCE" and
-            harmonyLevel < purityLevel and
-            harmonyLevel < supremacyLevel
-        )
-    ) then
-        showProloguePopup = false;
+            supremacyLevel < harmonyLevel
+        ) then
+            return;
+        end
+
+        if (purityLevel > supremacyLevel) then
+            questType = "QUEST_VICTORY_PROMISED_LAND";
+        elseif (supremacyLevel > purityLevel) then
+            questType = "QUEST_VICTORY_EMANCIPATION";
+        elseif (purityLevel == supremacyLevel) then
+            -- If the player has a tied purity and supremacy level, pick one of them
+            -- randomly to show
+            local showPurityProloguePopup = math.random() < 0.5;
+            if showPurityProloguePopup then
+                questType = "QUEST_VICTORY_PROMISED_LAND";
+            else
+                questType = "QUEST_VICTORY_EMANCIPATION";
+            end
+        end
     end
 
-    -- Show purity prologue popup but not supremacy
-    if (
-        purityLevel == supremacyLevel and
-        questType == "QUEST_VICTORY_EMANCIPATION" and
-        showPurityProloguePopup
-    ) then
-        showProloguePopup = false;
-    -- Show supremacy prologue popup but not purity
-    elseif (
-        purityLevel == supremacyLevel and
-        questType == "QUEST_VICTORY_PROMISED_LAND" and
-        not showPurityProloguePopup
-    ) then
-        showProloguePopup = false;
-    end
-
-    local player = Players[playerID];
-    local quest = player:GetQuest(questType)
+    local quest = player:GetQuest(GameInfo.Quests[questType].ID);
     if not quest then return end
     local questPrologue = quest:GetPrologue();
     print("(Beyond Earth Eclipse) questPrologue = " .. questPrologue)
 
-    if (showProloguePopup and not shownVictoryQuestStrings[questPrologue]) then
+    if (not shownVictoryQuestStrings[questPrologue]) then
         print("(Beyond Earth Eclipse) showing prologue popup for victory " .. questType)
 
         Events.SerialEventGameMessagePopup({
@@ -310,16 +305,17 @@ function OnTechResearched(teamType, techType, change)
 end
 GameEvents.TeamTechResearched.Add(OnTechResearched)
 
--- A countdown to piece complete can be started by an orbital unit
-function OnOrbitalUnitLaunched(playerID, unitType, plotX, plotY)
+function OnOrbitalUnitLaunched(playerID, unitType, _plotX, _plotY)
+    print("(Beyond Earth Eclipse) OnOrbitalUnitLaunched()")
+
     local player = Players[playerID];
     if not player:IsHuman() or not player:IsAlive() then
         return;
     end
 
-    if (unitType == GameInfo.Units["UNIT_DEEP_SPACE_TELESCOPE"]) then
+    if (unitType == GameInfo.Units["UNIT_DEEP_SPACE_TELESCOPE"].ID) then
         ShowVictoryProloguePopup(playerID, "QUEST_VICTORY_CONTACT")
-    elseif (unitType == GameInfo.Units["UNIT_LASERCOM_SATELLITE"]) then
+    elseif (unitType == GameInfo.Units["UNIT_LASERCOM_SATELLITE"].ID) then
         -- This satellite is for both the emancipation and promised land victories;
         -- ShowVictoryProloguePopup has logic to decide which one to show
         ShowVictoryProloguePopup(playerID, "QUEST_VICTORY_EMANCIPATION")
