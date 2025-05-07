@@ -1,27 +1,25 @@
-<!--
-
-# Beyond Earth: Eclipse
-
-A mod for Sid Meier's Civilization: Beyond Earth to give it more flavour.
-
-📌 [See my other Civ projects here](https://github.com/search?q=user%3Abmaupin+topic%3Acivilization&type=Repositories)
-
--->
-
 ## To do
 
 - [x] Overwrite all leader tech/wonder audio
 - [x] Remove hybrid affinities from all techs; hybrid affinity should be a choice, not an accident
 - [x] Adjust all leader traits to have stronger personalities
-- [ ] Add new leader intro text for all leaders to reflect darker theme
+- [x] Add new leader intro text for all leaders to reflect darker theme
   - [x] Modify all leader intro text
   - [x] Modify `IntroductionQuote` for all leaders to use any available intro text? Instead of just for that leader
-- [ ] Find a way to bring text from victory dialogue to the front; it's interesting
-- [ ] Disable other affinity technologies as we advance in one affinity?
-- [ ] Base game audio with Rising Tide and vice versa?
+- [x] Find a way to bring text from victory dialogue to the front; it's interesting
 - [ ] Test with base game
 
 <!--
+
+# Beyond Earth: Eclipse
+
+📌 [See my other Civ projects here](https://github.com/search?q=user%3Abmaupin+topic%3Acivilization&type=Repositories)
+
+A small mod for Sid Meier's Civilization: Beyond Earth to give it more flavour. This mod was meant to bring out the world building that already exists in the game but not to drastically change it. For mods that have a bigger gameplay impact, see:
+
+- [Anchor Ceti](https://forums.civfanatics.com/threads/anchor-ceti-a-story-in-beyond-earth.664817/)
+- [Ryika's mods](https://steamcommunity.com/id/ryika/myworkshopfiles/?appid=65980)
+- [Codex](https://steamcommunity.com/sharedfiles/filedetails/?id=780912351) is another massive mod but has been delisted as its complexity can lead to stability issues
 
 ## Installation
 
@@ -61,6 +59,12 @@ Rising Tide added affinity values to techs that previously didn't have any (like
 
 These changes have been reverted in this mod, so that acquiring any particular affinity once again is an intentional choice the player can make rather something they fall into as a result of progressing through the tech web.
 
+### Victories
+
+#### Transcendence victory objective popups have been fixed
+
+Each victory has different objectives that can contain some interesting world building. In Rising Tide, functionality was added to show these objectives in popups except for the transcendence (harmony) victory. This mod fixes those popups.
+
 ## Usage
 
 TODO
@@ -68,5 +72,41 @@ TODO
 ## Manual installation
 
 TODO
+
+## Other ideas/wishlist
+
+### Leaders
+
+#### Replace other leader quotes
+
+It seems there are other leader quotes that haven't been replaced, such as affinity progress (see Harmony level 5 quote from Daoming Sochua, for example).
+
+### Affinities
+
+#### Make affinity bonuses more disctinct
+
+Right now the unit promotion bonuses across the different affinities aren't differentiated enough. While this makes the game fairly well balanced, this results in a bit of "ludonarrative" dissonance in which the gameplay of each affinity does not necessarily match the world building.
+
+It would be more interesting if, for example, harmony was given bonuses related to their harmonious relationship with the planet, so for example health and movement. Purity could be given bonuses of strength and attack. And supremacy could be given bonuses to technology and range.
+
+#### Make affinity choice more impactful
+
+One current problem with the affinities (and other game systems) is that there are few tradeoffs other than opportunity cost. Specifically, the player can max out all affinities if she wishes to do so. Instead, as the player progresses in one affinity I think it could be more interesting to gradually reduce the maximum level of the other affinities in such a way that only one affinity victory condition could be achieved.
+
+For example, the max affinity level in Rising Tide is 18 and affinity victories need a minimum affinity of 15. If the player reaches affinity level 9 in one affinity, for every level after that, the maximum level of the other affinities could be reduced by 1. This would allow the player to reach level 18 in only one affinity (capping the others at level 9), or alternatively the player could reach level 15 in one affinity to fulfill its victory conditions while still reaching level 10 in at least one other affinity in order to take advantage of hybrid bonuses.
+
+This could even be extended to include blocking higher level affinity technologies to make specialising in one affinity more of an interesting choice.
+
+#### Affinity progress should be more dependant on player actions
+
+Affinity progress is almost entirely made through researching technologies. This isn't bad in and of itself, but it means that player actions have little impact on choice of affinity, potentially leading to bizarre outcomes such as a player who chooses the harmony affinity and proceeds to wipe out all alien life. Instead, it would be much more interesting if player action had a greater impact on affinity. For example, a player could receive harmony affinity points for every alien in her borders at the end of each turn that she does not attack, or every tile of miasma in her borders left untouched.
+
+Quests do give some affinity points, but this could also likewise be given more weight.
+
+### Victories
+
+#### Show victory prologue text
+
+The game has interesting story-building text for each victory as a prologue. This mod has code to show this prologue text in a popup, but in the end it got too complicated and messy to sort out. It might still be worth showing this text to add to the world building.
 
 -->
