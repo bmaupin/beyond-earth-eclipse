@@ -131,7 +131,12 @@
     <File md5="0902cd20fe0bd720255c0f86d163a567" import="1">Assets/Sounds/Speech/English/Wonders/Xenodrome.mp3</File>
     <File md5="3281cf987e14a9b6a535c12e3223d314" import="1">Assets/Sounds/Speech/English/Wonders/Xenomalleum.mp3</File>
     <File md5="a677cae7903b65f35e8b1d563c50d522" import="1">Assets/Sounds/Speech/English/Wonders/Xenonova.mp3</File>
+    <File md5="4857412df97e66cb82a373df80bdb78f" import="0">Lua/Victories.lua</File>
     <File md5="3c8817d41a3c2ef77c8af76ff9d595af" import="0">SQL/Language_en_US.sql</File>
+    <File md5="3470a72ac2e3ce5aee488837026bb954" import="0">UI/VictoryObjectiveReceivedPopup.lua</File>
+    <File md5="2e1f7539adfa3fe41143db6edd1bc276" import="0">UI/VictoryObjectiveReceivedPopup.xml</File>
+    <!-- <File md5="f6678b924e443e5608926650ba0d6778" import="0">UI/VictoryProloguePopup.lua</File>
+    <File md5="f6ff5d5d782ff25c5372534c4f8ad526" import="0">UI/VictoryProloguePopup.xml</File> -->
     <File md5="2d7e83a68f0fe6fa2d7f5014a923b651" import="0">XML/Leader_CondemnationBiases.xml</File>
     <File md5="6dc419d189a85cd8a86d47753c46bdf0" import="0">XML/Leader_Flavors.xml</File>
     <File md5="23a5d5299f9e7d49f9f31c7a1e37f4e7" import="0">XML/Leader_MajorCivApproachBiases.xml</File>
@@ -149,5 +154,17 @@
     </OnModActivated>
   </Actions>
   <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/Victories.lua">
+      <Name>Eclipse - Victories</Name>
+      <Description>Eclipse - Victories</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="UI/VictoryObjectiveReceivedPopup.xml">
+      <Name>Eclipse - VictoryObjectiveReceivedPopup</Name>
+      <Description></Description>
+    </EntryPoint>
+    <!-- <EntryPoint type="InGameUIAddin" file="UI/VictoryProloguePopup.xml">
+      <Name>Eclipse - VictoryProloguePopup</Name>
+      <Description></Description>
+    </EntryPoint> -->
   </EntryPoints>
 </Mod>
