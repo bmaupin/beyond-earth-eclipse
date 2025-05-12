@@ -223,7 +223,7 @@ VALUES
     ('TXT_KEY_INTRO_MESSAGE_POLYSTRALIA_5', 'civbe-eclipse'),
     ('TXT_KEY_INTRO_MESSAGE_RUSSIA_5', 'civbe-eclipse');
 UPDATE Language_en_US
-SET Text = 'As one of the most easily recognized personalities on Old Earth, Suzanne Fielding is uniquely familiar with most, if not all of the other Sponsors. What started out as natural relationships has slowly been turned into one of the many building blocks of ARC''s formidable intelligence behemoth. As corporations have evolved into governments, what could have been called customer relations have evolved into something else altogether: a vast secretive web of espionage that the ARC uses to keep an eye on both friend and foe. To what purposes, only Fielding may know.'
+SET Text = 'As one of the most easily recognized personalities on Old Earth, Suzanne Fielding is uniquely familiar with most, if not all of the other Sponsors. Natural relationships with other leaders have slowly turned into building blocks of ARC''s formidable intelligence behemoth. As corporations have evolved into governments, what could have been called customer relations have evolved into something else altogether: a vast secretive web of espionage that the ARC uses to keep an eye on both friend and foe. To what purposes, only Fielding may know.'
 WHERE Text = 'civbe-eclipse';
 
 INSERT INTO Language_en_US (Tag, Text)
@@ -565,7 +565,7 @@ VALUES
     ('TXT_KEY_INTRO_MESSAGE_POLYSTRALIA_18', 'civbe-eclipse'),
     ('TXT_KEY_INTRO_MESSAGE_RUSSIA_18', 'civbe-eclipse');
 UPDATE Language_en_US
-SET Text = 'Even as the PAC expands quickly across the new planet, outsiders do not have an open window into the society that is forcefully vying for the top of the food chain. The PAC, while made up of a vast population, acts as one. Any openness that was genuine or feigned after The Great Mistake in order to propel humanity off of a dying planet has been cast aside. There is now little pretence that the PAC exists solely for its own interests now. Other sponsors are wise to be cautious about entering into an agreement with PAC, given that it is widely believed PAC will only enter into such agreements when they believe they are able to extract all or most of the benefit, often at the expense of the other party. Such decisions should not be taken lightly.'
+SET Text = 'Even as the PAC expands quickly across the new planet, outsiders do not have an open window into the society that is forcefully vying for the top of the food chain. The PAC, while made up of a vast population, acts as one. Any openness that was genuine or feigned after The Great Mistake in order to propel humanity off of a dying planet has been cast aside. There is now little pretence that the PAC exists solely for its own interests. Other sponsors are wise to be cautious about entering into an agreement with PAC, given that it is widely believed PAC will only enter into such agreements when they believe they are able to extract all or most of the benefit, often at the expense of the other party. Such decisions should not be taken lightly.'
 WHERE Text = 'civbe-eclipse';
 
 -- Polystralia

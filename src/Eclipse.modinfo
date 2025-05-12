@@ -3,8 +3,8 @@
   <Properties>
     <Name>Eclipse</Name>
     <Stability>Alpha</Stability>
-    <Teaser>TODO</Teaser>
-    <Description>TODO</Description>
+    <Teaser>Small mod to give Beyond Earth more flavour</Teaser>
+    <Description>Small changes to leaders, victories, and affinities to make them more interesting</Description>
     <Authors>bmaupin</Authors>
     <HideSetupGame>0</HideSetupGame>
     <AffectsSavedGames>1</AffectsSavedGames>
@@ -132,7 +132,7 @@
     <File md5="3281cf987e14a9b6a535c12e3223d314" import="1">Assets/Sounds/Speech/English/Wonders/Xenomalleum.mp3</File>
     <File md5="a677cae7903b65f35e8b1d563c50d522" import="1">Assets/Sounds/Speech/English/Wonders/Xenonova.mp3</File>
     <File md5="4857412df97e66cb82a373df80bdb78f" import="0">Lua/Victories.lua</File>
-    <File md5="3c8817d41a3c2ef77c8af76ff9d595af" import="0">SQL/Language_en_US.sql</File>
+    <File md5="a094d465c3ea47f08831d7fcf9467010" import="0">SQL/Language_en_US.sql</File>
     <File md5="3470a72ac2e3ce5aee488837026bb954" import="0">UI/VictoryObjectiveReceivedPopup.lua</File>
     <File md5="2e1f7539adfa3fe41143db6edd1bc276" import="0">UI/VictoryObjectiveReceivedPopup.xml</File>
     <!-- <File md5="f6678b924e443e5608926650ba0d6778" import="0">UI/VictoryProloguePopup.lua</File>
