@@ -1,0 +1,32 @@
+{
+  // Prevent the Lua extension form scanning the entire workspace
+  "Lua.workspace.maxPreload": 0,
+  "Lua.diagnostics.globals": [
+    "ButtonPopupTypes",
+    "CommandTypes",
+    "Events",
+    "GameDefines",
+    "GameEvents",
+    "GameInfo",
+    "GameInfoTypes",
+    "Locale",
+    "Map",
+    "NotificationTypes",
+    "Players",
+    "PreGame",
+    "ToGridFromHex",
+    "Controls",
+    "UIManager",
+    "ContextPtr",
+    "PopupPriority",
+    "Mouse",
+    "Keys",
+    "KeyEvents",
+    "UI",
+    "include",
+    "Game",
+    "ContentManager",
+    "ContentType",
+    "Teams"
+  ]
+}
