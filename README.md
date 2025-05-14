@@ -1,39 +1,45 @@
-## To do
-
-- [x] Overwrite all leader tech/wonder audio
-- [x] Remove hybrid affinities from all techs; hybrid affinity should be a choice, not an accident
-- [x] Adjust all leader traits to have stronger personalities
-- [x] Add new leader intro text for all leaders to reflect darker theme
-  - [x] Modify all leader intro text
-  - [x] Modify `IntroductionQuote` for all leaders to use any available intro text? Instead of just for that leader
-- [x] Find a way to bring text from victory dialogue to the front; it's interesting
-- [ ] Test with base game
-
-<!--
-
 # Beyond Earth: Eclipse
 
 📌 [See my other Civ projects here](https://github.com/search?q=user%3Abmaupin+topic%3Acivilization&type=Repositories)
 
-A small mod for Sid Meier's Civilization: Beyond Earth to give it more flavour. This mod was meant to bring out the world building that already exists in the game but not to drastically change it. For mods that have a bigger gameplay impact, see:
+A small mod for Sid Meier's Civilization: Beyond Earth to give it more flavour. Features include:
 
-- [Anchor Ceti](https://forums.civfanatics.com/threads/anchor-ceti-a-story-in-beyond-earth.664817/)
-- [Ryika's mods](https://steamcommunity.com/id/ryika/myworkshopfiles/?appid=65980)
-- [Codex](https://steamcommunity.com/sharedfiles/filedetails/?id=780912351) is another massive mod but has been delisted as its complexity can lead to stability issues
+- Tech and wonder quotes are now spoken by sponsors
+- More distinct leader personalities
+- New intro text for all leaders
+- Tech tree affinities have been reverted to base game values
+- Transcendence victory objective popups have been fixed
+- Compatible with base game and Rising Tide
 
 ## Installation
 
-TODO
+⚠️ If you're playing on Linux, install the patch here to fix the crash when using mods: [https://github.com/bmaupin/civ-be-linux-fixes/](https://github.com/bmaupin/civ-be-linux-fixes/)
+
+Install the mod from Steam here or see below for manual installation instructions:<br>
+<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3478662712">
+<img src="assets/steam-store-badge.webp" alt="Available on Steam" width="200px">
+</a>
+
+## Usage
+
+1. Install the mod
+1. Start Beyond Earth and go to the _Mods_ menu
+1. Check _Eclipse_ and any other desired mods
 
 ## Features
+
+Sid Meier's Alpha Centauri was used as an inspiration for much of this; while it lacks the gameplay and user experience amenities of modern strategy games, it still has some of the best world building of any strategy game.
+
+This mod was meant to bring out the world building that already exists in Beyond Earth but not to drastically change it. For mods that have a bigger gameplay impact, see:
+
+- [Anchor Ceti](https://forums.civfanatics.com/threads/anchor-ceti-a-story-in-beyond-earth.664817/)
+- [Ryika's mods](https://steamcommunity.com/id/ryika/myworkshopfiles/?appid=65980)
 
 ### Leaders
 
 #### Tech and wonder quotes are now spoken by sponsors
 
 All tech and wonder quotes from sponsors have had their audio overridden so that they're now spoken by the respective sponsor instead of the same narrator that narrates most of the rest of the game in order to add more variety to the spoken dialogue.
-
-ⓘ This was inspired by Alpha Centauri, in which quotes are spoken by the various faction leaders in the game and not by the narrator.
 
 #### Stronger leader personalities
 
@@ -42,8 +48,6 @@ Leaders have been adjusted to have more distinct personalities:
 - Stronger preference for a particular affinity
 - More extreme values for leader traits (bold, loyal, guarded, deceptive, friendly, etc.)
 - A strong focus on one or two aspects for each leader (growth, production, trade, espionage, military, culture, etc.)
-
-ⓘ This was also inspired by Alpha Centauri. Instead of blank-slate faction leaders, each leader has a strong personality. Rather than making the game boring and predictable, Alpha Centauri was lauded for its memorable and interesting factions.
 
 #### New intro text for all leaders
 
@@ -65,13 +69,50 @@ These changes have been reverted in this mod, so that acquiring any particular a
 
 Each victory has different objectives that can contain some interesting world building. In Rising Tide, functionality was added to show these objectives in popups except for the transcendence (harmony) victory. This mod fixes those popups.
 
-## Usage
-
-TODO
-
 ## Manual installation
 
-TODO
+#### Linux
+
+Download the repository source file from [Releases](https://github.com/bmaupin/beyond-earth-eclipse/releases), extract it, and then run the install script:
+
+```
+./scripts/install-mod.sh
+```
+
+Or:
+
+1. Go to [Releases](https://github.com/bmaupin/beyond-earth-eclipse/releases) and download the `.civbemod` file
+1. Get the version of the mod from [src/Eclipse.modinfo](src/Eclipse.modinfo)
+   - It's add the end of the `Mod` element, e.g. `version="1"`
+1. Create a new directory named `Eclipse (v 1)`
+   - 👉 Update the value after `(v ` with the version from the previous step
+1. Extract the contents of the `.civbemod` file to the directory you created (it's compressed using 7zip)
+1. Move the directory to the mods directory
+   - Native: ~/.local/share/aspyr-media/Sid Meier's Civilization Beyond Earth/MODS/
+   - Proton: ~/.steam/steam/steamapps/compatdata/65980/pfx/drive_c/users/steamuser/Documents/My Games/Sid Meier's Civilization Beyond Earth/MODS
+
+#### Windows
+
+1. Go to [Releases](https://github.com/bmaupin/beyond-earth-eclipse/releases) and download the `.civbemod` file
+1. Copy it to Documents/My Games/Sid Meier's Civilization Beyond Earth/MODS
+
+<!-- 🤷‍♂️
+
+## Story
+
+Darkness has fallen across the planet.
+
+After the Great Mistake, Earth's leaders came together and put aside their petty differences in order to ensure humanity's survival. This new idealistic outlook persisted as the various sponsors sent groups of colonists across the starts to settle a new planet.
+
+But something has changed. Has some kind of microscopic organism infected the population? Is it due to cosmic radiation or the subtle change in hue of their new star? Or have these brave new humans simply fallen into old habits and predjudices now that they have started to find a semblance of normality on this harsh alien planet?
+
+Whatever the cause may be, it is clear that while some have held on to the same utopian ideals that boosted them from Earth to a new planet, for many more these ideals have been replaced with old tendencies of tribalism, selfishness, and suspicion.
+
+Will humanity repeat the same failures that lead to the Great Mistake? Will they descend further into a dark distopia? Or will they rise above the new challenges they face?
+
+Now is your time to help decide the fate of those who have left Earth and find themselves very far from home.
+
+-->
 
 ## Other ideas/wishlist
 
@@ -83,7 +124,7 @@ It seems there are other leader quotes that haven't been replaced, such as affin
 
 ### Affinities
 
-#### Make affinity bonuses more disctinct
+#### Make affinity bonuses more distinct
 
 Right now the unit promotion bonuses across the different affinities aren't differentiated enough. While this makes the game fairly well balanced, this results in a bit of "ludonarrative" dissonance in which the gameplay of each affinity does not necessarily match the world building.
 
@@ -108,5 +149,3 @@ Quests do give some affinity points, but this could also likewise be given more 
 #### Show victory prologue text
 
 The game has interesting story-building text for each victory as a prologue. This mod has code to show this prologue text in a popup, but in the end it got too complicated and messy to sort out. It might still be worth showing this text to add to the world building.
-
--->
