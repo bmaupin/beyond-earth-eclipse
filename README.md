@@ -82,10 +82,8 @@ Download the repository source file from [Releases](https://github.com/bmaupin/b
 Or:
 
 1. Go to [Releases](https://github.com/bmaupin/beyond-earth-eclipse/releases) and download the `.civbemod` file
-1. Get the version of the mod from [src/Eclipse.modinfo](src/Eclipse.modinfo)
-   - It's add the end of the `Mod` element, e.g. `version="1"`
 1. Create a new directory named `Eclipse (v 1)`
-   - 👉 Update the value after `(v ` with the version from the previous step
+   - 👉 Update the value after `(v ` with the version from the filename
 1. Extract the contents of the `.civbemod` file to the directory you created (it's compressed using 7zip)
 1. Move the directory to the mods directory
    - Native: ~/.local/share/aspyr-media/Sid Meier's Civilization Beyond Earth/MODS/

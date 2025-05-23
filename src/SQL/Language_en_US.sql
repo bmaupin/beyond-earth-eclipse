@@ -854,7 +854,7 @@ VALUES
     ('TXT_KEY_INTRO_MESSAGE_POLYSTRALIA_31', 'civbe-eclipse'),
     ('TXT_KEY_INTRO_MESSAGE_RUSSIA_31', 'civbe-eclipse');
 UPDATE Language_en_US
-SET Text = 'Although relatively few people had heard of Lena Ebner before she took over leadership of INTEGR, she comes from a long line of hard-working industrialists. Like those before her, Lena prefers to keep her head down and let the results speak for themselves. Productivity and efficiency are held as high values both by Lena herself as well as INTEGR as a whole. Little acknowledgement nor approval are given to frivolity, and when possible any excess is sought out and curtailed with ruthless efficacy in order to prevent it from spreading like an infection. This same additude has grown beyond just INTEGR''s own holdings to reflect its view on many of the other sponsors and their perceived wanton exhorbitance.'
+SET Text = 'Although relatively few people had heard of Lena Ebner before she took over leadership of INTEGR, she comes from a long line of hard-working industrialists. Like those before her, Lena prefers to keep her head down and let the results speak for themselves. Productivity and efficiency are held as high values both by Lena herself as well as INTEGR as a whole. Little acknowledgement nor approval are given to frivolity, and when possible any excess is sought out and curtailed with ruthless efficacy in order to prevent it from spreading like an infection. This same attitude has grown beyond just INTEGR''s own holdings to reflect its view on many of the other sponsors and their perceived wanton exhorbitance.'
 WHERE Text = 'civbe-eclipse';
 
 INSERT INTO Language_en_US (Tag, Text)
