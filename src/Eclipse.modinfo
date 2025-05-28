@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="dc718a43-7f42-45c5-8963-a158d69d947b" version="1">
+<Mod id="dc718a43-7f42-45c5-8963-a158d69d947b" version="2">
   <Properties>
     <Name>Eclipse</Name>
     <Stability>Alpha</Stability>
@@ -132,25 +132,27 @@
     <File md5="3281cf987e14a9b6a535c12e3223d314" import="1">Assets/Sounds/Speech/English/Wonders/Xenomalleum.mp3</File>
     <File md5="a677cae7903b65f35e8b1d563c50d522" import="1">Assets/Sounds/Speech/English/Wonders/Xenonova.mp3</File>
     <File md5="4857412df97e66cb82a373df80bdb78f" import="0">Lua/Victories.lua</File>
-    <File md5="a094d465c3ea47f08831d7fcf9467010" import="0">SQL/Language_en_US.sql</File>
+    <File md5="7b1dce88acdb3e30e76fde0e97ee6645" import="0">SQL/Language_en_US.sql</File>
+    <File md5="c87df094a44496cb4b94db435cb70ce5" import="0">SQL/Technology_Affinities.sql</File>
     <File md5="3470a72ac2e3ce5aee488837026bb954" import="0">UI/VictoryObjectiveReceivedPopup.lua</File>
     <File md5="2e1f7539adfa3fe41143db6edd1bc276" import="0">UI/VictoryObjectiveReceivedPopup.xml</File>
     <!-- <File md5="f6678b924e443e5608926650ba0d6778" import="0">UI/VictoryProloguePopup.lua</File>
     <File md5="f6ff5d5d782ff25c5372534c4f8ad526" import="0">UI/VictoryProloguePopup.xml</File> -->
     <File md5="2d7e83a68f0fe6fa2d7f5014a923b651" import="0">XML/Leader_CondemnationBiases.xml</File>
-    <File md5="6dc419d189a85cd8a86d47753c46bdf0" import="0">XML/Leader_Flavors.xml</File>
+    <File md5="31dc32dbcd587e9fc49134dbfd83427b" import="0">XML/Leader_Flavors.xml</File>
     <File md5="23a5d5299f9e7d49f9f31c7a1e37f4e7" import="0">XML/Leader_MajorCivApproachBiases.xml</File>
     <File md5="f45a45c57ecb68edbbc9fde3a79fad40" import="0">XML/Leaders.xml</File>
-    <File md5="a948fbd05a0c75255ef713f8494bd66c" import="0">XML/Technology_Affinities.xml</File>
+    <!-- <File md5="a948fbd05a0c75255ef713f8494bd66c" import="0">XML/Technology_Affinities.xml</File> -->
   </Files>
   <Actions>
     <OnModActivated>
       <UpdateDatabase>SQL/Language_en_US.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Technology_Affinities.sql</UpdateDatabase>
       <UpdateDatabase>XML/Leader_CondemnationBiases.xml</UpdateDatabase>
       <UpdateDatabase>XML/Leader_Flavors.xml</UpdateDatabase>
       <UpdateDatabase>XML/Leader_MajorCivApproachBiases.xml</UpdateDatabase>
       <UpdateDatabase>XML/Leaders.xml</UpdateDatabase>
-      <UpdateDatabase>XML/Technology_Affinities.xml</UpdateDatabase>
+      <!-- <UpdateDatabase>XML/Technology_Affinities.xml</UpdateDatabase> -->
     </OnModActivated>
   </Actions>
   <EntryPoints>

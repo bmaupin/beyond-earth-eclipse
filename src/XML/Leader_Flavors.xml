@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
     <Leader_Flavors>
+        <!-- The game doesn't set affinity flavours for the leaders. Setting the value to
+             12 doesn't seem to have an adverse affect as the leaders still tend to choose
+             hybrid affinities in general, but this does tend to influence their highest
+             affinity. -->
+        <Row>
+            <LeaderType>LEADER_AFRICAN_UNION</LeaderType>
+            <FlavorType>FLAVOR_PURITY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_AFRICAN_UNION" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -16,25 +25,30 @@
         <Update>
             <Where LeaderType="LEADER_AFRICAN_UNION" FlavorType="FLAVOR_PROMISED_LAND" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_AFRICAN_UNION" FlavorType="FLAVOR_GROWTH" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_AFRICAN_UNION" FlavorType="FLAVOR_TILE_IMPROVEMENT" />
             <Set>
-                <Flavor>10</Flavor>
+                <Flavor>8</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_AL_FALAH</LeaderType>
+            <FlavorType>FLAVOR_HARMONY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_AL_FALAH" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
@@ -52,27 +66,37 @@
         <Update>
             <Where LeaderType="LEADER_AL_FALAH" FlavorType="FLAVOR_NAVAL_TILE_IMPROVEMENT" />
             <Set>
-                <Flavor>10</Flavor>
+                <Flavor>8</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_AL_FALAH" FlavorType="FLAVOR_EXPANSION" />
             <Set>
-                <Flavor>8</Flavor>
+                <Flavor>6</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_AL_FALAH" FlavorType="FLAVOR_GROWTH" />
             <Set>
-                <Flavor>8</Flavor>
+                <Flavor>6</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_AL_FALAH" FlavorType="FLAVOR_TILE_IMPROVEMENT" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_ARC</LeaderType>
+            <FlavorType>FLAVOR_SUPREMACY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
+        <Row>
+            <LeaderType>LEADER_ARC</LeaderType>
+            <FlavorType>FLAVOR_ESPIONAGE</FlavorType>
+            <Flavor>8</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_ARC" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -82,7 +106,7 @@
         <Update>
             <Where LeaderType="LEADER_ARC" FlavorType="FLAVOR_EMANCIPATION" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
@@ -94,13 +118,13 @@
         <Update>
             <Where LeaderType="LEADER_ARC" FlavorType="FLAVOR_EXPANSION" />
             <Set>
-                <Flavor>10</Flavor>
+                <Flavor>8</Flavor>
             </Set>
         </Update>
         <Row>
-            <LeaderType>LEADER_ARC</LeaderType>
-            <FlavorType>FLAVOR_ESPIONAGE</FlavorType>
-            <Flavor>11</Flavor>
+            <LeaderType>LEADER_BRASILIA</LeaderType>
+            <FlavorType>FLAVOR_PURITY</FlavorType>
+            <Flavor>12</Flavor>
         </Row>
         <Update>
             <Where LeaderType="LEADER_BRASILIA" FlavorType="FLAVOR_TRANSCENDENCE" />
@@ -117,21 +141,26 @@
         <Update>
             <Where LeaderType="LEADER_BRASILIA" FlavorType="FLAVOR_PROMISED_LAND" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_BRASILIA" FlavorType="FLAVOR_OFFENSE" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_BRASILIA" FlavorType="FLAVOR_MILITARY_TRAINING" />
             <Set>
-                <Flavor>10</Flavor>
+                <Flavor>8</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_CHUNGSU</LeaderType>
+            <FlavorType>FLAVOR_SUPREMACY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_CHUNGSU" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -141,7 +170,7 @@
         <Update>
             <Where LeaderType="LEADER_CHUNGSU" FlavorType="FLAVOR_EMANCIPATION" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
@@ -153,25 +182,30 @@
         <Update>
             <Where LeaderType="LEADER_CHUNGSU" FlavorType="FLAVOR_RECON" />
             <Set>
-                <Flavor>8</Flavor>
+                <Flavor>6</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_CHUNGSU" FlavorType="FLAVOR_SCIENCE" />
             <Set>
-                <Flavor>9</Flavor>
+                <Flavor>7</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_CHUNGSU" FlavorType="FLAVOR_ESPIONAGE" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_FRANCO_IBERIA</LeaderType>
+            <FlavorType>FLAVOR_HARMONY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_FRANCO_IBERIA" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
@@ -189,25 +223,30 @@
         <Update>
             <Where LeaderType="LEADER_FRANCO_IBERIA" FlavorType="FLAVOR_OFFENSE" />
             <Set>
-                <Flavor>3</Flavor>
+                <Flavor>2</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_FRANCO_IBERIA" FlavorType="FLAVOR_EXPANSION" />
             <Set>
-                <Flavor>5</Flavor>
+                <Flavor>4</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_FRANCO_IBERIA" FlavorType="FLAVOR_CULTURE" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_INDIA</LeaderType>
+            <FlavorType>FLAVOR_HARMONY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_INDIA" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
@@ -225,19 +264,19 @@
         <Update>
             <Where LeaderType="LEADER_INDIA" FlavorType="FLAVOR_EXPANSION" />
             <Set>
-                <Flavor>6</Flavor>
+                <Flavor>5</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_INDIA" FlavorType="FLAVOR_GROWTH" />
             <Set>
-                <Flavor>11</Flavor>
+                <Flavor>8</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_INDIA" FlavorType="FLAVOR_CULTURE" />
             <Set>
-                <Flavor>9</Flavor>
+                <Flavor>7</Flavor>
             </Set>
         </Update>
         <Update>
@@ -246,6 +285,11 @@
                 <Flavor>4</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_INTEGR</LeaderType>
+            <FlavorType>FLAVOR_PURITY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_INTEGR" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -261,33 +305,38 @@
         <Update>
             <Where LeaderType="LEADER_INTEGR" FlavorType="FLAVOR_PROMISED_LAND" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_INTEGR" FlavorType="FLAVOR_INFRASTRUCTURE" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_INTEGR" FlavorType="FLAVOR_PRODUCTION" />
             <Set>
-                <Flavor>10</Flavor>
+                <Flavor>8</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_INTEGR" FlavorType="FLAVOR_ENERGY" />
             <Set>
-                <Flavor>8</Flavor>
+                <Flavor>6</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_INTEGR" FlavorType="FLAVOR_SCIENCE" />
             <Set>
-                <Flavor>8</Flavor>
+                <Flavor>6</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_NORTH_SEA_ALLIANCE</LeaderType>
+            <FlavorType>FLAVOR_SUPREMACY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_NORTH_SEA_ALLIANCE" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -297,7 +346,7 @@
         <Update>
             <Where LeaderType="LEADER_NORTH_SEA_ALLIANCE" FlavorType="FLAVOR_EMANCIPATION" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
@@ -309,51 +358,44 @@
         <Update>
             <Where LeaderType="LEADER_NORTH_SEA_ALLIANCE" FlavorType="FLAVOR_NAVAL" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_NORTH_SEA_ALLIANCE" FlavorType="FLAVOR_NAVAL_TILE_IMPROVEMENT" />
             <Set>
-                <Flavor>10</Flavor>
+                <Flavor>8</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_NORTH_SEA_ALLIANCE" FlavorType="FLAVOR_HEALTH" />
             <Set>
-                <Flavor>8</Flavor>
+                <Flavor>6</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_NORTH_SEA_ALLIANCE" FlavorType="FLAVOR_WATER_CONNECTION" />
             <Set>
-                <Flavor>10</Flavor>
+                <Flavor>8</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_NORTH_SEA_ALLIANCE" FlavorType="FLAVOR_AQUATIC" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_NORTH_SEA_ALLIANCE" FlavorType="FLAVOR_NAVAL_RANGED" />
             <Set>
-                <Flavor>8</Flavor>
+                <Flavor>6</Flavor>
             </Set>
         </Update>
-        <Update>
-            <Where LeaderType="LEADER_PAN_ASIA" FlavorType="FLAVOR_DIPLOMACY" />
-            <Set>
-                <Flavor>3</Flavor>
-            </Set>
-        </Update>
-        <Update>
-            <Where LeaderType="LEADER_PAN_ASIA" FlavorType="FLAVOR_CONTACT" />
-            <Set>
-                <Flavor>8</Flavor>
-            </Set>
-        </Update>
+        <Row>
+            <LeaderType>LEADER_PAN_ASIA</LeaderType>
+            <FlavorType>FLAVOR_SUPREMACY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_PAN_ASIA" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -361,21 +403,50 @@
             </Set>
         </Update>
         <Update>
+            <Where LeaderType="LEADER_PAN_ASIA" FlavorType="FLAVOR_EMANCIPATION" />
+            <Set>
+                <Flavor>9</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_PAN_ASIA" FlavorType="FLAVOR_PROMISED_LAND" />
+            <Set>
+                <Flavor>0</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_PAN_ASIA" FlavorType="FLAVOR_DIPLOMACY" />
+            <Set>
+                <Flavor>2</Flavor>
+            </Set>
+        </Update>
+        <Update>
+            <Where LeaderType="LEADER_PAN_ASIA" FlavorType="FLAVOR_CONTACT" />
+            <Set>
+                <Flavor>6</Flavor>
+            </Set>
+        </Update>
+        <Update>
             <Where LeaderType="LEADER_PAN_ASIA" FlavorType="FLAVOR_EXPANSION" />
             <Set>
-                <Flavor>8</Flavor>
+                <Flavor>6</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_PAN_ASIA" FlavorType="FLAVOR_PRODUCTION" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_POLYSTRALIA</LeaderType>
+            <FlavorType>FLAVOR_HARMONY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_POLYSTRALIA" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
@@ -393,33 +464,38 @@
         <Update>
             <Where LeaderType="LEADER_POLYSTRALIA" FlavorType="FLAVOR_EXPANSION" />
             <Set>
-                <Flavor>6</Flavor>
+                <Flavor>5</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_POLYSTRALIA" FlavorType="FLAVOR_I_LAND_TRADE_ROUTE" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_POLYSTRALIA" FlavorType="FLAVOR_I_SEA_TRADE_ROUTE" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_POLYSTRALIA" FlavorType="FLAVOR_I_TRADE_ORIGIN" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_POLYSTRALIA" FlavorType="FLAVOR_I_TRADE_DESTINATION" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_RUSSIA</LeaderType>
+            <FlavorType>FLAVOR_PURITY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_RUSSIA" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -435,19 +511,19 @@
         <Update>
             <Where LeaderType="LEADER_RUSSIA" FlavorType="FLAVOR_PROMISED_LAND" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>5</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_RUSSIA" FlavorType="FLAVOR_EXPANSION" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
         <Update>
             <Where LeaderType="LEADER_RUSSIA" FlavorType="FLAVOR_PRODUCTION" />
             <Set>
-                <Flavor>8</Flavor>
+                <Flavor>6</Flavor>
             </Set>
         </Update>
         <Update>
@@ -459,7 +535,7 @@
         <Update>
             <Where LeaderType="LEADER_RUSSIA" FlavorType="FLAVOR_ORBITAL" />
             <Set>
-                <Flavor>12</Flavor>
+                <Flavor>9</Flavor>
             </Set>
         </Update>
     </Leader_Flavors>
