@@ -1,67 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
     <Leader_Flavors>
-        <!-- These don't seem to have any effect -->
-        <!-- <Row>
+        <!-- The game doesn't set affinity flavours for the leaders. Setting the value to
+             12 doesn't seem to have an adverse affect as the leaders still tend to choose
+             hybrid affinities in general, but this does tend to influence their highest
+             affinity. -->
+        <Row>
             <LeaderType>LEADER_AFRICAN_UNION</LeaderType>
             <FlavorType>FLAVOR_PURITY</FlavorType>
-            <Flavor>10</Flavor>
+            <Flavor>12</Flavor>
         </Row>
-        <Row>
-            <LeaderType>LEADER_AL_FALAH</LeaderType>
-            <FlavorType>FLAVOR_HARMONY</FlavorType>
-            <Flavor>10</Flavor>
-        </Row>
-        <Row>
-            <LeaderType>LEADER_ARC</LeaderType>
-            <FlavorType>FLAVOR_SUPREMACY</FlavorType>
-            <Flavor>10</Flavor>
-        </Row>
-        <Row>
-            <LeaderType>LEADER_BRASILIA</LeaderType>
-            <FlavorType>FLAVOR_PURITY</FlavorType>
-            <Flavor>10</Flavor>
-        </Row>
-        <Row>
-            <LeaderType>LEADER_CHUNGSU</LeaderType>
-            <FlavorType>FLAVOR_SUPREMACY</FlavorType>
-            <Flavor>10</Flavor>
-        </Row>
-        <Row>
-            <LeaderType>LEADER_FRANCO_IBERIA</LeaderType>
-            <FlavorType>FLAVOR_HARMONY</FlavorType>
-            <Flavor>10</Flavor>
-        </Row>
-        <Row>
-            <LeaderType>LEADER_INDIA</LeaderType>
-            <FlavorType>FLAVOR_HARMONY</FlavorType>
-            <Flavor>10</Flavor>
-        </Row>
-        <Row>
-            <LeaderType>LEADER_INTEGR</LeaderType>
-            <FlavorType>FLAVOR_PURITY</FlavorType>
-            <Flavor>10</Flavor>
-        </Row>
-        <Row>
-            <LeaderType>LEADER_NORTH_SEA_ALLIANCE</LeaderType>
-            <FlavorType>FLAVOR_SUPREMACY</FlavorType>
-            <Flavor>10</Flavor>
-        </Row>
-        <Row>
-            <LeaderType>LEADER_PAN_ASIA</LeaderType>
-            <FlavorType>FLAVOR_SUPREMACY</FlavorType>
-            <Flavor>10</Flavor>
-        </Row>
-        <Row>
-            <LeaderType>LEADER_POLYSTRALIA</LeaderType>
-            <FlavorType>FLAVOR_HARMONY</FlavorType>
-            <Flavor>10</Flavor>
-        </Row>
-        <Row>
-            <LeaderType>LEADER_RUSSIA</LeaderType>
-            <FlavorType>FLAVOR_PURITY</FlavorType>
-            <Flavor>10</Flavor>
-        </Row> -->
         <Update>
             <Where LeaderType="LEADER_AFRICAN_UNION" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -92,6 +40,11 @@
                 <Flavor>8</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_AL_FALAH</LeaderType>
+            <FlavorType>FLAVOR_HARMONY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_AL_FALAH" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -134,6 +87,16 @@
                 <Flavor>9</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_ARC</LeaderType>
+            <FlavorType>FLAVOR_SUPREMACY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
+        <Row>
+            <LeaderType>LEADER_ARC</LeaderType>
+            <FlavorType>FLAVOR_ESPIONAGE</FlavorType>
+            <Flavor>8</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_ARC" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -159,9 +122,9 @@
             </Set>
         </Update>
         <Row>
-            <LeaderType>LEADER_ARC</LeaderType>
-            <FlavorType>FLAVOR_ESPIONAGE</FlavorType>
-            <Flavor>8</Flavor>
+            <LeaderType>LEADER_BRASILIA</LeaderType>
+            <FlavorType>FLAVOR_PURITY</FlavorType>
+            <Flavor>12</Flavor>
         </Row>
         <Update>
             <Where LeaderType="LEADER_BRASILIA" FlavorType="FLAVOR_TRANSCENDENCE" />
@@ -193,6 +156,11 @@
                 <Flavor>8</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_CHUNGSU</LeaderType>
+            <FlavorType>FLAVOR_SUPREMACY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_CHUNGSU" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -229,6 +197,11 @@
                 <Flavor>9</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_FRANCO_IBERIA</LeaderType>
+            <FlavorType>FLAVOR_HARMONY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_FRANCO_IBERIA" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -265,6 +238,11 @@
                 <Flavor>9</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_INDIA</LeaderType>
+            <FlavorType>FLAVOR_HARMONY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_INDIA" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -307,6 +285,11 @@
                 <Flavor>4</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_INTEGR</LeaderType>
+            <FlavorType>FLAVOR_PURITY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_INTEGR" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -349,6 +332,11 @@
                 <Flavor>6</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_NORTH_SEA_ALLIANCE</LeaderType>
+            <FlavorType>FLAVOR_SUPREMACY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_NORTH_SEA_ALLIANCE" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -403,6 +391,11 @@
                 <Flavor>6</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_PAN_ASIA</LeaderType>
+            <FlavorType>FLAVOR_SUPREMACY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_PAN_ASIA" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -445,6 +438,11 @@
                 <Flavor>9</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_POLYSTRALIA</LeaderType>
+            <FlavorType>FLAVOR_HARMONY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_POLYSTRALIA" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>
@@ -493,6 +491,11 @@
                 <Flavor>9</Flavor>
             </Set>
         </Update>
+        <Row>
+            <LeaderType>LEADER_RUSSIA</LeaderType>
+            <FlavorType>FLAVOR_PURITY</FlavorType>
+            <Flavor>12</Flavor>
+        </Row>
         <Update>
             <Where LeaderType="LEADER_RUSSIA" FlavorType="FLAVOR_TRANSCENDENCE" />
             <Set>

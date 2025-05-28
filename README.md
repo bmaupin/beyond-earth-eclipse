@@ -7,7 +7,6 @@ A small mod for Sid Meier's Civilization: Beyond Earth to give it more flavour. 
 - Tech and wonder quotes are now spoken by sponsors
 - More distinct leader personalities
 - New intro text for all leaders
-- Tech tree affinities have been reverted to base game values
 - Transcendence victory objective popups have been fixed
 - Compatible with base game and Rising Tide
 
@@ -54,14 +53,6 @@ Leaders have been adjusted to have more distinct personalities:
 Leaders have been given new intro text to align with the personality changes as well as fit the new story premise of the mod.
 
 In addition, the intro text for any leader may show when the game is started, not just the currently selected leader. This helps increase world building, especially in the case for players who typically only play as certain factions.
-
-### Affinities
-
-#### Tech tree affinities have been reverted to base game values
-
-Rising Tide added affinity values to techs that previously didn't have any (like many branch techs) and also added multiple affinities to many techs. This was possibly to ensure players were more likely to interact with hybrid affinities in the game, but it made acquiring any particular affinity less intentional.
-
-These changes have been reverted in this mod, so that acquiring any particular affinity once again is an intentional choice the player can make rather something they fall into as a result of progressing through the tech web.
 
 ### Victories
 
@@ -121,6 +112,14 @@ Now is your time to help decide the fate of those who have left Earth and find t
 It seems there are other leader quotes that haven't been replaced, such as affinity progress (see Harmony level 5 quote from Daoming Sochua, for example).
 
 ### Affinities
+
+#### Make affinity choice more intentional
+
+Rising Tide added affinity values to techs that previously didn't have any (like many branch techs) and also added multiple affinities to many techs. This was possibly to ensure players were more likely to interact with hybrid affinities in the game, but it made acquiring any particular affinity less intentional.
+
+These changes were originally reverted in this mod, so that acquiring any particular affinity once again would be an intentional choice the player can make rather something they fall into as a result of progressing through the tech web.
+
+However, after making this change the AI players seemed to progress through the affinities much more slowly to the extent that the game balanced seemed to be impacted, so the change was disabled. Other attempts were made with less negative results but still seemed to hurt the game balance.
 
 #### Make affinity bonuses more distinct
 
