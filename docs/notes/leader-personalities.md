@@ -20,3 +20,21 @@ Compare to Civ 5: [CIV V Interactive AI Bias Value Chart](http://civdata.com/)
 - Hughes (NORTH_SEA_ALLIANCE): ocean/naval (strong), health (moderate), supremacy, balanced
 - Lena (INTEGR): infrastructure/production (strong), energy/science (moderate), Purity, untrustworthy
 - Moon (CHUNGSU): espionage (strong), science (moderate), SUPREMACY, untrustworthy
+
+#### How AI leader flavours work
+
+- Valid leader flavour values seem to be 1 to 10
+  - Other flavours can go as high as 100 (e.g. technologies)
+- The game randomises this value at runtime
+  - This seems to be controlled by `FLAVOR_RANDOMIZATION_RANGE` in globalaidefines.xml
+  - This defaults to 2
+    - So if a value is set to 5, it could range from 3-7
+    - A value of 10 could range from 8-10
+    - A value of 12 would be always 10
+- These values only seem to be taken into account at certain points in the AI decision-making process, so even a value of 12 may lead to unexpected AI behaviour if the AI is programmed to act a certain way in certain circumstances without consulting flavours
+
+For more information, see:
+
+- [Community Ideas: Diplomacy Flavors for AI Leaders](https://forums.civfanatics.com/threads/community-ideas-diplomacy-flavors-for-ai-leaders.666737/)
+- [CivilizationV: The guide of leader flavors!](https://forums.civfanatics.com/threads/civilizationv-the-guide-of-leader-flavors.401897/)
+- [What does modifying <FLAVOR> do](https://forums.civfanatics.com/threads/what-does-modifying-flavor-do.430701/)
