@@ -134,6 +134,7 @@
     <File md5="4857412df97e66cb82a373df80bdb78f" import="0">Lua/Victories.lua</File>
     <File md5="00ac89a40571bec3c43114dfb9e2e5b9" import="0">SQL/HandicapInfos.sql</File>
     <File md5="7b1dce88acdb3e30e76fde0e97ee6645" import="0">SQL/Language_en_US.sql</File>
+    <File md5="9d2f6ebc2fc4cebd9a65bebf00bf7898" import="0">SQL/Quests.sql</File>
     <File md5="c87df094a44496cb4b94db435cb70ce5" import="0">SQL/Technologies.sql</File>
     <File md5="3470a72ac2e3ce5aee488837026bb954" import="0">UI/VictoryObjectiveReceivedPopup.lua</File>
     <File md5="2e1f7539adfa3fe41143db6edd1bc276" import="0">UI/VictoryObjectiveReceivedPopup.xml</File>
@@ -149,6 +150,7 @@
     <OnModActivated>
       <UpdateDatabase>SQL/HandicapInfos.sql</UpdateDatabase>
       <UpdateDatabase>SQL/Language_en_US.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Quests.sql</UpdateDatabase>
       <UpdateDatabase>SQL/Technologies.sql</UpdateDatabase>
       <UpdateDatabase>XML/Leader_CondemnationBiases.xml</UpdateDatabase>
       <UpdateDatabase>XML/Leader_Flavors.xml</UpdateDatabase>
