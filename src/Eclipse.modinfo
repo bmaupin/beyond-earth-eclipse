@@ -132,10 +132,11 @@
     <File md5="3281cf987e14a9b6a535c12e3223d314" import="1">Assets/Sounds/Speech/English/Wonders/Xenomalleum.mp3</File>
     <File md5="a677cae7903b65f35e8b1d563c50d522" import="1">Assets/Sounds/Speech/English/Wonders/Xenonova.mp3</File>
     <File md5="4857412df97e66cb82a373df80bdb78f" import="0">Lua/Victories.lua</File>
-    <File md5="00ac89a40571bec3c43114dfb9e2e5b9" import="0">SQL/HandicapInfos.sql</File>
+    <File md5="8e40f5954e94d5316de753ea28c71cfa" import="0">SQL/Civilizations.sql</File>
+    <File md5="f05d7220ecf0f9d0a165030da3f205b7" import="0">SQL/HandicapInfos.sql</File>
     <File md5="7b1dce88acdb3e30e76fde0e97ee6645" import="0">SQL/Language_en_US.sql</File>
-    <File md5="9d2f6ebc2fc4cebd9a65bebf00bf7898" import="0">SQL/Quests.sql</File>
-    <File md5="c87df094a44496cb4b94db435cb70ce5" import="0">SQL/Technologies.sql</File>
+    <File md5="63f5f5b77d8ee1cefda76b1be3619ecd" import="0">SQL/Quests.sql</File>
+    <File md5="d6a83e3c6e09e4f8ddc326443cffba26" import="0">SQL/Technologies.sql</File>
     <File md5="3470a72ac2e3ce5aee488837026bb954" import="0">UI/VictoryObjectiveReceivedPopup.lua</File>
     <File md5="2e1f7539adfa3fe41143db6edd1bc276" import="0">UI/VictoryObjectiveReceivedPopup.xml</File>
     <!-- <File md5="f6678b924e443e5608926650ba0d6778" import="0">UI/VictoryProloguePopup.lua</File>
@@ -148,10 +149,12 @@
   </Files>
   <Actions>
     <OnModActivated>
+      <!-- This will need to happen first since changes to civilisations depends on this -->
+      <UpdateDatabase>SQL/Technologies.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Civilizations.sql</UpdateDatabase>
       <UpdateDatabase>SQL/HandicapInfos.sql</UpdateDatabase>
       <UpdateDatabase>SQL/Language_en_US.sql</UpdateDatabase>
       <UpdateDatabase>SQL/Quests.sql</UpdateDatabase>
-      <UpdateDatabase>SQL/Technologies.sql</UpdateDatabase>
       <UpdateDatabase>XML/Leader_CondemnationBiases.xml</UpdateDatabase>
       <UpdateDatabase>XML/Leader_Flavors.xml</UpdateDatabase>
       <UpdateDatabase>XML/Leader_MajorCivApproachBiases.xml</UpdateDatabase>
