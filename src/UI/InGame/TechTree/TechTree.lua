@@ -765,6 +765,30 @@ function RefreshDisplayOfSpecificTech( tech )
  	local isTechOwner 		= activeTeam:GetTeamTechs():HasTech(techID);
  	local isNowResearching	= (g_player:GetCurrentResearch() == techID);
 
+	-- === BEGIN MOD: Dim techs the player can never research ===
+	--
+	--     If a tech is added to the Civilization_DisableTechs table, the game does
+	--     prevent the player from researching it, however it is still shown in the tech
+	--     web and there is no clear visual indication that the tech cannot be researched
+	--     other than the fact that clicking on it does nothing. Hiding the tech leaves
+	--     gaps in the tech web, so we dim it instead.
+	if g_player ~= nil and g_player:IsHuman() then
+		if not g_player:CanEverResearch(techID) then
+			-- print("(Triptych) Hiding tech node:", tech.Type);
+
+			-- Dim the tech
+			if thisTechButton then
+				thisTechButton.TechButton:SetAlpha(0.25);
+			end
+
+			-- Alternative: hide the tech altogether
+			-- if thisTechButton then
+			-- 	thisTechButton.TechButton:SetHide(true)
+			-- end
+			-- return -- stop processing this tech
+		end
+	end
+	-- === END MOD ===
 
 	-- Advisor recommendations...
 
@@ -1832,7 +1856,11 @@ function Initialize()
 
 	-- Hard coded/special filters:
 	table.insert( g_filterTable, { "", "TXT_KEY_TECHWEB_FILTER_NONE", nil } );
-	table.insert( g_filterTable, { "", "TXT_KEY_TECHWEB_FILTER_RECOMMENDED", g_TechFilters.TECHFILTER_RECOMMENDED } );
+	-- === BEGIN MOD: Add conditional for compatibility with base game ===
+	if g_TechFilters and g_TechFilters.TECHFILTER_RECOMMENDED then
+		table.insert( g_filterTable, { "", "TXT_KEY_TECHWEB_FILTER_RECOMMENDED", g_TechFilters.TECHFILTER_RECOMMENDED } );
+	end
+	-- === END MOD ===
 
 	-- Load entried into filter table from TechFilters XML data
 	for row in GameInfo.TechFilters() do
