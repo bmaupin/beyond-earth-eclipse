@@ -276,3 +276,14 @@ GameEvents.PlayerDoTurn.Add(ShowVictoryObjectivePopup);
 --     end
 -- end
 -- GameEvents.CityCaptureComplete.Add(OnCityCaptureComplete)
+
+
+-- -- NOTE: autoplay has some quirks
+-- --       - all affinity techs are hidden in tech web, not just techs for other affinities
+-- --       - in-progress research isn't shown (normally it's shown in the top left)
+-- local function AutoPlay()
+--     -- First parameter is number of turns to autoplay, second is player to return control to (or -1 for none)
+--     Game.SetAIAutoPlay(51, 0);
+--     -- First try, game ended around 150 😅
+-- end
+-- Events.SequenceGameInitComplete.Add(AutoPlay);
