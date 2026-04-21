@@ -947,3 +947,97 @@ VALUES
 UPDATE Language_en_US
 SET Text = 'Being willing to live on a city floating on seas that are often anything but peaceful requires a strong reliance on and trust in technology. This has become an ingrained part of daily life in the North Sea Alliance, and Duncan Hughes has led his people by example. Constantly praising the benefits of technology, he often marvels out loud about the other sponsors who have a longstanding fear of adopting advancements that have grown to be an essential pillar of the thriving NSA society.'
 WHERE Text = 'civbe-eclipse';
+
+
+-- Prepend sponsor descriptions with affinity in the sponsor setup screen
+-- African Union
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_PURITY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_PERSONALITY_TRAIT_CHARACTER_GROWTH_A_HELP';
+
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_PURITY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_TRAIT_UMOJA';
+
+-- ARC
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_SUPREMACY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_PERSONALITY_TRAIT_CHARACTER_COVERT_A_HELP';
+
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_PURITY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_TRAIT_CORPORATE_ESPIONAGE';
+
+-- Brasilia
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_PURITY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_PERSONALITY_TRAIT_CHARACTER_COMBAT_A_HELP';
+
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_PURITY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_TRAIT_GUERILLA_MASTERY';
+
+-- Franco-Iberia
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_HARMONY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_PERSONALITY_TRAIT_CHARACTER_CULTURE_A_HELP';
+
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_HARMONY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_TRAIT_FREE_VIRTUES';
+
+-- Kavithan
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_HARMONY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_PERSONALITY_TRAIT_CHARACTER_EXPAND_A_HELP';
+
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_HARMONY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_TRAIT_MISSIONARY_OUTPOSTS';
+
+-- PAC
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_SUPREMACY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_PERSONALITY_TRAIT_CHARACTER_INDUSTRY_A_HELP';
+
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_SUPREMACY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_TRAIT_COORDINATED_WORKFORCE';
+
+-- Polystralia
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_HARMONY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_PERSONALITY_TRAIT_CHARACTER_TRADE_A_HELP';
+
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_HARMONY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_TRAIT_TRADING_NETWORK';
+
+-- Russia
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_PURITY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_PERSONALITY_TRAIT_CHARACTER_ORBITAL_A_HELP';
+
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_PURITY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_TRAIT_COSMONAUT_LEGACY';
+
+-- Al Falah
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_HARMONY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_PERSONALITY_TRAIT_CHARACTER_WEALTH_A_HELP';
+
+-- NSA
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_SUPREMACY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_PERSONALITY_TRAIT_CHARACTER_AQUATIC_A_HELP';
+
+-- INTEGR
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_PURITY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_PERSONALITY_TRAIT_CHARACTER_DIPLOMACY_A_HELP';
+
+-- Chungsu
+UPDATE Language_en_US
+SET Text = '(' || (SELECT Text FROM Language_en_US WHERE Tag = 'TXT_KEY_AFFINITY_TYPE_SUPREMACY') || ') ' || Text
+WHERE Tag = 'TXT_KEY_PERSONALITY_TRAIT_CHARACTER_SCIENCE_A_HELP';
