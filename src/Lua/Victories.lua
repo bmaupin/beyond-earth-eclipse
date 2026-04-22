@@ -116,141 +116,140 @@ function ShowVictoryObjectivePopup(playerID)
 end
 GameEvents.PlayerDoTurn.Add(ShowVictoryObjectivePopup);
 
--- TODO: Uncomment if we ever decide to show victory prologue popups
--- function ShowVictoryProloguePopup(playerID, questType)
---     -- DELETEME
---     print("(Beyond Earth Eclipse) ShowVictoryProloguePopup()")
+function ShowVictoryProloguePopup(playerID, questType)
+    -- DELETEME
+    print("(Beyond Earth Eclipse) ShowVictoryProloguePopup()")
 
---     local player = Players[playerID];
---     if not player:IsHuman() or not player:IsAlive() then
---         return;
---     end
+    local player = Players[playerID];
+    if not player:IsHuman() or not player:IsAlive() then
+        return;
+    end
 
---     print("(Beyond Earth Eclipse) ShowVictoryProloguePopup() playerID=", playerID)
---     print("(Beyond Earth Eclipse) ShowVictoryProloguePopup() questType=", questType)
+    print("(Beyond Earth Eclipse) ShowVictoryProloguePopup() playerID=", playerID)
+    print("(Beyond Earth Eclipse) ShowVictoryProloguePopup() questType=", questType)
 
---     local purityLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_PURITY"].ID);
---     local harmonyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_HARMONY"].ID);
---     local supremacyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_SUPREMACY"].ID);
+    local purityLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_PURITY"].ID);
+    local harmonyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_HARMONY"].ID);
+    local supremacyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_SUPREMACY"].ID);
 
---     -- Only show the harmony victory prologue if that's the player's highest affinity (or
---     -- tied)
---     if (
---         questType == "QUEST_VICTORY_TRANSCENDENCE" and
---         (
---             harmonyLevel < purityLevel or
---             harmonyLevel < supremacyLevel
---         )
---     ) then
---         return;
---     end
+    -- Only show the harmony victory prologue if that's the player's highest affinity (or
+    -- tied)
+    if (
+        questType == "QUEST_VICTORY_TRANSCENDENCE" and
+        (
+            harmonyLevel < purityLevel or
+            harmonyLevel < supremacyLevel
+        )
+    ) then
+        return;
+    end
 
---     -- Emancipation and promised land victories share the first objective so we have to
---     -- handle them together
---     if (
---         questType == "QUEST_VICTORY_EMANCIPATION" or
---         questType == "QUEST_VICTORY_PROMISED_LAND"
---     ) then
---         -- Make sure one or the other are higher than or tied with harmony affinity level
---         if (
---             purityLevel < harmonyLevel or
---             supremacyLevel < harmonyLevel
---         ) then
---             return;
---         end
+    -- Emancipation and promised land victories share the first objective so we have to
+    -- handle them together
+    if (
+        questType == "QUEST_VICTORY_EMANCIPATION" or
+        questType == "QUEST_VICTORY_PROMISED_LAND"
+    ) then
+        -- Make sure one or the other are higher than or tied with harmony affinity level
+        if (
+            purityLevel < harmonyLevel or
+            supremacyLevel < harmonyLevel
+        ) then
+            return;
+        end
 
---         if (purityLevel > supremacyLevel) then
---             questType = "QUEST_VICTORY_PROMISED_LAND";
---         elseif (supremacyLevel > purityLevel) then
---             questType = "QUEST_VICTORY_EMANCIPATION";
---         elseif (purityLevel == supremacyLevel) then
---             -- If the player has a tied purity and supremacy level, pick one of them
---             -- randomly to show
---             local showPurityProloguePopup = math.random() < 0.5;
---             if showPurityProloguePopup then
---                 questType = "QUEST_VICTORY_PROMISED_LAND";
---             else
---                 questType = "QUEST_VICTORY_EMANCIPATION";
---             end
---         end
---     end
+        if (purityLevel > supremacyLevel) then
+            questType = "QUEST_VICTORY_PROMISED_LAND";
+        elseif (supremacyLevel > purityLevel) then
+            questType = "QUEST_VICTORY_EMANCIPATION";
+        elseif (purityLevel == supremacyLevel) then
+            -- If the player has a tied purity and supremacy level, pick one of them
+            -- randomly to show
+            local showPurityProloguePopup = math.random() < 0.5;
+            if showPurityProloguePopup then
+                questType = "QUEST_VICTORY_PROMISED_LAND";
+            else
+                questType = "QUEST_VICTORY_EMANCIPATION";
+            end
+        end
+    end
 
---     local quest = player:GetQuest(GameInfo.Quests[questType].ID);
---     if not quest then return end
+    local quest = player:GetQuest(GameInfo.Quests[questType].ID);
+    if not quest then return end
 
---     -- This is just a minimal sanity check that should hopefully fail if the victory
---     -- objectives have been modified by another mod to avoid potential compatibility issues
---     local objectives = quest:GetObjectives();
---     local objectiveEpilogue = objectives[1]:GetEpilogue();
---     if (
---         objectiveEpilogue ~= nil and
---         (
---             objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE" or
---             objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE" or
---             objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE" or
---             objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_PROMISED_LAND_LAUNCH_EPILOGUE" or
---             objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_EMANCIPATION_LAUNCH_EPILOGUE" or
---             objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_CONTACT_SIGNAL_EPILOGUE"
---         )
---     ) then
---         return
---     end
+    -- This is just a minimal sanity check that should hopefully fail if the victory
+    -- objectives have been modified by another mod to avoid potential compatibility issues
+    local objectives = quest:GetObjectives();
+    local objectiveEpilogue = objectives[1]:GetEpilogue();
+    if (
+        objectiveEpilogue ~= nil and
+        (
+            objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE" or
+            objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE" or
+            objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE" or
+            objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_PROMISED_LAND_LAUNCH_EPILOGUE" or
+            objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_EMANCIPATION_LAUNCH_EPILOGUE" or
+            objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_CONTACT_SIGNAL_EPILOGUE"
+        )
+    ) then
+        return
+    end
 
---     local questPrologue = quest:GetPrologue();
---     print("(Beyond Earth Eclipse) questPrologue = " .. questPrologue)
+    local questPrologue = quest:GetPrologue();
+    print("(Beyond Earth Eclipse) questPrologue = " .. questPrologue)
 
---     if (not shownVictoryQuestStrings[questPrologue]) then
---         print("(Beyond Earth Eclipse) showing prologue popup for victory " .. questType)
+    if (not shownVictoryQuestStrings[questPrologue]) then
+        print("(Beyond Earth Eclipse) showing prologue popup for victory " .. questType)
 
---         Events.SerialEventGameMessagePopup({
---             Type = ButtonPopupTypes.BUTTONPOPUP_VICTORY_PROLOGUE,
---             Data1 = GameInfo.Quests[questType].ID,
---             Text = quest:GetPrologue()
---         });
+        Events.SerialEventGameMessagePopup({
+            Type = ButtonPopupTypes.BUTTONPOPUP_VICTORY_PROLOGUE,
+            Data1 = GameInfo.Quests[questType].ID,
+            Text = quest:GetPrologue()
+        });
 
---         shownVictoryQuestStrings[questPrologue] = true;
---     end
--- end
+        shownVictoryQuestStrings[questPrologue] = true;
+    end
+end
 
--- function OnTechResearched(teamType, techType, _change)
---     local activePlayer
---     if Game.GetActivePlayer() ~= nil then
---         activePlayer = Players[Game.GetActivePlayer()]
---     else
---         activePlayer = Players[0]
---     end
+function OnTechResearched(teamType, techType, _change)
+    local activePlayer
+    if Game.GetActivePlayer() ~= nil then
+        activePlayer = Players[Game.GetActivePlayer()]
+    else
+        activePlayer = Players[0]
+    end
 
---     if not activePlayer:IsHuman() or not activePlayer:IsAlive() then
---         return;
---     end
+    if not activePlayer:IsHuman() or not activePlayer:IsAlive() then
+        return;
+    end
 
---     if activePlayer:GetTeam() == teamType and activePlayer:IsHuman() then
---         if (techType == GameInfo.Technologies["TECH_TRANSGENICS"].ID or
---             techType == GameInfo.Technologies["TECH_SWARM_INTELLIGENCE"].ID or
---             techType == GameInfo.Technologies["TECH_NANOROBOTICS"].ID) then
---             ShowVictoryProloguePopup(activePlayer:GetID(), "QUEST_VICTORY_TRANSCENDENCE")
---         end
---     end
--- end
--- GameEvents.TeamTechResearched.Add(OnTechResearched)
+    if activePlayer:GetTeam() == teamType and activePlayer:IsHuman() then
+        if (techType == GameInfo.Technologies["TECH_TRANSGENICS"].ID or
+            techType == GameInfo.Technologies["TECH_SWARM_INTELLIGENCE"].ID or
+            techType == GameInfo.Technologies["TECH_NANOROBOTICS"].ID) then
+            ShowVictoryProloguePopup(activePlayer:GetID(), "QUEST_VICTORY_TRANSCENDENCE")
+        end
+    end
+end
+GameEvents.TeamTechResearched.Add(OnTechResearched)
 
--- function OnOrbitalUnitLaunched(playerID, unitType, _plotX, _plotY)
---     print("(Beyond Earth Eclipse) OnOrbitalUnitLaunched()")
+function OnOrbitalUnitLaunched(playerID, unitType, _plotX, _plotY)
+    print("(Beyond Earth Eclipse) OnOrbitalUnitLaunched()")
 
---     local player = Players[playerID];
---     if not player:IsHuman() or not player:IsAlive() then
---         return;
---     end
+    local player = Players[playerID];
+    if not player:IsHuman() or not player:IsAlive() then
+        return;
+    end
 
---     if (unitType == GameInfo.Units["UNIT_DEEP_SPACE_TELESCOPE"].ID) then
---         ShowVictoryProloguePopup(playerID, "QUEST_VICTORY_CONTACT")
---     elseif (unitType == GameInfo.Units["UNIT_LASERCOM_SATELLITE"].ID) then
---         -- This satellite is for both the emancipation and promised land victories;
---         -- ShowVictoryProloguePopup has logic to decide which one to show
---         ShowVictoryProloguePopup(playerID, "QUEST_VICTORY_EMANCIPATION")
---     end
--- end
--- GameEvents.OrbitalUnitLaunched.Add(OnOrbitalUnitLaunched);
+    if (unitType == GameInfo.Units["UNIT_DEEP_SPACE_TELESCOPE"].ID) then
+        ShowVictoryProloguePopup(playerID, "QUEST_VICTORY_CONTACT")
+    elseif (unitType == GameInfo.Units["UNIT_LASERCOM_SATELLITE"].ID) then
+        -- This satellite is for both the emancipation and promised land victories;
+        -- ShowVictoryProloguePopup has logic to decide which one to show
+        ShowVictoryProloguePopup(playerID, "QUEST_VICTORY_EMANCIPATION")
+    end
+end
+GameEvents.OrbitalUnitLaunched.Add(OnOrbitalUnitLaunched);
 
 -- -- Possibly show domination victory prologue
 -- local function OnCityCaptureComplete(cityX, cityY)
