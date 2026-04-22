@@ -34,6 +34,16 @@ This mod was meant to bring out the world building that already exists in Beyond
 - [Anchor Ceti](https://forums.civfanatics.com/threads/anchor-ceti-a-story-in-beyond-earth.664817/)
 - [Ryika's mods](https://steamcommunity.com/id/ryika/myworkshopfiles/?appid=65980)
 
+### Affinities
+
+#### Affinities have unique tile improvements
+
+Some tile improvements have been made affinity-specific to increase asymmetric gameplay:
+
+- Harmony: Biowell, Xenomass Well
+- Purity: Dome, Floatstone Quarry
+- Supremaxy: Node, Firaxite Mine
+
 ### Leaders
 
 #### Tech and wonder quotes are now spoken by sponsors
