@@ -277,6 +277,84 @@ GameEvents.OrbitalUnitLaunched.Add(OnOrbitalUnitLaunched);
 -- GameEvents.CityCaptureComplete.Add(OnCityCaptureComplete)
 
 
+function DisableNonAffinityVictoryQuests()
+    for playerID = 0, GameDefines.MAX_CIV_PLAYERS - 1 do
+        local player = Players[playerID];
+
+        if player:IsHuman() and player:IsAlive() then
+            -- Harmony
+            if player:CanEverResearch(GameInfo.Technologies["TECH_ALIEN_EVOLUTION"].ID) then
+                print("***************************** (Beyond Earth Eclipse) Failing non-harmony quests")
+                quest = player:GetQuest(GameInfo.Quests["QUEST_VICTORY_PROMISED_LAND"].ID);
+                -- if (quest:IsInProgress() and not quest:DidFail()) then
+                --     quest:Fail();
+                -- end
+                objectives = quest:GetObjectives();
+                objective = objectives[1];
+                if (objective:IsInProgress() and not objective:DidFail()) then
+                    objective:Fail();
+                end
+
+                quest = player:GetQuest(GameInfo.Quests["QUEST_VICTORY_EMANCIPATION"].ID);
+                -- if (quest:IsInProgress() and not quest:DidFail()) then
+                --     quest:Fail();
+                -- end
+                objectives = quest:GetObjectives();
+                objective = objectives[1];
+                if (objective:IsInProgress() and not objective:DidFail()) then
+                    objective:Fail();
+                end
+            -- Purity
+            elseif player:CanEverResearch(GameInfo.Technologies["TECH_TACTICAL_LEV"].ID) then
+                print("***************************** (Beyond Earth Eclipse) Failing non-purity quests")
+                quest = player:GetQuest(GameInfo.Quests["QUEST_VICTORY_TRANSCENDENCE"].ID);
+                -- if (quest:IsInProgress() and not quest:DidFail()) then
+                --     quest:Fail();
+                -- end
+                objectives = quest:GetObjectives();
+                objective = objectives[1];
+                if (objective:IsInProgress() and not objective:DidFail()) then
+                    objective:Fail();
+                end
+
+                quest = player:GetQuest(GameInfo.Quests["QUEST_VICTORY_EMANCIPATION"].ID);
+                -- if (quest:IsInProgress() and not quest:DidFail()) then
+                --     quest:Fail();
+                -- end
+                objectives = quest:GetObjectives();
+                objective = objectives[1];
+                if (objective:IsInProgress() and not objective:DidFail()) then
+                    objective:Fail();
+                end
+            -- Supremacy
+            elseif player:CanEverResearch(GameInfo.Technologies["TECH_NEURAL_UPLOADING"].ID) then
+                print("***************************** (Beyond Earth Eclipse) Failing non-supremacy quests")
+                quest = player:GetQuest(GameInfo.Quests["QUEST_VICTORY_TRANSCENDENCE"].ID);
+                -- if (quest:IsInProgress() and not quest:DidFail()) then
+                --     quest:Fail();
+                -- end
+                objectives = quest:GetObjectives();
+                objective = objectives[1];
+                if (objective:IsInProgress() and not objective:DidFail()) then
+                    objective:Fail();
+                end
+
+                quest = player:GetQuest(GameInfo.Quests["QUEST_VICTORY_PROMISED_LAND"].ID);
+                -- if (quest:IsInProgress() and not quest:DidFail()) then
+                --     quest:Fail();
+                -- end
+                objectives = quest:GetObjectives();
+                objective = objectives[1];
+                if (objective:IsInProgress() and not objective:DidFail()) then
+                    objective:Fail();
+                end
+            end
+        end
+    end
+end
+Events.SequenceGameInitComplete.Add(DisableNonAffinityVictoryQuests);
+
+
 -- -- NOTE: autoplay has some quirks
 -- --       - all affinity techs are hidden in tech web, not just techs for other affinities
 -- --       - in-progress research isn't shown (normally it's shown in the top left)
