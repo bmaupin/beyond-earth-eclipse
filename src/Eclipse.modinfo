@@ -136,6 +136,7 @@
     <File md5="8e40f5954e94d5316de753ea28c71cfa" import="0">SQL/Civilizations.sql</File>
     <File md5="f05d7220ecf0f9d0a165030da3f205b7" import="0">SQL/HandicapInfos.sql</File>
     <File md5="03ede0589f3d60483c69c79431a4fde0" import="0">SQL/Language_en_US.sql</File>
+    <File md5="4f6c0e7e8a7a1734608ac2b7ddca2d51" import="0">SQL/Projects.sql</File>
     <File md5="63f5f5b77d8ee1cefda76b1be3619ecd" import="0">SQL/Quests.sql</File>
     <File md5="d6a83e3c6e09e4f8ddc326443cffba26" import="0">SQL/Technologies.sql</File>
     <File md5="5e98f679467d5361dcb7641739fcb0aa" import="1">UI/InGame/TechTree/TechTree.lua</File>
@@ -156,6 +157,7 @@
       <UpdateDatabase>SQL/Civilizations.sql</UpdateDatabase>
       <UpdateDatabase>SQL/HandicapInfos.sql</UpdateDatabase>
       <UpdateDatabase>SQL/Language_en_US.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Projects.sql</UpdateDatabase>
       <UpdateDatabase>SQL/Quests.sql</UpdateDatabase>
       <UpdateDatabase>XML/Leader_CondemnationBiases.xml</UpdateDatabase>
       <UpdateDatabase>XML/Leader_Flavors.xml</UpdateDatabase>
