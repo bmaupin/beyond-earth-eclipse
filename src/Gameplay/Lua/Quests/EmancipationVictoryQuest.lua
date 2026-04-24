@@ -27,7 +27,11 @@ function QuestScript.OnStartGame(isLoadGame)
 		for playerType=0, GameDefines.MAX_MAJOR_CIVS - 1, 1 do
 			local player = Players[playerType];
 			if (not player:IsMinorCiv() and player:IsEverAlive() and not HasPlayerDoneQuestType(playerType, QuestScript.Info.ID)) then
-				StartQuest(playerType, QuestScript.Type);
+				-- === BEGIN MOD: Only start victory quest if the player picked a supremacy sponsor ===
+				if player:CanEverResearch(GameInfo.Technologies["TECH_NEURAL_UPLOADING"].ID) then
+					StartQuest(playerType, QuestScript.Type);
+				end
+				-- === END MOD ===
 			end
 		end
 	end

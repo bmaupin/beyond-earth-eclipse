@@ -36,6 +36,22 @@ This mod was meant to bring out the world building that already exists in Beyond
 
 ### Affinities
 
+<!-- #### Hybrid affinities removed
+
+Hybrid affinities are an interesting feature that was never fully fleshed out; there are not as many hybrid units nor are there any hybrid victory conditions. -->
+
+#### Each sponsor is limited to one specific affinity
+
+Each sponsor can only research technologies for a specific affinity, and therefore can only build units, buildings, and wonders for that affinity. This affinity is indicated in the sponsor selection screen.
+
+This makes each sponsor more unique and asymmetric, as one of the common criticisms with Beyond Earth is that the factions are bland. In addition, it makes the choice of affinity a meaningful decision that now has a real cost, while also streamlining the gameplay and allowing the player to more deeply explore a single affinity.
+
+#### Affinity points moved from branch techs
+
+The technology web has been reworked so that affinity points on branch techs have been moved to branch techs.
+
+Rising Tide added hybrid affinity points to branch techs, possibly to ensure players were more likely to interact with hybrid affinities in the game. However, this made acquiring any particular affinity less of an intentional player choice and resulted in gameplay that was less unique between sessions.
+
 #### Affinities have unique tile improvements
 
 Some tile improvements have been made affinity-specific to increase asymmetric gameplay:
@@ -69,6 +85,12 @@ In addition, the intro text for any leader may show when the game is started, no
 #### Transcendence victory objective popups have been fixed
 
 Each victory has different objectives that can contain some interesting world building. In Rising Tide, functionality was added to show these objectives in popups except for the transcendence (harmony) victory. This mod fixes those popups.
+
+#### Other affinity victory quests won't start
+
+Quests for victory quests other than the affinity associated with the chosen sponsor won't start. This avoids seeing popups for other affinity victory quests.
+
+Without this mod, in Rising Tide if you launch a lasercom satellite you would see popups for the purity and supremacy victory quests.
 
 ## Manual installation
 
@@ -137,22 +159,14 @@ Right now the unit promotion bonuses across the different affinities aren't diff
 
 It would be more interesting if, for example, harmony was given bonuses related to their harmonious relationship with the planet, so for example health and movement. Purity could be given bonuses of strength and attack. And supremacy could be given bonuses to technology and range.
 
-#### Make affinity choice more impactful
-
-One current problem with the affinities (and other game systems) is that there are few tradeoffs other than opportunity cost. Specifically, the player can max out all affinities if she wishes to do so. Instead, as the player progresses in one affinity I think it could be more interesting to gradually reduce the maximum level of the other affinities in such a way that only one affinity victory condition could be achieved.
-
-For example, the max affinity level in Rising Tide is 18 and affinity victories need a minimum affinity of 15. If the player reaches affinity level 9 in one affinity, for every level after that, the maximum level of the other affinities could be reduced by 1. This would allow the player to reach level 18 in only one affinity (capping the others at level 9), or alternatively the player could reach level 15 in one affinity to fulfill its victory conditions while still reaching level 10 in at least one other affinity in order to take advantage of hybrid bonuses.
-
-This could even be extended to include blocking higher level affinity technologies to make specialising in one affinity more of an interesting choice.
-
 #### Affinity progress should be more dependant on player actions
 
 Affinity progress is almost entirely made through researching technologies. This isn't bad in and of itself, but it means that player actions have little impact on choice of affinity, potentially leading to bizarre outcomes such as a player who chooses the harmony affinity and proceeds to wipe out all alien life. Instead, it would be much more interesting if player action had a greater impact on affinity. For example, a player could receive harmony affinity points for every alien in her borders at the end of each turn that she does not attack, or every tile of miasma in her borders left untouched.
 
 Quests do give some affinity points, but this could also likewise be given more weight.
 
-### Victories
+## Non-goals
 
-#### Show victory prologue text
+#### Compatibility with other mods
 
-The game has interesting story-building text for each victory as a prologue. This mod has code to show this prologue text in a popup, but in the end it got too complicated and messy to sort out. It might still be worth showing this text to add to the world building.
+While this mod is small, it makes some major changes to game files and is not intended to be compatible with other mods that change gameplay.
