@@ -277,12 +277,36 @@ GameEvents.OrbitalUnitLaunched.Add(OnOrbitalUnitLaunched);
 -- GameEvents.CityCaptureComplete.Add(OnCityCaptureComplete)
 
 
--- -- NOTE: autoplay has some quirks
--- --       - all affinity techs are hidden in tech web, not just techs for other affinities
--- --       - in-progress research isn't shown (normally it's shown in the top left)
--- local function AutoPlay()
---     -- First parameter is number of turns to autoplay, second is player to return control to (or -1 for none)
---     Game.SetAIAutoPlay(51, 0);
---     -- First try, game ended around 150 😅
+-- NOTE: autoplay has some quirks
+--       - all affinity techs are hidden in tech web, not just techs for other affinities
+--       - in-progress research isn't shown (normally it's shown in the top left)
+local function AutoPlay()
+    -- First parameter is number of turns to autoplay, second is player to return control to (or -1 for none)
+    Game.SetAIAutoPlay(300, 0);
+    -- First try, game ended around 150 😅
+end
+Events.SequenceGameInitComplete.Add(AutoPlay);
+
+-- local function MaybeStopAutoplay(playerID)
+--     -- Only run the check once per turn
+--     if playerID == 0 then
+--         local player = Players[playerID];
+
+--         -- Test transcendence victory popup. To use:
+--         --
+--         -- - Set autoplay to a high value (at least 300)
+--         -- - In game setup, use the smallest map, turn off all victories except transcendence, enable Always peace, select non-harmony AI players
+--         --
+--         -- Stop after player has transcendence victory stage 1; we can go back and load previous save to test victory popup
+--         if (player:HasTech(GameInfo.Technologies["TECH_NANOROBOTICS"].ID) and
+--             player:HasTech(GameInfo.Technologies["TECH_SWARM_INTELLIGENCE"].ID) and
+--             player:HasTech(GameInfo.Technologies["TECH_TRANSGENICS"].ID)
+--         ) then
+--             if Game.GetAIAutoPlay() > 0 then
+--                 print("***************************** (Beyond Earth Eclipse) stopping autoplay");
+--                 Game.SetAIAutoPlay(1, 0);
+--             end
+--         end
+--     end
 -- end
--- Events.SequenceGameInitComplete.Add(AutoPlay);
+-- GameEvents.PlayerDoTurn.Add(MaybeStopAutoplay);
