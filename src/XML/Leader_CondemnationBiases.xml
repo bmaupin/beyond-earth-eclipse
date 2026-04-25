@@ -4,7 +4,7 @@
 		<Update>
 			<Where LeaderType="LEADER_FRANCO_IBERIA" CondemnationType="CONDEMNATION_ALIEN_APPROACH" />
 			<Set>
-				<Bias>8</Bias>
+				<Bias>12</Bias>
 			</Set>
 		</Update>
 		<Update>
@@ -22,7 +22,7 @@
 		<Update>
 			<Where LeaderType="LEADER_BRASILIA" CondemnationType="CONDEMNATION_WARMONGERING" />
 			<Set>
-				<Bias>1</Bias>
+				<Bias>0</Bias>
 			</Set>
 		</Update>
 	</Leader_CondemnationBiases>

@@ -4,211 +4,113 @@
         <Update>
             <Where Type="LEADER_AFRICAN_UNION" />
             <Set>
+                <!-- Max meaningful value is 7 -->
+                <AffinityDevotion>0</AffinityDevotion>
+                <AntiAlien>6</AntiAlien>
                 <Boldness>0</Boldness>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_AFRICAN_UNION" />
-            <Set>
+                <CoopWillingness>8</CoopWillingness>
                 <DiploBalance>8</DiploBalance>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_AFRICAN_UNION" />
-            <Set>
+                <Loyalty>8</Loyalty>
                 <WarmongerHate>8</WarmongerHate>
             </Set>
         </Update>
         <Update>
-            <Where Type="LEADER_AFRICAN_UNION" />
+            <Where Type="LEADER_AL_FALAH" />
             <Set>
+                <AffinityDevotion>12</AffinityDevotion>
+                <AntiAlien>0</AntiAlien>
                 <CoopWillingness>8</CoopWillingness>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_AFRICAN_UNION" />
-            <Set>
                 <Loyalty>8</Loyalty>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_AFRICAN_UNION" />
-            <Set>
-                <AntiAlien>6</AntiAlien>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_AL_FALAH" />
-            <Set>
-                <CoopWillingness>8</CoopWillingness>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_AL_FALAH" />
-            <Set>
-                <Loyalty>8</Loyalty>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_AL_FALAH" />
-            <Set>
-                <AntiAlien>1</AntiAlien>
             </Set>
         </Update>
         <Update>
             <Where Type="LEADER_ARC" />
             <Set>
+                <AffinityDevotion>12</AffinityDevotion>
+                <AntiAlien>7</AntiAlien>
                 <Boldness>8</Boldness>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_ARC" />
-            <Set>
+                <Forgiveness>2</Forgiveness>
                 <Neediness>2</Neediness>
             </Set>
         </Update>
         <Update>
-            <Where Type="LEADER_ARC" />
-            <Set>
-                <Forgiveness>2</Forgiveness>
-            </Set>
-        </Update>
-        <Update>
             <Where Type="LEADER_BRASILIA" />
             <Set>
+                <AffinityDevotion>12</AffinityDevotion>
+                <AntiAlien>10</AntiAlien>
                 <Boldness>8</Boldness>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_BRASILIA" />
-            <Set>
+                <Chattiness>2</Chattiness>
+                <Forgiveness>1</Forgiveness>
                 <Neediness>1</Neediness>
             </Set>
         </Update>
         <Update>
-            <Where Type="LEADER_BRASILIA" />
+            <Where Type="LEADER_CHUNGSU" />
             <Set>
-                <Forgiveness>1</Forgiveness>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_BRASILIA" />
-            <Set>
-                <Chattiness>2</Chattiness>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_BRASILIA" />
-            <Set>
+                <AffinityDevotion>3</AffinityDevotion>
                 <AntiAlien>8</AntiAlien>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_CHUNGSU" />
-            <Set>
+                <Chattiness>1</Chattiness>
                 <CoopWillingness>0</CoopWillingness>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_CHUNGSU" />
-            <Set>
+                <Forgiveness>3</Forgiveness>
                 <Loyalty>0</Loyalty>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_CHUNGSU" />
-            <Set>
                 <Neediness>0</Neediness>
             </Set>
         </Update>
         <Update>
-            <Where Type="LEADER_CHUNGSU" />
-            <Set>
-                <Forgiveness>3</Forgiveness>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_CHUNGSU" />
-            <Set>
-                <Chattiness>1</Chattiness>
-            </Set>
-        </Update>
-        <Update>
             <Where Type="LEADER_FRANCO_IBERIA" />
             <Set>
+                <AffinityDevotion>7</AffinityDevotion>
+                <AntiAlien>0</AntiAlien>
+                <Forgiveness>1</Forgiveness>
                 <Loyalty>1</Loyalty>
             </Set>
         </Update>
         <Update>
-            <Where Type="LEADER_FRANCO_IBERIA" />
-            <Set>
-                <Forgiveness>1</Forgiveness>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_FRANCO_IBERIA" />
-            <Set>
-                <AntiAlien>0</AntiAlien>
-            </Set>
-        </Update>
-        <Update>
             <Where Type="LEADER_INDIA" />
             <Set>
+                <AffinityDevotion>5</AffinityDevotion>
+                <AntiAlien>0</AntiAlien>
                 <Loyalty>8</Loyalty>
             </Set>
         </Update>
         <Update>
-            <Where Type="LEADER_INDIA" />
-            <Set>
-                <AntiAlien>0</AntiAlien>
-            </Set>
-        </Update>
-        <Update>
             <Where Type="LEADER_INTEGR" />
             <Set>
+                <AffinityDevotion>7</AffinityDevotion>
+                <AntiAlien>10</AntiAlien>
                 <CoopWillingness>4</CoopWillingness>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_INTEGR" />
-            <Set>
                 <Loyalty>0</Loyalty>
             </Set>
         </Update>
         <Update>
-            <Where Type="LEADER_INTEGR" />
+            <Where Type="LEADER_NORTH_SEA_ALLIANCE" />
             <Set>
-                <AntiAlien>6</AntiAlien>
+                <AffinityDevotion>0</AffinityDevotion>
+                <AntiAlien>5</AntiAlien>
             </Set>
         </Update>
         <Update>
             <Where Type="LEADER_PAN_ASIA" />
             <Set>
+                <AffinityDevotion>7</AffinityDevotion>
+                <AntiAlien>6</AntiAlien>
                 <Chattiness>2</Chattiness>
             </Set>
         </Update>
         <Update>
             <Where Type="LEADER_POLYSTRALIA" />
             <Set>
+                <AffinityDevotion>0</AffinityDevotion>
+                <AntiAlien>2</AntiAlien>
                 <CoopWillingness>4</CoopWillingness>
             </Set>
         </Update>
         <Update>
-            <Where Type="LEADER_POLYSTRALIA" />
-            <Set>
-                <AntiAlien>1</AntiAlien>
-            </Set>
-        </Update>
-        <Update>
             <Where Type="LEADER_RUSSIA" />
             <Set>
+                <AffinityDevotion>3</AffinityDevotion>
+                <AntiAlien>12</AntiAlien>
                 <Chattiness>2</Chattiness>
-            </Set>
-        </Update>
-        <Update>
-            <Where Type="LEADER_RUSSIA" />
-            <Set>
-                <AntiAlien>8</AntiAlien>
             </Set>
         </Update>
     </Leaders>

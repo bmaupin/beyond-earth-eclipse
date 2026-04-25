@@ -147,10 +147,10 @@
     <File md5="2e1f7539adfa3fe41143db6edd1bc276" import="0">UI/VictoryObjectiveReceivedPopup.xml</File>
     <File md5="f6678b924e443e5608926650ba0d6778" import="0">UI/VictoryProloguePopup.lua</File>
     <File md5="f6ff5d5d782ff25c5372534c4f8ad526" import="0">UI/VictoryProloguePopup.xml</File>
-    <File md5="2d7e83a68f0fe6fa2d7f5014a923b651" import="0">XML/Leader_CondemnationBiases.xml</File>
+    <File md5="e1c9fb805b82a62a2ac17d96393d0b8b" import="0">XML/Leader_CondemnationBiases.xml</File>
     <File md5="31dc32dbcd587e9fc49134dbfd83427b" import="0">XML/Leader_Flavors.xml</File>
-    <File md5="23a5d5299f9e7d49f9f31c7a1e37f4e7" import="0">XML/Leader_MajorCivApproachBiases.xml</File>
-    <File md5="f45a45c57ecb68edbbc9fde3a79fad40" import="0">XML/Leaders.xml</File>
+    <File md5="ebc44a7a0a7f416030d687b0411199fe" import="0">XML/Leader_MajorCivApproachBiases.xml</File>
+    <File md5="f0e4ef763d429c37ffa77657811f1dac" import="0">XML/Leaders.xml</File>
   </Files>
   <Actions>
     <OnModActivated>
@@ -169,6 +169,20 @@
     </OnModActivated>
   </Actions>
   <EntryPoints>
+    <!-- To make the game load custom Quests, you have to import them into the VFS, and Load them via the Content Tab as Type: Quest and Name: <Name of the File without the .lua Ending>.
+         (https://forums.civfanatics.com/threads/what-would-be-the-simplest-way-to-replace-a-required-building-for-a-quest.623436/#post-14894202)  -->
+    <EntryPoint type="Quest" file="Gameplay/Lua/Quests/EmancipationVictoryQuest.lua">
+      <Name>EmancipationVictoryQuest</Name>
+      <Description></Description>
+    </EntryPoint>
+    <EntryPoint type="Quest" file="Gameplay/Lua/Quests/PromisedLandVictoryQuest.lua">
+      <Name>PromisedLandVictoryQuest</Name>
+      <Description></Description>
+    </EntryPoint>
+    <EntryPoint type="Quest" file="Gameplay/Lua/Quests/TranscendenceVictoryQuest.lua">
+      <Name>TranscendenceVictoryQuest</Name>
+      <Description></Description>
+    </EntryPoint>
     <EntryPoint type="InGameUIAddin" file="Lua/Victories.lua">
       <Name>Eclipse - Victories</Name>
       <Description>Eclipse - Victories</Description>
