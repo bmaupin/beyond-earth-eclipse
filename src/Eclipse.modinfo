@@ -134,7 +134,7 @@
     <File md5="27777c2ec6cbb23f7b3aa62c97c2e0e9" import="1">Gameplay/Lua/Quests/EmancipationVictoryQuest.lua</File>
     <File md5="5fc7ceab99f12bc894cdcb3fd2a9a658" import="1">Gameplay/Lua/Quests/PromisedLandVictoryQuest.lua</File>
     <File md5="23465d7d704feb46fb74fe2a6e2158d6" import="1">Gameplay/Lua/Quests/TranscendenceVictoryQuest.lua</File>
-    <File md5="4857412df97e66cb82a373df80bdb78f" import="0">Lua/Victories.lua</File>
+    <File md5="a3c62864c497699c3afab0ccb8fe3caa" import="0">Lua/Victories.lua</File>
     <File md5="832c14254a7461f0e1d6cd8b102d1400" import="0">SQL/Builds.sql</File>
     <File md5="8e40f5954e94d5316de753ea28c71cfa" import="0">SQL/Civilizations.sql</File>
     <File md5="f05d7220ecf0f9d0a165030da3f205b7" import="0">SQL/HandicapInfos.sql</File>
