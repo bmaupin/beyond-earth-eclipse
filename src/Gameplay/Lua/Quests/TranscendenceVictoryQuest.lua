@@ -129,6 +129,21 @@ function QuestScript.DoStage(quest)
 			-- Turn on the Mind Flower project
 			team:SetQuestProjectAllowed(MIND_FLOWER_PROJECT_TYPE, true);
 			quest.PersistentData.Stage = quest.PersistentData.Stage + 1;
+
+			-- === BEGIN MOD ===
+			local isRisingTideActive = ContentManager.IsActive("54D2B257-C591-4045-8F17-A69F033166C7", ContentType.GAMEPLAY);
+			if (player:IsHuman() and player:IsAlive() and isRisingTideActive) then
+				print("(Beyond Earth Eclipse) showing objective popup for victory " .. quest:GetType() .. " stage 2")
+
+				Events.SerialEventGameMessagePopup({
+					Type = ButtonPopupTypes.BUTTONPOPUP_QUEST_OBJECTIVE_RECEIVED_ECLIPSE,
+					Data1 = player:GetID(),
+					Data2 = quest:GetIndex(),
+					-- This is the index of the next objective; Lua indexes start at 1
+					Data3 = 4
+				});
+			end
+			-- === END MOD ===
 		end
 	else
 		quest.PersistentData.Stage = quest.PersistentData.Stage + 1;
@@ -159,6 +174,21 @@ function QuestScript.DoStage(quest)
 
 		local objective = AddObjective(quest, "QUEST_OBJECTIVE_BUILD_PROJECT", MIND_FLOWER_PROJECT_TYPE);
 		objective:SetEpilogue("TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_MIND_EPILOGUE");
+
+		-- === BEGIN MOD ===
+		local isRisingTideActive = ContentManager.IsActive("54D2B257-C591-4045-8F17-A69F033166C7", ContentType.GAMEPLAY);
+		if (player:IsHuman() and player:IsAlive() and isRisingTideActive) then
+			print("(Beyond Earth Eclipse) showing objective popup for victory " .. quest:GetType() .. " objective " .. objective:GetSummary())
+
+			Events.SerialEventGameMessagePopup({
+				Type = ButtonPopupTypes.BUTTONPOPUP_QUEST_OBJECTIVE_RECEIVED_ECLIPSE,
+				Data1 = player:GetID(),
+				Data2 = quest:GetIndex(),
+				-- This is the index of the next objective; Lua indexes start at 1
+				Data3 = objective:GetIndex()
+			});
+		end
+		-- === END MOD ===
 	elseif (quest.PersistentData.Stage == Stages.AwakenPlanet) then
 		quest:SetProgress(75);
 
@@ -195,6 +225,21 @@ function QuestScript.DoStage(quest)
 		local objective = AddObjective(quest, "QUEST_OBJECTIVE_OPERATE_MIND_FLOWER", duration, "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_WAIT_SUMMARY");
 		objective:SetEpilogue("TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_WAIT_EPILOGUE");
 		quest.PersistentData.WaitObjectiveIndex = objective:GetIndex();		
+
+		-- === BEGIN MOD ===
+		local isRisingTideActive = ContentManager.IsActive("54D2B257-C591-4045-8F17-A69F033166C7", ContentType.GAMEPLAY);
+		if (player:IsHuman() and player:IsAlive() and isRisingTideActive) then
+			print("(Beyond Earth Eclipse) showing objective popup for victory " .. quest:GetType() .. " objective " .. objective:GetSummary())
+
+			Events.SerialEventGameMessagePopup({
+				Type = ButtonPopupTypes.BUTTONPOPUP_QUEST_OBJECTIVE_RECEIVED_ECLIPSE,
+				Data1 = player:GetID(),
+				Data2 = quest:GetIndex(),
+				-- This is the index of the next objective; Lua indexes start at 1
+				Data3 = objective:GetIndex()
+			});
+		end
+		-- === END MOD ===
 
 	elseif (quest.PersistentData.Stage == Stages.End) then
 
