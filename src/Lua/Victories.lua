@@ -119,26 +119,29 @@ GameEvents.PlayerDoTurn.Add(TriggerVictoryProloguePopup);
 -- end
 -- Events.SequenceGameInitComplete.Add(AutoPlay);
 
--- local function MaybeStopAutoplay(playerID)
---     -- Only run the check once per turn
---     if playerID == 0 then
---         local player = Players[playerID];
+-- -- Uncomment as needed for testing purity/supremacy stage 2 victory popup
+-- -- Set Always Peace, difficulty to Sputnik, colonists to Scientists, larger planet size (for more resources), just 1 other player with a different affinity, disable all victory conditions except the one to test
+-- local function AutoPlay()
+--     print("********************* AutoPlay()");
+--     -- First parameter is number of turns to autoplay, second is player to return control to (or -1 for none)
+--     Game.SetAIAutoPlay(300);
+-- end
+-- -- Run this once at the start of the game
+-- Events.SequenceGameInitComplete.Add(AutoPlay);
 
---         -- Test transcendence victory popup. To use:
---         --
---         -- - Set autoplay to a high value (at least 300)
---         -- - In game setup, use the smallest map, turn off all victories except transcendence, enable Always peace, select non-harmony AI players
---         --
---         -- Stop after player has transcendence victory stage 1; we can go back and load previous save to test victory popup
---         if (player:HasTech(GameInfo.Technologies["TECH_NANOROBOTICS"].ID) and
---             player:HasTech(GameInfo.Technologies["TECH_SWARM_INTELLIGENCE"].ID) and
---             player:HasTech(GameInfo.Technologies["TECH_TRANSGENICS"].ID)
---         ) then
---             if Game.GetAIAutoPlay() > 0 then
---                 print("***************************** (Beyond Earth Eclipse) stopping autoplay");
---                 Game.SetAIAutoPlay(1, 0);
---             end
+-- local function MaybeStopAutoPlay(playerID)
+--     if playerID ~= 0 then
+--         return;
+--     end
+
+--     local player = Players[playerID];
+
+--     if player:HasTech(GameInfo.Technologies["TECH_ORBITAL_NETWORKS"].ID) then
+--         print("********************* Orbital networks researched; stopping autoplay");
+--         if Game.GetAIAutoPlay() > 0 then
+--             Game.SetAIAutoPlay(1, 0);
 --         end
+--         GameEvents.PlayerDoTurn.Remove(MaybeStopAutoPlay);
 --     end
 -- end
--- GameEvents.PlayerDoTurn.Add(MaybeStopAutoplay);
+-- GameEvents.PlayerDoTurn.Add(MaybeStopAutoPlay);
