@@ -69,6 +69,70 @@ function TriggerVictoryProloguePopup(playerID)
 end
 GameEvents.PlayerDoTurn.Add(TriggerVictoryProloguePopup);
 
+-- Trigger the transcendence victory quest stage 2 popup
+--
+-- The other victory quest popups are triggered directly in TranscendenceVictoryQuest.lua,
+-- but this one is different because it's triggered by researching three technologies that
+-- can be researched in any order and there is a different objective prologue associated
+-- with each one. In order to pick the correct one, we listen for the
+-- GameEvents.TeamTechResearched event (there doesn't seem to be such an event for an
+-- individual player).
+function TriggerTranscendenceStage2Popup(teamType, techType, _change)
+    local player
+    if Game.GetActivePlayer() ~= nil then
+        player = Players[Game.GetActivePlayer()];
+    else
+        player = Players[0];
+    end
+
+    if not player:IsHuman() or not player:IsAlive() then
+        return;
+    end
+
+    if player:GetTeam() == teamType and player:IsHuman() then
+        local objectiveIndex = 0;
+        if (
+            techType == GameInfo.Technologies["TECH_TRANSGENICS"].ID and
+            player:HasTech(GameInfo.Technologies["TECH_NANOROBOTICS"].ID) and
+            player:HasTech(GameInfo.Technologies["TECH_SWARM_INTELLIGENCE"].ID)
+        ) then
+            objectiveIndex = 1;
+        elseif (
+            techType == GameInfo.Technologies["TECH_SWARM_INTELLIGENCE"].ID and
+            player:HasTech(GameInfo.Technologies["TECH_NANOROBOTICS"].ID) and
+            player:HasTech(GameInfo.Technologies["TECH_TRANSGENICS"].ID)
+        ) then
+            objectiveIndex = 2;
+        elseif (
+            techType == GameInfo.Technologies["TECH_NANOROBOTICS"].ID and
+            player:HasTech(GameInfo.Technologies["TECH_SWARM_INTELLIGENCE"].ID) and
+            player:HasTech(GameInfo.Technologies["TECH_TRANSGENICS"].ID)
+        ) then
+            objectiveIndex = 3;
+        end
+
+        if objectiveIndex ~= 0 then
+            local quest = player:GetQuest(GameInfo.Quests["QUEST_VICTORY_TRANSCENDENCE"].ID);
+            local objectives = quest:GetObjectives();
+            local objective = objectives[objectiveIndex];
+
+            print("(Beyond Earth Eclipse) showing objective popup for victory " .. quest:GetType() .. " objective " .. objective:GetSummary());
+
+            Events.SerialEventGameMessagePopup({
+                Type = ButtonPopupTypes.BUTTONPOPUP_QUEST_OBJECTIVE_RECEIVED_ECLIPSE,
+                Data1 = player:GetID(),
+                Data2 = quest:GetIndex(),
+                -- This is the index of the next objective; Lua indexes start at 1
+                Data3 = objective:GetIndex() + 1
+            });
+        end
+    end
+end
+local isRisingTideActive = ContentManager.IsActive("54D2B257-C591-4045-8F17-A69F033166C7", ContentType.GAMEPLAY);
+if isRisingTideActive then
+    GameEvents.TeamTechResearched.Add(TriggerTranscendenceStage2Popup);
+end
+
 -- -- TODO: Uncomment if we decide to show the contact victory prologue popup
 -- function OnOrbitalUnitLaunched(playerID, unitType, _plotX, _plotY)
 --     print("(Beyond Earth Eclipse) OnOrbitalUnitLaunched()")

@@ -182,8 +182,12 @@ function ShowWindow()
 		return;
 	end
 
+	-- ID of the player
 	local playerType = m_PopupInfo.Data1;
+	-- Index of the victory quest
 	local questIndex = m_PopupInfo.Data2;
+	-- Index of the next objective to show. The title of this objective will be shown as
+	-- well as the epilogue of the previous objective.
 	local objectiveIndex = m_PopupInfo.Data3;
 
 	local player = Players[playerType];
