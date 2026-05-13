@@ -188,6 +188,9 @@ function ShowWindow()
 	local questIndex = m_PopupInfo.Data2;
 	-- Index of the next objective to show. The title of this objective will be shown as
 	-- well as the epilogue of the previous objective.
+	--
+	-- NOTE: This is the Lua array index (starting at 1) of the next objective, e.g.
+	--       objectives[index]. If objective:GetIndex() is used, it starts at 0.
 	local objectiveIndex = m_PopupInfo.Data3;
 
 	local player = Players[playerType];

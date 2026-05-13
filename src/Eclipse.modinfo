@@ -134,8 +134,8 @@
     <File md5="32391ed016244e8044e596ead8c8832c" import="1">Gameplay/Lua/AssignStartingPlots.lua</File>
     <File md5="27777c2ec6cbb23f7b3aa62c97c2e0e9" import="1">Gameplay/Lua/Quests/EmancipationVictoryQuest.lua</File>
     <File md5="5fc7ceab99f12bc894cdcb3fd2a9a658" import="1">Gameplay/Lua/Quests/PromisedLandVictoryQuest.lua</File>
-    <File md5="aaeb7b5b59d9ba8c64088dd876110f77" import="1">Gameplay/Lua/Quests/TranscendenceVictoryQuest.lua</File>
-    <File md5="9a508080aee8d78632680232950538e2" import="0">Lua/Victories.lua</File>
+    <File md5="01c53283b062fe4bb64531a77326c9ab" import="1">Gameplay/Lua/Quests/TranscendenceVictoryQuest.lua</File>
+    <File md5="8bb5f9df87183ca25fe9722021e4e85a" import="0">Lua/Victories.lua</File>
     <File md5="832c14254a7461f0e1d6cd8b102d1400" import="0">SQL/Builds.sql</File>
     <File md5="8e40f5954e94d5316de753ea28c71cfa" import="0">SQL/Civilizations.sql</File>
     <File md5="f05d7220ecf0f9d0a165030da3f205b7" import="0">SQL/HandicapInfos.sql</File>
@@ -144,7 +144,7 @@
     <File md5="63f5f5b77d8ee1cefda76b1be3619ecd" import="0">SQL/Quests.sql</File>
     <File md5="d6a83e3c6e09e4f8ddc326443cffba26" import="0">SQL/Technologies.sql</File>
     <File md5="5e98f679467d5361dcb7641739fcb0aa" import="1">UI/InGame/TechTree/TechTree.lua</File>
-    <File md5="57bed993e6165b18f432f3e8a51a039d" import="0">UI/VictoryObjectiveReceivedPopup.lua</File>
+    <File md5="80c20da1e8f826c8b55299ee7458b538" import="0">UI/VictoryObjectiveReceivedPopup.lua</File>
     <File md5="2e1f7539adfa3fe41143db6edd1bc276" import="0">UI/VictoryObjectiveReceivedPopup.xml</File>
     <File md5="f6678b924e443e5608926650ba0d6778" import="0">UI/VictoryProloguePopup.lua</File>
     <File md5="f6ff5d5d782ff25c5372534c4f8ad526" import="0">UI/VictoryProloguePopup.xml</File>

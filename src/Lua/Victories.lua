@@ -96,6 +96,7 @@ function TriggerTranscendenceStage2Popup(teamType, techType, _change)
             player:HasTech(GameInfo.Technologies["TECH_NANOROBOTICS"].ID) and
             player:HasTech(GameInfo.Technologies["TECH_SWARM_INTELLIGENCE"].ID)
         ) then
+            -- Lua array indexes start at 1
             objectiveIndex = 1;
         elseif (
             techType == GameInfo.Technologies["TECH_SWARM_INTELLIGENCE"].ID and
@@ -122,8 +123,8 @@ function TriggerTranscendenceStage2Popup(teamType, techType, _change)
                 Type = ButtonPopupTypes.BUTTONPOPUP_QUEST_OBJECTIVE_RECEIVED_ECLIPSE,
                 Data1 = player:GetID(),
                 Data2 = quest:GetIndex(),
-                -- This is the index of the next objective; Lua indexes start at 1
-                Data3 = objective:GetIndex() + 1
+                -- Index of the next objective
+                Data3 = objectiveIndex + 1
             });
         end
     end
@@ -182,30 +183,3 @@ end
 --     Game.SetAIAutoPlay(300, 0);
 -- end
 -- Events.SequenceGameInitComplete.Add(AutoPlay);
-
--- -- Uncomment as needed for testing purity/supremacy stage 2 victory popup
--- -- Set Always Peace, difficulty to Sputnik, colonists to Scientists, larger planet size (for more resources), just 1 other player with a different affinity, disable all victory conditions except the one to test
--- local function AutoPlay()
---     print("********************* AutoPlay()");
---     -- First parameter is number of turns to autoplay, second is player to return control to (or -1 for none)
---     Game.SetAIAutoPlay(300);
--- end
--- -- Run this once at the start of the game
--- Events.SequenceGameInitComplete.Add(AutoPlay);
-
--- local function MaybeStopAutoPlay(playerID)
---     if playerID ~= 0 then
---         return;
---     end
-
---     local player = Players[playerID];
-
---     if player:HasTech(GameInfo.Technologies["TECH_ORBITAL_NETWORKS"].ID) then
---         print("********************* Orbital networks researched; stopping autoplay");
---         if Game.GetAIAutoPlay() > 0 then
---             Game.SetAIAutoPlay(1, 0);
---         end
---         GameEvents.PlayerDoTurn.Remove(MaybeStopAutoPlay);
---     end
--- end
--- GameEvents.PlayerDoTurn.Add(MaybeStopAutoPlay);

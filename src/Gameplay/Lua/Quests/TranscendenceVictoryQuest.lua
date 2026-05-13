@@ -205,8 +205,9 @@ function QuestScript.DoStage(quest)
 				Type = ButtonPopupTypes.BUTTONPOPUP_QUEST_OBJECTIVE_RECEIVED_ECLIPSE,
 				Data1 = player:GetID(),
 				Data2 = quest:GetIndex(),
-				-- This is the index of the next objective; Lua indexes start at 1
-				Data3 = objective:GetIndex()
+				-- Add 1 because it expects the Lua array index value (starting at 1) but
+				-- objective:GetIndex() starts at 0
+				Data3 = objective:GetIndex() + 1
 			});
 		end
 		-- === END MOD ===
