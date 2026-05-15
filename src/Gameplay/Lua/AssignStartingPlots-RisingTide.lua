@@ -4382,8 +4382,12 @@ function AssignStartingPlots:CreateResources(fertilityMap : table)
 		for resInfo in GameInfo.Resources() do
 			if(resInfo.ResourceClassType == GameInfo.ResourceClasses["RESOURCECLASS_STRATEGIC"].Type ) then
 				-- === BEGIN MOD: If Mini Beyond Earth is enabled, add affinity resources as well ===
-				if ((self.resource_setting == 5 and resInfo.Affinity == false) or
-					(isMiniBeyondEarthModEnabled and (resInfo.Affinity == true or resInfo.Type == "RESOURCE_TITANIUM"))) then
+				if (
+					(self.resource_setting == 5 and resInfo.Affinity == false) or
+					(isMiniBeyondEarthModEnabled and
+						(resInfo.Affinity == true or resInfo.Type == "RESOURCE_PETROLEUM" or resInfo.Type == "RESOURCE_TITANIUM")
+					)
+				) then
 				-- === END MOD ===
 					table.insert(strategic, resInfo.ID);
 					resourceCount = resourceCount + 1;
