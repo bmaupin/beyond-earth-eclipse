@@ -4238,9 +4238,31 @@ function AssignStartingPlots:NormalizeStartLocation(region_number)
 			end
 		end
 	end
-	
+
+	-- === BEGIN MOD: Function to check if mod is enabled ===
+	--
+	-- Source: https://forums.civfanatics.com/threads/checking-whether-a-mod-is-active-by-id.558215/
+	function ModEnabledCheck(sModID)
+		for i,v in pairs(Modding.GetActivatedMods()) do
+			if sModID == v.ID then
+				return true;
+			end
+		end
+		return false;
+	end
+	local isMiniBeyondEarthModEnabled = ModEnabledCheck("9412c9bf-a7b2-481e-b42e-431f06aac221");
+	-- === END MOD ===
+
 	-- Add mandatory titanium, geothermal, petroleum to every start if Strategic Balance option is enabled.
-	if self.resource_setting == 5 then
+	-- === BEGIN MOD: If Mini Beyond Earth is enabled, add petroleum and titanium to every start ===
+	--
+	-- Unlike the logic for Rising Tide, the logic for adding strategic resources in
+	-- AddStrategicBalanceResources only seems to add petroleum and titanium. However, the
+	-- base game seems to already add a lot of affinity resources and geothermal isn't
+	-- needed for any victory conditions or affinity-specific units so extra petroleum and
+	-- titanium should be sufficient.
+	if self.resource_setting == 5 or isMiniBeyondEarthModEnabled then
+	-- === END MOD ===
 		self:AddStrategicBalanceResources(region_number)
 	end
 	

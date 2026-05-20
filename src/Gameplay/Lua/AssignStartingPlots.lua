@@ -1,3 +1,6 @@
+-- There are significant differences in AssignStartingPlots.lua between the base game and
+-- Rising Tide. Rather than try to merge them, both files have been added to this project
+-- and are conditionally included.
 local isRisingTideActive = ContentManager.IsActive("54D2B257-C591-4045-8F17-A69F033166C7", ContentType.GAMEPLAY);
 if isRisingTideActive then
 	include("AssignStartingPlots-RisingTide");
