@@ -1,14 +1,8 @@
 function ShowVictoryProloguePopup(playerID, questType)
-    -- DELETEME
-    print("(Beyond Earth Eclipse) ShowVictoryProloguePopup()")
-
     local player = Players[playerID];
     if not player:IsHuman() or not player:IsAlive() then
         return;
     end
-
-    print("(Beyond Earth Eclipse) ShowVictoryProloguePopup() playerID=", playerID)
-    print("(Beyond Earth Eclipse) ShowVictoryProloguePopup() questType=", questType)
 
     local quest = player:GetQuest(GameInfo.Quests[questType].ID);
     if not quest then return end
@@ -30,9 +24,6 @@ function ShowVictoryProloguePopup(playerID, questType)
     ) then
         return;
     end
-
-    local questPrologue = quest:GetPrologue();
-    print("(Beyond Earth Eclipse) questPrologue = " .. questPrologue)
 
     Events.SerialEventGameMessagePopup({
         Type = ButtonPopupTypes.BUTTONPOPUP_VICTORY_PROLOGUE,
