@@ -146,6 +146,7 @@
     <File md5="4f6c0e7e8a7a1734608ac2b7ddca2d51" import="0">SQL/Projects.sql</File>
     <File md5="63f5f5b77d8ee1cefda76b1be3619ecd" import="0">SQL/Quests.sql</File>
     <File md5="d6a83e3c6e09e4f8ddc326443cffba26" import="0">SQL/Technologies.sql</File>
+    <File md5="2f2d2261dd7c28a55de8b0ebac5ca962" import="0">SQL/Units.sql</File>
     <File md5="5e98f679467d5361dcb7641739fcb0aa" import="1">UI/InGame/TechTree/TechTree.lua</File>
     <File md5="80c20da1e8f826c8b55299ee7458b538" import="0">UI/VictoryObjectiveReceivedPopup.lua</File>
     <File md5="2e1f7539adfa3fe41143db6edd1bc276" import="0">UI/VictoryObjectiveReceivedPopup.xml</File>
@@ -166,6 +167,7 @@
       <UpdateDatabase>SQL/Language_en_US.sql</UpdateDatabase>
       <UpdateDatabase>SQL/Projects.sql</UpdateDatabase>
       <UpdateDatabase>SQL/Quests.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Units.sql</UpdateDatabase>
       <UpdateDatabase>XML/Leader_CondemnationBiases.xml</UpdateDatabase>
       <UpdateDatabase>XML/Leader_Flavors.xml</UpdateDatabase>
       <UpdateDatabase>XML/Leader_MajorCivApproachBiases.xml</UpdateDatabase>
