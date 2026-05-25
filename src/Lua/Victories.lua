@@ -37,7 +37,7 @@ function TriggerVictoryProloguePopup(playerID)
     -- other victory objectives, the first objective is in progress from the beginning of
     -- the game so we can't use that to trigger it
     -- TODO: Tweak this as needed
-    if Game.GetGameTurn() ~= 25 then
+    if Game.GetGameTurn() ~= 50 then
         return;
     end
 
