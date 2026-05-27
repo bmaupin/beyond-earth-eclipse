@@ -131,9 +131,6 @@
     <File md5="0902cd20fe0bd720255c0f86d163a567" import="1">Assets/Sounds/Speech/English/Wonders/Xenodrome.mp3</File>
     <File md5="3281cf987e14a9b6a535c12e3223d314" import="1">Assets/Sounds/Speech/English/Wonders/Xenomalleum.mp3</File>
     <File md5="a677cae7903b65f35e8b1d563c50d522" import="1">Assets/Sounds/Speech/English/Wonders/Xenonova.mp3</File>
-    <File md5="730441b6deb490113699ce756be430b6" import="1">Gameplay/Lua/AssignStartingPlots.lua</File>
-    <File md5="50e6bd9561a4f8a69738a20f24e0fefc" import="1">Gameplay/Lua/AssignStartingPlots-BaseGame.lua</File>
-    <File md5="e36c575471de7fe652df9be180466ac5" import="1">Gameplay/Lua/AssignStartingPlots-RisingTide.lua</File>
     <File md5="27777c2ec6cbb23f7b3aa62c97c2e0e9" import="1">Gameplay/Lua/Quests/EmancipationVictoryQuest.lua</File>
     <File md5="5fc7ceab99f12bc894cdcb3fd2a9a658" import="1">Gameplay/Lua/Quests/PromisedLandVictoryQuest.lua</File>
     <File md5="01c53283b062fe4bb64531a77326c9ab" import="1">Gameplay/Lua/Quests/TranscendenceVictoryQuest.lua</File>
