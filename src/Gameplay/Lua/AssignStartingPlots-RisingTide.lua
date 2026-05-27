@@ -4190,6 +4190,30 @@ function AssignStartingPlots:CreateResources(fertilityMap : table)
 	local landDensity : number = 20;
 	local seaDensity : number = 30;
 
+	-- === BEGIN MOD: Increase resource density if Mini Beyond Earth is enabled ===
+	--
+	-- When Mini Beyond Earth is enabled, the maps are so small that there aren't enough
+	-- strategic resources in particular. But increasing strategic resources (which we do
+	-- below) isn't very effective if we don't also increase the overall resource density
+	-- allowed in the map.
+
+	-- Source: https://forums.civfanatics.com/threads/checking-whether-a-mod-is-active-by-id.558215/
+	function ModEnabledCheck(sModID)
+		for i,v in pairs(Modding.GetActivatedMods()) do
+			if sModID == v.ID then
+				return true;
+			end
+		end
+		return false;
+	end
+	local isMiniBeyondEarthModEnabled = ModEnabledCheck("9412c9bf-a7b2-481e-b42e-431f06aac221");
+
+	if isMiniBeyondEarthModEnabled then
+		landDensity = landDensity * 2;
+		seaDensity = seaDensity * 2;
+	end
+	-- === END MOD ===
+
 	local gridWidth : number, gridHeight : number = Map.GetGridSize();
 	local baseRunningWeight = ((gridWidth * gridHeight) * (landDensity / 4)) / 100;
 	local resourceTrackingTable : table = {};	
@@ -4200,6 +4224,17 @@ function AssignStartingPlots:CreateResources(fertilityMap : table)
 			RunningWeight = baseRunningWeight,
 			NegativeWeight = row.NegativeWeight,
 		};
+
+		-- === BEGIN MOD: Increase strategic resource weight if Mini Beyond Earth is enabled ===
+		--
+		-- This includes affinity resources but excludes geothermal.
+		if isMiniBeyondEarthModEnabled and row.ResourceClassType == "RESOURCECLASS_STRATEGIC" and row.Type ~= "RESOURCE_GEOTHERMAL_ENERGY" then
+			print("****************************** Doubling weight for " .. row.Type .. " was: " .. resourceData.RunningWeight);
+			resourceData.RunningWeight = baseRunningWeight * 4;
+
+		end
+		-- === END MOD ===
+
 		resourceTrackingTable[row.ID] = resourceData;
 	end
 
@@ -4350,45 +4385,13 @@ function AssignStartingPlots:CreateResources(fertilityMap : table)
 		end
 	end
 
-	-- === BEGIN MOD: Function to check if mod is enabled ===
-	--
-	-- Source: https://forums.civfanatics.com/threads/checking-whether-a-mod-is-active-by-id.558215/
-	function ModEnabledCheck(sModID)
-		for i,v in pairs(Modding.GetActivatedMods()) do
-			if sModID == v.ID then
-				return true;
-			end
-		end
-		return false;
-	end
-	local isMiniBeyondEarthModEnabled = ModEnabledCheck("9412c9bf-a7b2-481e-b42e-431f06aac221");
-	-- === END MOD ===
-
 	-- Add mandatory titanium, geothermal, petroleum to every start if Strategic Balance option is enabled.
-	-- === BEGIN MOD: If Mini Beyond Earth is enabled, add strategic resources to every start ===
-	--
-	-- Without this change, if Mini Beyond Earth is enabled the maps are so small that not
-	-- enough strategic resources get placed in order for players to be able to build
-	-- affinity-specific unique units, even when the amount of resources is set to
-	-- "legendary."
-	--
-	-- This change might be better placed in Mini Beyond Earth itself but that mod avoids
-	-- overriding game files as much as possible for maximum compatibility, whereas this
-	-- mod is already so game-breaking that it doesn't have that same design constraint.
-	if self.resource_setting == 5 or isMiniBeyondEarthModEnabled then
-	-- === END MOD ===
+	if self.resource_setting == 5 then
 		local strategic = {};
 		local resourceCount = 0;
 		for resInfo in GameInfo.Resources() do
 			if(resInfo.ResourceClassType == GameInfo.ResourceClasses["RESOURCECLASS_STRATEGIC"].Type ) then
-				-- === BEGIN MOD: If Mini Beyond Earth is enabled, add affinity resources as well ===
-				if (
-					(self.resource_setting == 5 and resInfo.Affinity == false) or
-					(isMiniBeyondEarthModEnabled and
-						(resInfo.Affinity == true or resInfo.Type == "RESOURCE_PETROLEUM" or resInfo.Type == "RESOURCE_TITANIUM")
-					)
-				) then
-				-- === END MOD ===
+				if (resInfo.Affinity == false) then
 					table.insert(strategic, resInfo.ID);
 					resourceCount = resourceCount + 1;
 				end
@@ -4400,7 +4403,7 @@ function AssignStartingPlots:CreateResources(fertilityMap : table)
 				local x = self.startingPlots[player_num][1];
 				local y = self.startingPlots[player_num][2];
 				local plot = Map.GetPlot(x, y);
-
+			
 				local shuffled = GetShuffledCopyOfTable(strategic);
 				for i = 1, resourceCount + 1, 1 do
 					self.resourcesSet = 1;

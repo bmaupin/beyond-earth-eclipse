@@ -142,7 +142,7 @@
     <File md5="8e40f5954e94d5316de753ea28c71cfa" import="0">SQL/Civilizations.sql</File>
     <File md5="f05d7220ecf0f9d0a165030da3f205b7" import="0">SQL/HandicapInfos.sql</File>
     <File md5="e8bb13d4150998fa805413d7ff338525" import="0">SQL/Language_en_US.sql</File>
-    <File md5="e8bb13d4150998fa805413d7ff338525" import="0">SQL/Leaders.sql</File>
+    <File md5="cd1999b31344aabe4a40ae79f2f683c3" import="0">SQL/Leaders.sql</File>
     <File md5="4f6c0e7e8a7a1734608ac2b7ddca2d51" import="0">SQL/Projects.sql</File>
     <File md5="63f5f5b77d8ee1cefda76b1be3619ecd" import="0">SQL/Quests.sql</File>
     <File md5="d6a83e3c6e09e4f8ddc326443cffba26" import="0">SQL/Technologies.sql</File>
@@ -153,7 +153,7 @@
     <File md5="f6678b924e443e5608926650ba0d6778" import="0">UI/VictoryProloguePopup.lua</File>
     <File md5="f6ff5d5d782ff25c5372534c4f8ad526" import="0">UI/VictoryProloguePopup.xml</File>
     <File md5="e1c9fb805b82a62a2ac17d96393d0b8b" import="0">XML/Leader_CondemnationBiases.xml</File>
-    <File md5="31dc32dbcd587e9fc49134dbfd83427b" import="0">XML/Leader_Flavors.xml</File>
+    <File md5="672252c28e73734b2364967b62fb73c3" import="0">XML/Leader_Flavors.xml</File>
     <File md5="ebc44a7a0a7f416030d687b0411199fe" import="0">XML/Leader_MajorCivApproachBiases.xml</File>
     <File md5="f0e4ef763d429c37ffa77657811f1dac" import="0">XML/Leaders.xml</File>
   </Files>
@@ -165,6 +165,7 @@
       <UpdateDatabase>SQL/Civilizations.sql</UpdateDatabase>
       <UpdateDatabase>SQL/HandicapInfos.sql</UpdateDatabase>
       <UpdateDatabase>SQL/Language_en_US.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Leaders.sql</UpdateDatabase>
       <UpdateDatabase>SQL/Projects.sql</UpdateDatabase>
       <UpdateDatabase>SQL/Quests.sql</UpdateDatabase>
       <UpdateDatabase>SQL/Units.sql</UpdateDatabase>
