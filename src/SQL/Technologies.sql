@@ -32,7 +32,9 @@ SET AffinityValue = 27
 WHERE AffinityValue = 20
   AND EXISTS (SELECT Description FROM Civilizations WHERE Type = 'CIVILIZATION_CHUNGSU');
 
--- This helps the AI leaders choose techs that align with their preferred affinity (as determined by Leader_Flavors)
+-- This helps the AI leaders choose techs that align with their preferred affinity (as
+-- determined by Leader_Flavors); this makes a big difference! Otherwise, AI tends to
+-- strongly favour branch techs over leaf techs.
 INSERT INTO Technology_Flavors (TechType, FlavorType, Flavor)
 SELECT
     a.TechType,

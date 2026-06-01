@@ -174,3 +174,72 @@ end
 --     Game.SetAIAutoPlay(300, 0);
 -- end
 -- Events.SequenceGameInitComplete.Add(AutoPlay);
+
+-- -- Uncomment as needed for testing
+-- local function AutoPlay()
+--     if Game.GetGameTurn() ~= 0 then
+--         return;
+--     end
+
+--     local turnToStopAutoplay = 200;
+
+--     local function PrintDebuggingInfo(playerID)
+--         -- Only log every n turns
+--         if Game.GetGameTurn() == turnToStopAutoplay and playerID == 0 then
+--             print("********************* DEBUGGING; turn:" .. tostring(Game.GetGameTurn()));
+--             for playerID = 0, GameDefines.MAX_MAJOR_CIVS - 1 do
+--                 local player = Players[playerID];
+--                 if player ~= nil and player:IsEverAlive() then
+--                     print("********************* Player: " .. player:GetName());
+
+--                     print("********************* Cities: " .. tostring(player:GetNumCities()));
+
+--                     print("*********************");
+--                     for affinityInfo in GameInfo.Affinity_Types() do
+--                         local affinityLevel = player:GetAffinityLevel(affinityInfo.ID);
+--                         print("********************* Affinity: " .. tostring(affinityInfo.Type) .. " level: " .. tostring(affinityLevel));
+--                     end
+--                     print("*********************");
+
+--                     print("********************* Total xenomass: " .. tostring(player:GetNumResourceTotal(GameInfo.Resources["RESOURCE_XENOMASS"].ID, false)));
+--                     print("********************* Total firaxite: " .. tostring(player:GetNumResourceTotal(GameInfo.Resources["RESOURCE_FIRAXITE"].ID, false)));
+--                     print("********************* Total float stone: " .. tostring(player:GetNumResourceTotal(GameInfo.Resources["RESOURCE_FLOAT_STONE"].ID, false)));
+--                     print("********************* Total titanium: " .. tostring(player:GetNumResourceTotal(GameInfo.Resources["RESOURCE_TITANIUM"].ID, false)));
+--                     print("********************* Total petroleum: " .. tostring(player:GetNumResourceTotal(GameInfo.Resources["RESOURCE_PETROLEUM"].ID, false)));
+--                     print("*********************");
+
+--                     local dominantAffinityType = player:GetDominantAffinityType();
+--                     if dominantAffinityType == GameInfo.Affinity_Types["AFFINITY_TYPE_HARMONY"].ID then
+--                         print("********************* Xeno Swarm: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_XENO_SWARM"].ID)));
+--                         print("********************* Xeno Cavalry: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_XENO_CAVALRY"].ID)));
+--                         print("********************* Rocktopus: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_ROCKTOPUS"].ID)));
+--                         print("********************* Xeno Titan: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_XENO_TITAN"].ID)));
+
+--                     elseif dominantAffinityType == GameInfo.Affinity_Types["AFFINITY_TYPE_SUPREMACY"].ID then
+--                         print("********************* CNDR: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_CNDR"].ID)));
+--                         print("********************* CARVR: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_CARVR"].ID)));
+--                         print("********************* SABR: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_SABR"].ID)));
+--                         print("********************* ANGEL: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_ANGEL"].ID)));
+
+--                     elseif dominantAffinityType == GameInfo.Affinity_Types["AFFINITY_TYPE_PURITY"].ID then
+
+--                         print("********************* Battlesuit: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_BATTLESUIT"].ID)));
+--                         print("********************* Aegis: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_AEGIS"].ID)));
+--                         print("********************* LEV Tank: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_LEV_TANK"].ID)));
+--                         print("********************* LEV Destroyer: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_LEV_DESTROYER"].ID)));
+--                     end
+
+--                     print("*********************");
+--                     print("*********************");
+--                 end
+--             end
+--         end
+--     end
+--     GameEvents.PlayerDoTurn.Add(PrintDebuggingInfo);
+
+--     print("********************* AutoPlay()");
+--     -- First parameter is number of turns to autoplay, second is player to return control to (or -1 for none)
+--     Game.SetAIAutoPlay(turnToStopAutoplay, 0);
+-- end
+-- -- Run this once at the start of the game or when the game is loaded
+-- Events.SequenceGameInitComplete.Add(AutoPlay);
