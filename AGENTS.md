@@ -1,4 +1,4 @@
-- Be succinct
+- Be concise
 - Merely provide guidance and do not write to any files unless otherwise requested
 - Use British English spelling
 - Don't use rg, use grep
