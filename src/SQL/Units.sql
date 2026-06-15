@@ -43,4 +43,4 @@ WHERE Units.AlienLifeform = 0
   -- Limit to Rising Tide only; unfortunately the promotion only exists in Rising Tide,
   -- and attempts to add it to the base game seemed to have no effect; maybe the logic for
   -- EmbarkDefenseModifier that the promotion relies on was only added in Rising Tide?
-  AND EXISTS (SELECT Description FROM Civilizations WHERE Type = 'CIVILIZATION_CHUNGSU');
+  AND EXISTS (SELECT * FROM DownloadableContent WHERE PackageID = "54D2B257C59140458F17A69F033166C7" AND IsActive = 1);
