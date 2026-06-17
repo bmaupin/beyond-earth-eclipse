@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "name": "beyond-earth-eclipse",
+      "path": "..",
+    },
+    {
+      "name": "Sid Meier's Civilization Beyond Earth",
+      "path": "../../../../../.local/share/Steam/steamapps/common/Sid Meier's Civilization Beyond Earth",
+    },
+    {
+      "name": "Sid Meier's Civilization Beyond Earth",
+      "path": "../../../../../.local/share/aspyr-media/Sid Meier's Civilization Beyond Earth",
+    },
+    {
+      "name": "civ-modding-tools",
+      "path": "../../civ-modding-tools",
+    },
+  ],
+  "settings": {
+    // Prevent the Lua extension form scanning the entire workspace
+    "Lua.workspace.maxPreload": 0,
+  },
+}
