@@ -186,12 +186,6 @@
             </Set>
         </Update>
         <Update>
-            <Where LeaderType="LEADER_CHUNGSU" FlavorType="FLAVOR_SCIENCE" />
-            <Set>
-                <Flavor>7</Flavor>
-            </Set>
-        </Update>
-        <Update>
             <Where LeaderType="LEADER_CHUNGSU" FlavorType="FLAVOR_ESPIONAGE" />
             <Set>
                 <Flavor>9</Flavor>
@@ -322,12 +316,6 @@
         </Update>
         <Update>
             <Where LeaderType="LEADER_INTEGR" FlavorType="FLAVOR_ENERGY" />
-            <Set>
-                <Flavor>6</Flavor>
-            </Set>
-        </Update>
-        <Update>
-            <Where LeaderType="LEADER_INTEGR" FlavorType="FLAVOR_SCIENCE" />
             <Set>
                 <Flavor>6</Flavor>
             </Set>
@@ -524,12 +512,6 @@
             <Where LeaderType="LEADER_RUSSIA" FlavorType="FLAVOR_PRODUCTION" />
             <Set>
                 <Flavor>6</Flavor>
-            </Set>
-        </Update>
-        <Update>
-            <Where LeaderType="LEADER_RUSSIA" FlavorType="FLAVOR_SCIENCE" />
-            <Set>
-                <Flavor>4</Flavor>
             </Set>
         </Update>
         <Update>

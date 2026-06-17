@@ -58,7 +58,7 @@
 		<Update>
 			<Where LeaderType="LEADER_AFRICAN_UNION" MajorCivApproachType="MAJOR_CIV_APPROACH_FRIENDLY" />
 			<Set>
-				<Bias>8</Bias>
+				<Bias>10</Bias>
 			</Set>
 		</Update>
 		<Update>
@@ -100,7 +100,7 @@
 		<Update>
 			<Where LeaderType="LEADER_ARC" MajorCivApproachType="MAJOR_CIV_APPROACH_WAR" />
 			<Set>
-				<Bias>8</Bias>
+				<Bias>10</Bias>
 			</Set>
 		</Update>
 		<Update>
@@ -172,7 +172,7 @@
 		<Update>
 			<Where LeaderType="LEADER_BRASILIA" MajorCivApproachType="MAJOR_CIV_APPROACH_WAR" />
 			<Set>
-				<Bias>8</Bias>
+				<Bias>12</Bias>
 			</Set>
 		</Update>
 		<Update>

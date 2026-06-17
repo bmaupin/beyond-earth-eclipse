@@ -1,239 +1,131 @@
--- Track which victory quest strings we've shown by storing the text key for each one.
--- This includes the objective epilogue strings and the quest prologue strings.
-local shownVictoryQuestStrings = {}
-
-function PopulateCompletedVictoryObjectives()
-    for playerID = 0, GameDefines.MAX_CIV_PLAYERS - 1 do
-        local player = Players[playerID];
-
-        if player:IsHuman() and player:IsAlive() then
-            local quests = player:GetQuests()
-            for _, quest in ipairs(quests) do
-                local questPrologue = quest:GetPrologue();
-                local questId = quest:GetType()
-                local questInfo = GameInfo.Quests[questId];
-                local questType = questInfo.Type;
-
-                -- if (quest:IsInProgress() and
-                if (
-                    (questType == "QUEST_VICTORY_CONTACT" or
-                    questType == "QUEST_VICTORY_EMANCIPATION" or
-                    questType == "QUEST_VICTORY_PROMISED_LAND" or
-                    questType == "QUEST_VICTORY_TRANSCENDENCE")
-                ) then
-                    local objectives = quest:GetObjectives()
-                    for _, objective in ipairs(objectives) do
-                        local objectiveEpilogue = objective:GetEpilogue()
-
-                        if ((not objective:IsInProgress()) and
-                            objective:DidSucceed() and
-                            not shownVictoryQuestStrings[objectiveEpilogue]
-                        ) then
-                            shownVictoryQuestStrings[objectiveEpilogue] = true;
-
-                            -- Add the quest prologue text key as well; we should only
-                            -- show this once per victory type
-                            if (not shownVictoryQuestStrings[questPrologue]) then
-                                shownVictoryQuestStrings[questPrologue] = true;
-                            end
-                        end
-                    end
-                end
-            end
-        end
-    end
-end
--- Run this once when the game is first started/loaded
-Events.SequenceGameInitComplete.Add(PopulateCompletedVictoryObjectives);
-
-function ShowVictoryObjectivePopup(playerID)
+function ShowVictoryProloguePopup(playerID, questType)
     local player = Players[playerID];
     if not player:IsHuman() or not player:IsAlive() then
         return;
     end
 
-    local quests = player:GetQuests()
-    for _, quest in ipairs(quests) do
-        local questId = quest:GetType()
-        local questInfo = GameInfo.Quests[questId];
-        local questType = questInfo.Type;
+    local quest = player:GetQuest(GameInfo.Quests[questType].ID);
+    if not quest then return end
 
-        -- NOTE: We don't need logic to determine whether a victory type has been disabled
-        --       in the game options because disabled victories won't show up in the
-        --       player's quests
-        if (quest:IsInProgress() and
-            (questType == "QUEST_VICTORY_CONTACT" or
-            questType == "QUEST_VICTORY_EMANCIPATION" or
-            questType == "QUEST_VICTORY_PROMISED_LAND" or
-            questType == "QUEST_VICTORY_TRANSCENDENCE")
+    -- This is just a minimal sanity check that should hopefully fail if the victory
+    -- objectives have been modified by another mod to avoid potential compatibility issues
+    local objectives = quest:GetObjectives();
+    local objectiveEpilogue = objectives[1]:GetEpilogue();
+    if (
+        objectiveEpilogue ~= nil and
+        (
+            objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE" and
+            objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE" and
+            objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE" and
+            objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_PROMISED_LAND_LAUNCH_EPILOGUE" and
+            objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_EMANCIPATION_LAUNCH_EPILOGUE" and
+            objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_CONTACT_SIGNAL_EPILOGUE"
+        )
+    ) then
+        return;
+    end
+
+    Events.SerialEventGameMessagePopup({
+        Type = ButtonPopupTypes.BUTTONPOPUP_VICTORY_PROLOGUE,
+        Data1 = GameInfo.Quests[questType].ID,
+        Text = quest:GetPrologue()
+    });
+end
+
+function TriggerVictoryProloguePopup(playerID)
+    -- Use hard-coded turn number to trigger victory prologue popup, because unlike the
+    -- other victory objectives, the first objective is in progress from the beginning of
+    -- the game so we can't use that to trigger it
+    -- TODO: Tweak this as needed
+    if Game.GetGameTurn() ~= 50 then
+        return;
+    end
+
+    local player = Players[playerID];
+    if not player:IsHuman() or not player:IsAlive() then
+        return;
+    end
+
+    -- Use the tech required to research each affinity's highest affinity unit
+    -- Harmony
+    if player:CanEverResearch(GameInfo.Technologies["TECH_ALIEN_EVOLUTION"].ID) then
+        ShowVictoryProloguePopup(playerID, "QUEST_VICTORY_TRANSCENDENCE");
+    -- Purity
+    elseif player:CanEverResearch(GameInfo.Technologies["TECH_TACTICAL_LEV"].ID) then
+        ShowVictoryProloguePopup(playerID, "QUEST_VICTORY_PROMISED_LAND");
+    -- Supremacy
+    elseif player:CanEverResearch(GameInfo.Technologies["TECH_NEURAL_UPLOADING"].ID) then
+        ShowVictoryProloguePopup(playerID, "QUEST_VICTORY_EMANCIPATION");
+    end
+end
+GameEvents.PlayerDoTurn.Add(TriggerVictoryProloguePopup);
+
+-- Trigger the transcendence victory quest stage 2 popup
+--
+-- The other victory quest popups are triggered directly in TranscendenceVictoryQuest.lua,
+-- but this one is different because it's triggered by researching three technologies that
+-- can be researched in any order and there is a different objective prologue associated
+-- with each one. In order to pick the correct one, we listen for the
+-- GameEvents.TeamTechResearched event (there doesn't seem to be such an event for an
+-- individual player).
+function TriggerTranscendenceStage2Popup(teamType, techType, _change)
+    local player
+    if Game.GetActivePlayer() ~= nil then
+        player = Players[Game.GetActivePlayer()];
+    else
+        player = Players[0];
+    end
+
+    if not player:IsHuman() or not player:IsAlive() then
+        return;
+    end
+
+    if player:GetTeam() == teamType and player:IsHuman() then
+        local objectiveIndex = 0;
+        if (
+            techType == GameInfo.Technologies["TECH_TRANSGENICS"].ID and
+            player:HasTech(GameInfo.Technologies["TECH_NANOROBOTICS"].ID) and
+            player:HasTech(GameInfo.Technologies["TECH_SWARM_INTELLIGENCE"].ID)
         ) then
-            local objectives = quest:GetObjectives()
-            for _, objective in ipairs(objectives) do
-                local objectiveEpilogue = objective:GetEpilogue()
+            -- Lua array indexes start at 1
+            objectiveIndex = 1;
+        elseif (
+            techType == GameInfo.Technologies["TECH_SWARM_INTELLIGENCE"].ID and
+            player:HasTech(GameInfo.Technologies["TECH_NANOROBOTICS"].ID) and
+            player:HasTech(GameInfo.Technologies["TECH_TRANSGENICS"].ID)
+        ) then
+            objectiveIndex = 2;
+        elseif (
+            techType == GameInfo.Technologies["TECH_NANOROBOTICS"].ID and
+            player:HasTech(GameInfo.Technologies["TECH_SWARM_INTELLIGENCE"].ID) and
+            player:HasTech(GameInfo.Technologies["TECH_TRANSGENICS"].ID)
+        ) then
+            objectiveIndex = 3;
+        end
 
-                if ((not objective:IsInProgress()) and
-                    objective:DidSucceed() and
-                    not shownVictoryQuestStrings[objectiveEpilogue]
-                ) then
-                    local showObjectivePopup = false;
+        if objectiveIndex ~= 0 then
+            local quest = player:GetQuest(GameInfo.Quests["QUEST_VICTORY_TRANSCENDENCE"].ID);
+            local objectives = quest:GetObjectives();
+            local objective = objectives[objectiveIndex];
 
-                    -- Unfortunately the epilogue text for the transcendence victory tech
-                    -- objectives are repetitive, so only show whichever is finished
-                    -- last.
-                    if (
-                        questType == "QUEST_VICTORY_TRANSCENDENCE" and
-                        objectives[1]:DidSucceed() and
-                        objectives[2]:DidSucceed() and
-                        objectives[3]:DidSucceed()
-                    ) then
-                        showObjectivePopup = true;
-                    end
+            print("(Beyond Earth Eclipse) showing objective popup for victory " .. quest:GetType() .. " objective " .. objective:GetSummary());
 
-                    local isRisingTideActive = ContentManager.IsActive("54D2B257-C591-4045-8F17-A69F033166C7", ContentType.GAMEPLAY);
-                    if (questType == "QUEST_VICTORY_TRANSCENDENCE" and showObjectivePopup and isRisingTideActive) then
-                        print("(Beyond Earth Eclipse) showing objective popup for victory " .. questType .. " objective " .. objective:GetSummary())
-
-                        if (questType == "QUEST_VICTORY_TRANSCENDENCE") then
-                            Events.SerialEventGameMessagePopup({
-                                Type = ButtonPopupTypes.BUTTONPOPUP_QUEST_OBJECTIVE_RECEIVED_ECLIPSE,
-                                Data1 = playerID,
-                                Data2 = quest:GetIndex(),
-                                -- This is the index of the next objective; Lua indexes
-                                -- start at 1 so we have to add 2 😝
-                                Data3 = objective:GetIndex() + 2
-                            });
-                        end
-                    end
-
-                    -- Always add the text key to the list whether or not we show a popup
-                    if (not shownVictoryQuestStrings[objectiveEpilogue]) then
-                        shownVictoryQuestStrings[objectiveEpilogue] = true;
-                    end
-                end
-            end
+            Events.SerialEventGameMessagePopup({
+                Type = ButtonPopupTypes.BUTTONPOPUP_QUEST_OBJECTIVE_RECEIVED_ECLIPSE,
+                Data1 = player:GetID(),
+                Data2 = quest:GetIndex(),
+                -- Index of the next objective
+                Data3 = objectiveIndex + 1
+            });
         end
     end
 end
-GameEvents.PlayerDoTurn.Add(ShowVictoryObjectivePopup);
+local isRisingTideActive = ContentManager.IsActive("54D2B257-C591-4045-8F17-A69F033166C7", ContentType.GAMEPLAY);
+if isRisingTideActive then
+    GameEvents.TeamTechResearched.Add(TriggerTranscendenceStage2Popup);
+end
 
--- TODO: Uncomment if we ever decide to show victory prologue popups
--- function ShowVictoryProloguePopup(playerID, questType)
---     -- DELETEME
---     print("(Beyond Earth Eclipse) ShowVictoryProloguePopup()")
-
---     local player = Players[playerID];
---     if not player:IsHuman() or not player:IsAlive() then
---         return;
---     end
-
---     print("(Beyond Earth Eclipse) ShowVictoryProloguePopup() playerID=", playerID)
---     print("(Beyond Earth Eclipse) ShowVictoryProloguePopup() questType=", questType)
-
---     local purityLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_PURITY"].ID);
---     local harmonyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_HARMONY"].ID);
---     local supremacyLevel = player:GetAffinityLevel(GameInfo.Affinity_Types["AFFINITY_TYPE_SUPREMACY"].ID);
-
---     -- Only show the harmony victory prologue if that's the player's highest affinity (or
---     -- tied)
---     if (
---         questType == "QUEST_VICTORY_TRANSCENDENCE" and
---         (
---             harmonyLevel < purityLevel or
---             harmonyLevel < supremacyLevel
---         )
---     ) then
---         return;
---     end
-
---     -- Emancipation and promised land victories share the first objective so we have to
---     -- handle them together
---     if (
---         questType == "QUEST_VICTORY_EMANCIPATION" or
---         questType == "QUEST_VICTORY_PROMISED_LAND"
---     ) then
---         -- Make sure one or the other are higher than or tied with harmony affinity level
---         if (
---             purityLevel < harmonyLevel or
---             supremacyLevel < harmonyLevel
---         ) then
---             return;
---         end
-
---         if (purityLevel > supremacyLevel) then
---             questType = "QUEST_VICTORY_PROMISED_LAND";
---         elseif (supremacyLevel > purityLevel) then
---             questType = "QUEST_VICTORY_EMANCIPATION";
---         elseif (purityLevel == supremacyLevel) then
---             -- If the player has a tied purity and supremacy level, pick one of them
---             -- randomly to show
---             local showPurityProloguePopup = math.random() < 0.5;
---             if showPurityProloguePopup then
---                 questType = "QUEST_VICTORY_PROMISED_LAND";
---             else
---                 questType = "QUEST_VICTORY_EMANCIPATION";
---             end
---         end
---     end
-
---     local quest = player:GetQuest(GameInfo.Quests[questType].ID);
---     if not quest then return end
-
---     -- This is just a minimal sanity check that should hopefully fail if the victory
---     -- objectives have been modified by another mod to avoid potential compatibility issues
---     local objectives = quest:GetObjectives();
---     local objectiveEpilogue = objectives[1]:GetEpilogue();
---     if (
---         objectiveEpilogue ~= nil and
---         (
---             objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_TRANS_EPILOGUE" or
---             objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_SWARM_EPILOGUE" or
---             objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_TRANSCENDENCE_NANO_EPILOGUE" or
---             objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_PROMISED_LAND_LAUNCH_EPILOGUE" or
---             objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_EMANCIPATION_LAUNCH_EPILOGUE" or
---             objectiveEpilogue ~= "TXT_KEY_QUEST_VICTORY_CONTACT_SIGNAL_EPILOGUE"
---         )
---     ) then
---         return
---     end
-
---     local questPrologue = quest:GetPrologue();
---     print("(Beyond Earth Eclipse) questPrologue = " .. questPrologue)
-
---     if (not shownVictoryQuestStrings[questPrologue]) then
---         print("(Beyond Earth Eclipse) showing prologue popup for victory " .. questType)
-
---         Events.SerialEventGameMessagePopup({
---             Type = ButtonPopupTypes.BUTTONPOPUP_VICTORY_PROLOGUE,
---             Data1 = GameInfo.Quests[questType].ID,
---             Text = quest:GetPrologue()
---         });
-
---         shownVictoryQuestStrings[questPrologue] = true;
---     end
--- end
-
--- function OnTechResearched(teamType, techType, _change)
---     local activePlayer
---     if Game.GetActivePlayer() ~= nil then
---         activePlayer = Players[Game.GetActivePlayer()]
---     else
---         activePlayer = Players[0]
---     end
-
---     if not activePlayer:IsHuman() or not activePlayer:IsAlive() then
---         return;
---     end
-
---     if activePlayer:GetTeam() == teamType and activePlayer:IsHuman() then
---         if (techType == GameInfo.Technologies["TECH_TRANSGENICS"].ID or
---             techType == GameInfo.Technologies["TECH_SWARM_INTELLIGENCE"].ID or
---             techType == GameInfo.Technologies["TECH_NANOROBOTICS"].ID) then
---             ShowVictoryProloguePopup(activePlayer:GetID(), "QUEST_VICTORY_TRANSCENDENCE")
---         end
---     end
--- end
--- GameEvents.TeamTechResearched.Add(OnTechResearched)
-
+-- -- TODO: Uncomment if we decide to show the contact victory prologue popup
 -- function OnOrbitalUnitLaunched(playerID, unitType, _plotX, _plotY)
 --     print("(Beyond Earth Eclipse) OnOrbitalUnitLaunched()")
 
@@ -244,15 +136,11 @@ GameEvents.PlayerDoTurn.Add(ShowVictoryObjectivePopup);
 
 --     if (unitType == GameInfo.Units["UNIT_DEEP_SPACE_TELESCOPE"].ID) then
 --         ShowVictoryProloguePopup(playerID, "QUEST_VICTORY_CONTACT")
---     elseif (unitType == GameInfo.Units["UNIT_LASERCOM_SATELLITE"].ID) then
---         -- This satellite is for both the emancipation and promised land victories;
---         -- ShowVictoryProloguePopup has logic to decide which one to show
---         ShowVictoryProloguePopup(playerID, "QUEST_VICTORY_EMANCIPATION")
 --     end
 -- end
 -- GameEvents.OrbitalUnitLaunched.Add(OnOrbitalUnitLaunched);
 
--- -- Possibly show domination victory prologue
+-- -- TODO: Uncomment if we decide to show domination victory prologue
 -- local function OnCityCaptureComplete(cityX, cityY)
 --     local plot = Map.GetPlot(cityX, cityY)
 --     if not plot then return end
@@ -276,3 +164,82 @@ GameEvents.PlayerDoTurn.Add(ShowVictoryObjectivePopup);
 --     end
 -- end
 -- GameEvents.CityCaptureComplete.Add(OnCityCaptureComplete)
+
+
+-- -- NOTE: autoplay has some quirks
+-- --       - all affinity techs are hidden in tech web, not just techs for other affinities
+-- --       - in-progress research isn't shown (normally it's shown in the top left)
+-- local function AutoPlay()
+--     -- First parameter is number of turns to autoplay, second is player to return control to (or -1 for none)
+--     Game.SetAIAutoPlay(300, 0);
+-- end
+-- Events.SequenceGameInitComplete.Add(AutoPlay);
+
+-- -- Uncomment as needed for testing
+-- local function AutoPlay()
+--     if Game.GetGameTurn() ~= 0 then
+--         return;
+--     end
+
+--     local turnToStopAutoplay = 200;
+
+--     local function PrintDebuggingInfo(playerID)
+--         -- Only log every n turns
+--         if Game.GetGameTurn() == turnToStopAutoplay and playerID == 0 then
+--             print("********************* DEBUGGING; turn:" .. tostring(Game.GetGameTurn()));
+--             for playerID = 0, GameDefines.MAX_MAJOR_CIVS - 1 do
+--                 local player = Players[playerID];
+--                 if player ~= nil and player:IsEverAlive() then
+--                     print("********************* Player: " .. player:GetName());
+
+--                     print("********************* Cities: " .. tostring(player:GetNumCities()));
+
+--                     print("*********************");
+--                     for affinityInfo in GameInfo.Affinity_Types() do
+--                         local affinityLevel = player:GetAffinityLevel(affinityInfo.ID);
+--                         print("********************* Affinity: " .. tostring(affinityInfo.Type) .. " level: " .. tostring(affinityLevel));
+--                     end
+--                     print("*********************");
+
+--                     print("********************* Total xenomass: " .. tostring(player:GetNumResourceTotal(GameInfo.Resources["RESOURCE_XENOMASS"].ID, false)));
+--                     print("********************* Total firaxite: " .. tostring(player:GetNumResourceTotal(GameInfo.Resources["RESOURCE_FIRAXITE"].ID, false)));
+--                     print("********************* Total float stone: " .. tostring(player:GetNumResourceTotal(GameInfo.Resources["RESOURCE_FLOAT_STONE"].ID, false)));
+--                     print("********************* Total titanium: " .. tostring(player:GetNumResourceTotal(GameInfo.Resources["RESOURCE_TITANIUM"].ID, false)));
+--                     print("********************* Total petroleum: " .. tostring(player:GetNumResourceTotal(GameInfo.Resources["RESOURCE_PETROLEUM"].ID, false)));
+--                     print("*********************");
+
+--                     local dominantAffinityType = player:GetDominantAffinityType();
+--                     if dominantAffinityType == GameInfo.Affinity_Types["AFFINITY_TYPE_HARMONY"].ID then
+--                         print("********************* Xeno Swarm: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_XENO_SWARM"].ID)));
+--                         print("********************* Xeno Cavalry: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_XENO_CAVALRY"].ID)));
+--                         print("********************* Rocktopus: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_ROCKTOPUS"].ID)));
+--                         print("********************* Xeno Titan: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_XENO_TITAN"].ID)));
+
+--                     elseif dominantAffinityType == GameInfo.Affinity_Types["AFFINITY_TYPE_SUPREMACY"].ID then
+--                         print("********************* CNDR: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_CNDR"].ID)));
+--                         print("********************* CARVR: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_CARVR"].ID)));
+--                         print("********************* SABR: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_SABR"].ID)));
+--                         print("********************* ANGEL: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_ANGEL"].ID)));
+
+--                     elseif dominantAffinityType == GameInfo.Affinity_Types["AFFINITY_TYPE_PURITY"].ID then
+
+--                         print("********************* Battlesuit: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_BATTLESUIT"].ID)));
+--                         print("********************* Aegis: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_AEGIS"].ID)));
+--                         print("********************* LEV Tank: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_LEV_TANK"].ID)));
+--                         print("********************* LEV Destroyer: " .. tostring(player:GetUnitClassCount(GameInfo.UnitClasses["UNITCLASS_LEV_DESTROYER"].ID)));
+--                     end
+
+--                     print("*********************");
+--                     print("*********************");
+--                 end
+--             end
+--         end
+--     end
+--     GameEvents.PlayerDoTurn.Add(PrintDebuggingInfo);
+
+--     print("********************* AutoPlay()");
+--     -- First parameter is number of turns to autoplay, second is player to return control to (or -1 for none)
+--     Game.SetAIAutoPlay(turnToStopAutoplay, 0);
+-- end
+-- -- Run this once at the start of the game or when the game is loaded
+-- Events.SequenceGameInitComplete.Add(AutoPlay);

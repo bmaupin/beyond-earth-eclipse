@@ -2,11 +2,14 @@
 
 📌 [See my other Civ projects here](https://github.com/search?q=user%3Abmaupin+topic%3Acivilization&type=Repositories)
 
-A small mod for Sid Meier's Civilization: Beyond Earth to give it more flavour. Features include:
+An experimental mod for Sid Meier's Civilization: Beyond Earth to give it more flavour. Features include:
 
+- Each sponsor is limited to one specific affinity
+- Affinities have unique tile improvements
 - Tech and wonder quotes are now spoken by sponsors
 - More distinct leader personalities
 - New intro text for all leaders
+- New victory prologue popups
 - Transcendence victory objective popups have been fixed
 - Compatible with base game and Rising Tide
 
@@ -29,10 +32,34 @@ Install the mod from Steam here or see below for manual installation instruction
 
 Sid Meier's Alpha Centauri was used as an inspiration for much of this; while it lacks the gameplay and user experience amenities of modern strategy games, it still has some of the best world building of any strategy game.
 
-This mod was meant to bring out the world building that already exists in Beyond Earth but not to drastically change it. For mods that have a bigger gameplay impact, see:
+This mod has the design goal of bringing out the world building that already exists in Beyond Earth rather than adding significantly to the game. For mods that have a bigger gameplay impact, see:
 
 - [Anchor Ceti](https://forums.civfanatics.com/threads/anchor-ceti-a-story-in-beyond-earth.664817/)
 - [Ryika's mods](https://steamcommunity.com/id/ryika/myworkshopfiles/?appid=65980)
+
+### Affinities
+
+#### Each sponsor is limited to one specific affinity
+
+Each sponsor can only research technologies for a specific affinity, and therefore can only build units, buildings, and wonders for that affinity and cannot pursue victory conditions for other affinities. The sponsor's affinity is indicated in the sponsor selection screen.
+
+This makes each sponsor more unique and asymmetric, as one of the common criticisms with Beyond Earth is that the factions are bland. In addition, it makes the choice of affinity a meaningful decision that now has a real cost, while also streamlining the gameplay and allowing the player to more deeply explore a single affinity.
+
+As only the main affinities were selected, it is no longer possible to get hybrid affinity points from the tech web. Hybrid affinities are an interesting feature that was never fully fleshed out; there are not as many hybrid units nor are there any hybrid victory conditions.
+
+#### Affinity points moved to leaf techs
+
+For Rising Tide, the technology web has been reworked so that affinity points on branch techs have been moved to leaf techs.
+
+Rising Tide added hybrid affinity points to branch techs, possibly to ensure players were more likely to interact with hybrid affinities in the game. However, this made acquiring any particular affinity less of an intentional player choice and resulted in gameplay that was less unique between sessions.
+
+#### Affinities have unique tile improvements
+
+Some tile improvements have been made affinity-specific to increase asymmetric gameplay:
+
+- Harmony: Biowell, Xenomass Well
+- Purity: Dome, Floatstone Quarry
+- Supremaxy: Node, Firaxite Mine
 
 ### Leaders
 
@@ -47,6 +74,7 @@ Leaders have been adjusted to have more distinct personalities:
 - Stronger preference for a particular affinity
 - More extreme values for leader traits (bold, loyal, guarded, deceptive, friendly, etc.)
 - A strong focus on one or two aspects for each leader (growth, production, trade, espionage, military, culture, etc.)
+- All leaders have been given a boost to science, as this is key to gaining affinity points and
 
 #### New intro text for all leaders
 
@@ -56,9 +84,27 @@ In addition, the intro text for any leader may show when the game is started, no
 
 ### Victories
 
+#### New victory prologue popups
+
+The game has interesting story-building prologue text for each victory that is now shown in a special popup in order to add to the world building.
+
+Without this mod, the text for these prologues is buried in the quest menu because when any sponsor can achieve any affinity victory, there's no easy way to decide which victory prologue to show.
+
 #### Transcendence victory objective popups have been fixed
 
 Each victory has different objectives that can contain some interesting world building. In Rising Tide, functionality was added to show these objectives in popups except for the transcendence (harmony) victory. This mod fixes those popups.
+
+#### Other affinity victory quests won't start
+
+Quests for victory quests other than the affinity associated with the chosen sponsor won't start. This avoids seeing popups for other affinity victory quests.
+
+Without this mod, in Rising Tide if you launch a lasercom satellite you would see popups for the purity and supremacy victory quests.
+
+### Other
+
+#### Free Vapour Shield promotion
+
+In Rising Tide, all units have been given the Vapour Shield promotion. This removes the defence penalty units have when embarked. This was done specifically to benefit the AI because it is very bad about putting land units in water in positions where they're vulnerable to attack.
 
 ## Manual installation
 
@@ -113,13 +159,11 @@ It seems there are other leader quotes that haven't been replaced, such as affin
 
 ### Affinities
 
-#### Make affinity choice more intentional
+#### Give some sponsors hybrid affinities
 
-Rising Tide added affinity values to techs that previously didn't have any (like many branch techs) and also added multiple affinities to many techs. This was possibly to ensure players were more likely to interact with hybrid affinities in the game, but it made acquiring any particular affinity less intentional.
+Because each sponsor can only research technologies for one affinity, sponsors are unable to acquire significant points in other affinities. Hybrid affinities could potentially be implemented, for example, by associating some sponsors with specific hybrid affinities (e.g. pick 3 of the Rising Tide sponsors and assign each one to a hybrid affinity). Then each of those sponsors could be given access to the technologies for each of those affinities.
 
-These changes were originally reverted in this mod, so that acquiring any particular affinity once again would be an intentional choice the player can make rather something they fall into as a result of progressing through the tech web.
-
-However, after making this change the AI players seemed to progress through the affinities much more slowly to the extent that the game balanced seemed to be impacted, so the change was disabled. Other attempts were made with less negative results but still seemed to hurt the game balance.
+For balance, instead of giving access to all technologies for each hybrid affinity, it might make sense to only give access to a portion. Right now each affinity has 13 technologies. In order to max out a hybrid affinity, a sponsor would need to achieve at least level 10 in each of the affinities, so at least 6 technologies at 27 points each. To make it more balanced, perhaps they could be given access to 7 technologies each.
 
 #### Make affinity bonuses more distinct
 
@@ -127,22 +171,25 @@ Right now the unit promotion bonuses across the different affinities aren't diff
 
 It would be more interesting if, for example, harmony was given bonuses related to their harmonious relationship with the planet, so for example health and movement. Purity could be given bonuses of strength and attack. And supremacy could be given bonuses to technology and range.
 
-#### Make affinity choice more impactful
-
-One current problem with the affinities (and other game systems) is that there are few tradeoffs other than opportunity cost. Specifically, the player can max out all affinities if she wishes to do so. Instead, as the player progresses in one affinity I think it could be more interesting to gradually reduce the maximum level of the other affinities in such a way that only one affinity victory condition could be achieved.
-
-For example, the max affinity level in Rising Tide is 18 and affinity victories need a minimum affinity of 15. If the player reaches affinity level 9 in one affinity, for every level after that, the maximum level of the other affinities could be reduced by 1. This would allow the player to reach level 18 in only one affinity (capping the others at level 9), or alternatively the player could reach level 15 in one affinity to fulfill its victory conditions while still reaching level 10 in at least one other affinity in order to take advantage of hybrid bonuses.
-
-This could even be extended to include blocking higher level affinity technologies to make specialising in one affinity more of an interesting choice.
-
 #### Affinity progress should be more dependant on player actions
 
 Affinity progress is almost entirely made through researching technologies. This isn't bad in and of itself, but it means that player actions have little impact on choice of affinity, potentially leading to bizarre outcomes such as a player who chooses the harmony affinity and proceeds to wipe out all alien life. Instead, it would be much more interesting if player action had a greater impact on affinity. For example, a player could receive harmony affinity points for every alien in her borders at the end of each turn that she does not attack, or every tile of miasma in her borders left untouched.
 
 Quests do give some affinity points, but this could also likewise be given more weight.
 
-### Victories
+### AI
 
-#### Show victory prologue text
+#### Further AI tweaks
 
-The game has interesting story-building text for each victory as a prologue. This mod has code to show this prologue text in a popup, but in the end it got too complicated and messy to sort out. It might still be worth showing this text to add to the world building.
+The AI in Beyond Earth is not very good. Some adjustments have already been made (increase `FLAVOR_SCIENCE` and give free Vapour Shield). Some additional ways it could be improved:
+
+- Increase `AI_STRATEGY_DEFEND_MY_LANDS_UNITS_PER_CITY` or `AI_STRATEGY_DEFEND_MY_LANDS_BASE_UNITS` to increase number of units AI reserves for defence
+  - Also `FLAVOR_CITY_DEFENSE` (buldings that increase city defense), `FLAVOR_DEFENSE` (defensive units), `FLAVOR_MILITARY_TRAINING` (buildings that increase unit defense)
+- Increase AI `FLAVOR_CULTURE` so it will get more tiles
+  - Also `FLAVOR_EXPANSION` (building colonists and founding cities)
+
+## Non-goals
+
+#### Compatibility with other mods
+
+While this mod is small, it makes some major changes to game files and is not intended to be compatible with other mods that change gameplay.
