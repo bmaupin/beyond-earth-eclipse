@@ -110,14 +110,6 @@ In Rising Tide, all units have been given the Vapour Shield promotion. This remo
 
 #### Linux
 
-Download the repository source file from [Releases](https://github.com/bmaupin/beyond-earth-eclipse/releases), extract it, and then run the install script:
-
-```
-./scripts/install-mod.sh
-```
-
-Or:
-
 1. Go to [Releases](https://github.com/bmaupin/beyond-earth-eclipse/releases) and download the `.civbemod` file
 1. Create a new directory named `Eclipse (v 1)`
    - 👉 Update the value after `(v ` with the version from the filename
@@ -125,6 +117,8 @@ Or:
 1. Move the directory to the mods directory
    - Native: ~/.local/share/aspyr-media/Sid Meier's Civilization Beyond Earth/MODS/
    - Proton: ~/.steam/steam/steamapps/compatdata/65980/pfx/drive_c/users/steamuser/Documents/My Games/Sid Meier's Civilization Beyond Earth/MODS
+
+ⓘ The project also has an [install script](./scripts/install.sh) but this is meant for local development; it will install the latest version of the mod which may not be ready for release
 
 #### Windows
 
