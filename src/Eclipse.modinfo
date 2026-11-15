@@ -44,7 +44,7 @@
     <File md5="e1c9fb805b82a62a2ac17d96393d0b8b" import="0">XML/Leader_CondemnationBiases.xml</File>
     <File md5="672252c28e73734b2364967b62fb73c3" import="0">XML/Leader_Flavors.xml</File>
     <File md5="ebc44a7a0a7f416030d687b0411199fe" import="0">XML/Leader_MajorCivApproachBiases.xml</File>
-    <File md5="f0e4ef763d429c37ffa77657811f1dac" import="0">XML/Leaders.xml</File>
+    <File md5="c4179301bd97e652f2788bdc1437b2b0" import="0">XML/Leaders.xml</File>
   </Files>
   <Actions>
     <OnModActivated>
