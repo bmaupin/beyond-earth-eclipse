@@ -23,6 +23,26 @@
   <Blocks />
   <!-- See here for more information about this section: https://forums.civfanatics.com/threads/file-attributes-properties-is-that-vfs-ingameuiaddin-or-updatedatabase.487846/ -->
   <Files>
+    <File md5="dcd8611bd8bf86155e9162e73a6b2318" import="1">Art/Elodie_Environment.xml</File>
+    <File md5="403c6923fb614e6887eefefe2c0991ea" import="1">Art/Elodie_Scene.xml</File>
+    <File md5="720e833191f11dfd9f9a62d4ef222fb6" import="1">Art/Elodie_stage_1.dds</File>
+    <File md5="3cdd800073419fa4ce5ea358cfbacfb2" import="1">Art/Elodie_stage_2.dds</File>
+    <File md5="dec06661db472269b7df94d0eb7f1f37" import="1">Art/Elodie_stage_3.dds</File>
+    <File md5="40a8fa4bea6aa62ba82e83d76c2fe363" import="1">Art/Fielding_Environment.xml</File>
+    <File md5="686737780ef653e4d5a1e63654e19dbf" import="1">Art/Fielding_Scene.xml</File>
+    <File md5="49e7c8e53231f82ce9db141bb7d44fd3" import="1">Art/Fielding_stage_1.dds</File>
+    <File md5="ad8135f5fe41c0ab9a08d7a1bde4d44e" import="1">Art/Fielding_stage_2.dds</File>
+    <File md5="4e18fc70464f298e4bcae269a284e454" import="1">Art/Fielding_stage_3.dds</File>
+    <File md5="8f91f56f5ad8d077e880b00326540966" import="1">Art/Hutama_Environment.xml</File>
+    <File md5="d1302dfd5feb90a0fabe7919a5f03b0d" import="1">Art/Hutama_Scene.xml</File>
+    <File md5="66b5004bd1038c1b60778d8eabb2716d" import="1">Art/Hutama_stage_1.dds</File>
+    <File md5="b88c9fb944fec0f0d38ed3d75c5320b2" import="1">Art/Hutama_stage_2.dds</File>
+    <File md5="c106e8b6fa318fb19f52e8299dba8db7" import="1">Art/Hutama_stage_3.dds</File>
+    <File md5="6f1bceff00a9636d3ce87221a0fead34" import="1">Art/Sochua_Environment.xml</File>
+    <File md5="d277cfedff11c546ba8418f31af4e21c" import="1">Art/Sochua_Scene.xml</File>
+    <File md5="23a79c37facb08552a3d89f608fd60b6" import="1">Art/Sochua_stage_1.dds</File>
+    <File md5="4b8e5eaec943d4eb59212aae09b09601" import="1">Art/Sochua_stage_2.dds</File>
+    <File md5="3c9e67828c6a448f394a3dbe0ea0bfd1" import="1">Art/Sochua_stage_3.dds</File>
     <File md5="91468aba3ce61a555b8633b86e3689ac" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/Akkorokamui.mp3</File>
     <File md5="d57fefb3811a9b75ea6ea0298afa14a1" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/BenthicAugur.mp3</File>
     <File md5="0ee1c1df32d0cf9b97779a820d9aa8f6" import="1">Assets/DLC/Expansion1/Sounds/Speech/English/Wonders/DimensionFoldingComplex.mp3</File>
@@ -139,7 +159,7 @@
     <File md5="8e40f5954e94d5316de753ea28c71cfa" import="0">SQL/Civilizations.sql</File>
     <File md5="f05d7220ecf0f9d0a165030da3f205b7" import="0">SQL/HandicapInfos.sql</File>
     <File md5="e8bb13d4150998fa805413d7ff338525" import="0">SQL/Language_en_US.sql</File>
-    <File md5="cd1999b31344aabe4a40ae79f2f683c3" import="0">SQL/Leaders.sql</File>
+    <File md5="ed345af60380bcaacc35e4d6a472a60d" import="0">SQL/Leaders.sql</File>
     <File md5="4f6c0e7e8a7a1734608ac2b7ddca2d51" import="0">SQL/Projects.sql</File>
     <File md5="63f5f5b77d8ee1cefda76b1be3619ecd" import="0">SQL/Quests.sql</File>
     <File md5="471baf8800025bf7ce68bf8130115573" import="0">SQL/Technologies.sql</File>

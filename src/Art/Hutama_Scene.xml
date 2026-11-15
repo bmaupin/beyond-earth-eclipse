@@ -1,0 +1,17 @@
+<LeaderScene>
+  <FallbackImage ID="Level1" image="Hutama_stage_1.dds" />
+  <FallbackImage ID="Level2_Purity" image="Hutama_stage_1.dds" />
+  <FallbackImage ID="Level2_Harmony" image="Hutama_stage_2.dds" />
+  <FallbackImage ID="Level2_Supremacy" image="Hutama_stage_1.dds" />
+  <FallbackImage ID="Level3_Purity" image="Hutama_stage_1.dds" />
+  <FallbackImage ID="Level3_Harmony" image="Hutama_stage_3.dds" />
+  <FallbackImage ID="Level3_Supremacy" image="Hutama_stage_1.dds" />
+
+  <Environment ID="Level1" XML="Hutama_Environment.xml" />
+  <Environment ID="Level2_Purity" XML="Hutama_Environment.xml" />
+  <Environment ID="Level2_Harmony" XML="Hutama_Environment.xml" />
+  <Environment ID="Level2_Supremacy" XML="Hutama_Environment.xml" />
+  <Environment ID="Level3_Purity" XML="Hutama_Environment.xml" />
+  <Environment ID="Level3_Harmony" XML="Hutama_Environment.xml" />
+  <Environment ID="Level3_Supremacy" XML="Hutama_Environment.xml" />
+</LeaderScene>

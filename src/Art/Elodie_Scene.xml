@@ -1,0 +1,17 @@
+<LeaderScene>
+  <FallbackImage ID="Level1" image="Elodie_stage_1.dds" />
+  <FallbackImage ID="Level2_Purity" image="Elodie_stage_1.dds" />
+  <FallbackImage ID="Level2_Harmony" image="Elodie_stage_2.dds" />
+  <FallbackImage ID="Level2_Supremacy" image="Elodie_stage_1.dds" />
+  <FallbackImage ID="Level3_Purity" image="Elodie_stage_1.dds" />
+  <FallbackImage ID="Level3_Harmony" image="Elodie_stage_3.dds" />
+  <FallbackImage ID="Level3_Supremacy" image="Elodie_stage_1.dds" />
+
+  <Environment ID="Level1" XML="Elodie_Environment.xml" />
+  <Environment ID="Level2_Purity" XML="Elodie_Environment.xml" />
+  <Environment ID="Level2_Harmony" XML="Elodie_Environment.xml" />
+  <Environment ID="Level2_Supremacy" XML="Elodie_Environment.xml" />
+  <Environment ID="Level3_Purity" XML="Elodie_Environment.xml" />
+  <Environment ID="Level3_Harmony" XML="Elodie_Environment.xml" />
+  <Environment ID="Level3_Supremacy" XML="Elodie_Environment.xml" />
+</LeaderScene>

@@ -1,0 +1,17 @@
+<LeaderScene>
+  <FallbackImage ID="Level1" image="Sochua_stage_1.dds" />
+  <FallbackImage ID="Level2_Purity" image="Sochua_stage_1.dds" />
+  <FallbackImage ID="Level2_Harmony" image="Sochua_stage_1.dds" />
+  <FallbackImage ID="Level2_Supremacy" image="Sochua_stage_2.dds" />
+  <FallbackImage ID="Level3_Purity" image="Sochua_stage_1.dds" />
+  <FallbackImage ID="Level3_Harmony" image="Sochua_stage_1.dds" />
+  <FallbackImage ID="Level3_Supremacy" image="Sochua_stage_3.dds" />
+
+  <Environment ID="Level1" XML="Sochua_Environment.xml" />
+  <Environment ID="Level2_Purity" XML="Sochua_Environment.xml" />
+  <Environment ID="Level2_Harmony" XML="Sochua_Environment.xml" />
+  <Environment ID="Level2_Supremacy" XML="Sochua_Environment.xml" />
+  <Environment ID="Level3_Purity" XML="Sochua_Environment.xml" />
+  <Environment ID="Level3_Harmony" XML="Sochua_Environment.xml" />
+  <Environment ID="Level3_Supremacy" XML="Sochua_Environment.xml" />
+</LeaderScene>

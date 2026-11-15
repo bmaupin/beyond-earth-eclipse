@@ -7,3 +7,30 @@ UPDATE Leader_Flavors
 SET Flavor = 10
 WHERE FlavorType = 'FLAVOR_SCIENCE'
 AND LeaderType != 'LEADER_ALIEN';
+
+
+
+UPDATE Leaders
+SET
+  ArtDefineTag = 'Fielding_Scene.xml'
+WHERE Type = 'LEADER_ARC';
+
+
+
+UPDATE Leaders
+SET
+  ArtDefineTag = 'Elodie_Scene.xml'
+WHERE Type = 'LEADER_FRANCO_IBERIA';
+
+
+UPDATE Leaders
+SET
+  ArtDefineTag = 'Sochua_Scene.xml'
+WHERE Type = 'LEADER_PAN_ASIA';
+
+
+
+UPDATE Leaders
+SET
+  ArtDefineTag = 'Hutama_Scene.xml'
+WHERE Type = 'LEADER_POLYSTRALIA';
