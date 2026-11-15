@@ -6,7 +6,6 @@ An experimental mod for Sid Meier's Civilization: Beyond Earth to give it more f
 
 - Each sponsor is limited to one specific affinity
 - Affinities have unique tile improvements
-- Tech and wonder quotes are now spoken by sponsors
 - More distinct leader personalities
 - New intro text for all leaders
 - New victory prologue popups
@@ -62,10 +61,6 @@ Some tile improvements have been made affinity-specific to increase asymmetric g
 - Supremaxy: Node, Firaxite Mine
 
 ### Leaders
-
-#### Tech and wonder quotes are now spoken by sponsors
-
-All tech and wonder quotes from sponsors have had their audio overridden so that they're now spoken by the respective sponsor instead of the same narrator that narrates most of the rest of the game in order to add more variety to the spoken dialogue.
 
 #### Stronger leader personalities
 
@@ -147,9 +142,9 @@ Now is your time to help decide the fate of those who have left Earth and find t
 
 ### Leaders
 
-#### Replace other leader quotes
+#### More dramatic leader affinity portraits
 
-It seems there are other leader quotes that haven't been replaced, such as affinity progress (see Harmony level 5 quote from Daoming Sochua, for example).
+It would be great if affinity changes resulted in more dramatic changes to the leader. For example, if fully embracing the supremacy affinity converted the leader into a cyborg or robot, or if the leader was replaced with one. Even the leader images in Sid Meier's Starships have more dramatic portraits.
 
 ### Affinities
 
