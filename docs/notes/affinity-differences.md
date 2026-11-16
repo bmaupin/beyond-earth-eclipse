@@ -37,6 +37,8 @@ Change `MinTurnsBetween` and/or `ThrottleTurns` for `REACTION_AFFINITY_DIFFERS_W
 
 #### Generating score
 
+ⓘ See [CvDiplomacyAI::GetAffinityDiffersScore](https://github.com/bmaupin/beyond-earth-recomp/blob/main/src/CvDiplomacyAI.cpp)
+
 The score is 0 in these conditions:
 
 - One of the players has no affinity or no dominant affinity

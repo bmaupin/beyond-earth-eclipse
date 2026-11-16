@@ -23,6 +23,7 @@
   <Blocks />
   <!-- See here for more information about this section: https://forums.civfanatics.com/threads/file-attributes-properties-is-that-vfs-ingameuiaddin-or-updatedatabase.487846/ -->
   <Files>
+    <File md5="cb3b50d1846c7cddfa2cdd42dd97391c" import="1">Gameplay/Lua/DefaultReactionHelpers.lua</File>
     <File md5="27777c2ec6cbb23f7b3aa62c97c2e0e9" import="1">Gameplay/Lua/Quests/EmancipationVictoryQuest.lua</File>
     <File md5="5fc7ceab99f12bc894cdcb3fd2a9a658" import="1">Gameplay/Lua/Quests/PromisedLandVictoryQuest.lua</File>
     <File md5="01c53283b062fe4bb64531a77326c9ab" import="1">Gameplay/Lua/Quests/TranscendenceVictoryQuest.lua</File>
