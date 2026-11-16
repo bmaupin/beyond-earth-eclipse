@@ -784,7 +784,17 @@ function DefaultHandler_RelationshipChanged(traitScript : CvPersonalityTraitScri
 						reactionInfo = GameInfo.Reactions["REACTION_RELATIONSHIP_WITH_FRIEND_IMPROVED_LIKE"];
 					end
 				elseif (relationship < RelationshipLevels.RELATIONSHIP_NEUTRAL) then
-					if (isImprovement) then
+					-- === BEGIN MOD: Don't decrease respect when making peace ===
+					--
+					-- It's super annoying to get a respect hit for making peace. It can even happen
+					-- if a player you're allied with makes peace with another player and then you
+					-- make peace with that player too. NOTE there's also
+					-- REACTION_PEACE_ESTABLISHED_DISLIKE but it doesn't seem to trigger due to bugs
+					-- in the logic
+					--
+					-- if (isImprovement) then
+					if (isImprovement and oldRelationship ~= RelationshipLevels.RELATIONSHIP_WAR) then
+					-- === END MOD ===
 						reactionInfo = GameInfo.Reactions["REACTION_RELATIONSHIP_WITH_ENEMY_IMPROVED_DISLIKE"];
 					end
 				end
